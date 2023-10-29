@@ -1,0 +1,277 @@
+/*!
+Theme Name: ternoTheme
+Theme URI: https://underscores.me/
+Author: Automattic
+Author URI: https://automattic.com/
+Description: Hi. I'm a starter theme called <code>ternoTheme</code>, or <em>underscores</em>, if you like. I'm a theme meant for hacking so don't use me as a <em>Parent Theme</em>. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: ternoTheme
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+ternoTheme is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic
+	- Normalize
+	- Box sizing
+# Base
+	- Typography
+	- Elements
+	- Links
+	- Forms
+## Layouts
+# Components
+	- Navigation
+	- Posts and pages
+	- Comments
+	- Widgets
+	- Media
+	- Captions
+	- Galleries
+# plugins
+	- Jetpack infinite scroll
+# Utilities
+	- Accessibility
+	- Alignments
+
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Generic
+--------------------------------------------------------------*/
+
+/* Normalize
+--------------------------------------------- */
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+	 ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+ body{
+	 margin: 0;
+	 padding: 0;
+	 font-family: 'Open Sans', sans-serif;
+ }
+ 
+ .mainBlock{
+	 height: 100vh;
+	 width: 100vw;
+	 background-image: url(images/pexels-benjamin-daniel-1815449.jpg);
+	 background-size: cover;
+ }
+ 
+ .upperHeader{
+	 position: absolute;
+	 width: 100vw;
+	 top: 0;
+ }
+ 
+ .blue{
+	 width: 100%;
+	 background: #0070FF;
+	 height: 15px;
+ }
+ 
+ .yellow{
+	 width: 100%;
+	 background: #fff444;
+	 height: 15px;
+ }
+ 
+ .mainBlock h1{
+	 font-size: 4.2em;
+	 font-weight: 1000;
+	 color:white;
+	 position: absolute;
+	 width: 100vw;
+	 text-align: center;
+	 top: 32vh;
+	 font-family: 'Open Sans', sans-serif;
+ }
+ 
+ .subtitle{
+	 font-size: 2.4em;
+	 font-weight: 400;
+	 color: white;
+	 position: absolute;
+	 width: 100vw;
+	 text-align: center;
+	 top: 65vh;
+	 font-family: 'Open Sans', sans-serif;
+ }
+ 
+ header{
+	 width: 100%;
+	 display: flex;
+	 flex-direction: row;
+	 align-items: center;
+ }
+ 
+ header a{
+	 font-size: 18px;
+	 color: white;
+	 text-decoration: none;
+	 font-weight: 500;
+	 padding-top: 55px;
+	 margin-left: 40px;
+ }
+ 
+ .active{
+	 font-weight: 800;
+ }
+ 
+ .logo{
+	 padding-top: 50px;
+	 padding-left: 25px;
+	 height: 50px;
+ }
+ 
+ .onLink{
+	 position: absolute;
+	 top: 80vh;
+	 display: flex;
+	 justify-content: center;
+	 width: 100vw;
+ }
+ 
+ .linkToContact{
+	 padding: 15px 30px;
+	 background: white;
+	 border-radius: 30px;
+	 font-family: 'Open Sans', sans-serif;
+	 color: #2c2d2c;
+	 text-decoration: none;
+	 display: block;
+	 margin-left: auto;
+	 margin-right: auto;
+ }
+ 
+ .secBlock{
+	 height: 100vh;
+	 display: flex;
+	 justify-content: center;
+	 flex-direction: row;
+	 align-items: center;
+	 padding: 50px;
+ }
+ 
+ .secBlock img{
+	 width: 45%;
+ }
+ 
+ .secBlock h2{
+	 font-size: 3.8em;
+	 color: #2c2d2c;
+	 margin-bottom: 15px;
+ }
+ 
+ .secBlock p{
+	  color: #2c2d2c;
+	  font-size: 18px;
+	  padding: 0;
+	  margin: 0;
+ }
+ 
+ .linksToContact{
+	 height: 90vh;
+	 width: 100%;
+	 display: flex;
+	 justify-content:center;
+	 flex-direction: row;
+	 align-items: center;
+ }
+ 
+ .linksToContact a{
+	 padding: 50px;
+ }
+ 
+ .linksToContact a img:hover{
+	 height: 200px;
+	 width: 200px;
+ }
+ 
+ @media (min-width: 360px) and (max-width: 1000px) { 
+	 .mainBlock h1{
+		 font-size: 24px;
+	 }
+ 
+	 .subtitle{
+		 font-size: 18px;
+		 top: 55vh;
+	 }
+ 
+	 .onLink{
+		 top: 70vh;
+	 }
+ 
+	 header {
+		 width: 100%;
+		 display: flex;
+		 justify-content: center;
+		 flex-direction: column;
+		 align-items: center;
+	 }
+ 
+	 header a {
+		 padding-top: 15px;
+		 padding-left: 0;
+		 margin-left: 0;
+	 }
+	 .logo {
+		 padding-left: 0;
+	 }
+ 
+	 .secBlock {
+		 flex-direction: column;
+	 }
+ 
+	 .secBlock h2 {
+		 font-size: 24px;
+	 }
+ 
+	 .secBlock p {
+		 font-size: 14px;
+	 }
+ 
+	 .inSecBlock{
+		 padding-bottom: 25px;
+	 }
+	 .secBlock img {
+		 width: 90%;
+	 }
+ 
+	 .linksToContact {
+		 flex-direction: column;
+		 height: 70vh;
+	 }
+ 
+	 .linksToContact a {
+		 padding: 15px;
+ 
+	 }
+	 .linksToContact a img{
+		 height: 100px;
+		 width: 100px;
+	 }
+ }

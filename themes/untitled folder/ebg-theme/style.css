@@ -1,0 +1,561 @@
+/*!
+Theme Name: EBG Theme
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: ebg-theme
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+EBG Theme is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic
+	- Normalize
+	- Box sizing
+# Base
+	- Typography
+	- Elements
+	- Links
+	- Forms
+## Layouts
+# Components
+	- Navigation
+	- Posts and pages
+	- Comments
+	- Widgets
+	- Media
+	- Captions
+	- Galleries
+# plugins
+	- Jetpack infinite scroll
+# Utilities
+	- Accessibility
+	- Alignments
+
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Generic
+--------------------------------------------------------------*/
+
+/* Normalize
+--------------------------------------------- */
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+	 ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+ @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+ *{
+	 margin: 0;
+	 padding: 0;
+	 scroll-behavior: smooth;
+ }   
+ 
+ body{
+	 margin: 0;
+	 padding: 0;
+ }
+ 
+ header{
+	 width: 100%;
+	 height: 75px;
+	 background-color: #111747;
+	 display: flex;
+	 justify-content: space-between;
+	 align-items: center;
+	 position: fixed;
+	 z-index: 5;
+ }
+ 
+ .logo{
+	 padding-left: 25px;
+	 width: 425px;
+	 height: auto;
+ }
+ 
+ .menu{
+	 padding-right: 25px;
+	 display: flex;
+	 width: 450px;
+	 justify-content: space-between;
+	 align-items: center;
+	 list-style: none;
+ }
+ 
+ .menu li{
+	 width: 150px;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+ }
+ 
+ .menu li a{
+	 font-family: 'Open Sans', sans-serif;
+	 font-size: 16px;
+	 font-weight: 400;
+	 text-decoration: none;
+	 color: #fff;
+ }
+ 
+ .menu li a:hover
+ {
+	 text-decoration: underline;
+ }
+ 
+ .menu li .active, .current-menu-item{
+	 font-weight: 700;
+ }
+ 
+ .boatBg{
+	 position: absolute;
+	 top: 0;
+	 height: 100vh;
+	 width: 100vw;
+	 z-index: -5;
+ }
+ 
+ .mainScreen{
+	 height: 100vh;
+	 width: 100vw;
+ }
+ 
+ .mainScreen h1{
+	 position: absolute;
+	 color: #fff;
+	 font-family: 'Montserrat';
+	 font-style: normal;
+	 font-weight: 400;
+	 font-size: 3.2em;
+	 line-height: 59px;
+	 letter-spacing: 0.15em;
+	 text-align: center;
+	 width: 100%;
+	 top: 25vh;
+ }
+ 
+ .bottomArrow{
+	 position: absolute;
+	 width: 100%;
+	 bottom: 25px;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 height: 80px;
+ }
+ 
+ .bottomArrow img{
+	 height: 80px;
+	 width: auto;
+ }
+ 
+ .bottomArrow {
+	 -webkit-animation: pulsing 2s infinite;
+	 animation: pulsing 2s infinite;
+   }
+   
+   @-webkit-keyframes pulsing {
+	 0% {
+	   bottom: 35px;
+	 }
+	 50% {
+	   bottom: 25px;
+	 }
+	 100% {
+	   bottom: 35px;
+	 }
+   }
+   
+   @keyframes pulsing {
+	 0% {
+		 bottom: 35px;
+	   }
+	   50% {
+		 bottom: 25px;
+	   }
+	   100% {
+		 bottom: 35px;
+	   }
+   }
+ 
+ .futureScreen{
+	 height: 100vh;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 flex-direction: column;
+ }
+ 
+ .futureScreen h2{
+	 margin-bottom: 20px;
+ }
+ 
+ .futureScreen p{
+	 width: 80vw;
+ }
+ 
+ .biggerText{
+	 font-family: 'Open Sans';
+	 font-style: normal;
+	 font-weight: 400;
+	 font-size: 24px;
+	 line-height: 33px;
+	 color: #2C2D2C;
+ }
+ 
+ .CEO{
+	 height: 100vh;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+ }
+ 
+ .CEO img{
+	 margin-right: 75px;
+	 height: 50vh;
+	 width: auto;
+ }
+ 
+ .innerCEO p{
+	 width: 60vw;
+	 font-size: 18px;
+	 line-height: 25px;
+ }
+ 
+ .innerCEO h2{
+	 font-family: 'Open Sans';
+	 font-style: normal;
+	 font-weight: 700;
+	 font-size: 2.2em;
+	 line-height: 44px;
+	 margin-bottom: 10px;
+	 color: #111747;
+	 width: 60vw;
+ }
+ 
+ footer{
+	 width: 100%;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 flex-direction: column;
+	 height: 210px;
+	 background-color: #111747;
+ }
+ 
+ footer img{
+	 height: 35px;
+	 width: auto;
+ }
+ .bottomMenu{
+	 display: flex;
+	 justify-content: space-between;
+	 align-items: center;
+	 width: 460px;
+	 list-style: none;
+	 margin-top: 30px;
+	 margin-bottom: 30px;
+ }
+ 
+ .bottomMenu li{
+	 color: #fff;
+	 font-family: 'Open Sans';
+	 font-style: normal;
+	 font-weight: 400;
+	 font-size: 18px;
+ }
+ 
+ .bottomMenu li:hover{
+	 font-weight: 700;
+ }
+ 
+ .bottomMenu a{
+	 text-decoration: none;
+ }
+ 
+ .bottomMenuLine{
+	 width: 1px;
+	 height: 30px;
+	 background-color: #fff;
+ }
+ 
+ .littleText{
+	 font-family: 'Open Sans';
+ font-style: normal;
+ font-weight: 300;
+ font-size: 14px;
+ line-height: 20px;
+ /* identical to box height, or 143% */
+ 
+ text-transform: uppercase;
+ 
+ color: #FFFFFF;
+ }
+ 
+ .screen{
+	 width: 100vw;
+	 min-height: 100vh;
+	 padding-top: 15vh;
+ }
+ 
+ .title{
+	 font-family: 'Open Sans';
+	 font-style: normal;
+	 font-weight: 700;
+	 font-size: 3.2em;
+	 text-align: center;
+	 text-transform: uppercase;
+ 
+	 color: #141B4F;
+	 text-align: center;
+	 width: 100%;
+ }
+ 
+ .subTitle{
+		 font-family: 'Open Sans';
+	 font-style: normal;
+	 font-weight: 300;
+	 font-size: 2em;
+	 /* identical to box height */
+ 
+	 text-align: center;
+ 
+	 color: #2C2D2C;
+ }
+ 
+ .card{
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: center;
+	 align-items: flex-start;
+	 width: 100%;
+	 background-color: #F3F3F6;
+	 border: none;
+	 border-radius: 30px;
+	 transition: box-shadow 0.5s linear;
+	 cursor: pointer;
+ }
+ 
+ .card:hover{
+	 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ 
+ }
+ 
+ .card img{
+	 width: 100%;
+	 height: auto;
+ }
+ 
+ .cardInner{
+	 padding: 15px;
+ }
+ 
+ .cardInner h3{
+	 font-family: 'Open Sans';
+	 font-style: normal;
+	 font-weight: 400;
+	 font-size: 1.2em;
+	 line-height: 33px;
+	 color: #2C2D2C;
+ }
+ .cardInner p{
+	 font-family: 'Open Sans';
+	 font-style: normal;
+	 font-weight: 400;
+	 font-size: 0.9em;
+ 
+	 color: #2C2D2C;
+ }
+ 
+ .cardInner a{
+	 font-family: 'Open Sans';
+	 font-style: normal;
+	 font-weight: 400;
+	 font-size: 1em;
+ 
+	 text-align: center;
+	 text-decoration-line: underline;
+	 color: #292E59;
+	 display: block;
+	 width: 100%;
+	 text-align: right;
+ }
+ 
+ .cardsBlockOutter{
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 padding-top: 50px;
+ }
+ 
+ .cardsBlock{
+	 width: 90%;
+	 display: grid;
+	 grid-template-columns: repeat(4, 1fr);
+	 grid-column-gap: 50px;
+	 grid-row-gap: 50px;
+ }
+ 
+ .contactBlock{
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 flex-direction: column;
+	 width: 100%;
+	 margin-top: 50px;
+ }
+ 
+ .oneContactBlock{
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 margin-bottom: 30px;
+ }
+ 
+ .oneContactBlock img{
+	 margin-right: 5px;
+	 height: 20px;
+	 width: auto;
+ }
+ 
+ .oneContactBlock a{
+ 
+	 font-family: 'Open Sans';
+	 font-style: normal;
+	 font-weight: 300;
+	 font-size: 20px;
+ 
+	 /* identical to box height, or 60% */
+	 
+	 text-decoration: none;
+	 
+	 color: #2C2D2C;
+	 cursor: pointer;
+ }
+ 
+ 
+  @media (max-width: 990px) {
+	 .boatBg{
+		 object-fit: cover;
+	 }
+ 
+	 .CEO {
+		 flex-direction: column;
+		 min-height: 100vh;
+		 height: fit-content;
+	 }
+ 
+	 .CEO img {
+		 margin-right: 0;
+		 margin-bottom: 50px;
+	 }
+ 
+	 header{
+		 width: 100vw;
+	 }
+	 .cardsBlock {
+		 grid-template-columns: repeat(3, 1fr);
+		 grid-column-gap: 30px;
+		 grid-row-gap: 30px;
+	 }
+   }
+ 
+ 
+  @media (max-width: 768px) {
+	 header{
+		 flex-direction: column;
+		 height: auto;
+		 padding-top: 15px;
+	 }
+ 
+	 .menu{
+		 flex-direction: column;
+		 padding-bottom: 15px;
+	 }
+ 
+	 .menu li{
+		 margin: 10px;
+	 }
+ 
+	 .logo {
+		 padding-left: 0;
+		 padding-bottom: 20px;
+		 width: 330px;
+ 
+	 }
+ 
+	 .innerCEO p, .innerCEO h2 {
+		 width: 90vw;
+	 }
+ 
+	 .innerCEO{
+		 padding-bottom: 50px;
+	 }
+ 
+	 .CEO img {
+		 height: auto;
+		 width: 80vw;
+	 }
+ 
+	 footer img {
+		 height: auto;
+		 width: 300px;
+	 }
+ 
+	 .bottomMenu{
+		 flex-direction: column;
+		 width: auto;
+	 }
+ 
+	 footer{
+		 width: auto;
+		 height: fit-content;
+		 padding: 25px;
+	 }
+ 
+	 .cardsBlock {
+		 grid-template-columns: repeat(1, 1fr);
+	 }
+ 
+	 .screen{
+		 padding-top: 25vh;
+	 }
+ 
+	 .title{
+		 font-size: 2.4em;
+		 min-width: 90vw;
+	 }
+ 
+	 .subTitle{
+		 font-size: 1.6em;
+		 min-width: 90vw;
+	 }
+ 
+	 .oneContactBlock a{
+		 font-size: 14px;
+	 }
+ 
+ 
+   }
