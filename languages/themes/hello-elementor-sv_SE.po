@@ -1,0 +1,409 @@
+# Translation of Themes - Hello Elementor in Swedish
+# This file is distributed under the same license as the Themes - Hello Elementor package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2023-10-18 18:58:45+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.0.0-alpha.10\n"
+"Language: sv_SE\n"
+"Project-Id-Version: Themes - Hello Elementor\n"
+
+#. Description of the theme
+#, gp-priority: high
+msgid "A lightweight and minimalist WordPress theme for Elementor page builder."
+msgstr "Ett litet och minimalistiskt WordPress-tema för Elementor page builder."
+
+#. Theme Name of the theme
+#, gp-priority: high
+msgid "Hello Elementor"
+msgstr "Hello Elementor"
+
+#. translators: %s: Link that opens Elementor's "Site Identity" panel.
+#: includes/settings/settings-footer.php:279
+#: includes/settings/settings-header.php:269
+#: includes/settings/settings-header.php:286
+msgid "Go to <a href=\"%s\">Site Identity</a> to manage your site's title"
+msgstr "Gå till <a href=\"%s\">webbplatsidentitet</a> för att hantera din webbplatsrubrik"
+
+#: includes/admin-functions.php:139
+msgid "Explore Elementor Page Builder Plugin"
+msgstr "Utforska tillägget Elementor Page Builder"
+
+#: includes/settings/settings-footer.php:495
+#: includes/settings/settings-header.php:518
+msgid "Upgrade"
+msgstr "Uppgradera"
+
+#: includes/customizer/elementor-upsell.php:78
+msgid "Activate Now"
+msgstr "Aktivera nu"
+
+#: header.php:31
+msgid "Skip to content"
+msgstr "Hoppa till innehåll"
+
+#: includes/settings/settings-header.php:534
+msgid "Create Header"
+msgstr "Skapa sidhuvud"
+
+#: includes/settings/settings-header.php:532
+msgid "Create a custom header with the new Theme Builder"
+msgstr "Skapa ett anpassat sidhuvud med den nya temabyggaren"
+
+#: includes/settings/settings-header.php:516
+msgid "Create a custom header with multiple options"
+msgstr "Skapa ett anpassat sidhuvud med flera alternativ"
+
+#: includes/settings/settings-header.php:467
+msgid "Toggle Color"
+msgstr "Slå på/av färg"
+
+#: includes/settings/settings-header.php:441
+msgid "None"
+msgstr "Ingen"
+
+#. translators: %d: Breakpoint number.
+#: includes/settings/settings-header.php:440
+msgid "Tablet (< %dpx)"
+msgstr "Läsplatta (< %dpx)"
+
+#. translators: %d: Breakpoint number.
+#: includes/settings/settings-header.php:438
+msgid "Mobile (< %dpx)"
+msgstr "Mobil (< %dpx)"
+
+#: includes/settings/settings-header.php:433
+msgid "Breakpoint"
+msgstr "Brytpunkt"
+
+#: includes/settings/settings-header.php:422
+msgid "Dropdown"
+msgstr "Rullgardinsmeny"
+
+#: includes/settings/settings-header.php:421
+msgid "Horizontal"
+msgstr "Horisontell"
+
+#: includes/settings/settings-header.php:417
+msgid "Menu Layout"
+msgstr "Menylayout"
+
+#: includes/settings/settings-footer.php:511
+msgid "Create Footer"
+msgstr "Skapa sidfot"
+
+#: includes/settings/settings-footer.php:510
+#: includes/settings/settings-header.php:533
+msgid "With the new Theme Builder you can jump directly into each part of your site"
+msgstr "Med den nya temabyggaren kan du hoppa direkt till varje del av din webbplats"
+
+#: includes/settings/settings-footer.php:509
+msgid "Create a custom footer with the new Theme Builder"
+msgstr "Skapa en anpassad sidfot med den nya temabygggaren"
+
+#: includes/settings/settings-footer.php:494
+#: includes/settings/settings-header.php:517
+msgid "Upgrade to Elementor Pro and enjoy free design and many more features"
+msgstr "Uppgradera till Elementor Pro och njut av gratis design och många fler funktioner"
+
+#: includes/settings/settings-footer.php:493
+msgid "Create a custom footer with multiple options"
+msgstr "Skapa en anpassad sidfot med flera alternativ"
+
+#: includes/settings/settings-footer.php:438
+msgid "All rights reserved"
+msgstr "Alla rättigheter reserverade"
+
+#: includes/settings/settings-footer.php:396
+#: includes/settings/settings-header.php:453
+msgid "Color"
+msgstr "Färg"
+
+#: includes/settings/settings-footer.php:388
+#: includes/settings/settings-header.php:409
+msgid "Changes will be reflected in the preview only after the page reloads."
+msgstr "Ändringar kommer att återspeglas i förhandsgranskningen endast efter att sidan laddats om."
+
+#: includes/settings/settings-footer.php:380
+#: includes/settings/settings-header.php:401
+msgid "Go to the <a href=\"%s\" target=\"_blank\">Menus screen</a> to manage your menus."
+msgstr "Gå till <a href=\"%s\" target=\"_blank\">menyskärmen</a> för att hantera dina menyer."
+
+#: includes/settings/settings-footer.php:367
+#: includes/settings/settings-header.php:388
+msgid "Go to <a href=\"%s\" target=\"_blank\">Menus screen</a> to create one."
+msgstr "Gå till <a href=\"%s\" target=\"_blank\">menyskärmen</a> för att skapa en."
+
+#: includes/settings/settings-footer.php:367
+#: includes/settings/settings-header.php:388
+msgid "There are no menus in your site."
+msgstr "Det finns inga menyer på din webbplats."
+
+#: includes/settings/settings-footer.php:357
+#: includes/settings/settings-header.php:378
+msgid "— Select a Menu —"
+msgstr "— Välj en meny —"
+
+#. translators: %s: Link that opens Elementor's "Site Identity" panel.
+#: includes/settings/settings-footer.php:335
+#: includes/settings/settings-header.php:349
+msgid "Go to <a href=\"%s\">Site Identity</a> to manage your site's tagline"
+msgstr "Gå till <a href=\"%s\">webbplatsidentitet</a> för att hantera din webbplats slogan"
+
+#: includes/settings/settings-footer.php:263
+#: includes/settings/settings-footer.php:321
+#: includes/settings/settings-footer.php:408
+#: includes/settings/settings-footer.php:460
+#: includes/settings/settings-header.php:266
+#: includes/settings/settings-header.php:335
+#: includes/settings/settings-header.php:482
+msgid "Typography"
+msgstr "Typografi"
+
+#: includes/settings/settings-footer.php:247
+#: includes/settings/settings-footer.php:306
+#: includes/settings/settings-footer.php:445
+#: includes/settings/settings-header.php:250
+#: includes/settings/settings-header.php:320
+msgid "Text Color"
+msgstr "Textfärg"
+
+#. translators: %s: Link that opens Elementor's "Site Identity" panel.
+#: includes/settings/settings-footer.php:219
+#: includes/settings/settings-header.php:222
+msgid "Go to <a href=\"%s\">Site Identity</a> to manage your site's logo"
+msgstr "Gå till <a href=\"%s\">webbplatsidentitet</a> för att hantera din webbplats logga"
+
+#: includes/settings/settings-footer.php:216
+#: includes/settings/settings-header.php:219
+msgid "Logo Width"
+msgstr "Loggans bredd"
+
+#: includes/settings/settings-footer.php:206
+#: includes/settings/settings-header.php:209
+msgid "Title"
+msgstr "Rubrik"
+
+#: includes/settings/settings-footer.php:205
+#: includes/settings/settings-header.php:208
+msgid "Logo"
+msgstr "Logga"
+
+#: includes/settings/settings-footer.php:201
+#: includes/settings/settings-header.php:204
+msgid "Type"
+msgstr "Typ"
+
+#: includes/settings/settings-footer.php:179
+#: includes/settings/settings-header.php:175
+msgid "Background"
+msgstr "Bakgrund"
+
+#: includes/settings/settings-footer.php:153
+#: includes/settings/settings-header.php:139
+msgid "Gap"
+msgstr "Mellanrum"
+
+#: includes/settings/settings-footer.php:127
+#: includes/settings/settings-header.php:113
+msgid "Content Width"
+msgstr "Innehållsbredd"
+
+#: includes/settings/settings-footer.php:116
+#: includes/settings/settings-header.php:102
+msgid "Full Width"
+msgstr "Full bredd"
+
+#: includes/settings/settings-footer.php:115
+#: includes/settings/settings-header.php:101
+msgid "Boxed"
+msgstr "Inramad"
+
+#: includes/settings/settings-footer.php:113
+#: includes/settings/settings-header.php:99
+msgid "Width"
+msgstr "Bredd"
+
+#: includes/settings/settings-footer.php:102
+#: includes/settings/settings-header.php:88
+msgid "Centered"
+msgstr "Centrerat"
+
+#: includes/settings/settings-footer.php:101
+#: includes/settings/settings-header.php:87
+msgid "Inverted"
+msgstr "Inverterad"
+
+#: includes/settings/settings-footer.php:100
+#: includes/settings/settings-header.php:86
+msgid "Default"
+msgstr "Standard"
+
+#: includes/settings/settings-footer.php:98
+#: includes/settings/settings-header.php:84
+msgid "Layout"
+msgstr "Layout"
+
+#: includes/settings/settings-footer.php:86
+#: includes/settings/settings-footer.php:420
+msgid "Copyright"
+msgstr "Upphovsrätt"
+
+#: includes/settings/settings-footer.php:74
+#: includes/settings/settings-footer.php:348
+#: includes/settings/settings-footer.php:376
+#: includes/settings/settings-header.php:73
+#: includes/settings/settings-header.php:362
+#: includes/settings/settings-header.php:397
+#: template-parts/dynamic-header.php:59
+msgid "Menu"
+msgstr "Meny"
+
+#: includes/settings/settings-footer.php:62
+#: includes/settings/settings-footer.php:296
+#: includes/settings/settings-header.php:62
+#: includes/settings/settings-header.php:303
+msgid "Tagline"
+msgstr "Slogan"
+
+#: includes/settings/settings-footer.php:53
+#: includes/settings/settings-footer.php:65
+#: includes/settings/settings-footer.php:77
+#: includes/settings/settings-footer.php:89
+#: includes/settings/settings-header.php:54
+#: includes/settings/settings-header.php:65
+#: includes/settings/settings-header.php:76
+msgid "Hide"
+msgstr "Dölj"
+
+#: includes/settings/settings-footer.php:52
+#: includes/settings/settings-footer.php:64
+#: includes/settings/settings-footer.php:76
+#: includes/settings/settings-footer.php:88
+#: includes/settings/settings-header.php:53
+#: includes/settings/settings-header.php:64
+#: includes/settings/settings-header.php:75
+msgid "Show"
+msgstr "Visa"
+
+#: includes/settings/settings-footer.php:50
+#: includes/settings/settings-footer.php:191
+#: includes/settings/settings-header.php:51
+#: includes/settings/settings-header.php:187
+msgid "Site Logo"
+msgstr "Webbplatslogga"
+
+#: includes/customizer/elementor-upsell.php:86
+msgid "Start Here"
+msgstr "Börja här"
+
+#: includes/customizer/elementor-upsell.php:75
+#: includes/customizer/elementor-upsell.php:83
+msgid "Set Your Header &amp; Footer"
+msgstr "Ställ in ditt sidhuvud och sidfot"
+
+#: includes/customizer/elementor-upsell.php:67
+#: includes/customizer/elementor-upsell.php:70
+msgid "Update Elementor"
+msgstr "Uppdatera Elementor"
+
+#: includes/customizer/elementor-upsell.php:54
+msgid "Install &amp; Activate"
+msgstr "Installera och aktivera"
+
+#: includes/customizer-functions.php:19
+msgid "Header &amp; Footer"
+msgstr "Sidhuvud och sidfot"
+
+#: includes/admin-functions.php:133
+msgid "Get Elementor"
+msgstr "Skaffa Elementor"
+
+#: functions.php:31 includes/settings/settings-footer.php:21
+#: includes/settings/settings-footer.php:42
+msgid "Footer"
+msgstr "Sidfot"
+
+#: functions.php:30 includes/settings/settings-header.php:23
+#: includes/settings/settings-header.php:43
+msgid "Header"
+msgstr "Sidhuvud"
+
+#: includes/admin-functions.php:137
+msgid "Thanks for installing the Hello Theme!"
+msgstr "Tack för att du installerar temat Hello!"
+
+#: includes/admin-functions.php:49 includes/customizer/elementor-upsell.php:42
+msgid "Install Elementor"
+msgstr "Installera Elementor"
+
+#: includes/admin-functions.php:40 includes/customizer/elementor-upsell.php:59
+#: includes/customizer/elementor-upsell.php:62
+msgid "Activate Elementor"
+msgstr "Aktivera Elementor"
+
+#. translators: 1: number of comments
+#: comments.php:39
+msgctxt "comments title"
+msgid "%1$s Response"
+msgid_plural "%1$s Responses"
+msgstr[0] "%1$s svar"
+msgstr[1] "%1$s svar"
+
+#: comments.php:35
+msgctxt "comments title"
+msgid "One Response"
+msgstr "Ett svar"
+
+#. Translators: HTML arrow
+#: template-parts/archive.php:51 template-parts/search.php:57
+msgid "newer %s"
+msgstr "nyare %s"
+
+#. Translators: HTML arrow
+#: template-parts/archive.php:49 template-parts/search.php:55
+msgid "%s older"
+msgstr "%s äldre"
+
+#: template-parts/search.php:43
+msgid "It seems we can't find what you're looking for."
+msgstr "Det verkar som vi inte kan hitta det du letar efter."
+
+#: template-parts/search.php:17
+msgid "Search results for: "
+msgstr "Sökresultat för:"
+
+#: template-parts/dynamic-footer.php:33 template-parts/dynamic-header.php:36
+#: template-parts/header.php:29
+msgid "Home"
+msgstr "Hem"
+
+#: template-parts/single.php:27
+msgid "Tagged "
+msgstr "Märkt"
+
+#: template-parts/404.php:21
+msgid "It looks like nothing was found at this location."
+msgstr "Det verkar som om inget hittades på denna plats."
+
+#: template-parts/404.php:16
+msgid "The page can&rsquo;t be found."
+msgstr "Den sidan kan inte hittas."
+
+#. Author URI of the theme
+#, gp-priority: low
+msgid "https://elementor.com/?utm_source=wp-themes&utm_campaign=author-uri&utm_medium=wp-dash"
+msgstr "https://elementor.com/?utm_source=wp-themes&utm_campaign=author-uri&utm_medium=wp-dash"
+
+#. Theme URI of the theme
+#, gp-priority: low
+msgid "https://elementor.com/hello-theme/?utm_source=wp-themes&utm_campaign=theme-uri&utm_medium=wp-dash"
+msgstr "https://elementor.com/hello-theme/?utm_source=wp-themes&utm_campaign=theme-uri&utm_medium=wp-dash"
+
+#. Author of the theme
+#, gp-priority: low
+msgid "Elementor Team"
+msgstr "Elementor Team"

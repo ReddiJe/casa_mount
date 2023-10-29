@@ -1,0 +1,559 @@
+# Translation of Plugins - Custom Field Template - Stable (latest release) in Russian
+# This file is distributed under the same license as the Plugins - Custom Field Template - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2021-12-12 18:21:06+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - Custom Field Template - Stable (latest release)\n"
+
+#: custom-field-template.php:1463
+msgid "Before the more tag"
+msgstr "Перед меткой more"
+
+#: custom-field-template.php:1300
+msgid "Disable the admin search"
+msgstr "Отключить поиск на экране администратора"
+
+#: custom-field-template.php:1299
+msgid "In case that you would like to forbid to use the admin search."
+msgstr "При запрете использования поиска по экрану управления."
+
+#. Author URI of the plugin
+msgid "https://wpgogo.com/"
+msgstr "https://wpgogo.com/"
+
+#. Author of the plugin
+msgid "Hiroaki Miyashita"
+msgstr "Hiroaki Miyashita"
+
+#. Description of the plugin
+msgid "This plugin adds the default custom fields on the Write Post/Page."
+msgstr "Этот плагин добавляет пользовательские поля по умолчанию на страницу/записи."
+
+#. Plugin URI of the plugin
+msgid "https://wpgogo.com/development/custom-field-template.html"
+msgstr "https://wpgogo.com/development/custom-field-template.html"
+
+#: custom-field-template.php:3647
+msgid "Search &raquo;"
+msgstr "Поиск &raquo;"
+
+#: custom-field-template.php:2882
+msgid "Save"
+msgstr "Сохранить"
+
+#: custom-field-template.php:2877
+msgid "Are you sure to reset current values? Default values will be loaded."
+msgstr "Вы уверены, что хотите сбросить текущие значения? Будут загружены значения по умолчанию."
+
+#: custom-field-template.php:2876
+msgid "Initialize"
+msgstr "Загрузить шаблон"
+
+#: custom-field-template.php:2872
+msgid "Enable"
+msgstr "Включить"
+
+#: custom-field-template.php:2444 custom-field-template.php:2639
+msgid "Delete"
+msgstr "Удалить"
+
+#: custom-field-template.php:2419
+msgid "Select by Media Picker"
+msgstr "Выбрать с помощью средства выбора мультимедиа"
+
+#: custom-field-template.php:2416
+msgid " OR "
+msgstr " ИЛИ "
+
+#: custom-field-template.php:2276
+msgid "Toggle"
+msgstr "Переключатель"
+
+#: custom-field-template.php:2265 custom-field-template.php:2269
+msgid "Add Media"
+msgstr "добавить медиа-файл"
+
+#: custom-field-template.php:2261
+msgid "Add Audio"
+msgstr "добавить аудио-файл"
+
+#: custom-field-template.php:2256
+msgid "Add Video"
+msgstr "добавить видео-файл"
+
+#: custom-field-template.php:2251
+msgid "Add an Image"
+msgstr "добавить изображение"
+
+#: custom-field-template.php:2155
+msgid "Select"
+msgstr "Выбрать"
+
+#: custom-field-template.php:2053
+msgid "Clear"
+msgstr "Очистить"
+
+#: custom-field-template.php:1902 custom-field-template.php:2045
+#: custom-field-template.php:2137 custom-field-template.php:2329
+#: custom-field-template.php:2331 custom-field-template.php:2406
+#: custom-field-template.php:2637
+msgid "Add New"
+msgstr "Добавить новый"
+
+#: custom-field-template.php:1804
+msgid "WordPress plugin sales site: CMS x WP"
+msgstr "Сайт по продаже плагинов WordPress: CMS x WP"
+
+#: custom-field-template.php:1803
+msgid "There are much more plugins which are useful for developing business websites such as membership sites or ec sites. You could totally treat WordPress as CMS by use of CMS x WP plugins."
+msgstr "Существует гораздо больше плагинов, которые полезны для разработки бизнес-сайтов, таких как сайты членства или сайты эк. Вы можете полностью рассматривать WordPress как CMS, используя плагины CMS x WP."
+
+#: custom-field-template.php:1801
+msgid "CMS x WP"
+msgstr "CMS x WP"
+
+#: custom-field-template.php:1794
+msgid "Do you have any trouble with the plugin setup? Please visit the following manual site."
+msgstr "У вас возникли проблемы с настройкой плагина? Посетите следующий сайт с инструкциями."
+
+#: custom-field-template.php:1792 custom-field-template.php:1795
+msgid "Custom Field Template Manual"
+msgstr "Руководство по Custom Field Template"
+
+#: custom-field-template.php:1778
+msgid "If you liked this plugin, please make a donation via paypal! Any amount is welcome. Your support is much appreciated."
+msgstr "Если Вам понравился плагин можете отблагодарить автора через paypal! Он будет рад любой сумме вознаграждения. Ваша поддержка значима!"
+
+#: custom-field-template.php:1776
+msgid "Donation"
+msgstr "Отблагодарить"
+
+#: custom-field-template.php:1763
+msgid "Delete Options &raquo;"
+msgstr "Удалить настройки &raquo;"
+
+#: custom-field-template.php:1759
+msgid "Are you sure to delete options? Options you set will be deleted."
+msgstr "Удаляем настройки? Удалятся ВСЕ настройки и шаблоны."
+
+#: custom-field-template.php:1757
+msgid "Delete Options"
+msgstr "Удалить настройки"
+
+#: custom-field-template.php:1747
+msgid "Reset Options &raquo;"
+msgstr "Сбросить настройки &raquo;"
+
+#: custom-field-template.php:1743
+msgid "Are you sure to reset options? Options you set will be reset to the default settings."
+msgstr "Сбрасываем настройки? Все настройки будут сброшены к дефолтным, созданные шаблоны не сохранятся."
+
+#: custom-field-template.php:1741
+msgid "Reset Options"
+msgstr "Сбросить настройки"
+
+#: custom-field-template.php:1731
+msgid "Import Options &raquo;"
+msgstr "Импорт настроек &raquo;"
+
+#: custom-field-template.php:1727
+msgid "Are you sure to import options? Options you set will be overwritten."
+msgstr "Импортировать настройки? Ваши настройки будут заменены новыми."
+
+#: custom-field-template.php:1725
+msgid "Import Options"
+msgstr "Импорт настроек"
+
+#: custom-field-template.php:1715
+msgid "Export Options &raquo;"
+msgstr "Параметры экспорта &raquo;"
+
+#: custom-field-template.php:1709
+msgid "Export Options"
+msgstr "Параметры экспорта"
+
+#: custom-field-template.php:1532
+msgid "Option List"
+msgstr "Список настроек"
+
+#: custom-field-template.php:1521
+msgid "Rebuild Tags &raquo;"
+msgstr "Перестроить метки (теги) &raquo;"
+
+#: custom-field-template.php:1517
+msgid "Are you sure to rebuild tags?"
+msgstr "Перестраиваем метки?"
+
+#: custom-field-template.php:1515
+msgid "Rebuild Tags"
+msgstr "Перестроить метки (теги)"
+
+#: custom-field-template.php:1504
+msgid "Rebuild Value Counts &raquo;"
+msgstr "Обновить &raquo;"
+
+#: custom-field-template.php:1500
+msgid "Value Counts are used for temporarily saving how many values in each key. Set `valueCount = true` into fields."
+msgstr "Подсчет значений используется для временного хранения информации о том, сколько значений в каждом ключе произвольного поля. Установите `valueCount = true` в поля."
+
+#: custom-field-template.php:1496
+msgid "Are you sure to rebuild all value counts?"
+msgstr "Уверены?"
+
+#: custom-field-template.php:1494
+msgid "Rebuild Value Counts"
+msgstr "Перестроить подсчет значений"
+
+#: custom-field-template.php:1478
+msgid "Apply also to excerpts"
+msgstr "Применить также к отрывкам"
+
+#: custom-field-template.php:1477
+msgid "Apply to feeds"
+msgstr "Применить к RSS-ленте"
+
+#: custom-field-template.php:1475
+msgid "Content"
+msgstr "Содержимое"
+
+#: custom-field-template.php:1465
+msgid "Inside the content ([cfthook hook=%d])"
+msgstr "Внутри контента  ([cfthook hook=%d])"
+
+#: custom-field-template.php:1464
+msgid "After the content"
+msgstr "После содержимого"
+
+#: custom-field-template.php:1462
+msgid "Before the content"
+msgstr "Перед содержимым"
+
+#: custom-field-template.php:1461
+msgid "Position"
+msgstr "Позиция"
+
+#: custom-field-template.php:1449
+msgid "Auto Hook of `the_content()` (Experimental Option)"
+msgstr "Автоматический хук (hook) для `the_content()` (экспериментальная опция)"
+
+#: custom-field-template.php:1421
+msgid "For `checkbox`, `radio`, and `select`, you must set $values as an array."
+msgstr "Это опция только для типов полей  `checkbox`, `radio` и `select`. Вы должны задать $values как массив."
+
+#: custom-field-template.php:1419
+msgid "For `text` and `textarea`, you must set $value as an string."
+msgstr "Это опция только для типов полей  `text` и `textarea`. Вы должны задать $values как массив."
+
+#: custom-field-template.php:1418
+msgid "Are you sure to save PHP codes? Please do it at your own risk."
+msgstr "Сохраняем PHP код? Т.к. это экспериментальная функция, то вы делаете это на свой страх и риск."
+
+#: custom-field-template.php:1416
+msgid "PHP CODE (Experimental Option)"
+msgstr "PHP код (экспериментальная опция)"
+
+#: custom-field-template.php:1400 custom-field-template.php:1476
+msgid "Use PHP"
+msgstr "Использовать PHP"
+
+#: custom-field-template.php:1389
+msgid "For [cftsearch], [key] will be converted into the input field."
+msgstr "Для [cftsearch] [key] будет преобразовано в поле ввода."
+
+#: custom-field-template.php:1388
+msgid "For [cft], [key] will be converted into the value of [key]."
+msgstr "Для [cft]: [key] будет преобразован в значение [key]."
+
+#: custom-field-template.php:1385
+msgid "[cft] and [cftsearch] Shortcode Format"
+msgstr "Формат условных кодов типа [cft] и[cftsearch] "
+
+#: custom-field-template.php:1366
+msgid "ADMIN CSS"
+msgstr "Внешний вид в админ. панели (CSS)"
+
+#: custom-field-template.php:1352
+msgid "I want to use a wider screen."
+msgstr "Я хочу использовать более широкий экран."
+
+#: custom-field-template.php:1351
+msgid "In case that you would like to hide the advertisement right column."
+msgstr "В случае, если вы хотите скрыть правую колонку рекламы."
+
+#: custom-field-template.php:1346
+msgid "Text to place after every value which is called by the cft shortcode"
+msgstr "Тест ПОСЛЕ каждого пункта списка, вызываемым условным кодом cft"
+
+#: custom-field-template.php:1344
+msgid "Text to place before every value which is called by the cft shortcode"
+msgstr "Тест ПЕРЕД каждым пунктом списка, вызываемым условным кодом cft"
+
+#: custom-field-template.php:1342
+msgid "Text to place after every list which is called by the cft shortcode"
+msgstr "Тест ПОСЛЕ каждого списка, вызываемым условным кодом cft"
+
+#: custom-field-template.php:1340
+msgid "Text to place before every list which is called by the cft shortcode"
+msgstr "Тест ПЕРЕД каждым списком, вызываемым условным кодом cft"
+
+#: custom-field-template.php:1330
+msgid "Use the jQuery validation"
+msgstr "Используйте валидацию jQuery"
+
+#: custom-field-template.php:1329
+msgid "In case that you would like to use the jQuery validation."
+msgstr "В случае, если вы хотите использовать валидацию jQuery."
+
+#: custom-field-template.php:1325
+msgid "Use the shortcode in the excerpt"
+msgstr "Использовать условные коды (шоткоды) в цитате (excerpt)"
+
+#: custom-field-template.php:1324
+msgid "In case that you would like to use the shortcode in the excerpt."
+msgstr "Если вы хотите использовать условные коды в цитате (excerpt)"
+
+#: custom-field-template.php:1320
+msgid "Use the shortcode in the widget"
+msgstr "Использовать условные коды в виджете"
+
+#: custom-field-template.php:1319
+msgid "In case that you would like to use the shortcode in the widget."
+msgstr "Если вы хотите использовать условные коды в виджете"
+
+#: custom-field-template.php:1315
+msgid "Deploy the box in each template"
+msgstr "Развертывание box в каждом шаблоне"
+
+#: custom-field-template.php:1314
+msgid "In case that you would like to deploy the box in each template."
+msgstr "В случае, если вы хотите развернуть box в каждом шаблоне."
+
+#: custom-field-template.php:1310
+msgid "Replace the box title"
+msgstr "Заменить название вкладки"
+
+#: custom-field-template.php:1309
+msgid "In case that you would like to replace the box title with the template title."
+msgstr "Заменить название вкладки на название шаблона"
+
+#: custom-field-template.php:1305
+msgid "Disable the custom field column (The quick edit also does not work.)"
+msgstr "Отключить столбцы настраиваемого поля (быстрое редактирование тоже не работает)"
+
+#: custom-field-template.php:1304
+msgid "In case that you would like to forbid to display the custom field column on the edit post list page."
+msgstr "Спрятать колонку «Custom Fields» на странице списка записей в админ. панели"
+
+#: custom-field-template.php:1295
+msgid "Disable the quick edit"
+msgstr "Отключить быстрое редактирование"
+
+#: custom-field-template.php:1294
+msgid "In case that you would like to forbid to use the quick edit."
+msgstr "Запретить использовать быстрое редактирование"
+
+#: custom-field-template.php:1290
+msgid "Disable the default custom fields"
+msgstr "Отключить настраиваемые поля по умолчанию"
+
+#: custom-field-template.php:1289
+msgid "In case that you would like to forbid to use the default custom fields."
+msgstr "Запретить использовать дефолтную вкладку «Произвольные поля»"
+
+#: custom-field-template.php:1285
+msgid "Disable the save button"
+msgstr "Отключить кнопку сохранения"
+
+#: custom-field-template.php:1284
+msgid "In case that you would like to forbid to use the save button."
+msgstr "В случае если хотите запретить использовать кнопку сохранения"
+
+#: custom-field-template.php:1280
+msgid "Disable the initialize button"
+msgstr "Отключить кнопку инициализации"
+
+#: custom-field-template.php:1279
+msgid "In case that you would like to forbid to use the initialize button."
+msgstr "В случае если хотите запретить использовать кнопку «загрузить шаблон»"
+
+#: custom-field-template.php:1275
+msgid "Use the `Disable` button. The default custom fields will be superseded."
+msgstr "Использовать кнопку «Отключить». Дефолтный бокс «Произвольные поля» будет заменен."
+
+#: custom-field-template.php:1274
+msgid "In case that you would like to disable input fields of the custom field template temporarily"
+msgstr "В случае если хотите <b>временно</b> заблокировать поля ввода для произвольных полей"
+
+#: custom-field-template.php:1270
+msgid "Use the auto save in switching templates"
+msgstr "да"
+
+#: custom-field-template.php:1269
+msgid "In case that you would like to save values automatically in switching templates"
+msgstr "Автоматически сохранять значения произвольных полей при смене шаблона custom fields"
+
+#: custom-field-template.php:1265
+msgid "Use wpautop function"
+msgstr "Использовать функцию wpautop"
+
+#: custom-field-template.php:1264
+msgid "In case that you would like to add p and br tags in textareas automatically"
+msgstr "Добавлять метки p и br в текстовое поле автоматически"
+
+#: custom-field-template.php:1261
+msgid "Use labels in place of custom keys"
+msgstr "использовать ярлыки"
+
+#: custom-field-template.php:1260
+msgid "In case that you would like to replace custom keys by labels if `label` is set"
+msgstr "Показывать ярлык (label) вместо ключа произвольного поля (если label указан)"
+
+#: custom-field-template.php:1245
+msgid "Global Settings"
+msgstr "Общие настройки"
+
+#: custom-field-template.php:1235 custom-field-template.php:1356
+#: custom-field-template.php:1375 custom-field-template.php:1406
+#: custom-field-template.php:1439 custom-field-template.php:1484
+msgid "Update Options &raquo;"
+msgstr "Обновить настройки &raquo;"
+
+#: custom-field-template.php:1228
+msgid "Template Content"
+msgstr "Содержимое шаблона"
+
+#: custom-field-template.php:1215
+msgid "Template Format"
+msgstr "Формат шаблона"
+
+#: custom-field-template.php:1213
+msgid "Page Template file name(s) (comma-deliminated)"
+msgstr "Имена php-файлов Темы (разделяйте запятыми)"
+
+#: custom-field-template.php:1211 custom-field-template.php:1473
+msgid "Category ID (comma-deliminated)"
+msgstr "ID рубрик (разделяйте запятыми)"
+
+#: custom-field-template.php:1209
+msgid "Post ID (comma-deliminated)"
+msgstr "ID записей (разделяйте запятыми)"
+
+#: custom-field-template.php:1207 custom-field-template.php:1471
+msgid "Custom Post Type (comma-deliminated)"
+msgstr "Пользовательский тип записей (разделяйте запятыми)"
+
+#: custom-field-template.php:1206 custom-field-template.php:1470
+msgid "Page"
+msgstr "Страница"
+
+#: custom-field-template.php:1205 custom-field-template.php:1469
+msgid "Post"
+msgstr "Запись"
+
+#: custom-field-template.php:1204 custom-field-template.php:1468
+msgid "Both"
+msgstr "Оба"
+
+#: custom-field-template.php:1202 custom-field-template.php:1467
+msgid "Post Type"
+msgstr "Тип страниц"
+
+#: custom-field-template.php:1200
+msgid "Template Instruction"
+msgstr "Инструкция к шаблону"
+
+#: custom-field-template.php:1198
+msgid "Template Title"
+msgstr "Заголовок шаблона"
+
+#: custom-field-template.php:1196 custom-field-template.php:2871
+#: custom-field-template.php:2872
+msgid "Disable"
+msgstr "Отключить"
+
+#: custom-field-template.php:1185
+msgid "Custom Field Template Options"
+msgstr "Настройки Custom Field Template"
+
+#: custom-field-template.php:1184 custom-field-template.php:1244
+#: custom-field-template.php:1365 custom-field-template.php:1384
+#: custom-field-template.php:1415 custom-field-template.php:1448
+#: custom-field-template.php:1493 custom-field-template.php:1514
+#: custom-field-template.php:1531 custom-field-template.php:1708
+#: custom-field-template.php:1724 custom-field-template.php:1740
+#: custom-field-template.php:1756 custom-field-template.php:1775
+#: custom-field-template.php:1791 custom-field-template.php:1800
+msgid "Click to toggle"
+msgstr "Нажмите, чтобы переключить"
+
+#: custom-field-template.php:1135
+msgid "Options deleted."
+msgstr "Настройки удалены."
+
+#: custom-field-template.php:1131
+msgid "Options resetted."
+msgstr "Настройки сброшены."
+
+#: custom-field-template.php:1124
+msgid "Options imported."
+msgstr "Настройки импортированы."
+
+#: custom-field-template.php:1115
+msgid "Tags rebuilt."
+msgstr "Метки (теги) перестроены."
+
+#: custom-field-template.php:1112
+msgid "Value Counts rebuilt."
+msgstr "Подсчет значений произвольных полей перестоен."
+
+#: custom-field-template.php:1035 custom-field-template.php:1066
+#: custom-field-template.php:1070 custom-field-template.php:1082
+#: custom-field-template.php:1090 custom-field-template.php:1108
+msgid "Options updated."
+msgstr "Настройки обновлены."
+
+#: custom-field-template.php:1019
+msgid "You can not use the following words as the field key: `content`, `post_title`, and `excerpt`, and `action`."
+msgstr "Вы не можете использовать следующие слова в качестве ключа поля: `content`, `post_title`, `excerpt` и `action`."
+
+#: custom-field-template.php:790
+msgid "Default Template"
+msgstr "Шаблон по умолчанию"
+
+#: custom-field-template.php:744
+msgid "Settings"
+msgstr "Настройки"
+
+#: custom-field-template.php:700 custom-field-template.php:712
+msgid "Custom Fields"
+msgstr "Настраиваемые поля"
+
+#: custom-field-template.php:679
+msgid "read more"
+msgstr "читать далее"
+
+#: custom-field-template.php:350 custom-field-template.php:3034
+msgid "Load"
+msgstr "Загрузка"
+
+#: custom-field-template.php:236
+msgid "Use this"
+msgstr "Использовать это"
+
+#: custom-field-template.php:234
+msgid "Media Picker"
+msgstr "Средство выбора медиа"
+
+#. Plugin Name of the plugin
+#: custom-field-template.php:182 custom-field-template.php:205
+#: custom-field-template.php:206 custom-field-template.php:224
+#: custom-field-template.php:873 custom-field-template.php:1177
+#: custom-field-template.php:2728 custom-field-template.php:2821
+msgid "Custom Field Template"
+msgstr "Custom Field Template"

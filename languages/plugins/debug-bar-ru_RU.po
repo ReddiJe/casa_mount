@@ -1,0 +1,299 @@
+# Translation of Plugins - Debug Bar - Stable (latest release) in Russian
+# This file is distributed under the same license as the Plugins - Debug Bar - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2019-08-25 10:53:28+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/3.0.0\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - Debug Bar - Stable (latest release)\n"
+
+#. translators: %s = duration in milliseconds.
+#: panels/class-debug-bar-queries.php:54 panels/class-debug-bar-queries.php:84
+msgid "%s ms"
+msgstr "%s мс"
+
+#: panels/class-debug-bar-deprecated.php:35
+msgid "Total Files:"
+msgstr "Всего файлов:"
+
+#: panels/class-debug-bar-deprecated.php:33
+msgid "Total Functions:"
+msgstr "Всего функций:"
+
+#: panels/class-debug-bar-php.php:80
+msgid "Total Warnings:"
+msgstr "Всего предупреждений:"
+
+#: panels/class-debug-bar-queries.php:87
+msgid "Total DB Errors:"
+msgstr "Всего ошибок БД:"
+
+#: panels/class-debug-bar-queries.php:66
+msgid "Database Errors"
+msgstr "Ошибки базы данных"
+
+#: panels/class-debug-bar-wp-query.php:28
+msgid "Search"
+msgstr "Поиск"
+
+#: panels/class-debug-bar-wp-query.php:30
+msgid "Taxonomy"
+msgstr "Таксономия"
+
+#: panels/class-debug-bar-wp-query.php:34
+msgid "Home"
+msgstr "Главная"
+
+#: panels/class-debug-bar-wp-query.php:36
+msgid "Attachment"
+msgstr "Вложение"
+
+#: panels/class-debug-bar-wp-query.php:40
+msgid "Page"
+msgstr "Страница"
+
+#: panels/class-debug-bar-wp-query.php:42
+msgid "Category"
+msgstr "Рубрика"
+
+#: panels/class-debug-bar-wp-query.php:44
+msgid "Tag"
+msgstr "Метка"
+
+#: panels/class-debug-bar-wp-query.php:46
+msgid "Author"
+msgstr "Автор"
+
+#: panels/class-debug-bar-wp-query.php:48
+msgid "Date"
+msgstr "Дата"
+
+#: panels/class-debug-bar-wp-query.php:50
+msgid "Archive"
+msgstr "Архив"
+
+#: panels/class-debug-bar-wp-query.php:74
+msgid "Post Type:"
+msgstr "Тип записи:"
+
+#. Plugin Name of the plugin
+msgid "Debug Bar"
+msgstr "Debug Bar"
+
+#: panels/class-debug-bar-request.php:5
+msgid "Request"
+msgstr "Запрос"
+
+#: panels/class-debug-bar-queries.php:82
+msgid "Total query time:"
+msgstr "Общее время запроса:"
+
+#: panels/class-debug-bar-queries.php:79
+msgid "Total Queries:"
+msgstr "Всего запросов:"
+
+#: panels/class-debug-bar-queries.php:6
+msgid "Queries"
+msgstr "Запросы"
+
+#: debug-bar.php:201
+msgid "Debug"
+msgstr "Отладка"
+
+#: debug-bar.php:299
+msgid "PHP"
+msgstr "PHP"
+
+#: debug-bar.php:302
+msgid "DB"
+msgstr "БД"
+
+#: debug-bar.php:302
+msgid "MySQL"
+msgstr "MySQL"
+
+#: panels/class-debug-bar-deprecated.php:34
+msgid "Total Arguments:"
+msgstr "Всего аргументов:"
+
+#: panels/class-debug-bar-js.php:19
+msgid "Total Errors:"
+msgstr "Всего ошибок:"
+
+#: panels/class-debug-bar-js.php:7
+msgid "JavaScript"
+msgstr "JavaScript"
+
+#: panels/class-debug-bar-wp-query.php:26
+msgid "404"
+msgstr "404"
+
+#. Author URI of the plugin
+msgid "https://wordpress.org/"
+msgstr "https://ru.wordpress.org/"
+
+#. Author of the plugin
+msgid "wordpressdotorg"
+msgstr "wordpressdotorg"
+
+#. Description of the plugin
+msgid "Adds a debug menu to the admin bar that shows query, cache, and other helpful debugging information."
+msgstr "Добавляет в панель инструментов меню отладки, в котором отображаются запросы, кэш и другая полезная информация для отладки."
+
+#. Plugin URI of the plugin
+msgid "https://wordpress.org/plugins/debug-bar/"
+msgstr "https://ru.wordpress.org/plugins/debug-bar/"
+
+#: panels/class-debug-bar-wp-query.php:98
+msgid "Queried Object:"
+msgstr "Запрашиваемый объект:"
+
+#: panels/class-debug-bar-wp-query.php:89
+msgid "Query SQL:"
+msgstr "Запрос SQL:"
+
+#: panels/class-debug-bar-wp-query.php:85
+msgid "Query Arguments:"
+msgstr "Аргументы запроса:"
+
+#: panels/class-debug-bar-wp-query.php:70
+msgid "Page on Front:"
+msgstr "Страница внешней части:"
+
+#: panels/class-debug-bar-wp-query.php:69
+msgid "Page for Posts:"
+msgstr "Страница записей:"
+
+#: panels/class-debug-bar-deprecated.php:11
+msgid "Deprecated"
+msgstr "Устарело"
+
+#. translators: %s is a formatted number representing the memory usage.
+#: debug-bar.php:312
+msgid "%s bytes"
+msgstr "%s байт"
+
+#: debug-bar.php:310
+msgid "Memory Usage"
+msgstr "Использование памяти"
+
+#. translators: %d is the site id number in a multi-site setting.
+#: debug-bar.php:295
+msgid "#%d"
+msgstr "#%d"
+
+#: panels/class-debug-bar-php.php:87
+msgid "WARNING:"
+msgstr "ПРЕДУПРЕЖДЕНИЕ:"
+
+#: panels/class-debug-bar-php.php:100
+msgid "NOTICE:"
+msgstr "ЗАМЕТКА:"
+
+#: panels/class-debug-bar-php.php:81
+msgid "Total Notices:"
+msgstr "Всего заметок:"
+
+#: panels/class-debug-bar-php.php:13
+msgid "Notices / Warnings"
+msgstr "Заметки и предупреждения"
+
+#: panels/class-debug-bar-object-cache.php:5
+msgid "Object Cache"
+msgstr "Кэш объекта"
+
+#: panels/class-debug-bar-deprecated.php:134
+msgid "%1$s was called with an argument that is <strong>deprecated</strong> since version %2$s with no alternative available."
+msgstr "Функция %1$s вызвана с аргументом, который <strong>считается устаревшим</strong> с версии %2$s. Альтернативы не предусмотрено."
+
+#: panels/class-debug-bar-deprecated.php:132
+msgid "%1$s was called with an argument that is <strong>deprecated</strong> since version %2$s! %3$s"
+msgstr "Функция %1$s вызвана с аргументом, который <strong>считается устаревшим</strong> с версии %2$s! %3$s."
+
+#. translators: %1$s is a function or file name, %2$s a version number.
+#: panels/class-debug-bar-deprecated.php:91
+#: panels/class-debug-bar-deprecated.php:109
+msgid "%1$s is <strong>deprecated</strong> since version %2$s with no alternative available."
+msgstr "Функция %1$s с версии %2$s <strong>считается устаревшей</strong>. Альтернативы не предусмотрено."
+
+#. translators: %1$s is a function or file name, %2$s a version number, %3$s an
+#. alternative function or file to use.
+#: panels/class-debug-bar-deprecated.php:88
+#: panels/class-debug-bar-deprecated.php:106
+msgid "%1$s is <strong>deprecated</strong> since version %2$s! Use %3$s instead."
+msgstr "Функция %1$s с версии %2$s <strong>считается устаревшей</strong>! Используйте %3$s."
+
+#: panels/class-debug-bar-wp-query.php:21
+msgid "Queried Object ID:"
+msgstr "ID запрашиваемого объекта:"
+
+#: panels/class-debug-bar-wp-query.php:5
+msgid "WP Query"
+msgstr "Запрос WP"
+
+#: panels/class-debug-bar-request.php:50
+msgid "Matched Rewrite Query:"
+msgstr "Запрос на перезапись:"
+
+#: panels/class-debug-bar-request.php:41
+msgid "Matched Rewrite Rule:"
+msgstr "По правилу перезаписи:"
+
+#: panels/class-debug-bar-request.php:32
+msgid "Query String:"
+msgstr "Строка запроса:"
+
+#: panels/class-debug-bar-request.php:23
+msgid "Request:"
+msgstr "Запрос:"
+
+#: panels/class-debug-bar-request.php:18 panels/class-debug-bar-request.php:27
+#: panels/class-debug-bar-request.php:36 panels/class-debug-bar-request.php:45
+#: panels/class-debug-bar-wp-query.php:80
+msgid "None"
+msgstr "Нет"
+
+#: panels/class-debug-bar-queries.php:62
+msgid "SAVEQUERIES must be defined to show the query log."
+msgstr "SAVEQUERIES должны быть определены, чтобы отобразить журнал запросов."
+
+#: panels/class-debug-bar-wp-query.php:67
+msgid "Show on Front:"
+msgstr "Показывать во внешней части:"
+
+#: panels/class-debug-bar-wp-query.php:60
+msgid "Query Template:"
+msgstr "Шаблон запроса:"
+
+#: panels/class-debug-bar-wp-query.php:56
+msgid "Query Type:"
+msgstr "Тип запроса:"
+
+#: panels/class-debug-bar-wp-query.php:32
+msgid "Front Page"
+msgstr "Внешняя страница"
+
+#: panels/class-debug-bar-queries.php:60
+msgid "There are no queries on this page."
+msgstr "На этой странице нет запросов."
+
+#. translators: %s = a url.
+#: panels/class-debug-bar-queries.php:32
+msgid "There are too many queries to show easily! <a href=\"%s\">Show them anyway</a>"
+msgstr "Слишком много запросов, чтобы они нормально отображались! <a href=\"%s\">Показать их принудительно</a>"
+
+#: debug-bar.php:318
+msgid "Please Enable"
+msgstr "Включите, пожалуйста"
+
+#: panels/class-debug-bar-wp-query.php:52
+msgid "Paged"
+msgstr "Постранично"
+
+#: panels/class-debug-bar-wp-query.php:38
+msgid "Single"
+msgstr "Одиночная"
