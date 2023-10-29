@@ -1,0 +1,52 @@
+
+.u-design-import-demo-page-headers {
+    background-color: #00a0d2;
+    color: #FFFFFF;
+    margin-top:20px;
+    margin-left: -2px;
+    padding: 11px 8px;
+}
+.admin-color-fresh .u-design-import-demo-page-headers {
+    background-color: #00a0d2;
+}
+.admin-color-light .u-design-import-demo-page-headers {
+    background-color: #04A4CC;
+}
+.admin-color-blue .u-design-import-demo-page-headers {
+    background-color: #E1A948;
+}
+.admin-color-coffee .u-design-import-demo-page-headers {
+    background-color: #C7A589;
+}
+.admin-color-ectoplasm .u-design-import-demo-page-headers {
+    background-color: #A3B745;
+}
+.admin-color-midnight .u-design-import-demo-page-headers {
+  background-color: #E14D43;
+}
+.admin-color-ocean .u-design-import-demo-page-headers {
+    background-color: #9EBAA0;
+}
+.admin-color-sunrise .u-design-import-demo-page-headers {
+    background-color: #DD823B;
+}
+
+.udesign-import-demo-wizard {
+    margin: 20px 0 40px;
+}
+
+.udesign-import-demo-wizard-description, 
+.udesign-import-demo-wizard-warning {
+    border: 1px solid #e5e5e5;
+    margin: 1em 0 0;
+    padding: 16px 32px 20px;
+    background-color: #FFFFFF;
+}
+
+.udesign-import-demo-wizard-warning {
+    border-left: 4px solid #ffb900;
+}
+
+.udesign-import-demo-wizard-link {
+    margin: 17px 0 15px;
+}

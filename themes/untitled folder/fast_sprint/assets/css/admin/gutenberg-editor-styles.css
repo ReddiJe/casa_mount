@@ -1,0 +1,1005 @@
+
+/* Define the width of the block editor. */
+.wp-block {
+    max-width: 920px;
+}
+
+
+/* Begin Images. */
+.editor-styles-wrapper .img-circle, .editor-styles-wrapper img.img-circle, .editor-styles-wrapper a img.img-circle {
+    border-radius: 50%;
+}
+/* End Images. */
+
+/* Begin Captions. */
+.editor-styles-wrapper .wp-caption {
+    background-color: #F6F6F6;
+    max-width: 96% !important;
+}
+.editor-styles-wrapper .wp-caption img {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    width: 100%;
+}
+.editor-styles-wrapper .wp-caption p.wp-caption-text {
+    font-size: 12px;
+    font-style: italic;
+    padding: 12px 12px 14px;
+    margin: 0;
+}
+.editor-styles-wrapper .wp-caption.alignleft, .editor-styles-wrapper .wp-caption.alignright { margin-top: 10px; }
+.editor-styles-wrapper .custom-frame-wrapper .wp-caption p.wp-caption-text { padding: 12px 0 0; }
+.editor-styles-wrapper .custom-frame-wrapper .wp-caption { margin: 5px; }
+/* End Captions. */
+
+/* Begin Gallery blocks image caption styling. */
+.editor-styles-wrapper .wp-block-gallery .blocks-gallery-image figcaption, 
+.editor-styles-wrapper .wp-block-gallery .blocks-gallery-item figcaption {
+	padding: 10px 0 5px;
+}
+/* End Gallery blocks image caption styling. */
+
+/* Begin Typography (Message Boxes). */
+.editor-styles-wrapper .info, .editor-styles-wrapper .success, .editor-styles-wrapper .warning, .editor-styles-wrapper .erroneous, .editor-styles-wrapper .validation {
+    display: block;
+    width:100%;
+    margin: 10px 0px;
+    background-repeat: no-repeat;
+    background-position: 15px 50%;
+}
+.editor-styles-wrapper .info {
+    color: #00529B;
+    border: 1px solid #38AEE5;
+    background-color: #BDE5F8;
+    background: -moz-linear-gradient(center top , #FFFFFF, #BDE5F8);
+    background: -webkit-gradient(linear, center top, center bottom, from(#FFFFFF), to(#BDE5F8));
+    background: -o-linear-gradient(top, #FFFFFF 0%,#BDE5F8 99%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #FFFFFF 0%,#BDE5F8 99%); /* IE10+ */
+}
+.editor-styles-wrapper .info .msg-box-icon,
+.editor-styles-wrapper .success .msg-box-icon,
+.editor-styles-wrapper .warning .msg-box-icon,
+.editor-styles-wrapper .erroneous .msg-box-icon {
+    position: relative;
+    display: block;
+    margin-left:15px;
+    padding: 18px 10px 18px 50px;
+}
+.editor-styles-wrapper .info .msg-box-icon::before,
+.editor-styles-wrapper .success .msg-box-icon::before,
+.editor-styles-wrapper .warning .msg-box-icon::before,
+.editor-styles-wrapper .erroneous .msg-box-icon::before {
+    content: " ";
+    background-image: url(../../images/misc-sprite-sheet.png); /* Original: info.png, error.png, success.png, warning.png */
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+}
+.editor-styles-wrapper .info .msg-box-icon::before {
+    background-position: -10px -816px;
+}
+.editor-styles-wrapper .success .msg-box-icon::before {
+    background-position: -10px -870px;
+}
+.editor-styles-wrapper .warning .msg-box-icon::before {
+    background-position: -10px -922px;
+}
+.editor-styles-wrapper .erroneous .msg-box-icon::before {
+    background-position: -10px -766px;
+}
+.editor-styles-wrapper .success {
+    color: #4F8A10;
+    border: 1px solid #A0CF4C;
+    background-color: #DFF2BF;
+    background: -moz-linear-gradient(center top , #FFFFFF, #DFF2BF);
+    background: -webkit-gradient(linear, center top, center bottom, from(#FFFFFF), to(#DFF2BF));
+    background: -o-linear-gradient(top, #FFFFFF 0%,#DFF2BF 99%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #FFFFFF 0%,#DFF2BF 99%); /* IE10+ */
+}
+.editor-styles-wrapper .warning {
+    color: #9F6000;
+    border: 1px solid #E5BC3B;
+    background-color: #FEEFB3;
+    background: -moz-linear-gradient(center top , #FFFFFF, #FEEFB3);
+    background: -webkit-gradient(linear, center top, center bottom, from(#FFFFFF), to(#FEEFB3));
+    background: -o-linear-gradient(top, #FFFFFF 0%,#FEEFB3 99%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #FFFFFF 0%,#FEEFB3 99%); /* IE10+ */
+}
+.editor-styles-wrapper .erroneous {
+    color: #D8000C;
+    border: 1px solid #FF7878;
+    background-color: #FFBABA;
+    background: -moz-linear-gradient(center top , #FFFFFF, #FFBABA);
+    background: -webkit-gradient(linear, center top, center bottom, from(#FFFFFF), to(#FFBABA));
+    background: -o-linear-gradient(top, #FFFFFF 0%,#FFBABA 99%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #FFFFFF 0%,#FFBABA 99%); /* IE10+ */
+}
+.editor-styles-wrapper .custom {
+    margin:10px 0 !important;
+    display:block;
+    width:100%;
+    border: 1px solid #BBB;
+    background-color: #EEEEEE; /* old browsers */
+    background: -moz-linear-gradient(center top , #FFFFFF, #EEEEEE); /* firefox */
+    background: -webkit-gradient(linear, center top, center bottom, from(#FFFFFF), to(#EEEEEE)); /* webkit */
+    background: -o-linear-gradient(top, #FFFFFF 0%,#EEEEEE 99%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #FFFFFF 0%,#EEEEEE 99%); /* IE10+ */
+}
+.editor-styles-wrapper .custom .inner-padding { padding: 17px !important; }
+.editor-styles-wrapper .simple {
+    background-color: #F5F5F5;
+    color: #333333;
+    display: block;
+    margin:10px 0 !important;
+}
+.editor-styles-wrapper .simple .inner-padding { padding: 10px !important; }
+.editor-styles-wrapper .msg-box-icon, .editor-styles-wrapper .simple .inner-padding, .editor-styles-wrapper .custom .inner-padding { overflow:hidden; }
+/* End Typography (Message Boxes) */
+
+/* Begin Block Quotes */
+.editor-styles-wrapper blockquote {
+    quotes: none;
+    padding: 5px 10px 5px 35px;
+    font-size: 16px;
+    line-height: 24px;
+    font-style: italic;
+}
+.editor-styles-wrapper blockquote p {
+    padding: 0 0 10px;
+}
+.editor-styles-wrapper blockquote.alignleft {
+    margin: 10px 20px 0 0;
+    width: 220px;
+}
+.editor-styles-wrapper blockquote.alignright {
+    margin: 10px 0 0 20px;
+    width: 220px;
+}
+.editor-styles-wrapper blockquote, 
+.editor-styles-wrapper blockquote.bq-dark,
+.editor-styles-wrapper blockquote.bq-light,
+.editor-styles-wrapper blockquote.bq-dark-2,
+.editor-styles-wrapper blockquote.bq-light-2 {
+    position: relative;
+}
+.editor-styles-wrapper blockquote::before, 
+.editor-styles-wrapper blockquote.bq-dark::before,
+.editor-styles-wrapper blockquote.bq-light::before,
+.editor-styles-wrapper blockquote.bq-dark-2::before,
+.editor-styles-wrapper blockquote.bq-light-2::before {
+    content: " ";
+    background-image: url(../../images/misc-sprite-sheet.png); /* Original: pull-quote-dark.png, pull-quote-light.png, pull-quote-2-dark.png, pull-quote-2-light.png */
+    position: absolute;
+    margin: 0;
+    left: 0;
+}
+.editor-styles-wrapper blockquote::before, 
+.editor-styles-wrapper blockquote.bq-dark::before,
+.editor-styles-wrapper blockquote.bq-light::before {
+    width: 30px;
+    height: 21px;
+    top: 4px;
+}
+.editor-styles-wrapper blockquote.bq-dark-2::before,
+.editor-styles-wrapper blockquote.bq-light-2::before {
+    width: 85px;
+    height: 67px;
+    top: 5px;
+}
+.editor-styles-wrapper blockquote::before, 
+.editor-styles-wrapper blockquote.bq-dark::before {
+    background-position: -10px -643px;
+}
+.editor-styles-wrapper blockquote.bq-light::before {
+    background-position: -10px -725px;
+}
+.editor-styles-wrapper blockquote.bq-dark-2::before {
+    background-position: -10px -1402px;
+}
+.editor-styles-wrapper blockquote.bq-light-2::before {
+    background-position: -10px -1489px;
+}
+.editor-styles-wrapper blockquote.bq-dark-2,
+.editor-styles-wrapper blockquote.bq-light-2 {
+    padding: 20px 10px 5px 20px;
+    font-size: 1.2em;
+    /*line-height: inherit;*/
+}
+
+.wp-block-quote,
+.wp-block-quote:not(.is-large):not(.is-style-large) {
+    border-left: none;
+    padding: 5px 10px 5px 35px;
+}
+.wp-block-quote p,
+.wp-block-quote:not(.is-large):not(.is-style-large) p {
+    font-size: 1em;
+    font-style: italic;
+    line-height: 24px;
+}
+
+.wp-block-quote.is-style-large {
+    margin: 20px 0;
+    padding: 0 10px 0 37px;
+}
+.wp-block-quote.is-large p, 
+.editor-styles-wrapper .editor-writing-flow .wp-block-quote.is-large p, 
+.wp-block-quote.is-style-large p, 
+.editor-styles-wrapper .editor-writing-flow .wp-block-quote.is-style-large p {
+    font-size: 24px;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.editor-styles-wrapper .editor-writing-flow .wp-block-quote.is-large.is-style-large p {
+    font-size: 32px;
+    line-height: 1.7;
+}
+
+.wp-block-quote.is-large {
+    padding: 20px 10px 5px 20px;
+    font-size: 1.2em;
+}
+.wp-block-quote.is-large,
+.wp-block-quote.is-large.bq-dark-2,
+.wp-block-quote.is-large.bq-light-2 {
+    position: relative;
+}
+.wp-block-quote.is-large::before,
+.wp-block-quote.is-large.bq-dark-2::before,
+.wp-block-quote.is-large.bq-light-2::before {
+    content: " ";
+    background-image: url(../../images/misc-sprite-sheet.png); /* Original: pull-quote-2-dark.png, pull-quote-2-light.png */
+    position: absolute;
+    margin: 0;
+    left: 0;
+}
+.wp-block-quote.is-large::before,
+.wp-block-quote.is-large.bq-dark-2::before,
+.wp-block-quote.is-large.bq-light-2::before {
+    width: 85px;
+    height: 67px;
+    top: 5px;
+}
+.wp-block-quote.is-large::before,
+.wp-block-quote.is-large.bq-dark-2::before {
+    background-position: -10px -1402px;
+}
+.wp-block-quote.is-large.bq-light-2::before {
+    background-position: -10px -1489px;
+}
+.wp-block-pullquote blockquote::before {
+    background-image: none;
+    quotes: none;
+}
+.wp-block-pullquote blockquote {
+    background-image: none;
+    quotes: none;
+    font-family: inherit;
+    font-size: 28px;
+    line-height: 1.6;
+    font-style: italic;
+    padding: 0;
+    margin: 0;
+}
+.wp-block-pullquote.alignleft { margin: 12px 16px 8px 0; }
+.wp-block-pullquote.alignright { margin: 12px 0 8px 16px; }
+
+.wp-block-pullquote blockquote > .editor-rich-text p,
+.wp-block-pullquote.is-style-default blockquote > .editor-rich-text p,
+.wp-block-pullquote.is-style-solid-color blockquote > .editor-rich-text p {
+    font-size: 28px !important;
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+.wp-block-pullquote.is-style-default blockquote,
+.wp-block-pullquote.is-style-default blockquote .wp-block-pullquote__citation,
+.wp-block-pullquote.is-style-solid-color blockquote,
+.wp-block-pullquote.is-style-solid-color blockquote .wp-block-pullquote__citation {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+    text-align: center;
+}
+.wp-block-pullquote__citation, .wp-block-pullquote cite, .wp-block-pullquote footer,
+.wp-block-pullquote.is-style-solid-color blockquote .wp-block-pullquote__citation, 
+.wp-block-pullquote.is-style-solid-color .wp-block-pullquote cite, 
+.wp-block-pullquote.is-style-solid-color .wp-block-pullquote footer {
+    color: #40464d;
+    font-size: 13px;
+    font-style: normal;
+    text-transform: uppercase;
+}
+.is-large .wp-block-quote__citation {
+    font-size: 18px;
+}
+/* End Block Quotes */
+
+/* Begin Typography (Miscellaneous styles). */
+.wp-block-separator {
+    clear: both;
+}
+
+.editor-styles-wrapper dd, .editor-styles-wrapper li {
+    margin-bottom: 0px;
+}
+.editor-styles-wrapper ul ul, .editor-styles-wrapper ol ul {
+    list-style-type: inherit !important;
+}
+/* End Typography (Miscellaneous styles). */
+
+/* Begin Typography: List Styles. */
+.block-library-list ul {
+    margin-left: 10px !important;
+}
+.block-library-list ol {
+    margin-left: 10px !important;
+}
+.block-library-list ul.list-1, .block-library-list ul.list-2, .block-library-list ul.list-3,.block-library-list ul.list-4,.block-library-list ul.list-5, .block-library-list ul.list-6, .block-library-list ul.list-7, .block-library-list ul.list-8, .block-library-list ul.list-9, .block-library-list ul.list-10, .block-library-list ul.list-11 {
+    margin-left: 12px !important;
+    padding-left: 0 !important;
+    position: relative;
+    overflow: hidden;
+}
+.editor-styles-wrapper li, .block-library-list .editor-rich-text__tinymce li {
+    margin-left: 10px;
+}
+.block-library-list ul.list-1 ul, .block-library-list ul.list-2 ul, .block-library-list ul.list-3 ul, .block-library-list ul.list-4 ul, .block-library-list ul.list-5 ul, .block-library-list ul.list-6 ul, .block-library-list ul.list-7 ul, .block-library-list ul.list-8 ul, .block-library-list ul.list-9 ul, .block-library-list ul.list-10 ul, .block-library-list ul.list-11 ul { 
+    margin-left: 10px !important;
+    padding-left: 0 !important;
+}
+.block-library-list ul.list-1 li, .block-library-list ul.list-2 li, .block-library-list ul.list-3 li, .block-library-list ul.list-4 li, .block-library-list ul.list-5 li, .block-library-list ul.list-6 li, .block-library-list ul.list-7 li, .block-library-list ul.list-8 li, .block-library-list ul.list-9 li, .block-library-list ul.list-10 li, .block-library-list ul.list-11 li {
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    margin-left: 0;
+    margin-bottom: 2px !important;
+    padding-bottom: 2px !important;
+    padding-left: 24px;
+    position: relative;
+}
+.block-library-list ul.list-1 li:before, .block-library-list ul.list-2 li:before, .block-library-list ul.list-3 li:before, .block-library-list ul.list-4 li:before, .block-library-list ul.list-5 li:before, .block-library-list ul.list-6 li:before, .block-library-list ul.list-7 li:before, .block-library-list ul.list-8 li:before, .block-library-list ul.list-9 li:before, .block-library-list ul.list-10 li:before, .block-library-list ul.list-11 li:before {
+    content: "";
+    display: inline-block;
+    margin-right: 4px;
+    position: absolute;
+}
+.block-library-list ul.list-1 li:before, .block-library-list ul.list-2 li:before, .block-library-list ul.list-3 li:before, .block-library-list ul.list-4 li:before, .block-library-list ul.list-5 li:before, .block-library-list ul.list-6 li:before ,.block-library-list ul.list-7 li:before, .block-library-list ul.list-8 li:before {
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    vertical-align: middle;
+    top: 4px;
+    left: 0;
+}
+.block-library-list ul.list-9 li:before {
+    width: 10px;
+    height: 8px;
+    margin-right: 6px;
+    top: 8px;
+    left: 4px;
+}
+.block-library-list ul.list-10 li:before, .block-library-list ul.list-11 li:before {
+    width: 10px;
+    height: 10px;
+    margin-right: 6px;
+    top: 6px;
+    left: 4px;
+}
+.block-library-list ul.list-1 li:before { background: url(../../images/misc-sprite-sheet.png) no-repeat scroll -10px -534px; } /* Original: tick-green.png */
+.block-library-list ul.list-2 li:before { background: url(../../images/misc-sprite-sheet.png) no-repeat scroll -10px -570px; } /* Original: tick-grey.png */
+.block-library-list ul.list-3 li:before { background: url(../../images/misc-sprite-sheet.png) no-repeat scroll -10px -318px; } /* Original: exclamation.png */
+.block-library-list ul.list-4 li:before { background: url(../../images/misc-sprite-sheet.png) no-repeat scroll -10px -498px; } /* Original: thumb-up.png */
+.block-library-list ul.list-5 li:before { background: url(../../images/misc-sprite-sheet.png) no-repeat scroll -10px -354px; } /* Original: lifeboy.png */
+.block-library-list ul.list-6 li:before { background: url(../../images/misc-sprite-sheet.png) no-repeat scroll -10px -246px; } /* Original: calendar-task.png */
+.block-library-list ul.list-7 li:before { background: url(../../images/misc-sprite-sheet.png) no-repeat scroll -10px -390px; } /* Original: pin.png */
+.block-library-list ul.list-8 li:before { background: url(../../images/misc-sprite-sheet.png) no-repeat scroll -10px -282px; } /* Original: clock.png */
+.block-library-list ul.list-9 li:before { background: url(../../images/misc-sprite-sheet.png) no-repeat scroll -10px -10px; } /* Original: double-arrow.png */
+.block-library-list ul.list-10 li:before { background: url(../../images/misc-sprite-sheet.png) no-repeat scroll -10px -186px; } /* Original: arrow-2.png */
+.block-library-list ul.list-11 li:before { background: url(../../images/misc-sprite-sheet.png) no-repeat scroll -10px -66px; } /* Original: arrow-3-dark.png */
+
+/* The following block fixes an issue for nested lists: */
+.block-library-list ul.list-1 > li:before { background: url(../../images/misc-sprite-sheet.png) no-repeat scroll -10px -534px; } /* Original: tick-green.png */
+.block-library-list ul.list-2 > li:before { background: url(../../images/misc-sprite-sheet.png) no-repeat scroll -10px -570px; } /* Original: tick-grey.png */
+.block-library-list ul.list-3 > li:before { background: url(../../images/misc-sprite-sheet.png) no-repeat scroll -10px -318px; } /* Original: exclamation.png */
+.block-library-list ul.list-4 > li:before { background: url(../../images/misc-sprite-sheet.png) no-repeat scroll -10px -498px; } /* Original: thumb-up.png */
+.block-library-list ul.list-5 > li:before { background: url(../../images/misc-sprite-sheet.png) no-repeat scroll -10px -354px; } /* Original: lifeboy.png */
+.block-library-list ul.list-6 > li:before { background: url(../../images/misc-sprite-sheet.png) no-repeat scroll -10px -246px; } /* Original: calendar-task.png */
+.block-library-list ul.list-7 > li:before { background: url(../../images/misc-sprite-sheet.png) no-repeat scroll -10px -390px; } /* Original: pin.png */
+.block-library-list ul.list-8 > li:before { background: url(../../images/misc-sprite-sheet.png) no-repeat scroll -10px -282px; } /* Original: clock.png */
+.block-library-list ul.list-9 > li:before { background: url(../../images/misc-sprite-sheet.png) no-repeat scroll -10px -10px; } /* Original: double-arrow.png */
+.block-library-list ul.list-10 > li:before { background: url(../../images/misc-sprite-sheet.png) no-repeat scroll -10px -186px; } /* Original: arrow-2.png */
+.block-library-list ul.list-11 > li:before { background: url(../../images/misc-sprite-sheet.png) no-repeat scroll -10px -66px; } /* Original: arrow-3-dark.png */
+
+p.has-drop-cap:not(:focus)::first-letter {
+    float: left;
+    font-size: 4em;
+    font-style: normal;
+    font-weight: 100;
+    line-height: .68;
+    margin: .05em .1em 0 0;
+    text-transform: uppercase;
+}
+.editor-styles-wrapper .editor-block-list__block[data-align="center"] .wp-block-categories ul {
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+/* End Typography: List Styles. */
+
+/* Begin Buttons. */
+.editor-styles-wrapper a.read-more-align-left,
+.editor-styles-wrapper a.read-more-align-right {
+    display:inline-block;
+}
+.editor-styles-wrapper a.read-more-align-left {
+    text-align: left;
+}
+.editor-styles-wrapper a.read-more-align-right {
+    float: right;
+}
+.editor-styles-wrapper a.read-more-align-left span,
+.editor-styles-wrapper a.read-more-align-right span {
+    font-style: italic;
+    padding-right: 3px;
+}
+
+.editor-styles-wrapper .align-btn-left {
+    float: left;
+    display: inline-block;
+}
+.editor-styles-wrapper .align-btn-right {
+    float: right;
+    display: inline-block;
+}
+.editor-styles-wrapper .align-btn-none {
+    float: none;
+    display: inline-block;
+}
+.editor-styles-wrapper .align-btn-center {
+    margin: 0 auto;
+    text-align: center;
+}
+.editor-styles-wrapper a.dark-button,
+.editor-styles-wrapper a.light-button {
+    font-family: Arial,Verdana,Helvetica,sans-serif;
+    font-size: 18px;
+    display: inline-block;
+    border: 0 none;
+    height: 51px;
+    margin: 0;
+    overflow: visible;
+    padding: 0 0 0 8px !important;
+    position: relative;
+}
+.editor-styles-wrapper a.dark-button {
+    background:transparent url(../../images/buttons-sprite-sheet.png) no-repeat scroll left -388px; /* Original: dark-button-l.png */
+}
+.editor-styles-wrapper a.light-button {
+    background:transparent url(../../images/buttons-sprite-sheet.png) no-repeat scroll left -133px; /* Original: light-button-l.png */
+    text-shadow: 0 1px #FFF;
+}
+.editor-styles-wrapper a.dark-button span,
+.editor-styles-wrapper a.light-button span {
+    display: block;
+    float: left;
+    position: relative;
+    padding: 18px 25px 18px 17px;
+    line-height:15px;
+}
+.editor-styles-wrapper a.dark-button span {
+    background: transparent url(../../images/buttons-sprite-sheet.png) no-repeat scroll right -271px; /* Original: dark-button-r.png */
+    color: #FFF;
+}
+.editor-styles-wrapper a.light-button span {
+    background: transparent url(../../images/buttons-sprite-sheet.png) no-repeat scroll right -18px; /* Original: light-button-r.png */
+    color: #666;
+}
+.editor-styles-wrapper a.dark-button:hover {
+    background-position: left -447px;
+    color: #666;
+    text-decoration: none;
+    cursor: pointer;
+}
+.editor-styles-wrapper a.dark-button:hover span {
+    background-position: right -330px;
+}
+.editor-styles-wrapper a.light-button:hover {
+    background-position: left -192px;
+}
+.editor-styles-wrapper a.light-button:hover span {
+    background-position: right -77px;
+}
+.editor-styles-wrapper a.dark-button:hover span,
+.editor-styles-wrapper a.light-button:hover span {
+    text-decoration: none;
+    cursor: pointer;
+    line-height:15px;
+}
+.editor-styles-wrapper a.dark-button:hover span{ color: #DDD; }
+.editor-styles-wrapper a.light-button:hover span { color: #333; }
+.editor-styles-wrapper a.dark-button:focus, a.dark-button:focus span,
+.editor-styles-wrapper a.light-button:focus, a.light-button:focus span {
+    overflow: hidden;
+    outline: none;
+}
+
+.editor-styles-wrapper a.small-dark-button,
+.editor-styles-wrapper a.small-light-button {
+    font-family: Arial,Verdana,Helvetica,sans-serif;
+    font-size: 12px;
+    display: inline-block;
+    border: 0 none;
+    height: 31px;
+    margin: 0;
+    overflow: visible;
+    padding: 0 0 0 8px !important;
+    position: relative;
+}
+.editor-styles-wrapper a.small-dark-button {
+    background:transparent url(../../images/buttons-sprite-sheet.png) no-repeat scroll left -876px; /* Original: small-dark-button-l.png */
+}
+.editor-styles-wrapper a.small-light-button {
+    background:transparent url(../../images/buttons-sprite-sheet.png) no-repeat scroll left -686px; /* Original: small-light-button-l.png */
+    text-shadow: 0 1px #FFF;
+}
+.editor-styles-wrapper a.small-dark-button span,
+.editor-styles-wrapper a.small-light-button span {
+    display: block;
+    float: left;
+    position: relative;
+    padding:10px 18px 10px 10px;
+    line-height:11px;
+
+}
+.editor-styles-wrapper a.small-dark-button span {
+    background: transparent url(../../images/buttons-sprite-sheet.png) no-repeat scroll right -796px; /* Original: small-dark-button-r.png */
+    color: #FFF;
+}
+.editor-styles-wrapper a.small-light-button span {
+    background: transparent url(../../images/buttons-sprite-sheet.png) no-repeat scroll right -605px; /* Original: small-light-button-r.png */
+    color: #666;
+}
+.editor-styles-wrapper a.small-dark-button:hover,
+.editor-styles-wrapper a.small-light-button:hover {
+    color: #666;
+    text-decoration: none;
+    cursor: pointer;
+}
+.editor-styles-wrapper a.small-dark-button:hover {
+    background-position: left -915px;
+}
+.editor-styles-wrapper a.small-dark-button:hover span {
+    background-position: right -835px;
+}
+.editor-styles-wrapper a.small-light-button:hover {
+    background-position: left -725px;
+}
+.editor-styles-wrapper a.small-light-button:hover span {
+    background-position: right -644px;
+}
+.editor-styles-wrapper a.small-dark-button:hover span,
+.editor-styles-wrapper a.small-light-button:hover span {
+    text-decoration: none;
+    cursor: pointer;
+    line-height:11px;
+}
+.editor-styles-wrapper a.small-dark-button:hover span { color: #DDD; }
+.editor-styles-wrapper a.small-light-button:hover span { color: #333; }
+.editor-styles-wrapper a.small-dark-button:focus, .editor-styles-wrapper a.small-dark-button:focus span,
+.editor-styles-wrapper a.small-light-button:focus, .editor-styles-wrapper a.small-light-button:focus span {
+    overflow: hidden;
+    outline: none;
+}
+
+.editor-styles-wrapper a.dark-round-button,
+.editor-styles-wrapper a.light-round-button {
+    font-family: Arial,Verdana,Helvetica,sans-serif;
+    font-size: 21px;
+    display: inline-block;
+    border: 0 none;
+    height: 60px;
+    margin: 0;
+    overflow: visible;
+    padding: 0 0 0 26px !important;
+    position: relative;
+}
+.editor-styles-wrapper a.dark-round-button {
+    background:transparent url(../../images/buttons-sprite-sheet.png) no-repeat scroll left -1376px; /* Original: dark-round-button-l.png */
+}
+.editor-styles-wrapper a.light-round-button {
+    background:transparent url(../../images/buttons-sprite-sheet.png) no-repeat scroll left -1105px; /* Original: light-round-button-l.png */
+    text-shadow: 0 1px #DDD;
+}
+.editor-styles-wrapper a.dark-round-button span,
+.editor-styles-wrapper a.light-round-button span {
+    display: block;
+    float: left;
+    position: relative;
+    padding: 20px 31px 20px 5px;
+    line-height:20px;
+}
+.editor-styles-wrapper a.dark-round-button span {
+    background: transparent url(../../images/buttons-sprite-sheet.png) no-repeat scroll right -1241px; /* Original: dark-round-button-r.png */
+    color: #FFF;
+}
+.editor-styles-wrapper a.light-round-button span {
+    background: transparent url(../../images/buttons-sprite-sheet.png) no-repeat scroll right -974px; /* Original: light-round-button-r.png */
+    color: #666;
+}
+.editor-styles-wrapper a.dark-round-button:hover,
+.editor-styles-wrapper a.light-round-button:hover {
+    color: #666;
+    text-decoration: none;
+    cursor: pointer;
+}
+.editor-styles-wrapper a.dark-round-button:hover {
+    background-position: left -1441px;
+}
+.editor-styles-wrapper a.dark-round-button:hover span {
+    background-position: right -1306px;
+}
+.editor-styles-wrapper a.light-round-button:hover {
+    background-position: left -1170px;
+}
+.editor-styles-wrapper a.light-round-button:hover span {
+    background-position: right -1039px;
+}
+.editor-styles-wrapper a.dark-round-button:hover span,
+.editor-styles-wrapper a.light-round-button:hover span {
+    text-decoration: none;
+    cursor: pointer;
+    line-height: 20px;
+}
+.editor-styles-wrapper a.dark-round-button:hover span { color: #DDD; }
+.editor-styles-wrapper a.light-round-button:hover span { color: #333; }
+.editor-styles-wrapper a.dark-round-button:focus, .editor-styles-wrapper a.dark-round-button:focus span,
+.editor-styles-wrapper a.light-round-button:focus, .editor-styles-wrapper a.light-round-button:focus span {
+    overflow: hidden;
+    outline: none;
+}
+
+.editor-styles-wrapper .custom-button, .editor-styles-wrapper .custom-button span,
+.editor-styles-wrapper .custom-button:visited, .editor-styles-wrapper .custom-button span:visited {
+    background: #222222 url(../../images/repeat-x-sprite-sheet.png) repeat-x scroll 0 -516px; /* Original: overlay.png */
+    display:inline-block;
+    -moz-border-radius: 6px; 
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+}
+.editor-styles-wrapper .custom-button, .editor-styles-wrapper .custom-button:visited {
+    display: inline-block;
+    text-decoration: none;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+    box-shadow:0px 1px 3px rgba(0,0,0,0.6);
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    position: relative;
+    cursor: pointer;
+}
+.editor-styles-wrapper .custom-button, a.editor-styles-wrapper .custom-button {
+    outline: 0 none;
+    margin: 3px;
+}
+.editor-styles-wrapper .custom-button:active { top: 1px; }
+.editor-styles-wrapper .custom-button span {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    font-weight: bold;
+    line-height: 1;
+    color:#FFF;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+    text-decoration:none;
+    text-align:center;
+    white-space: nowrap;
+}
+.editor-styles-wrapper .small.custom-button span, .editor-styles-wrapper .small.custom-button span:visited {
+    font-size: 11px;
+    padding: 6px 13px 5px;
+}
+.editor-styles-wrapper .custom-button span, .editor-styles-wrapper .custom-button span:visited,
+.editor-styles-wrapper .medium.custom-button span, .editor-styles-wrapper .medium.custom-button span:visited {
+    font-size: 13px;
+    padding: 7px 15px;
+}
+.editor-styles-wrapper .large.custom-button span, .editor-styles-wrapper .large.custom-button span:visited {
+    font-size: 18px;
+    padding: 9px 14px 9px;
+}
+.editor-styles-wrapper .x-large.custom-button span, .editor-styles-wrapper .x-large.custom-button span:visited {
+    font-size: 34px;
+    padding: 9px 14px 9px;
+}
+.editor-styles-wrapper .custom-button:hover {
+    color: #FFFFFF;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    opacity:0.8;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    /* -ms-filter must come before filter. */
+    filter: alpha(opacity=80);
+}
+.editor-styles-wrapper .custom-button span, .editor-styles-wrapper .custom-button span:visited {
+    background-color: #FF5C00;
+}
+
+.editor-styles-wrapper .flat-custom-button, .editor-styles-wrapper .flat-custom-button span,
+.editor-styles-wrapper .flat-custom-button:visited, .editor-styles-wrapper .flat-custom-button span:visited {
+    display:inline-block;
+    -moz-border-radius: 3px; 
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+.editor-styles-wrapper .flat-custom-button, .editor-styles-wrapper .flat-custom-button:visited {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+}
+.editor-styles-wrapper .flat-custom-button, a.editor-styles-wrapper .flat-custom-button {
+    outline: 0 none;
+    margin: 3px;
+}
+.editor-styles-wrapper .flat-custom-button:active { top: 1px; }
+.editor-styles-wrapper .flat-custom-button span {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    font-weight: bold;
+    line-height: 1;
+    color:#FFFFFF;
+    text-decoration:none;
+    text-align:center;
+    white-space: nowrap;
+}
+.editor-styles-wrapper .flat-custom-button span, .editor-styles-wrapper .flat-custom-button span:visited {
+    font-size: 13px;
+    padding: 10px 20px;
+}
+.editor-styles-wrapper .flat-custom-button:hover {
+    color: #FFFFFF;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    opacity:0.8;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    /* -ms-filter must come before filter. */
+    filter: alpha(opacity=80);
+}
+.editor-styles-wrapper .flat-custom-button span, .editor-styles-wrapper .flat-custom-button span:visited {
+    background-color: #FF5C00;
+    border: 1px solid #FF5C00;
+}
+.editor-styles-wrapper .custom-button span, .editor-styles-wrapper .flat-custom-button span {
+  white-space: normal;
+  line-height: 1.2;
+}
+/* End Buttons. */
+
+/* Begin: Dividers. */
+.editor-styles-wrapper .underline-1 {
+    background: transparent url(../../images/repeat-x-sprite-sheet.png) repeat-x scroll 0 100%; /* Original: heading_underline.png */
+}
+.editor-styles-wrapper .divider {
+    background: transparent url(../../images/repeat-x-sprite-sheet.png) repeat-x scroll 0 100%; /* Original: heading_underline.png */
+    clear: both;
+    display: block;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    width: 100%;
+}
+.editor-styles-wrapper .top-of-page {
+    font-family: "Lucida Sans Unicode","Lucida Grande","Trebuchet MS",Helvetica,Arial,sans-serif;
+    font-size: 10px;
+    line-height: 10px;
+    text-align: right;
+    margin-bottom: 25px;
+    position: relative;
+}
+.editor-styles-wrapper .top-of-page a {
+    height: 20px;
+    position: absolute;
+    right: 0;
+    top: 6px;
+    border:0 none;
+    outline:none;
+    cursor:pointer;
+}
+/* End: Dividers. */
+
+/* Begin Table Formatting. */
+table.custom-table,
+.wp-block-table.custom-table {
+    font-size: 12px;
+    margin: 10px 0;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+.wp-block-table.custom-table td, .wp-block-table.custom-table th {
+    border: 0 none;
+    word-break: break-all;
+    text-align: left;
+}
+table.custom-table th,
+.wp-block-table.custom-table th {
+    border-bottom: 2px solid #999;
+    padding: 12px;
+    font-size: 14px;
+    font-weight:bold;
+    text-align: left;
+}
+table.custom-table td,
+.wp-block-table.custom-table td {
+    padding: 9px 12px;
+    border-top: 1px solid #fff;
+}
+table.custom-table tfoot td,
+.wp-block-table.custom-table tfoot td {
+    font-size: 11px;
+}
+table.custom-table tbody td,
+.wp-block-table.custom-table tbody td {
+    background: transparent url('../../images/back.png') repeat scroll;
+}
+table.custom-table tbody tr:hover td,
+.wp-block-table.custom-table tbody tr:hover td {
+    background: none;
+}
+
+.wp-block-table td, .wp-block-table th {
+    text-align: left;
+}
+/* End Table Formatting. */
+
+/* Begin Miscellaneaus Styles. */
+.margin-top-0 { margin-top:0px; }
+.margin-top-1 { margin-top:1px; }
+.margin-top-2 { margin-top:2px; }
+.margin-top-3 { margin-top:3px; }
+.margin-top-4 { margin-top:4px; }
+.margin-top-5 { margin-top:5px; }
+.margin-top-10 { margin-top:10px; }
+.do-uppercase { text-transform: uppercase; }
+/* End Miscellaneaus Styles. */
+
+/* BEGIN: MailChimp Inline Form styling. */
+#udesign-mailchimp-bar{
+    min-height: 41px;
+}
+#udesign-mailchimp-bar input {
+  font-size: 15px;
+}
+#udesign-mailchimp-bar input[placeholder] {
+    color: #767676;
+}
+#udesign-mailchimp-bar input, 
+#udesign-mailchimp-bar input[type="email"], 
+#udesign-mailchimp-bar input[type="text"] {
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  height: auto;
+  margin: 0 0 0 23px;
+}
+#udesign-mailchimp-bar input[type="email"], 
+#udesign-mailchimp-bar input[type="text"] {
+  max-width: 300px;
+  width: 100%;
+  padding: 13px 11px;
+}
+#udesign-mailchimp-bar input, 
+#udesign-mailchimp-bar label {
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+}
+#udesign-mailchimp-bar form, 
+#udesign-mailchimp-bar input, 
+#udesign-mailchimp-bar label {
+  box-shadow: none;
+  box-sizing: border-box;
+  float: none;
+  height: auto;
+  line-height: initial;
+  outline: 0 none;
+  padding: 0;
+  text-shadow: none;
+  vertical-align: middle;
+}
+#udesign-mailchimp-bar input[type="submit"],
+#udesign-mailchimp-bar input.submit-button {
+  color: #ffffff;
+  background: #EF5974 none repeat scroll 0 0;
+  border-color: #EF5974;
+  padding: 13px 40px !important;
+  border-radius: 4px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+#udesign-mailchimp-bar label {
+  display: none;
+}
+.mc4wp-response { margin: 20px 23px 5px; } /* "MailChimp for WordPress" plugin specific styling. */
+
+
+/* Mobile Screen ( smaller than 480px )*/
+@media screen and (max-width: 480px) {
+        #udesign-mailchimp-bar input[type="text"], 
+        #udesign-mailchimp-bar input[type="email"] {
+          display: block;
+          margin: 20px auto;
+          max-width: 250px;
+        }
+}
+/* Medium Screen ( 480px to 719px ) */
+@media screen and (min-width: 480px) and (max-width: 719px) {
+    #udesign-mailchimp-bar input[type="text"], 
+    #udesign-mailchimp-bar input[type="email"] {
+      display: block;
+      margin: 20px auto;
+      max-width: 375px;
+    }
+}
+/* Mobile Screen ( smaller than 959px ) */
+@media screen and (max-width: 959px) {
+    #udesign-mailchimp-bar input[type="submit"], #udesign-mailchimp-bar input.submit-button {
+        margin: 27px auto 0;
+        display: block
+    }
+}
+/* END: MailChimp Inline Form styling. */
+
+
+/* BEGIN: Preformatted Block styling. */
+.editor-styles-wrapper code, .editor-styles-wrapper samp, .editor-styles-wrapper kbd {
+    padding: 2px;
+    border-radius: 2px;
+    color: #23282d;
+    background: #f3f4f5;
+    font-family: "Courier New", Courier, monospace, sans-serif;
+    text-align: left;
+}
+.wp-block-preformatted pre code {
+    line-height: 1.6em;
+    font-size: 11px;
+}
+.wp-block-preformatted pre {
+    padding: 0.1em 0.5em 0.3em 0.7em;
+    border-left: 11px solid #ccc;
+    margin: 1.7em 0 1.7em 0.3em;
+    overflow: auto;
+    width: 93%;
+    white-space: nowrap;
+}
+.wp-block-verse pre, pre.wp-block-verse {
+    white-space: normal;
+    border: none;
+    background: none;
+    font-family: inherit;
+    padding: 0;
+}
+/* END: Preformatted Block styling. */
+
+/* BEGIN: Block Columns styling. */
+.editor-block-list__block[data-align="full"] .wp-block-columns > .editor-inner-blocks {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+/* END: Block Columns styling. */
+
+/* BEGIN: Block Cover Image styling */
+.wp-block-cover { margin: 1em 0 1.5em; }
+.wp-block-cover.alignright { margin-left: 1.5em; }
+.wp-block-cover.alignleft { margin-right: 1.5em; }
+.wp-block-cover .block-editor-block-list__layout .block-editor-block-list__block {
+    padding-left: 0;
+    padding-right: 0;
+}
+/* END: Block Cover Image styling */
