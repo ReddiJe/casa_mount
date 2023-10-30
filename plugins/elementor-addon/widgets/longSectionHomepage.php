@@ -1,17 +1,17 @@
 <?php
 
 
-class Elementor_leftText extends \Elementor\Widget_Base
+class Elementor_longSectionHomepage extends \Elementor\Widget_Base
 {
 
     public function get_name()
     {
-        return 'leftText';
+        return 'longSectionHomepage';
     }
 
     public function get_title()
     {
-        return esc_html__('Left Text', 'elementor-addon');
+        return esc_html__('Long Section', 'elementor-addon');
     }
 
     public function get_icon()
@@ -35,9 +35,9 @@ class Elementor_leftText extends \Elementor\Widget_Base
         // Content Tab Start
 
         $this->start_controls_section(
-            'section_title',
+            'top_section_title',
             [
-                'label' => esc_html__('Title', 'elementor-addon'),
+                'label' => esc_html__('Top Title', 'elementor-addon'),
                 'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
             ]
         );
@@ -45,7 +45,7 @@ class Elementor_leftText extends \Elementor\Widget_Base
         $this->add_control(
             'upperTitle1',
             [
-                'label' => esc_html__('Title 1', 'elementor-addon'),
+                'label' => esc_html__('Top Title', 'elementor-addon'),
                 'type' => \Elementor\Controls_Manager::TEXTAREA,
                 'default' => esc_html__('Hello world', 'elementor-addon'),
             ]
@@ -69,10 +69,20 @@ class Elementor_leftText extends \Elementor\Widget_Base
             ]
         );
 
+        $this->end_controls_section();
+    
+        $this->start_controls_section(
+            'bottom_section_title',
+            [
+                'label' => esc_html__('Bottom Title', 'elementor-addon'),
+                'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
+            ]
+        );
+
         $this->add_control(
             'title',
             [
-                'label' => esc_html__('Title', 'elementor-addon'),
+                'label' => esc_html__('Bottom Title ', 'elementor-addon'),
                 'type' => \Elementor\Controls_Manager::TEXTAREA,
                 'default' => esc_html__('Hello world', 'elementor-addon'),
             ]
@@ -164,7 +174,7 @@ class Elementor_leftText extends \Elementor\Widget_Base
 
         <style>
             .longSectionHomepage {
-                background-image: url();
+                background-image: url(<?php echo esc_url( $settings['backgroundImage']['url'] ) ?> );
                 background-size: cover;
                 display: flex;
                 flex-direction: column;
@@ -257,13 +267,14 @@ class Elementor_leftText extends \Elementor\Widget_Base
             .descriptionMapHomepage p.description {
                 font-weight: 300;
             }
+
         </style>
 
         <div class="longSectionHomepage">
             <div class="topBlock wow fadeIn">
                 <div class="titlesLongSection">
                     <h2>
-                        <? echo $settings['upperTitle']; ?>
+                        <?php echo $settings['upperTitle1']; ?>
                     </h2>
                     <p class="subtitle">
                         <?php echo $settings['subtitle1']; ?>
@@ -296,7 +307,6 @@ class Elementor_leftText extends \Elementor\Widget_Base
                     </div>
                 </div>
             </div>
-
 
     <?php
     }
