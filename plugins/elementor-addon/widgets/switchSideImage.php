@@ -109,14 +109,6 @@ class Elementor_switchSideImage extends \Elementor\Widget_Base {
 
 	protected function render() {
 		$settings = $this->get_settings_for_display();
-
-		if ( 'yes' === $settings['switch_position'] ) {
-			echo 'right';
-		} else {
-			echo 'left';
-		}
-
-
 		?>
 		
 
@@ -136,12 +128,31 @@ class Elementor_switchSideImage extends \Elementor\Widget_Base {
         height: 80vh;
         object-fit: cover;
     }
+	.oneSideHero img.left{
+		display: none;
+	}
+
+	.oneSideHero.left img.left{
+		display: block;
+	}
+
+	.oneSideHero.left img.right{
+		display: none;
+	}
+
 
         </style>
-<?php echo $settings['switch_position']; ?> 
 
 
-<div class="oneSideHero">
+
+<div class="oneSideHero <?php 		
+		if ( 'yes' === $settings['switch_position'] ) {
+			echo 'right';
+		} else {
+			echo 'left';
+		} 
+		?> ">
+	<img src="<?php echo esc_url( $settings['image']['url'] );?>" alt="" class="left">
     <div class="text">
         <h2>
             <?php echo $settings['title']; ?>
@@ -150,6 +161,7 @@ class Elementor_switchSideImage extends \Elementor\Widget_Base {
             <?php echo $settings['text']; ?>
         </p>
     </div>
+	<img src="<?php echo esc_url( $settings['image']['url'] );?>" alt="" class="right">
 </div>
 
 
