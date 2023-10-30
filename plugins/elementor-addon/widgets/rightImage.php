@@ -1,14 +1,13 @@
 <?php
 
-
-class Elementor_Hello_World_Widget_2 extends \Elementor\Widget_Base {
+class Elementor_rightImage extends \Elementor\Widget_Base {
 
 	public function get_name() {
-		return 'hello_world_widget_2';
+		return 'rightImage';
 	}
 
 	public function get_title() {
-		return esc_html__( 'Hello World 2', 'elementor-addon' );
+		return esc_html__( 'Right image', 'elementor-addon' );
 	}
 
 	public function get_icon() {
@@ -52,7 +51,27 @@ class Elementor_Hello_World_Widget_2 extends \Elementor\Widget_Base {
 				'default' => esc_html__( 'Hello world', 'elementor-addon' ),
 			]
 		);
+
+        $this->add_control(
+            'textForLink',
+			[
+				'label' => esc_html__( 'Text for link', 'elementor-addon' ),
+				'type' => \Elementor\Controls_Manager::TEXT,
+				'default' => esc_html__( 'text for button', 'elementor-addon' ),
+                'placeholder' => esc_html__( 'insert text for button', 'elementor-addon' ),
+			]
+		);
 		
+        $this->add_control(
+			'url',
+			[
+				'label' => esc_html__( 'URL to embed', 'elementor-addon' ),
+				'type' => \Elementor\Controls_Manager::TEXT,
+				'input_type' => 'url',
+				'placeholder' => esc_html__( 'https://your-link.com', 'elementor-addon' ),
+			]
+		);
+
         $this->add_control(
 			'image',
 			[
@@ -128,8 +147,10 @@ class Elementor_Hello_World_Widget_2 extends \Elementor\Widget_Base {
         <p>
             <?php echo $settings['text']; ?>
         </p>
+        <a href="<?php echo $settings['url']; ?>" class="button"><?php echo $settings['textForLink']; ?></a>
         <?php echo '<img src="' . esc_url( $settings['image']['url'] ) . '" alt="">'; ?>
         </div>
+
 		<?php
 	}
 }
