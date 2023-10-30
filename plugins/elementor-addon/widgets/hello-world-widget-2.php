@@ -130,8 +130,6 @@ class Elementor_Hello_World_Widget_2 extends \Elementor\Widget_Base {
         </p>
         <?php echo '<img src="' . esc_url( $settings['image']['url'] ) . '" alt="">'; ?>
         </div>
-
-
 		<?php
 	}
 }
