@@ -15,14 +15,14 @@ function register_hello_world_widget( $widgets_manager ) {
 	require_once( __DIR__ . '/widgets/rightImage.php' );
 	require_once( __DIR__ . '/widgets/richText.php' );
 	require_once( __DIR__ . '/widgets/homePage.php' );
-	require_once( __DIR__ . '/widgets/leftText.php' );
+	require_once( __DIR__ . '/widgets/longSectionHomepage.php' );
 
 	$widgets_manager->register( new \Elementor_Hello_World_Widget_1() );
 	$widgets_manager->register( new \Elementor_Hello_World_Widget_2() );
 	$widgets_manager->register( new \Elementor_rightImage() );
 	$widgets_manager->register( new \Elementor_richText() );
 	$widgets_manager->register( new \Elementor_homePage() );
-	$widgets_manager->register( new \Elementor_leftText() );
+	$widgets_manager->register( new \Elementor_longSectionHomepage() );
 
 }
 add_action( 'elementor/widgets/register', 'register_hello_world_widget' );
