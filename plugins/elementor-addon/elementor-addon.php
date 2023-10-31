@@ -17,6 +17,8 @@ function register_hello_world_widget( $widgets_manager ) {
 	require_once( __DIR__ . '/widgets/homePage.php' );
 	require_once( __DIR__ . '/widgets/longSectionHomepage.php' );
 	require_once( __DIR__ . '/widgets/switchSideImage.php' );
+	require_once( __DIR__ . '/widgets/partnersList.php' );
+	require_once( __DIR__ . '/widgets/facilitiesList.php' );
 
 	$widgets_manager->register( new \Elementor_Hello_World_Widget_1() );
 	$widgets_manager->register( new \Elementor_Hello_World_Widget_2() );
@@ -25,6 +27,8 @@ function register_hello_world_widget( $widgets_manager ) {
 	$widgets_manager->register( new \Elementor_homePage() );
 	$widgets_manager->register( new \Elementor_longSectionHomepage() );
 	$widgets_manager->register( new \Elementor_switchSideImage() );
+	$widgets_manager->register( new \Elementor_partnersList() );
+	$widgets_manager->register( new \Elementor_facilitiesList() );
 
 }
 add_action( 'elementor/widgets/register', 'register_hello_world_widget' );

@@ -179,7 +179,6 @@ class Elementor_longSectionHomepage extends \Elementor\Widget_Base
                 display: flex;
                 flex-direction: column;
                 gap: 30vh;
-
             }
 
             .longSectionHomepage h2,
