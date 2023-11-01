@@ -239,6 +239,7 @@ class Elementor_homePage extends \Elementor\Widget_Base {
     color: #2c2d2c;
 }
         </style>
+        
     <div class="firstViewContainer">
         <video class="backgroundVideo" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
             <source src="./image/firstViewBg.mp4" type="video/mp4">
