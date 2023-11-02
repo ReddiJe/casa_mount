@@ -21,7 +21,12 @@ function register_hello_world_widget( $widgets_manager ) {
 	require_once( __DIR__ . '/widgets/facilitiesList.php' );
 	require_once( __DIR__ . '/widgets/questionsAndAnswers.php' );
 	require_once( __DIR__ . '/widgets/docsBlocks.php' );
+<<<<<<< HEAD
+	require_once( __DIR__ . '/widgets/myForm.php' );
 	require_once( __DIR__ . '/widgets/timeline.php' );
+=======
+>>>>>>> c502cf7cc68a36d9f2d6359c636ae2691896c585
+
 
 	$widgets_manager->register( new \Elementor_Hello_World_Widget_1() );
 	$widgets_manager->register( new \Elementor_Hello_World_Widget_2() );
@@ -34,7 +39,12 @@ function register_hello_world_widget( $widgets_manager ) {
 	$widgets_manager->register( new \Elementor_facilitiesList() );
 	$widgets_manager->register( new \Elementor_questionsAndAnswers() );
 	$widgets_manager->register( new \Elementor_docsBlocks() );
+<<<<<<< HEAD
+	$widgets_manager->register( new \Elementor_myForm() );
 	$widgets_manager->register( new \Elementor_timeline() );
+=======
+	
+>>>>>>> c502cf7cc68a36d9f2d6359c636ae2691896c585
 
 }
 add_action( 'elementor/widgets/register', 'register_hello_world_widget' );
