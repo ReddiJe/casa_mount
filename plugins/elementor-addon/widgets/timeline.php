@@ -52,6 +52,16 @@ class Elementor_timeline extends \Elementor\Widget_Base {
             ]
         );
 
+		$this->end_controls_section();
+
+		$this->start_controls_section(
+			'section_title',
+			[
+				'label' => esc_html__( 'Information', 'elementor-addon' ),
+				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
+            ]
+		);
+
 
 		$this->end_controls_section();
 
