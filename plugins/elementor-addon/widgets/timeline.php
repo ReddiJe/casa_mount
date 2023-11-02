@@ -55,13 +55,224 @@ class Elementor_timeline extends \Elementor\Widget_Base {
 		$this->end_controls_section();
 
 		$this->start_controls_section(
-			'section_title',
+			'step1',
 			[
-				'label' => esc_html__( 'Information', 'elementor-addon' ),
+				'label' => esc_html__( 'Step1', 'elementor-addon' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
             ]
 		);
 
+		$this->add_control(
+			'title1',
+			[
+				'label' => esc_html__( 'Title', 'elementor-addon' ),
+				'type' => \Elementor\Controls_Manager::TEXTAREA,
+				'default' => esc_html__( 'Hello world', 'elementor-addon' ),
+			]
+		);
+
+		$this->add_control(
+			'subtitle1',
+			[
+				'label' => esc_html__('Subtitle', 'elementor-addon'),
+				'type' => \Elementor\Controls_Manager::TEXTAREA,
+				'default' => esc_html__('Hello world', 'elementor-addon'),
+			]
+		);
+
+		$this->add_control(
+			'year1',
+			[
+				'label' => esc_html__('Year', 'elementor-addon'),
+				'type' => \Elementor\Controls_Manager::TEXT,
+				'default' => esc_html(date('Y'), 'elementor-addon'),
+			]
+		);
+
+		$this->end_controls_section();
+
+		$this->start_controls_section(
+			'Step2',
+			[
+				'label' => esc_html__( 'Step2', 'elementor-addon' ),
+				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
+            ]
+		);
+
+		$this->add_control(
+			'title2',
+			[
+				'label' => esc_html__( 'Title', 'elementor-addon' ),
+				'type' => \Elementor\Controls_Manager::TEXTAREA,
+				'default' => esc_html__( 'Hello world', 'elementor-addon' ),
+			]
+		);
+
+		$this->add_control(
+			'subtitle2',
+			[
+				'label' => esc_html__('Subtitle', 'elementor-addon'),
+				'type' => \Elementor\Controls_Manager::TEXTAREA,
+				'default' => esc_html__('Hello world', 'elementor-addon'),
+			]
+		);
+
+		$this->add_control(
+			'year2',
+			[
+				'label' => esc_html__('Year', 'elementor-addon'),
+				'type' => \Elementor\Controls_Manager::TEXT,
+				'default' => esc_html(date('Y'), 'elementor-addon'),
+			]
+		);
+
+		$this->end_controls_section();
+
+		$this->start_controls_section(
+			'step3',
+			[
+				'label' => esc_html__( 'Step3', 'elementor-addon' ),
+				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
+            ]
+		);
+
+		$this->add_control(
+			'title3',
+			[
+				'label' => esc_html__( 'Title', 'elementor-addon' ),
+				'type' => \Elementor\Controls_Manager::TEXTAREA,
+				'default' => esc_html__( 'Hello world', 'elementor-addon' ),
+			]
+		);
+
+		$this->add_control(
+			'subtitle3',
+			[
+				'label' => esc_html__('Subtitle', 'elementor-addon'),
+				'type' => \Elementor\Controls_Manager::TEXTAREA,
+				'default' => esc_html__('Hello world', 'elementor-addon'),
+			]
+		);
+
+		$this->add_control(
+			'year3',
+			[
+				'label' => esc_html__('Year', 'elementor-addon'),
+				'type' => \Elementor\Controls_Manager::TEXT,
+				'default' => esc_html(date('Y'), 'elementor-addon'),
+			]
+		);
+
+		$this->end_controls_section();
+
+		$this->start_controls_section(
+			'step4',
+			[
+				'label' => esc_html__( 'Step4', 'elementor-addon' ),
+				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
+            ]
+		);
+
+		$this->add_control(
+			'title4',
+			[
+				'label' => esc_html__( 'Title', 'elementor-addon' ),
+				'type' => \Elementor\Controls_Manager::TEXTAREA,
+				'default' => esc_html__( 'Hello world', 'elementor-addon' ),
+			]
+		);
+
+		$this->add_control(
+			'subtitle4',
+			[
+				'label' => esc_html__('Subtitle', 'elementor-addon'),
+				'type' => \Elementor\Controls_Manager::TEXTAREA,
+				'default' => esc_html__('Hello world', 'elementor-addon'),
+			]
+		);
+
+		$this->add_control(
+			'year4',
+			[
+				'label' => esc_html__('Year', 'elementor-addon'),
+				'type' => \Elementor\Controls_Manager::TEXT,
+				'default' => esc_html(date('Y'), 'elementor-addon'),
+			]
+		);
+
+		$this->end_controls_section();
+
+		$this->start_controls_section(
+			'step5',
+			[
+				'label' => esc_html__( 'Step5', 'elementor-addon' ),
+				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
+            ]
+		);
+
+		$this->add_control(
+			'title5',
+			[
+				'label' => esc_html__( 'Title', 'elementor-addon' ),
+				'type' => \Elementor\Controls_Manager::TEXTAREA,
+				'default' => esc_html__( 'Hello world', 'elementor-addon' ),
+			]
+		);
+
+		$this->add_control(
+			'subtitle5',
+			[
+				'label' => esc_html__('Subtitle', 'elementor-addon'),
+				'type' => \Elementor\Controls_Manager::TEXTAREA,
+				'default' => esc_html__('Hello world', 'elementor-addon'),
+			]
+		);
+
+		$this->add_control(
+			'year5',
+			[
+				'label' => esc_html__('Year', 'elementor-addon'),
+				'type' => \Elementor\Controls_Manager::TEXT,
+				'default' => esc_html(date('Y'), 'elementor-addon'),
+			]
+		);
+
+		$this->end_controls_section();
+
+		$this->start_controls_section(
+			'step6',
+			[
+				'label' => esc_html__( 'Step6', 'elementor-addon' ),
+				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
+            ]
+		);
+
+		$this->add_control(
+			'title6',
+			[
+				'label' => esc_html__( 'Title', 'elementor-addon' ),
+				'type' => \Elementor\Controls_Manager::TEXTAREA,
+				'default' => esc_html__( 'Hello world', 'elementor-addon' ),
+			]
+		);
+
+		$this->add_control(
+			'subtitle6',
+			[
+				'label' => esc_html__('Subtitle', 'elementor-addon'),
+				'type' => \Elementor\Controls_Manager::TEXTAREA,
+				'default' => esc_html__('Hello world', 'elementor-addon'),
+			]
+		);
+
+		$this->add_control(
+			'year6',
+			[
+				'label' => esc_html__('Year', 'elementor-addon'),
+				'type' => \Elementor\Controls_Manager::TEXT,
+				'default' => esc_html(date('Y'), 'elementor-addon'),
+			]
+		);
 
 		$this->end_controls_section();
 
@@ -102,7 +313,8 @@ class Elementor_timeline extends \Elementor\Widget_Base {
 		?>
 
         <style>
-			 .heroSectionTimeline{
+
+	.heroSectionTimeline{
         padding-top: 20vh;
         height: 40vh;
     }
@@ -149,15 +361,16 @@ class Elementor_timeline extends \Elementor\Widget_Base {
     
     .step p{
         color: #FFF;
-font-size: 20px;
-font-weight: 300;
-max-width: 700px;
+		font-size: 20px;
+		font-weight: 300;
+		max-width: 700px;
     }
 
     .step .subtitle{
         color: rgba(255, 255, 255, 0.75);
-font-size: 24px;
-font-weight: 500;
+		font-size: 24px;
+		font-weight: 500;
+		width: 100;
     }
 
     .stepOne{
@@ -198,14 +411,14 @@ font-weight: 500;
     .stepSix h3,
     .stepSix p{
         width: 100%;
-text-align: center;
+		text-align: center;
         }
     
 
 @media screen and (min-width: 1600px){
 
     .step p{
-max-width: 800px;
+		max-width: 800px;
     }
 
     .stepOne{
@@ -222,38 +435,36 @@ max-width: 800px;
 }
 
 
-.longTimeline{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 100px 25px;
-    gap: 15px;
-}
 
-.longTimeStep{
-    height: 490px;
-    padding: 25px;
-}
 
-.longTimeStep h3, .longTimeStep p{
-    color: #fff;
-}
+@media screen and (max-width: 1050px) {
+        .longTimeStep {
+            padding: 25px;
+        }
+    }
 
-.longTimeStep h3{
-font-size: 32px;
-font-weight: 400;
-}
+    @media screen and (max-width: 600px) {
+        .longTimeStep {
+            padding: 15px;
+        }
+    }
 
-.longTimeStep p{
-    font-size: 20px;
-font-weight: 300;
-}
+	@media screen and (max-width: 768px) {
+        .step h3 {
+            font-size: 1.5rem; 
+        }
 
-.longTimeStep .subtitle{
-    font-size: 24px;
-font-weight: 500;
-}
+        .step p {
+            font-size: 18px; 
+        }
+
+        .step .subtitle {
+            font-size: 20px; 
+        }
+    }
         </style>
+
+		
 
 <div class="heroSection heroSectionTimeline wow fadeInUp">
         <h1>
@@ -265,94 +476,57 @@ font-weight: 500;
     </div>
 
 <div class="timelineContainer">
-        <img src="./image/timelineBg.png" alt="" class="timelineBackground">
+        <img src="http://localhost/wp-content/uploads/2023/11/Group-87.png" alt="" class="timelineBackground">
         <div class="etapsContainer">
             <div class="step stepOne left wow fadeInUp">
                 <h3>
-                    2019
+					<?php echo $settings['year1']; ?>
                 </h3>
-                <p class="subtitle">Founding Year</p>
-                <p>It all began with a dream. In 2019, we embarked on our journey to create a haven of luxury and serenity in the heart of the Caribbean.</p>
+                <p class="subtitle"><?php echo $settings['title1']; ?></p>
+                <p><?php echo $settings['subtitle1']; ?></p>
             </div>
 
             <div class="step stepTwo right wow fadeInUp">
                 <h3>
-                    2023
+				<?php echo $settings['year2']; ?>
                 </h3>
-                <p class="subtitle">Land Acquisition</p>
-                <p>Securing the perfect location was a crucial step. In 2023, we acquired the breathtaking land that would become the canvas for our paradise.</p>
+                <p class="subtitle"><?php echo $settings['title2']; ?></p>
+                <p><?php echo $settings['subtitle2']; ?></p>
             </div>
 
             <div class="step stepThree left wow fadeInUp">
                 <h3>
-                    2024
+				<?php echo $settings['year3']; ?>
                 </h3>
-                <p class="subtitle">Planning and Design</p>
-                <p>Our vision took shape through meticulous planning and design. 2024 marked the inception of the architectural marvels that grace our residence.</p>
+                <p class="subtitle"><?php echo $settings['title3']; ?></p>
+                <p><?php echo $settings['subtitle3']; ?></p>
             </div>
 
             <div class="step stepFour right wow fadeInUp">
                 <h3>
-                    2025
+				<?php echo $settings['year4']; ?>
                 </h3>
-                <p class="subtitle">Construction Commencement</p>
-                <p>The first shovel hit the ground in 2025, signaling the start of our exciting journey toward creating the Caribbean's most coveted private residence.</p>
+                <p class="subtitle"><?php echo $settings['title4']; ?></p>
+                <p><?php echo $settings['subtitle4']; ?></p>
             </div>
 
             <div class="step stepFive left wow fadeInUp">
                 <h3>
-                    2026
+				<?php echo $settings['year5']; ?>
                 </h3>
-                <p class="subtitle">Mid construction</p>
-                <p>This year we plan to complete the construction of critical infrastructure and a separate entertainment segment for launch and additional attraction of resources.</p>
+                <p class="subtitle"><?php echo $settings['title5']; ?></p>
+                <p><?php echo $settings['subtitle5']; ?></p>
             </div>
 
             <div class="step stepSix left wow fadeInUp">
                 <h3>
-                    2027
+				<?php echo $settings['year6']; ?>
                 </h3>
-                <p class="subtitle">A Dream Realized, A Journey Begins</p>
-                <p>In 2027, CasaMountHouse reached an incredible milestone as we proudly announced the end of the construction phase and the dawn of a new era — the commencement of sales. This pivotal moment marked the transformation of our vision into reality and the opening of our doors to a world of discerning travelers seeking an unparalleled Jamaican experience.</p>
+                <p class="subtitle"><?php echo $settings['title6']; ?></p>
+                <p><?php echo $settings['subtitle6']; ?></p>
             </div>
         </div>
     </div>
-
-    <div class="longTimeline wow fadeInUp">
-        <div class="longTimeStep" style="background-image: url(./image/longTime1.png);">
-            <h3>
-                Private residence
-            </h3>
-            <p class="subtitle">
-                1st step
-            </p>
-            <p>
-                CasaMountHouse was conceived as more than just a residence; it was envisioned as a sanctuary. Nestled amidst the lush landscapes of Jamaica, our private residence emerged as a testament to luxury and serenity. Every element of CasaMountHouse was meticulously designed to create a haven where tranquility meets extravagance. From the meticulously landscaped gardens to the opulent interiors, it was clear from the beginning that we were crafting an oasis like no other.
-            </p>
-        </div>
-        <div class="longTimeStep" style="background-image: url(./image/longTime2.png);">
-            <h3>
-                Small Town
-        </h3>
-            <p class="subtitle">
-                2nd step
-        </p>
-            <p>
-                We set our sights on a charming Jamaican small town, recognizing its untapped potential as the perfect backdrop for CasaMountHouse. This quaint and culturally rich locale offered the ideal setting to complement our vision of an exclusive retreat. We embraced the vibrant local community, becoming a part of its fabric, and in doing so, CasaMountHouse became more than a private residence; it became a cherished neighbor, contributing to the area's growth while preserving its authentic character.
-        </p>
-        </div>
-        <div class="longTimeStep" style="background-image: url(./image/longTime3.png);">
-            <h3>
-                Dubai Of Caribbean
-        </h3>
-            <p class="subtitle">
-                3rd step
-        </p>
-            <p>
-                CasaMountHouse expanded its horizons and introduced a touch of Caribbean luxury to the dynamic landscape of Dubai. The fusion of Caribbean charm and Middle Eastern opulence was a vision brought to life in the heart of Dubai. Known as 'Dubai Caribbean,' this ambitious project exemplified our commitment to delivering world-class hospitality experiences. With breathtaking architecture, immersive experiences, and unparalleled service, Dubai Caribbean symbolized a global extension of the CasaMountHouse legacy.
-        </p>
-        </div>
-    </div>
-
 
 		<?php
 	}
