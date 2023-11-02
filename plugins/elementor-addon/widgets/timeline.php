@@ -43,6 +43,15 @@ class Elementor_timeline extends \Elementor\Widget_Base {
             ]
 		);
 
+		$this->add_control(
+            'subtitle',
+            [
+                'label' => esc_html__('Subtitle', 'elementor-addon'),
+                'type' => \Elementor\Controls_Manager::TEXTAREA,
+                'default' => esc_html__('Hello world', 'elementor-addon'),
+            ]
+        );
+
 
 		$this->end_controls_section();
 
@@ -238,10 +247,10 @@ font-weight: 500;
 
 <div class="heroSection heroSectionTimeline wow fadeInUp">
         <h1>
-            World-Class Facilities in the Heart of Jamaica
+            <?php echo $settings['title']; ?>
         </h1>
         <p>
-            Explore our private residence's extensive array of facilities, from top-tier schools and sports fields to a fully-equipped medical center, all designed to enrich your Caribbean lifestyle.
+            <?php echo $settings['subtitle']; ?>
         </p>
     </div>
 
