@@ -226,3 +226,27 @@ if ( ! function_exists( 'hello_elementor_body_open' ) ) {
 		wp_body_open();
 	}
 }
+
+function handle_contact_form_submission() {
+    if( isset($_POST['email']) ) {
+        $name = sanitize_text_field( $_POST['name'] );
+        $email = sanitize_email( $_POST['email'] );
+        $message = sanitize_textarea_field( $_POST['message'] );
+
+        $to = 'recipient@example.com';
+        $subject = 'New message from ' . $name;
+        $headers = 'From: ' . $email;
+
+        if( wp_mail($to, $subject, $message, $headers) ) {
+            wp_redirect( get_home_url() . '/thank-you/' );  // Redirect to a thank you page after sending
+            exit;
+        } else {
+            // Handle failure
+            wp_redirect( get_home_url() . '/error/' );
+            exit;
+        }
+    }
+}
+add_action( 'admin_post_nopriv_submit_contact_form', 'handle_contact_form_submission' );
+add_action( 'admin_post_submit_contact_form', 'handle_contact_form_submission' );
+
