@@ -8,7 +8,7 @@ class Elementor_myForm extends \Elementor\Widget_Base {
 	}
 
 	public function get_title() {
-		return esc_html__( 'Hello World 2', 'elementor-addon' );
+		return esc_html__( 'Form', 'elementor-addon' );
 	}
 
 	public function get_icon() {
