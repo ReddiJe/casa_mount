@@ -23,7 +23,6 @@ function register_hello_world_widget( $widgets_manager ) {
 	require_once( __DIR__ . '/widgets/docsBlocks.php' );
 	require_once( __DIR__ . '/widgets/myForm.php' );
 	require_once( __DIR__ . '/widgets/timeline.php' );
-	require_once( __DIR__ . '/widgets/timeline.php' );
 	require_once( __DIR__ . '/widgets/threeSteps.php' );
 
 
