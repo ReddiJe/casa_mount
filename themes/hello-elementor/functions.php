@@ -233,7 +233,7 @@ function handle_contact_form_submission() {
         $email = sanitize_email( $_POST['email'] );
         $message = sanitize_textarea_field( $_POST['message'] );
 
-        $to = 'recipient@example.com';
+        $to = 'enjoyable.design@gmail.com';
         $subject = 'New message from ' . $name;
         $headers = 'From: ' . $email;
 
