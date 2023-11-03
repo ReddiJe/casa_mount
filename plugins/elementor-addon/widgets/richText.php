@@ -162,6 +162,21 @@ class Elementor_richText extends \Elementor\Widget_Base {
 .buttonRichText:hover {
     background: #B1882F;
     color: #fff;
+			
+@media screen and (max-width: 600px) {
+    	.richText {
+
+        }
+         .richText h2 {
+            
+        }
+        .richText .subtitle {
+
+        }
+        .buttonRichText {
+
+        }
+    }
 }
 
         </style>

@@ -74,6 +74,25 @@ class Elementor_switchSideImage extends \Elementor\Widget_Base {
 			]
 		);
 
+		$this->add_control(
+            'textForButton',
+			[
+				'label' => esc_html__( 'Text For Button', 'elementor-addon' ),
+				'type' => \Elementor\Controls_Manager::TEXT,
+                'placeholder' => esc_html__( 'insert text for button', 'elementor-addon' ),
+			]
+		);
+
+        $this->add_control(
+			'url',
+			[
+				'label' => esc_html__( 'URL to embed', 'elementor-addon' ),
+				'type' => \Elementor\Controls_Manager::TEXT,
+				'input_type' => 'url',
+				'placeholder' => esc_html__( 'https://your-link.com', 'elementor-addon' ),
+			]
+		);
+
 		$this->end_controls_section();
 
 		// Content Tab End
@@ -141,6 +160,25 @@ class Elementor_switchSideImage extends \Elementor\Widget_Base {
 		display: none;
 }
 
+.oneSideHero a {
+		padding: 10px;
+		margin-top: 20px;
+    	border: 1px solid #B1882F;
+    	color: #B1882F;
+    	background: white;
+    	outline: none;
+    	box-sizing: none;
+    	font-size: 1.2rem;
+    	font-weight: 400;
+		text-align: center;
+		display: block;
+		width: max-content;
+}
+
+.oneSideHero .text h2 {
+    margin-bottom: 10px;
+}
+
 @media screen and (max-width: 600px) {
     .oneSideHero {
         flex-direction: column;
@@ -165,6 +203,7 @@ class Elementor_switchSideImage extends \Elementor\Widget_Base {
         display: none;
     }
 }
+
         </style>
 
 
@@ -184,6 +223,9 @@ class Elementor_switchSideImage extends \Elementor\Widget_Base {
         <p>
             <?php echo $settings['text']; ?>
         </p>
+		<a class="buttonRichText" href="<?php echo esc_url($settings['url']); ?>">
+            <?php echo esc_html($settings['textForButton']); ?>
+        </a>
     </div>
 	<img src="<?php echo esc_url( $settings['image']['url'] );?>" alt="" class="right">
 </div>
