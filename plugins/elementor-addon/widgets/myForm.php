@@ -4,7 +4,7 @@
 class Elementor_myForm extends \Elementor\Widget_Base {
 
 	public function get_name() {
-		return 'hello_world_widget_2';
+		return 'myForm';
 	}
 
 	public function get_title() {
@@ -52,17 +52,6 @@ class Elementor_myForm extends \Elementor\Widget_Base {
 				'default' => esc_html__( 'Hello world', 'elementor-addon' ),
 			]
 		);
-		
-        $this->add_control(
-			'image',
-			[
-				'label' => esc_html__( 'Choose Image', 'textdomain' ),
-				'type' => \Elementor\Controls_Manager::MEDIA,
-				'default' => [
-					'url' => \Elementor\Utils::get_placeholder_image_src(),
-				],
-			]
-		);
 
 		$this->end_controls_section();
 
@@ -101,37 +90,95 @@ class Elementor_myForm extends \Elementor\Widget_Base {
 	protected function render() {
 		$settings = $this->get_settings_for_display();
 		?>
+
         <style>
-            .heroImageContainer{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-                height: 90vh;
-                gap: 15px;
-            }
+.contactUsForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    padding: 150px;
+}
 
-            .page-header{
-                display: none;
-            }
+.contactUsForm h3 {
+    color: #B1882F;
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
 
-            .heroImageContainer img{
-                max-height: 80%;
-                width: 100%;
-                object-fit: cover;
-            }
+.contactUsForm p {
+    color: var(--Black, #2C2D2C);
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    width: 800px;
+    text-align: center;
+}
+
+.contactUsForm .inputContainer {
+    max-width: 100%;
+	width: 100%;
+}
+
+.contactUsForm .inputContainer input,
+.contactUsForm .inputContainer textarea {
+    width: 100%;
+    border-bottom: none;
+    background: var(--Light-gray, #FBFBFB);
+	margin-bottom: 10px;
+}
+
+.contactUsForm button {
+    padding: 10px;
+    border: 1px solid #B1882F;
+    color: #B1882F;
+    background: white;
+    outline: none;
+    box-sizing: none;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+@media (max-width: 900px) {
+    .contactUsForm {
+        padding: 20px;
+    }
+
+    .contactUsForm h3 {
+        font-size: 1.5rem;
+    }
+
+    .contactUsForm p {
+        font-size: 1rem;
+    }
+
+	.contactUsForm .containerInput {
+        max-width: 100%; 
+    }
+
+    .contactUsForm button {
+        width: 100%; 
+    }
+}
         </style>
-        <div class="heroImageContainer">
-		<h1 class="hello-world">
+
+        <div class="contactUsForm">
+		<h3>
 			<?php echo $settings['title']; ?>
-        </h1>
+        </h3>
         <p>
             <?php echo $settings['text']; ?>
         </p>
-		<form action="<?php echo esc_url( admin_url('admin-post.php') ); ?>" method="post">
+
+		<form action="" method="post" class="inputContainer">
     <input type="hidden" name="action" value="submit_contact_form">
+ 
     <input type="text" name="name" placeholder="Your Name" required>
+ 
     <input type="email" name="email" placeholder="Your Email" required>
+ 
     <textarea name="message" placeholder="Your Message" required></textarea>
     <button type="submit">Send Email</button>
 </form>
