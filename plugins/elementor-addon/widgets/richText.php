@@ -162,10 +162,10 @@ class Elementor_richText extends \Elementor\Widget_Base {
 .buttonRichText:hover {
     background: #B1882F;
     color: #fff;
-			
+}
 @media screen and (max-width: 600px) {
     	.richText {
-
+			padding: 150px 0;
         }
          .richText h2 {
             
@@ -177,7 +177,7 @@ class Elementor_richText extends \Elementor\Widget_Base {
 
         }
     }
-}
+
 
         </style>
  <div class="richText wow fadeIn" id="sectionForArrow">
