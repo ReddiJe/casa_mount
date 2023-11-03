@@ -172,7 +172,7 @@ class Elementor_myForm extends \Elementor\Widget_Base {
             <?php echo $settings['text']; ?>
         </p>
 
-		<form action="" method="post" class="inputContainer">
+		<form action="<?php echo esc_url( admin_url('admin-post.php') ); ?>" method="post" class="inputContainer">
     <input type="hidden" name="action" value="submit_contact_form">
  
     <input type="text" name="name" placeholder="Your Name" required>
