@@ -150,17 +150,17 @@ class Elementor_switchSideImage extends \Elementor\Widget_Base {
     }
 
 	.oneSideHero img {
-    max-width: 100%;
-	height: 80vh;
+    width: 100%;
+	height: 50vh;
     object-fit: cover;
 	}
 
-    .oneSideHero.left img.left,
+    .oneSideHero.left img.right,
     .oneSideHero.right img.right {
         display: block;
     }
 
-    .oneSideHero.left img.right,
+    .oneSideHero.left img.left,
     .oneSideHero.right img.left {
         display: none;
     }
