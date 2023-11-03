@@ -121,26 +121,50 @@ class Elementor_switchSideImage extends \Elementor\Widget_Base {
         align-items: center;
         gap: 25px;
         padding: 25px;
-    }
+}
 
 .oneSideHero img{
         width: 50%;
         height: 80vh;
         object-fit: cover;
-    }
-	.oneSideHero img.left{
-		display: none;
-	}
+}
 
-	.oneSideHero.left img.left{
+.oneSideHero img.left{
+		display: none;
+}
+
+.oneSideHero.left img.left{
 		display: block;
-	}
+}
 
-	.oneSideHero.left img.right{
+.oneSideHero.left img.right{
 		display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .oneSideHero {
+        flex-direction: column;
+		display: flex;
+    	align-items: center;
+    	text-align: center;
+    }
+
+	.oneSideHero img {
+    max-width: 100%;
+	height: 80vh;
+    object-fit: cover;
 	}
 
+    .oneSideHero.left img.left,
+    .oneSideHero.right img.right {
+        display: block;
+    }
 
+    .oneSideHero.left img.right,
+    .oneSideHero.right img.left {
+        display: none;
+    }
+}
         </style>
 
 

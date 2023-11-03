@@ -120,6 +120,7 @@ class Elementor_rightImage extends \Elementor\Widget_Base {
 	protected function render() {
 		$settings = $this->get_settings_for_display();
 		?>
+		
         <style>
             .heroImageContainer{
                 display: flex;
@@ -140,6 +141,7 @@ class Elementor_rightImage extends \Elementor\Widget_Base {
                 object-fit: cover;
             }
         </style>
+
         <div class="heroImageContainer">
 		<h1 class="hello-world">
 			<?php echo $settings['title']; ?>
