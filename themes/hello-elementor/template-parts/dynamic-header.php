@@ -39,7 +39,6 @@ $header_nav_menu = wp_nav_menu( [
 				</h1>
 			<?php endif; ?>
 		</div>
-
 		<?php if ( $header_nav_menu ) : ?>
 			<nav class="site-navigation <?php echo esc_attr( hello_show_or_hide( 'hello_header_menu_display' ) ); ?>">
 				<?php
