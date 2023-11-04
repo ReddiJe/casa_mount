@@ -163,20 +163,11 @@ class Elementor_richText extends \Elementor\Widget_Base {
     background: #B1882F;
     color: #fff;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 670px) {
     	.richText {
 			padding: 150px 0;
         }
-         .richText h2 {
-            
-        }
-        .richText .subtitle {
-
-        }
-        .buttonRichText {
-
-        }
-    }
+	}
 
 
         </style>

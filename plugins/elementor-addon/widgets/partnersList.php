@@ -163,6 +163,7 @@ class Elementor_partnersList extends \Elementor\Widget_Base
             .partnersSectionContainer {
                 background-image: url(<?php echo esc_url($settings['backgroundImage']['url']) ?>);
                 background-size: cover;
+                padding: 25px;
                 padding-bottom: 300px;
                 background-position: center bottom;
             }
@@ -181,6 +182,13 @@ class Elementor_partnersList extends \Elementor\Widget_Base
                 box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
                 height: 60px;
             }
+
+            @media screen and (max-width: 670px) {
+            .partnersContainer {
+                margin-top: 30px;
+            }
+	}
+
         </style>
 
 <div class="partnersSectionContainer richText wow fadeIn">

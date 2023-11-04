@@ -242,6 +242,31 @@ class Elementor_questionsAndAnswers extends \Elementor\Widget_Base {
     font-weight: 400;
     line-height: normal;
 }
+
+@media screen and (max-width: 670px) {
+        .question {
+          padding: 15px 10px;
+        }
+
+        .answers {
+            width: 100%;
+        }
+
+        .question,
+        .answer {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+        .questions,
+        .answers {
+            background: transparent;
+            border: none;
+            border-radius: 0;
+            box-shadow: none;
+        }
+    }
         </style>
 
 <div class="section-title">

@@ -310,9 +310,15 @@ class Elementor_timeline extends \Elementor\Widget_Base {
 
 	protected function render() {
 		$settings = $this->get_settings_for_display();
+
 		?>
 
         <style>
+
+	.heroSection {
+		text-align: center;
+		justify-content: center;
+	}
 
 	.heroSectionTimeline{
         padding-top: 20vh;
@@ -335,12 +341,12 @@ class Elementor_timeline extends \Elementor\Widget_Base {
         gap: 5px;
     }
 
-    .step h3, .ste p{
+    .step h3, .step p{
         color: #fff;
     }
 
     .step h3{
-        font-size: 2rem;
+        font-size: 1rem;
         font-weight: 400;
     }
 
@@ -415,7 +421,7 @@ class Elementor_timeline extends \Elementor\Widget_Base {
         }
     
 
-@media screen and (min-width: 1600px){
+/* @media screen and (min-width: 1600px){
 
     .step p{
 		max-width: 800px;
@@ -432,36 +438,112 @@ class Elementor_timeline extends \Elementor\Widget_Base {
         justify-content: end;
         align-items: end;
     }
+} */
+
+.timelineContainer .timelineBackgroundForPhone {
+	display: none;
 }
 
-
-
-
-@media screen and (max-width: 1050px) {
-        .longTimeStep {
-            padding: 25px;
-        }
+@media screen and (max-width: 768px) {
+    .timelineContainer .timelineBackground {
+        display: none;
     }
 
-    @media screen and (max-width: 600px) {
-        .longTimeStep {
-            padding: 15px;
-        }
+    .timelineContainer .timelineBackgroundForPhone {
+        display: block;
+		width: 100%;
+        object-fit: contain;
     }
 
-	@media screen and (max-width: 768px) {
-        .step h3 {
-            font-size: 1.5rem; 
-        }
-
-        .step p {
-            font-size: 18px; 
-        }
-
-        .step .subtitle {
-            font-size: 20px; 
-        }
+	.step{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
     }
+
+    .step h3, .ste p{
+        color: #fff;
+    }
+
+    .step h3{
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    .step.left{
+        justify-content: start;
+        align-items: start;
+    }
+
+    .step.right{
+        justify-content: start;
+        align-items: start;
+    }
+
+    .step.right p{
+        text-align: start;
+    }
+
+    
+    .step p{
+        color: #FFF;
+		font-size: 15px;
+		font-weight: 300;
+		max-width: 700px;
+    }
+
+    .step .subtitle{
+        color: rgba(255, 255, 255, 0.75);
+		font-size: 19px;
+		font-weight: 500;
+		width: 100;
+    }
+
+    .stepOne{
+        top: 10%;
+        left: 3%;
+    }
+
+    .stepTwo{
+        top: 21%;
+        left: 3%;
+        justify-content: start;
+        align-items: end;
+    }
+
+    .stepThree{
+        top: 33%;
+        left: 3%;
+    }
+
+    .stepFour{
+        top: 45%;
+        left: 3%;
+    }
+
+    .stepFive{
+		width: Fixed (313px);
+		height: Hug (137px);
+		gap: 5px;
+        top: 57%;
+        left: 3%;
+    }
+
+    .stepSix{
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.50);
+        top: 73%;
+        left: 54%;
+        transform: translateX(-50%);
+    }
+
+    .stepSix h3,
+    .stepSix p{
+        width: 100%;
+		text-align: center;
+        }
+}
         </style>
 
 		
@@ -477,6 +559,7 @@ class Elementor_timeline extends \Elementor\Widget_Base {
 
 <div class="timelineContainer">
         <img src="http://localhost/wp-content/uploads/2023/11/Group-87.png" alt="" class="timelineBackground">
+		<img src="http://localhost/wp-content/uploads/2023/11/Group-98.png" alt="" class="timelineBackgroundForPhone">
         <div class="etapsContainer">
             <div class="step stepOne left wow fadeInUp">
                 <h3>

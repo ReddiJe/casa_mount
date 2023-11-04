@@ -170,6 +170,9 @@ class Elementor_longSectionHomepage extends \Elementor\Widget_Base
     protected function render()
     {
         $settings = $this->get_settings_for_display();
+        $mobile_image = wp_get_attachment_image_src($settings['backgroundImage']['id'], 'mobile-image');
+
+
 ?>
 
         <style>
