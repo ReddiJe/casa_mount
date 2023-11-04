@@ -179,6 +179,10 @@ class Elementor_switchSideImage extends \Elementor\Widget_Base {
     margin-bottom: 10px;
 }
 
+.oneSideHero .text{
+	width: 100%;
+}
+
 @media screen and (max-width: 600px) {
     .oneSideHero {
         flex-direction: column;
@@ -223,9 +227,14 @@ class Elementor_switchSideImage extends \Elementor\Widget_Base {
         <p>
             <?php echo $settings['text']; ?>
         </p>
-		<a class="buttonRichText" href="<?php echo esc_url($settings['url']); ?>">
-            <?php echo esc_html($settings['textForButton']); ?>
-        </a>
+		<?php if ( $settings['url'] != "" ){
+			?>
+			<a class="buttonRichText" href="<?php echo esc_url($settings['url']); ?>">
+            	<?php echo esc_html($settings['textForButton']); ?>
+        	</a>
+			<?php
+		}
+		?>
     </div>
 	<img src="<?php echo esc_url( $settings['image']['url'] );?>" alt="" class="right">
 </div>
