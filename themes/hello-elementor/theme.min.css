@@ -787,6 +787,7 @@ body:not([class*=elementor-page-]) .site-main {
     .site-header:not(.dynamic-header),
     body:not([class*=elementor-page-]) .site-main {
         max-width: 100%;
+        padding: 25px;
     }
 
     .site-footer.footer-full-width,
