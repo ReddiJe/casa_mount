@@ -196,9 +196,10 @@ class Elementor_partnersList extends \Elementor\Widget_Base
 <div class="partnersContainer">
                 <?php
                 foreach ($partners as $partner) {
-?> 
-                    <img src="<?php echo $partner['partner_image']['url']; ?>" >
-        <?php echo $partner['partner_url']; ?>
+?>                      
+<a href="<?php echo $partner['partner_url']; ?>" class="partner"><img src="<?php echo $partner['partner_image']['url']; ?>" ></a>
+                    
+
         <?php
                     } ?>
             </div>
