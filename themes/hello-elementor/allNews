@@ -5,7 +5,7 @@
 <?php get_header(); 
 
 
-<h1><?php the_title();?></h1>
+<h2><?php the_title();?></h2>
 
 <?php
 global $post;
@@ -21,11 +21,17 @@ $postslist = get_posts([
         padding: 100px;
         width: 100%;
         background-size: cover;
+        box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
         border-radius: 25px;
     }
 
-    .oneNews h1 {
+    .h2 {
         text-decoration: none;
+    }
+
+    .a {
+        border-radius: 25px;
+        box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
     }
 
     .containerNews {
@@ -39,28 +45,28 @@ $postslist = get_posts([
         grid-template-rows: repeat(2, 1fr);
 }
 
-    .h1 {
-        font-size: 1.5rem;
-        text-decoration: none;
-        font-family: Urbanist;
-        font-size: 48px;
-        font-weight: 300;
-        line-height: 72px;
-        letter-spacing: 0em;
-        text-align: left;
-        padding: 0px 5px;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-    }
+    // .h1 {
+    //     font-size: 1.5rem;
+    //     text-decoration: none;
+    //     font-family: Urbanist;
+    //     font-size: 48px;
+    //     font-weight: 300;
+    //     line-height: 72px;
+    //     letter-spacing: 0em;
+    //     text-align: left;
+    //     padding: 0px 5px;
+    //     justify-content: center;
+    //     align-items: center;
+    //     gap: 10px;
+    // }
 
-    .newsTitle {
-        display: inline-flex;
-        padding: 0px 5px;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-    }
+    // .newsTitle {
+    //     display: inline-flex;
+    //     padding: 0px 5px;
+    //     justify-content: center;
+    //     align-items: center;
+    //     gap: 10px;
+    // }
 
     // .arrow {
     //     border-radius: 25px;
@@ -71,21 +77,15 @@ $postslist = get_posts([
     // }
 
     .containerNews> :nth-child(1) {
-        /* Styles for .div1 */
         grid-area: 1 / 1 / 3 / 3;
-        /* Additional styles for .div1 */
     }
 
     .containerNews> :nth-child(2) {
-        /* Styles for .div2 */
         grid-area: 1 / 3 / 2 / 4;
-        /* Additional styles for .div2 */
     }
 
     .containerNews> :nth-child(3) {
-        /* Styles for .div3 */
         grid-area: 2 / 3 / 3 / 4;
-        /* Additional styles for .div3 */
     }
 
 </style>
