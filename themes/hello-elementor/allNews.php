@@ -29,6 +29,7 @@ $postslist = get_posts([
         position: relative;
         height: 150px;
         width: 150px;
+        text-decoration: none;
     }
 
     .containerNews {
@@ -41,20 +42,22 @@ $postslist = get_posts([
         gap: 25px;
 }
 
+.oneNews h2 {
+    padding-left: 40px;
+    padding-right: 40px;
+    float: left;
+}
 
 .titleForImage {
-        position: relative;
-        display: inline-flex;
-        padding-left: 30px;
         justify-content: center;
         align-items: center;
         gap: 10px;
-        text-decoration: none;
     }
+
      .containerNews img {
         border-radius: 25px;
         height: 150px;
-        width: 200px;
+        width: 150px;
      }
 
 
@@ -66,29 +69,6 @@ $postslist = get_posts([
          align-items: center;
          gap: 10px;
      }
-
-         .h1 {
-         font-size: 1.5rem;
-         text-decoration: none;
-         font-family: Urbanist;
-         font-size: 48px;
-         font-weight: 300;
-         line-height: 72px;
-         letter-spacing: 0em;
-         text-align: left;
-         padding: 0px 5px;
-         justify-content: center;
-         align-items: center;
-         gap: 10px;
-     }
-
-     span {
-        height: 40px;
-        width: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 
     .arrowButton {
     position: absolute;
