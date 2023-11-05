@@ -39,6 +39,8 @@ $postslist = get_posts([
 
     .oneNews img{
         width: 30%;
+        height: 100%;
+        object-fit: cover;
     }
 
 
