@@ -178,7 +178,7 @@ while ( have_posts() ) :
 							<p class="position">Position</p>
 						</div>
 					</div>
-					<p class="date"><?php the_date( 'm-d-Y' ); ?></p>
+					<p class="date"><?php get_the_date( 'm-d-Y' ); ?></p>
 				</div>
 				<div class="content"><?php the_content(); ?></div>
 				<a href="./blog.html" class="allNewsLink">Browse All News ></a>
