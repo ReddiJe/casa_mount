@@ -102,12 +102,15 @@ class Elementor_homePage extends \Elementor\Widget_Base {
 		$settings = $this->get_settings_for_display();
 		?>
         <style>
-            
+            .firstViewContainer{
+                height: 90vh;
+                width: 100%;
+            }
 .backgroundVideo,
 .backgroundFirstSectionImage {
     position: absolute;
     z-index: -1;
-    height: 90vh;
+    height: 100%;
     width: 100%;
     object-fit: cover;
     top: 0;
