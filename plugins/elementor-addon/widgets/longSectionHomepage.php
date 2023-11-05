@@ -127,6 +127,17 @@ class Elementor_longSectionHomepage extends \Elementor\Widget_Base
         );
 
         $this->add_control(
+            'image',
+            [
+                'label' => esc_html__('Choose Image Between', 'textdomain'),
+                'type' => \Elementor\Controls_Manager::MEDIA,
+                'default' => [
+                    'url' => \Elementor\Utils::get_placeholder_image_src(),
+                ],
+            ]
+        );
+
+        $this->add_control(
             'description',
             [
                 'label' => esc_html__('Description', 'elementor-addon'),
@@ -201,19 +212,19 @@ class Elementor_longSectionHomepage extends \Elementor\Widget_Base
                 text-transform: uppercase;
             }
 
-            .titlesLongSection .subtitle {
-                font-size: 1.5rem;
-                font-weight: 300;
-                text-transform: uppercase;
-            }
-
-            .longSectionHomepage .text {
+            .textWowFadeIn {
                 background: rgba(0, 0, 0, 0.50);
                 backdrop-filter: blur(6px);
                 padding: 25px 25px 25px 50px;
                 width: 70%;
                 font-size: 1.125rem;
                 font-weight: 300;
+            }
+
+            .titlesLongSection .subtitle {
+                font-size: 1.5rem;
+                font-weight: 300;
+                text-transform: uppercase;
             }
 
             .hoverMapSection {
@@ -223,20 +234,21 @@ class Elementor_longSectionHomepage extends \Elementor\Widget_Base
                 padding: 100px 50px;
             }
 
-            .hoverMapSection img {
-                width: 80%;
-                justify-self: center;
+            .between {
+                width: 50%;
+                float: left;
             }
 
-            .hoverMapSection .leftText {
+            .leftText {
                 display: flex;
+                float: left;
                 justify-content: start;
                 align-items: start;
                 gap: 15px;
                 flex-direction: column;
             }
 
-            .hoverMapSection .leftText h3 {
+            .leftText h3 {
                 font-size: 3rem;
                 font-weight: 400;
                 text-transform: uppercase;
@@ -259,6 +271,7 @@ class Elementor_longSectionHomepage extends \Elementor\Widget_Base
                 align-items: start;
                 gap: 10px;
                 flex-direction: column;
+                clear: both;
             }
 
             .descriptionMapHomepage p {
@@ -298,6 +311,9 @@ class Elementor_longSectionHomepage extends \Elementor\Widget_Base
                         <p class="leftText">
                             <?php echo $settings['leftText']; ?>
                         </p>
+                        <div class="between">
+                        <?php echo $settings['image']; ?>
+                        </div>
                     </div>
                     <div class="descriptionMapHomepage">
                         <p class="title">

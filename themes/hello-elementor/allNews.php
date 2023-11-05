@@ -18,33 +18,56 @@ $postslist = get_posts([
 
 <style>
     .oneNews {
-        padding: 100px;
+        padding: 25px;
         width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 25px;
         background-size: cover;
         box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
         border-radius: 25px;
-    }
-
-    .h2 {
-        text-decoration: none;
-    }
-
-    .a {
-        border-radius: 25px;
-        box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+        position: relative;
+        height: 150px;
+        width: 150px;
     }
 
     .containerNews {
         padding: 25px;
         width: 100vw;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start; 
+        align-items: flex-start; 
         flex-direction: column;
         gap: 25px;
 }
 
-     .h1 {
+
+.titleForImage {
+        position: relative;
+        display: inline-flex;
+        padding-left: 30px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+    }
+     .containerNews img {
+        border-radius: 25px;
+        height: 150px;
+        width: 200px;
+     }
+
+
+     /* 
+     .newsTitle {
+         display: inline-flex;
+         padding: 0px 5px;
+         justify-content: center;
+         align-items: center;
+         gap: 10px;
+     }
+
+         .h1 {
          font-size: 1.5rem;
          text-decoration: none;
          font-family: Urbanist;
@@ -58,20 +81,25 @@ $postslist = get_posts([
          align-items: center;
          gap: 10px;
      }
-     .newsTitle {
-         display: inline-flex;
-         padding: 0px 5px;
-         justify-content: center;
-         align-items: center;
-         gap: 10px;
-     }
-     .arrow {
-         border-radius: 25px;
-         background: #FFF;
-         box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
-         width: 20px;
-         height: 20px;
-     }
+
+     span {
+        height: 40px;
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .arrowButton {
+    position: absolute;
+    bottom: 15px; 
+    right: 15px; 
+    background-color: #fff; 
+    border: black; 
+    border-radius: 25px;
+    cursor: pointer;  
+] */
+
 </style>
 
 <div class="containerNews">
@@ -87,12 +115,13 @@ $postslist = get_posts([
             // Your loop content here
     ?>
 
-            <a href="<?php the_permalink(); ?>" class="oneNews" style="background-image: url(<?php echo get_the_post_thumbnail_url(); ?>);">
-                <h1 class="newsTitle"><?php the_title(); ?></h1>
-                <div class="arrow"></div>
-            </a>
-
-
+            <a href="<?php the_permalink(); ?>" class="oneNews">
+            <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" class="newsImage">
+            <div>
+            <h2 class="titleForImage"><?php the_title(); ?></h2>
+            </div>
+        </a>
+                
     <?php
         endwhile;
         wp_reset_postdata();
