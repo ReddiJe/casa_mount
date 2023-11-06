@@ -81,30 +81,30 @@ class Elementor_docsBlocks extends \Elementor\Widget_Base
         );
 
         $this->add_control(
-            'title',
+            'oneAccommodation',
             [
-                'label' => esc_html__('Title', 'elementor-addon'),
-                'type' => \Elementor\Controls_Manager::TEXTAREA,
-                'default' => esc_html__('Hello world', 'elementor-addon'),
-            ]
-        );
-
-        $this->add_control(
-            'subtitle',
-			[
-				'label' => esc_html__( 'Subtitle', 'elementor-addon' ),
-				'type' => \Elementor\Controls_Manager::TEXTAREA,
-				'default' => esc_html__( 'Hello world', 'elementor-addon' ),
-			]
-		);
-
-        $this->add_control(
-            'image',
-            [
-                'label' => esc_html__('Choose Image', 'textdomain'),
-                'type' => \Elementor\Controls_Manager::MEDIA,
-                'default' => [
-                    'url' => \Elementor\Utils::get_placeholder_image_src(),
+                'label' => esc_html__('Accommodation', 'elementor-addon'),
+                'type' => \Elementor\Controls_Manager::REPEATER,
+                'fields' => [
+                    [
+                      'name' => 'image',
+                      'label' => esc_html__( 'Choose Image', 'textdomain' ),
+                      'type' => \Elementor\Controls_Manager::MEDIA,
+                      'label_block' => true,
+                      'default' => [
+                        'url' => \Elementor\Utils::get_placeholder_image_src(),
+                      ],
+                    ],
+                    [
+                        'label' => esc_html__( 'Subtitle', 'elementor-addon' ),
+                        'type' => \Elementor\Controls_Manager::TEXTAREA,
+                        'default' => esc_html__( 'Hello world', 'elementor-addon' ),
+                    ],
+                    [
+                        'label' => esc_html__('Title', 'elementor-addon'),
+                        'type' => \Elementor\Controls_Manager::TEXTAREA,
+                        'default' => esc_html__('Hello world', 'elementor-addon'),
+                    ],
                 ],
             ]
         );
