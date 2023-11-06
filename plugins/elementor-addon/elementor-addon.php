@@ -24,6 +24,7 @@ function register_hello_world_widget( $widgets_manager ) {
 	require_once( __DIR__ . '/widgets/threeSteps.php' );
 	require_once( __DIR__ . '/widgets/accommodationsList.php' );
 	require_once( __DIR__ . '/widgets/accommodationOptions.php' );
+	require_once( __DIR__ . '/widgets/photoSlider.php' );
 
 
 	$widgets_manager->register( new \Elementor_Hello_World_Widget_2() );
@@ -40,6 +41,7 @@ function register_hello_world_widget( $widgets_manager ) {
 	$widgets_manager->register( new \Elementor_threeSteps() );
 	$widgets_manager->register( new \Elementor_accommodationsList() );
 	$widgets_manager->register( new \Elementor_accommodationOptions() );
+	$widgets_manager->register( new \Elementor_photoSlider() );
 
 }
 add_action( 'elementor/widgets/register', 'register_hello_world_widget' );
