@@ -60,16 +60,6 @@ class Elementor_accommodationOptions extends \Elementor\Widget_Base
 			]
             );
 
-        $this->add_control(
-			'url',
-			[
-				'label' => esc_html__( 'URL to embed', 'elementor-addon' ),
-				'type' => \Elementor\Controls_Manager::TEXT,
-				'input_type' => 'url',
-				'placeholder' => esc_html__( 'https://your-link.com', 'elementor-addon' ),
-			]
-		);
-
         $this->end_controls_section();
 
         $this->start_controls_section(
@@ -87,27 +77,35 @@ class Elementor_accommodationOptions extends \Elementor\Widget_Base
                 'type' => \Elementor\Controls_Manager::REPEATER,
                 'fields' => [
                     [
-                      'name' => 'image',
-                      'label' => esc_html__( 'Choose Image', 'textdomain' ),
-                      'type' => \Elementor\Controls_Manager::MEDIA,
-                      'label_block' => true,
-                      'default' => [
-                        'url' => \Elementor\Utils::get_placeholder_image_src(),
-                      ],
+                        'name' => 'image',
+                        'label' => esc_html__('Choose Image', 'textdomain'),
+                        'type' => \Elementor\Controls_Manager::MEDIA,
+                        'label_block' => true,
+                        'default' => [
+                            'url' => \Elementor\Utils::get_placeholder_image_src(),
+                        ],
                     ],
                     [
-                        'label' => esc_html__( 'Subtitle', 'elementor-addon' ),
+                        'label' => esc_html('Title', 'elementor-addon'),
                         'type' => \Elementor\Controls_Manager::TEXTAREA,
-                        'default' => esc_html__( 'Hello world', 'elementor-addon' ),
+                        'default' => esc_html('Hello world', 'elementor-addon'),
                     ],
                     [
-                        'label' => esc_html__('Title', 'elementor-addon'),
+                        'label' => esc_html('Subtitle', 'elementor-addon'),
                         'type' => \Elementor\Controls_Manager::TEXTAREA,
-                        'default' => esc_html__('Hello world', 'elementor-addon'),
+                        'default' => esc_html('Hello world', 'elementor-addon'),
+                    ],
+                    [
+                        'label' => esc_html('URL', 'elementor-addon'), 
+                        'type' => \Elementor\Controls_Manager::URL, 
+                        'default' => [
+                            'url' => '', 
+                        ],
                     ],
                 ],
             ]
         );
+        
         
         $this->end_controls_section();
 
@@ -226,7 +224,7 @@ class Elementor_accommodationOptions extends \Elementor\Widget_Base
         <p><?php echo $settings['subtitle1']; ?></p>
         <div class="accommodationsContainer">
             <div class="accomodation">
-                <img src="./image/aaccommodation.jpeg" alt="">
+                <img src="<?php echo $settings['image']; ?>" alt="">
                 <div class="accomodationText">
                     <h3>
                     <?php echo $settings['title']; ?>
