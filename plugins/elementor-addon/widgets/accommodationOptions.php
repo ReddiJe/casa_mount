@@ -219,7 +219,7 @@ class Elementor_accommodationOptions extends \Elementor\Widget_Base
         </style>
 
 
-<div class="accommodationOptionsContainer">
+<div class="accommodationOptionsContainer wow slideInLeft">
         <h2><?php echo $settings['title1']; ?></h2>
         <p><?php echo $settings['subtitle1']; ?></p>
         <div class="accommodationsContainer">
