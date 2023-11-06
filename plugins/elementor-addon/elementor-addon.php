@@ -22,6 +22,7 @@ function register_hello_world_widget( $widgets_manager ) {
 	require_once( __DIR__ . '/widgets/myForm.php' );
 	require_once( __DIR__ . '/widgets/timeline.php' );
 	require_once( __DIR__ . '/widgets/threeSteps.php' );
+	require_once( __DIR__ . '/widgets/accommodationOptions.php' );
 
 
 	$widgets_manager->register( new \Elementor_Hello_World_Widget_2() );
@@ -36,6 +37,7 @@ function register_hello_world_widget( $widgets_manager ) {
 	$widgets_manager->register( new \Elementor_myForm() );
 	$widgets_manager->register( new \Elementor_timeline() );
 	$widgets_manager->register( new \Elementor_threeSteps() );
+	$widgets_manager->register( new \Elementor_accommodationOptions() );
 
 }
 add_action( 'elementor/widgets/register', 'register_hello_world_widget' );
