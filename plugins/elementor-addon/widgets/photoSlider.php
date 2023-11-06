@@ -133,72 +133,39 @@ class Elementor_photoSlider extends \Elementor\Widget_Base
 
 ?>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
-        <style>
-            .condosOptionsContainer {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-                gap: 25px;
-            }
+        
+<style>
 
-            .condosOptionsContainer h3 {
-                color: #2c2d2c;
-                font-size: 1.25rem;
-                font-weight: 400;
-                font-family: 'Open Sans', sans-serif;
-            }
+.splide__slide{
+    width: 100%;
+    height: 75vh;
+    padding: 50px 200px;
+}
 
-            .condosOptionsContainer p {
-                text-align: center;
-                color: #2c2d2c;
-                font-size: 1.25rem;
-                font-weight: 300;
-            }
+.splide__slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
-            .condosOPtionsContainerInner {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                gap: 25px;
-            }
+.splide__pagination{
+    display: none;
+}
 
-            .condosOPtionsContainerInner img {
-                width: 100%;
-                object-fit: contain;
-            }
-
-            .splide__slide{
-                width: 100%;
-                height: 75vh;
-                padding: 50px 200px;
-            }
-
-            .splide__slide img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-
-            .splide__pagination{
-                display: none;
-            }
-
-            .splide__arrow{
-                background: transparent;
-
+.splide__arrow{
+    background: transparent;
     width: 4em;
-            }
+}
 
-            .splide__arrow:hover,
-            .splide__arrow:active,
-            .splide__arrow:focus{
-                background: transparent;
-                border: none !important;
-                outline: none !important;
-            }
+.splide__arrow:hover,
+.splide__arrow:active,
+.splide__arrow:focus{
+    background: transparent;
+    border: none !important;
+    outline: none !important;
+}
 
-            .splide__arrow--prev {
+.splide__arrow--prev {
     left: 3em;
 }
 .splide__arrow--next {
