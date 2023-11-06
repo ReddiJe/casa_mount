@@ -132,7 +132,7 @@ class Elementor_photoSlider extends \Elementor\Widget_Base
         $accommodations = $settings['oneAccommodation'];
 
 ?>
-
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
         <style>
             .condosOptionsContainer {
                 display: flex;
@@ -167,13 +167,56 @@ class Elementor_photoSlider extends \Elementor\Widget_Base
                 width: 100%;
                 object-fit: contain;
             }
+
+            .splide__slide{
+                width: 100%;
+                height: 75vh;
+                padding: 50px 200px;
+            }
+
+            .splide__slide img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .splide__pagination{
+                display: none;
+            }
+
+            .splide__arrow{
+                background: transparent;
+
+    width: 4em;
+            }
+
+            .splide__arrow:hover,
+            .splide__arrow:active,
+            .splide__arrow:focus{
+                background: transparent;
+                border: none !important;
+                outline: none !important;
+            }
+
+            .splide__arrow--prev {
+    left: 3em;
+}
+.splide__arrow--next {
+    right: 3em;
+}
+
+.splide__arrow svg {
+    fill: #000;
+    height: 2em;
+    width: 2em;
+}
         </style>
         <section class="splide" aria-labelledby="carousel-heading">
 
             <div class="splide__track">
                 <ul class="splide__list">
                 <?php foreach ($accommodations as $accommodation) { ?>
-                    <li class="splide__slide"><h3><img src="<?php echo $accommodation['image']['url']; ?>" alt=""></li>
+                    <li class="splide__slide"><img src="<?php echo $accommodation['image']['url']; ?>" alt=""></li>
                 <?php } ?>
                 </ul>
             </div>
@@ -187,7 +230,7 @@ class Elementor_photoSlider extends \Elementor\Widget_Base
             });
         </script>
         <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+
 
 
 <?php
