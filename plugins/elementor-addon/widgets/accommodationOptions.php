@@ -169,7 +169,7 @@ class Elementor_accommodationOptions extends \Elementor\Widget_Base
 }
         </style>
 
-<div class="condosOptionsContainer">
+<div class="condosOptionsContainer ">
         <h3>
             <?php echo $settings['title1'] ?>
         </h3>

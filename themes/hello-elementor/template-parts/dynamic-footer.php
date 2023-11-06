@@ -133,9 +133,4 @@ $footer_nav_menu = wp_nav_menu( [
 
 	</div>
 </footer>
-<script src="../assets/wow.min.js"></script>
-    <script>
-        new WOW().init();
-        </script>
-    <script src="./main.js"></script>
 
