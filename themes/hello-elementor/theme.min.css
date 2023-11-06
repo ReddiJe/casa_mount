@@ -712,71 +712,6 @@ body:not([class*=elementor-page-]) .site-main {
     width: 100%
 }
 
-@media (max-width:575px) {
-
-    .page-header .entry-title,
-    .site-footer .footer-inner,
-    .site-footer:not(.dynamic-footer),
-    .site-header .header-inner,
-    .site-header:not(.dynamic-header),
-    body:not([class*=elementor-page-]) .site-main {
-        -webkit-padding-start: 10px;
-        padding-inline-start: 10px;
-        -webkit-padding-end: 10px;
-        padding-inline-end: 10px
-    }
-}
-
-@media (min-width:576px) {
-
-    .page-header .entry-title,
-    .site-footer .footer-inner,
-    .site-footer:not(.dynamic-footer),
-    .site-header .header-inner,
-    .site-header:not(.dynamic-header),
-    body:not([class*=elementor-page-]) .site-main {
-        max-width: 500px
-    }
-
-    .site-footer.footer-full-width .footer-inner,
-    .site-header.header-full-width .header-inner {
-        max-width: 100%
-    }
-}
-
-@media (min-width:768px) {
-
-    .page-header .entry-title,
-    .site-footer .footer-inner,
-    .site-footer:not(.dynamic-footer),
-    .site-header .header-inner,
-    .site-header:not(.dynamic-header),
-    body:not([class*=elementor-page-]) .site-main {
-        max-width: 600px
-    }
-
-    .site-footer.footer-full-width,
-    .site-header.header-full-width {
-        max-width: 100%
-    }
-}
-
-@media (min-width:992px) {
-
-    .page-header .entry-title,
-    .site-footer .footer-inner,
-    .site-footer:not(.dynamic-footer),
-    .site-header .header-inner,
-    .site-header:not(.dynamic-header),
-    body:not([class*=elementor-page-]) .site-main {
-        max-width: 800px
-    }
-
-    .site-footer.footer-full-width,
-    .site-header.header-full-width {
-        max-width: 100%
-    }
-}
 
 @media (min-width:1200px) {
 
@@ -784,8 +719,7 @@ body:not([class*=elementor-page-]) .site-main {
     .site-footer .footer-inner,
     .site-footer:not(.dynamic-footer),
     .site-header .header-inner,
-    .site-header:not(.dynamic-header),
-    body:not([class*=elementor-page-]) .site-main {
+    .site-header:not(.dynamic-header) {
         max-width: 100%;
         padding: 25px;
     }

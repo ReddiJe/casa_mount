@@ -1,7 +1,7 @@
 <?php
 
 
-class Elementor_docsBlocks extends \Elementor\Widget_Base
+class Elementor_accommodationOptions extends \Elementor\Widget_Base
 {
 
     public function get_name()
