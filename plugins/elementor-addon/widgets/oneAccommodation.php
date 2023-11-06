@@ -1,17 +1,17 @@
 <?php
 
 
-class Elementor_docsBlocks extends \Elementor\Widget_Base
+class Elementor_oneAccommodation extends \Elementor\Widget_Base
 {
 
     public function get_name()
     {
-        return 'docsBlocks';
+        return 'oneAccommodation';
     }
 
     public function get_title()
     {
-        return esc_html__('Documents Page', 'elementor-addon');
+        return esc_html__('One Accommodation', 'elementor-addon');
     }
 
     public function get_icon()
