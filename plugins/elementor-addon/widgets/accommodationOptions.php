@@ -11,7 +11,7 @@ class Elementor_accommodationOptions extends \Elementor\Widget_Base
 
     public function get_title()
     {
-        return esc_html__('Accommodation Page', 'elementor-addon');
+        return esc_html__('Accommodation Options', 'elementor-addon');
     }
 
     public function get_icon()
@@ -77,29 +77,18 @@ class Elementor_accommodationOptions extends \Elementor\Widget_Base
                 'type' => \Elementor\Controls_Manager::REPEATER,
                 'fields' => [
                     [
+                        'name' => 'title', 
+                        'label' => esc_html__( 'Title', 'textdomain' ),
+                        'type' => \Elementor\Controls_Manager::TEXT, 
+                        'default' => 'Default Title', 
+                    ],
+                    [
                         'name' => 'image',
-                        'label' => esc_html__('Choose Image', 'textdomain'),
+                        'label' => esc_html__( 'Choose Image', 'textdomain' ),
                         'type' => \Elementor\Controls_Manager::MEDIA,
                         'label_block' => true,
                         'default' => [
                             'url' => \Elementor\Utils::get_placeholder_image_src(),
-                        ],
-                    ],
-                    [
-                        'label' => esc_html('Title', 'elementor-addon'),
-                        'type' => \Elementor\Controls_Manager::TEXTAREA,
-                        'default' => esc_html('Hello world', 'elementor-addon'),
-                    ],
-                    [
-                        'label' => esc_html('Subtitle', 'elementor-addon'),
-                        'type' => \Elementor\Controls_Manager::TEXTAREA,
-                        'default' => esc_html('Hello world', 'elementor-addon'),
-                    ],
-                    [
-                        'label' => esc_html('URL', 'elementor-addon'), 
-                        'type' => \Elementor\Controls_Manager::URL, 
-                        'default' => [
-                            'url' => '', 
                         ],
                     ],
                 ],
@@ -140,14 +129,12 @@ class Elementor_accommodationOptions extends \Elementor\Widget_Base
     protected function render()
     {
         $settings = $this->get_settings_for_display();
-        $documents = $settings['documents'];
+        $accommodations = $settings['oneAccommodation'];
 
 ?>
 
         <style>
-    .accommodationOptionsContainer {
-    padding: 100px 25px;
-    width: 100%;
+.condosOptionsContainer{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,90 +142,47 @@ class Elementor_accommodationOptions extends \Elementor\Widget_Base
     gap: 25px;
 }
 
-.accommodationsContainer {
-    display: inline-flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 25px;
-}
-
-.accomodation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 15px;
-    background: #FFF;
-    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
-    overflow: hidden;
-    border-radius: 15px;
-    transition: all linear 300ms;
-}
-
-.accomodation:hover{
-    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
-}
-
-.accomodation img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-}
-
-.accomodationText {
-    padding: 15px;
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    flex-direction: column;
-    width: 100%;
-    gap: 15px;
-}
-
-.accomodationText a {
-    width: 100%;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    gap: 10px;
-    color: #B1882F;
-}
-
-.accomodationText h3 {
+.condosOptionsContainer h3{
     color: #2c2d2c;
-    font-family: Open Sans;
-    font-size: 1.75rem;
-    font-weight: 600;
+    font-size: 1.25rem;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.accomodationText p {
+.condosOptionsContainer p{
+    text-align: center;
     color: #2c2d2c;
     font-size: 1.25rem;
     font-weight: 300;
 }
+
+.condosOPtionsContainerInner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.condosOPtionsContainerInner img{
+    width: 100%;
+    object-fit: contain;
+}
         </style>
 
-
-<div class="accommodationOptionsContainer">
-        <h2><?php echo $settings['title1']; ?></h2>
-        <p><?php echo $settings['subtitle1']; ?></p>
-        <div class="accommodationsContainer">
-            <div class="accomodation">
-                <img src="<?php echo $settings['image']; ?>" alt="">
-                <div class="accomodationText">
-                    <h3>
-                    <?php echo $settings['title']; ?>
-                    </h3>
-                    <p><?php echo $settings['subtitle']; ?></p>
-                    <a href="<?php echo $settings['url']; ?>">Go To Options
-                        <svg xmlns="http://www.w3.org/2000/svg" width="77" height="15" viewBox="0 0 77 15" fill="none">
-                            <path d="M76.7071 8.20711C77.0976 7.81658 77.0976 7.18342 76.7071 6.79289L70.3431 0.428932C69.9526 0.0384078 69.3195 0.0384078 68.9289 0.428932C68.5384 0.819457 68.5384 1.45262 68.9289 1.84315L74.5858 7.5L68.9289 13.1569C68.5384 13.5474 68.5384 14.1805 68.9289 14.5711C69.3195 14.9616 69.9526 14.9616 70.3431 14.5711L76.7071 8.20711ZM0 8.5H76V6.5H0V8.5Z" fill="#B1882F"/>
-                            </svg>
-                    </a>
+<div class="condosOptionsContainer">
+        <h3>
+            <?php echo $settings['title1'] ?>
+        </h3>
+        <p><?php echo $settings['subtitle1'] ?></p>
+        <div class="condosOPtionsContainerInner">
+        <?php foreach ($accommodations as $accommodation) { ?>
+                <div class="option">
+                    <img src="<?php echo $accommodation['image']['url']; ?>" alt="">
+                        <h3><?php echo $accommodation['title']; ?></h3>
                 </div>
-            </div>
+            <?php } ?>
         </div>
-    </div>
+      </div>
 
 <?php
     }
