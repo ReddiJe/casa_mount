@@ -25,6 +25,7 @@ while ( have_posts() ) :
 	
 	.oneArticleContainer{
 		padding: 25px 25px 125px 25px;
+		width: 100vw;
 		padding-bottom: 300px;
 		display: flex;
 		padding-bottom: 0px;
@@ -32,6 +33,7 @@ while ( have_posts() ) :
 	}
 	
 	.oneArticleContainerInner{
+		width: 100%;
 		position: relative;
 		padding-top: 200px;
 		padding-bottom: 200px;
