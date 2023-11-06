@@ -70,7 +70,7 @@ class Elementor_longSectionHomepage extends \Elementor\Widget_Base
         );
 
         $this->end_controls_section();
-    
+
         $this->start_controls_section(
             'bottom_section_title',
             [
@@ -188,7 +188,7 @@ class Elementor_longSectionHomepage extends \Elementor\Widget_Base
 
         <style>
             .longSectionHomepage {
-                background-image: url(<?php echo esc_url( $settings['backgroundImage']['url'] ) ?> );
+                background-image: url(<?php echo esc_url($settings['backgroundImage']['url']) ?> );
                 background-size: cover;
                 display: flex;
                 flex-direction: column;
@@ -282,7 +282,6 @@ class Elementor_longSectionHomepage extends \Elementor\Widget_Base
             .descriptionMapHomepage p.description {
                 font-weight: 300;
             }
-
         </style>
 
         <div class="longSectionHomepage">
@@ -298,34 +297,37 @@ class Elementor_longSectionHomepage extends \Elementor\Widget_Base
                 <p class="textWowFadeIn">
                     <?php echo $settings['text1']; ?>
                 </p>
-                <div class="hoverMapSection wow fadeIn">
-                    <div class="leftText">
-                        <div class="titles">
-                            <h3>
-                                <?php echo $settings['title']; ?>
-                            </h3>
-                            <p class="subtitle">
-                                <?php echo $settings['subtitle']; ?>
-                            </p>
-                        </div>
-                        <p class="leftText">
-                            <?php echo $settings['leftText']; ?>
-                        </p>
-                        <div class="between">
-                        <?php echo $settings['image']; ?>
-                        </div>
-                    </div>
-                    <div class="descriptionMapHomepage">
-                        <p class="title">
-                            <?php echo $settings['title1']; ?>
-                        </p>
-                        <p class="description">
-                            <?php echo $settings['description']; ?>
+
+            </div>
+            <div class="hoverMapSection wow fadeIn">
+                <div class="leftText">
+                    <div class="titles">
+                        <h3>
+                            <?php echo $settings['title']; ?>
+                        </h3>
+                        <p class="subtitle">
+                            <?php echo $settings['subtitle']; ?>
                         </p>
                     </div>
+                    <p class="leftText">
+                        <?php echo $settings['leftText']; ?>
+                    </p>
+
+                </div>
+                <div class="between">
+                        <img src="<?php echo esc_url($settings['backgroundImage']['url']) ?>" alt="">
+                    </div>
+                <div class="descriptionMapHomepage">
+                    <p class="title">
+                        <?php echo $settings['title1']; ?>
+                    </p>
+                    <p class="description">
+                        <?php echo $settings['description']; ?>
+                    </p>
                 </div>
             </div>
+        </div>
 
-    <?php
+<?php
     }
 }
