@@ -1,14 +1,15 @@
 <?php
 
 
-class Elementor_Hello_World_Widget_2 extends \Elementor\Widget_Base {
+class Elementor_heroSection extends \Elementor\Widget_Base 
+{
 
 	public function get_name() {
-		return 'hello_world_widget_2';
+		return 'heroSection';
 	}
 
 	public function get_title() {
-		return esc_html__( 'Hello World 2', 'elementor-addon' );
+		return esc_html__( 'Hero Section', 'elementor-addon' );
 	}
 
 	public function get_icon() {

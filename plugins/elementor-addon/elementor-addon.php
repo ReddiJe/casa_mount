@@ -10,7 +10,6 @@
 
 function register_hello_world_widget( $widgets_manager ) {
 
-	require_once( __DIR__ . '/widgets/hello-world-widget-2.php' );
 	require_once( __DIR__ . '/widgets/richText.php' );
 	require_once( __DIR__ . '/widgets/homePage.php' );
 	require_once( __DIR__ . '/widgets/longSectionHomepage.php' );
@@ -26,9 +25,10 @@ function register_hello_world_widget( $widgets_manager ) {
 	require_once( __DIR__ . '/widgets/accommodationOptions.php' );
 	require_once( __DIR__ . '/widgets/photoSlider.php' );
 	require_once( __DIR__ . '/widgets/commentsSlider.php' );
+	require_once( __DIR__ . '/widgets/contactUs.php' );
+	require_once( __DIR__ . '/widgets/heroSection.php' );
 
 
-	$widgets_manager->register( new \Elementor_Hello_World_Widget_2() );
 	$widgets_manager->register( new \Elementor_richText() );
 	$widgets_manager->register( new \Elementor_homePage() );
 	$widgets_manager->register( new \Elementor_longSectionHomepage() );
@@ -44,6 +44,8 @@ function register_hello_world_widget( $widgets_manager ) {
 	$widgets_manager->register( new \Elementor_accommodationOptions() );
 	$widgets_manager->register( new \Elementor_photoSlider() );
 	$widgets_manager->register( new \Elementor_commentsSlider() );
+	$widgets_manager->register( new \Elementor_contactUs() );
+	$widgets_manager->register( new \Elementor_heroSection() );
 
 }
 add_action( 'elementor/widgets/register', 'register_hello_world_widget' );
