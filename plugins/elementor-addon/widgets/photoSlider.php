@@ -216,7 +216,9 @@ class Elementor_photoSlider extends \Elementor\Widget_Base
             <div class="splide__track">
                 <ul class="splide__list">
                 <?php foreach ($accommodations as $accommodation) { ?>
-                    <li class="splide__slide"><img src="<?php echo $accommodation['image']['url']; ?>" alt=""></li>
+                    <li class="splide__slide">
+                        <img src="<?php echo $accommodation['image']['url']; ?>" alt="">
+                    </li>
                 <?php } ?>
                 </ul>
             </div>
