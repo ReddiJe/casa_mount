@@ -43,7 +43,7 @@ class Elementor_photoSlider extends \Elementor\Widget_Base
         );
 
         $this->add_control(
-            'title1',
+            'title',
             [
                 'label' => esc_html__('Title', 'elementor-addon'),
                 'type' => \Elementor\Controls_Manager::TEXTAREA,
@@ -52,7 +52,7 @@ class Elementor_photoSlider extends \Elementor\Widget_Base
         );
 
         $this->add_control(
-            'subtitle1',
+            'subtitle',
             [
                 'label' => esc_html__('Subtitle', 'elementor-addon'),
                 'type' => \Elementor\Controls_Manager::TEXTAREA,
@@ -73,7 +73,7 @@ class Elementor_photoSlider extends \Elementor\Widget_Base
         $this->add_control(
             'oneAccommodation',
             [
-                'label' => esc_html__('Accommodation', 'elementor-addon'),
+                'label' => esc_html__('Media', 'elementor-addon'),
                 'type' => \Elementor\Controls_Manager::REPEATER,
                 'fields' => [
                     [
@@ -133,75 +133,96 @@ class Elementor_photoSlider extends \Elementor\Widget_Base
 
 ?>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
-        
-<style>
 
-.splide__slide{
-    width: 100%;
-    height: 75vh;
-    padding: 50px 200px;
-}
+        <style>
+            .splide__slide {
+                width: 100%;
+                height: 75vh;
+                padding: 50px 200px;
+            }
 
-.splide__slide img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+            .splide__slide img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
 
-.splide__pagination{
-    display: none;
-}
+            .splide__pagination {
+                display: none;
+            }
 
-.splide__arrow{
-    background: transparent;
-    width: 4em;
-}
+            .splide__arrow {
+                background: transparent;
+                width: 4em;
+            }
 
-.splide__arrow:hover,
-.splide__arrow:active,
-.splide__arrow:focus{
-    background: transparent;
-    border: none !important;
-    outline: none !important;
-}
+            .splide__arrow:hover,
+            .splide__arrow:active,
+            .splide__arrow:focus {
+                background: transparent;
+                border: none !important;
+                outline: none !important;
+            }
 
-.splide__arrow--prev {
-    left: 3em;
-}
-.splide__arrow--next {
-    right: 3em;
-}
+            .splide__arrow--prev {
+                left: 3em;
+            }
 
-.splide__arrow svg {
-    fill: #000;
-    height: 2em;
-    width: 2em;
-}
+            .splide__arrow--next {
+                right: 3em;
+            }
+
+            .splide__arrow svg {
+                fill: #000;
+                height: 2em;
+                width: 2em;
+            }
+
+            .Title {
+                padding: 100px 25px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 25px;
+            }
+
+            .Title h3 {
+                font-size: 1.5rem;
+                justify-content: center;
+            }
         </style>
-        <section class="splide" aria-labelledby="carousel-heading">
 
-            <div class="splide__track">
-                <ul class="splide__list">
-                <?php foreach ($accommodations as $accommodation) { ?>
-                    <li class="splide__slide">
-                        <img src="<?php echo $accommodation['image']['url']; ?>" alt="">
-                    </li>
-                <?php } ?>
-                </ul>
-            </div>
-        </section>
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                var splide = new Splide('.splide', {
-                    rewind: true,
+        <div class="Title">
+            <h3>
+                <?php echo $settings['title']; ?>
+            </h3>
+
+            <section class="splide" aria-labelledby="carousel-heading">
+
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <?php foreach ($accommodations as $accommodation) { ?>
+                            <li class="splide__slide">
+                                <img src="<?php echo $accommodation['image']['url']; ?>" alt="">
+                            </li>
+                        <?php } ?>
+                    </ul>
+                </div>
+            </section>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var splide = new Splide('.splide', {
+                        rewind: true,
+                    });
+                    splide.mount();
                 });
-                splide.mount();
-            });
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+            </script>
+            <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 
 
 
-<?php
+    <?php
     }
 }

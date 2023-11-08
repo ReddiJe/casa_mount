@@ -27,6 +27,7 @@ function register_hello_world_widget( $widgets_manager ) {
 	require_once( __DIR__ . '/widgets/commentsSlider.php' );
 	require_once( __DIR__ . '/widgets/contactUs.php' );
 	require_once( __DIR__ . '/widgets/heroSection.php' );
+	require_once( __DIR__ . '/widgets/homePageImage.php' );
 
 
 	$widgets_manager->register( new \Elementor_richText() );
@@ -46,6 +47,7 @@ function register_hello_world_widget( $widgets_manager ) {
 	$widgets_manager->register( new \Elementor_commentsSlider() );
 	$widgets_manager->register( new \Elementor_contactUs() );
 	$widgets_manager->register( new \Elementor_heroSection() );
+	$widgets_manager->register( new \Elementor_homePageImage() );
 
 }
 add_action( 'elementor/widgets/register', 'register_hello_world_widget' );
