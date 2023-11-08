@@ -153,14 +153,12 @@ class Elementor_contactUs extends \Elementor\Widget_Base
             .contactsContainer {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: 1fr;
-                grid-column-gap: 0px;
-                grid-row-gap: 0px;
-                justify-content: space-between;
+                width: 100%;
+                grid-column-gap: 24px;
             }
 
             .contactsContainer .side {
-                width: 50%;
+                width: 100%;
                 height: 100%;
                 display: flex;
                 gap: 25px;
@@ -175,9 +173,7 @@ class Elementor_contactUs extends \Elementor\Widget_Base
             .leftContainer h1 {
                 width: 100%;
                 color: var(--black);
-
                 font-size: 3.5rem;
-
                 font-weight: 300;
 
             }
