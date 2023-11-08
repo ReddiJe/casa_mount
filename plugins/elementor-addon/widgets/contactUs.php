@@ -150,20 +150,26 @@ class Elementor_contactUs extends \Elementor\Widget_Base
 ?>
 
         <style>
-            .contactsContainer .side {
-                min-width: 49%;
-                max-width: 51%;
-                width: 50%;
-                height: 100%;
+            .contactsContainer {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: 1fr;
+                grid-column-gap: 0px;
+                grid-row-gap: 0px;
                 justify-content: space-between;
+            }
+
+            .contactsContainer .side {
+                width: 50%;
+                height: 100%;
+                display: flex;
                 gap: 25px;
             }
 
-
             .leftContainer {
                 flex-direction: column;
+                margin-top: 20px;
+                margin-left: 15px;
             }
 
             .leftContainer h1 {
@@ -223,7 +229,8 @@ class Elementor_contactUs extends \Elementor\Widget_Base
 
             .rightContainer {
                 background-size: cover;
-
+                width: 100%;
+                margin-top: 20px;
             }
 
             .rightContainer form {
@@ -337,9 +344,7 @@ class Elementor_contactUs extends \Elementor\Widget_Base
                         <input type="text" placeholder="Your Name" id="name">
                     </div>
                     <div class="submitContainer">
-                        <a href="" class="sumbit">Submit <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
-                                <path d="M18.5626 27.1256C18.4133 26.9762 18.3295 26.7737 18.3295 26.5625C18.3295 26.3513 18.4133 26.1488 18.5626 25.9994L26.7637 17.7969L5.3132 17.7969C5.10186 17.7969 4.89917 17.7129 4.74972 17.5635C4.60028 17.4141 4.51633 17.2114 4.51633 17C4.51633 16.7887 4.60028 16.586 4.74972 16.4365C4.89917 16.2871 5.10186 16.2031 5.3132 16.2031L26.7637 16.2031L18.5626 8.00064C18.4218 7.84958 18.3452 7.64978 18.3488 7.44334C18.3525 7.23689 18.4361 7.03992 18.5821 6.89392C18.7281 6.74792 18.9251 6.66429 19.1315 6.66065C19.338 6.657 19.5378 6.73363 19.6888 6.87439L29.2513 16.4369C29.4006 16.5863 29.4844 16.7888 29.4844 17C29.4844 17.2112 29.4006 17.4137 29.2513 17.5631L19.6888 27.1256C19.5394 27.2749 19.3369 27.3587 19.1257 27.3587C18.9145 27.3587 18.712 27.2749 18.5626 27.1256Z" fill="white" />
-                            </svg></a>
+
                     </div>
                 </form>
 
