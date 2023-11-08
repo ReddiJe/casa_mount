@@ -155,6 +155,7 @@ class Elementor_contactUs extends \Elementor\Widget_Base
                 grid-template-columns: repeat(2, 1fr);
                 width: 100%;
                 grid-column-gap: 24px;
+                height: 80vh;
             }
 
             .contactsContainer .side {
@@ -230,7 +231,7 @@ class Elementor_contactUs extends \Elementor\Widget_Base
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                
+
             }
 
             .rightContainer form {
@@ -344,7 +345,7 @@ class Elementor_contactUs extends \Elementor\Widget_Base
                         <input type="text" placeholder="Your Name" id="name">
                     </div>
                     <div class="submitContainer">
-
+                        Submit
                     </div>
                 </form>
 
