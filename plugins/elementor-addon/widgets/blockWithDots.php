@@ -191,7 +191,7 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
         $this->start_controls_section(
             'block3',
             [
-                'label' => esc_html__('Block 2 Settings', 'elementor-addon'),
+                'label' => esc_html__('Block 3 Settings', 'elementor-addon'),
                 'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
             ]
         );
@@ -254,7 +254,7 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
         $this->start_controls_section(
             'block4',
             [
-                'label' => esc_html__('Block 2 Settings', 'elementor-addon'),
+                'label' => esc_html__('Block 4 Settings', 'elementor-addon'),
                 'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
             ]
         );
@@ -437,8 +437,8 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
             }
 
             .first {
-    display: block;
-}
+                display: block;
+            }
 
 
             .tabcontent a {
@@ -464,14 +464,14 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
                 }
             }
 
-            .media {
+            .tabcontent {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 height: 100%;
             }
 
-            .media img {
+            .tabcontent img {
                 max-width: 80%;
                 border-radius: 10px;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -493,7 +493,8 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
         </div>
 
         <div class="descriptionContainer page-width pageWidth">
-            <div id="Description" class="tabcontent">
+            <div id="block1" class="tabcontent first kitchen">
+                <img src="<?php echo $settings['image1']['url']; ?>" alt="">
                 <?php
                 foreach ($settings['repeater_control'] as $item) {
                     $top_number = !empty($item['top-number']) ? $item['top-number'] . '%' : '50%';
@@ -514,44 +515,98 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
                 }
                 ?>
             </div>
-        <div id="block1" class="tabcontent first kitchen">
-            1
-        </div>
-        <div id="block2" class="tabcontent">
-            2
-        </div>
-        <div id="block3" class="tabcontent">
-            3
-        </div>
-        <div id="block4" class="tabcontent">
-            4
-        </div>
+            <div id="block2" class="tabcontent">
+            <img src="<?php echo $settings['image2']['url']; ?>" alt="">
+                <?php
+                foreach ($settings['repeater_control'] as $item) {
+                    $top_number = !empty($item['top-number']) ? $item['top-number'] . '%' : '50%';
+                    $left_number = !empty($item['left-number']) ? $item['left-number'] . '%' : '50%';
+                ?>
+                    <div class="hoverDot" style="top:<?php echo esc_attr($top_number); ?>; left:<?php echo esc_attr($left_number); ?>;">
+                        <div class="dot">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+                                <g opacity="0.7">
+                                    <circle cx="17.5" cy="17.5" r="17.5" fill="white" />
+                                    <circle cx="17.5" cy="17.5" r="7.5" fill="#056CF2" />
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="description"><?php echo esc_html($item['description']); ?></div>
+                    </div>
+                <?php
+                }
+                ?>
+            </div>
+            <div id="block3" class="tabcontent">
+            <img src="<?php echo $settings['image3']['url']; ?>" alt="">
+                <?php
+                foreach ($settings['repeater_control'] as $item) {
+                    $top_number = !empty($item['top-number']) ? $item['top-number'] . '%' : '50%';
+                    $left_number = !empty($item['left-number']) ? $item['left-number'] . '%' : '50%';
+                ?>
+                    <div class="hoverDot" style="top:<?php echo esc_attr($top_number); ?>; left:<?php echo esc_attr($left_number); ?>;">
+                        <div class="dot">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+                                <g opacity="0.7">
+                                    <circle cx="17.5" cy="17.5" r="17.5" fill="white" />
+                                    <circle cx="17.5" cy="17.5" r="7.5" fill="#056CF2" />
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="description"><?php echo esc_html($item['description']); ?></div>
+                    </div>
+                <?php
+                }
+                ?>
+            </div>
+            <div id="block4" class="tabcontent">
+            <img src="<?php echo $settings['image4']['url']; ?>" alt="">
+                <?php
+                foreach ($settings['repeater_control'] as $item) {
+                    $top_number = !empty($item['top-number']) ? $item['top-number'] . '%' : '50%';
+                    $left_number = !empty($item['left-number']) ? $item['left-number'] . '%' : '50%';
+                ?>
+                    <div class="hoverDot" style="top:<?php echo esc_attr($top_number); ?>; left:<?php echo esc_attr($left_number); ?>;">
+                        <div class="dot">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+                                <g opacity="0.7">
+                                    <circle cx="17.5" cy="17.5" r="17.5" fill="white" />
+                                    <circle cx="17.5" cy="17.5" r="7.5" fill="#056CF2" />
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="description"><?php echo esc_html($item['description']); ?></div>
+                    </div>
+                <?php
+                }
+                ?>
+            </div>
         </div>
 
         <script>
             let sideMobNavigation = document.querySelector(".sideMobNavigation")
-let openSideNav = document.querySelector(".openSideNav")
-let closeSideNav = document.querySelector(".closeSideNav")
+            let openSideNav = document.querySelector(".openSideNav")
+            let closeSideNav = document.querySelector(".closeSideNav")
 
-let openMenu = () => {
-    sideMobNavigation.classList.toggle("open")
-    openSideNav.classList.toggle("open")
-    closeSideNav.classList.toggle("open")
-}
+            let openMenu = () => {
+                sideMobNavigation.classList.toggle("open")
+                openSideNav.classList.toggle("open")
+                closeSideNav.classList.toggle("open")
+            }
 
-function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName('tabcontent');
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = 'none';
-    }
-    tablinks = document.getElementsByClassName('tablinks');
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(' active', '');
-    }
-    document.getElementById(cityName).style.display = 'block';
-    evt.currentTarget.className += ' active';
-}
+            function openCity(evt, cityName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName('tabcontent');
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = 'none';
+                }
+                tablinks = document.getElementsByClassName('tablinks');
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(' active', '');
+                }
+                document.getElementById(cityName).style.display = 'block';
+                evt.currentTarget.className += ' active';
+            }
         </script>
 <?php
     }
