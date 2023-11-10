@@ -35,7 +35,7 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
         // Content Tab Start
 
         $this->start_controls_section(
-            'block1',
+            'sectionSettings',
             [
                 'label' => esc_html__('Section Settings', 'elementor-addon'),
                 'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
@@ -92,7 +92,7 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
         );
 
         $this->add_control(
-            'repeater_control',
+            'repeater_control1',
             [
                 'label' => esc_html__('Repeater Control', 'elementor-addon'),
                 'type' => \Elementor\Controls_Manager::REPEATER,
@@ -346,6 +346,7 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
     {
         $settings = $this->get_settings_for_display();
 
+
 ?>
 
         <style>
@@ -432,6 +433,7 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
             }
 
             .tabcontent {
+                position: relative;
                 display: none;
                 padding: 25px 0;
                 margin: 25px 0;
@@ -509,7 +511,7 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
         <div class="descriptionContainer page-width pageWidth">
             <div id="block1" class="tabcontent first" style="background-image: url(<?php echo $settings['image1']['url']; ?>);">
                 <?php
-                foreach ($settings['repeater_control'] as $item) {
+                foreach ($settings['repeater_control1'] as $item) {
                     $top_number = !empty($item['top-number']) ? $item['top-number'] . '%' : '50%';
                     $left_number = !empty($item['left-number']) ? $item['left-number'] . '%' : '50%';
                 ?>
@@ -528,9 +530,9 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
                 }
                 ?>
             </div>
-            <div id="block2" class="tabcontent" style="background-image: url(<?php echo $settings['image2']['url']; ?>);>
+            <div id="block2" class="tabcontent" style="background-image: url(<?php echo $settings['image2']['url']; ?>);">
                 <?php
-                foreach ($settings['repeater_control'] as $item) {
+                foreach ($settings['repeater_control2'] as $item) {
                     $top_number = !empty($item['top-number']) ? $item['top-number'] . '%' : '50%';
                     $left_number = !empty($item['left-number']) ? $item['left-number'] . '%' : '50%';
                 ?>
@@ -549,9 +551,9 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
                 }
                 ?>
             </div>
-            <div id="block3" class="tabcontent" style="background-image: url(<?php echo $settings['image3']['url']; ?>);>
+            <div id="block3" class="tabcontent" style="background-image: url(<?php echo $settings['image3']['url']; ?>);">
                 <?php
-                foreach ($settings['repeater_control'] as $item) {
+                foreach ($settings['repeater_control3'] as $item) {
                     $top_number = !empty($item['top-number']) ? $item['top-number'] . '%' : '50%';
                     $left_number = !empty($item['left-number']) ? $item['left-number'] . '%' : '50%';
                 ?>
@@ -570,9 +572,9 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
                 }
                 ?>
             </div>
-            <div id="block4" class="tabcontent" style="background-image: url(<?php echo $settings['image4']['url']; ?>);>
+            <div id="block4" class="tabcontent" style="background-image: url(<?php echo $settings['image4']['url']; ?>);">
                 <?php
-                foreach ($settings['repeater_control'] as $item) {
+                foreach ($settings['repeater_control4'] as $item) {
                     $top_number = !empty($item['top-number']) ? $item['top-number'] . '%' : '50%';
                     $left_number = !empty($item['left-number']) ? $item['left-number'] . '%' : '50%';
                 ?>
