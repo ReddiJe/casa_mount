@@ -436,6 +436,11 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
                 margin: 25px 0;
             }
 
+            .first {
+    display: block;
+}
+
+
             .tabcontent a {
                 color: var(--blue);
                 text-decoration: underline;
