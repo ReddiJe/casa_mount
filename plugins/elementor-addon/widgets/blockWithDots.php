@@ -454,6 +454,25 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
                 color: #fff;
             }
 
+            .pageWidth{
+                width: 100%;
+                padding: 25px;
+            }
+
+            @media screen and (min-width: 1600px) {
+                .pageWidth{
+                width: 100%;
+                padding: 25px 10%;
+            }
+            }
+
+            @media screen and (max-width: 600px) {
+                .pageWidth{
+                width: 100%;
+                padding: 15px;
+            }
+            }
+
             @media screen and (max-width: 600px) {
                 .tab {
                     overflow-x: scroll;
