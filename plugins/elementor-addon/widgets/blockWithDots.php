@@ -465,17 +465,11 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
             }
 
             .tabcontent {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 100%;
+                height: 80vh;
+    width: 100%;
+    background-size: cover;
             }
 
-            .tabcontent img {
-                max-width: 80%;
-                border-radius: 10px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            }
         </style>
 
 
@@ -493,8 +487,7 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
         </div>
 
         <div class="descriptionContainer page-width pageWidth">
-            <div id="block1" class="tabcontent first kitchen">
-                <img src="<?php echo $settings['image1']['url']; ?>" alt="">
+            <div id="block1" class="tabcontent first kitchen" style="background-image: url(<?php echo $settings['image1']['url']; ?>);">
                 <?php
                 foreach ($settings['repeater_control'] as $item) {
                     $top_number = !empty($item['top-number']) ? $item['top-number'] . '%' : '50%';
@@ -516,7 +509,7 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
                 ?>
             </div>
             <div id="block2" class="tabcontent">
-            <img src="<?php echo $settings['image2']['url']; ?>" alt="">
+                <img src="<?php echo $settings['image2']['url']; ?>" alt="">
                 <?php
                 foreach ($settings['repeater_control'] as $item) {
                     $top_number = !empty($item['top-number']) ? $item['top-number'] . '%' : '50%';
@@ -538,7 +531,7 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
                 ?>
             </div>
             <div id="block3" class="tabcontent">
-            <img src="<?php echo $settings['image3']['url']; ?>" alt="">
+                <img src="<?php echo $settings['image3']['url']; ?>" alt="">
                 <?php
                 foreach ($settings['repeater_control'] as $item) {
                     $top_number = !empty($item['top-number']) ? $item['top-number'] . '%' : '50%';
@@ -560,7 +553,7 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
                 ?>
             </div>
             <div id="block4" class="tabcontent">
-            <img src="<?php echo $settings['image4']['url']; ?>" alt="">
+                <img src="<?php echo $settings['image4']['url']; ?>" alt="">
                 <?php
                 foreach ($settings['repeater_control'] as $item) {
                     $top_number = !empty($item['top-number']) ? $item['top-number'] . '%' : '50%';
