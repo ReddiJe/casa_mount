@@ -17,6 +17,7 @@ function register_hello_world_widget( $widgets_manager ) {
 	require_once( __DIR__ . '/widgets/contactUs.php' );
 	require_once( __DIR__ . '/widgets/priceDependence.php' );
 	require_once( __DIR__ . '/widgets/prices.php' );
+	require_once( __DIR__ . '/widgets/blockWithDots.php' );
 
 
 	$widgets_manager->register( new \Elementor_switchSideImage() );
@@ -26,6 +27,7 @@ function register_hello_world_widget( $widgets_manager ) {
 	$widgets_manager->register( new \Elementor_contactUs() );
 	$widgets_manager->register( new \Elementor_prices() );
 	$widgets_manager->register( new \Elementor_priceDependence() );
+	$widgets_manager->register( new \Elementor_blockWithDots() );
 
 
 }
