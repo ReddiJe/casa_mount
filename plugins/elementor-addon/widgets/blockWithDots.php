@@ -481,10 +481,10 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
 
 
         <div class="tab">
-            <button class="tablinks active" onclick=""><?php echo $settings['blocksName1'] ?></button>
-            <button class="tablinks" onclick=""><?php echo $settings['blocksName2'] ?></button>
-            <button class="tablinks" onclick=""><?php echo $settings['blocksName3'] ?></button>
-            <button class="tablinks" onclick=""><?php echo $settings['blocksName4'] ?></button>
+            <button class="tablinks active" onclick="openCity(event, 'block1')"><?php echo $settings['blocksName1'] ?></button>
+            <button class="tablinks" onclick="openCity(event, 'block2')"><?php echo $settings['blocksName2'] ?></button>
+            <button class="tablinks" onclick="openCity(event, 'block3')"><?php echo $settings['blocksName3'] ?></button>
+            <button class="tablinks" onclick="openCity(event, 'block4')"><?php echo $settings['blocksName4'] ?></button>
         </div>
 
         <div class="descriptionContainer page-width pageWidth">
@@ -509,12 +509,18 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
                 }
                 ?>
             </div>
-            <div class="media">
-                <img src="<?php echo $settings['image1']['url']; ?>" alt="">
-                <img src="<?php echo $settings['image2']['url']; ?>" alt="">
-                <img src="<?php echo $settings['image3']['url']; ?>" alt="">
-                <img src="<?php echo $settings['image4']['url']; ?>" alt="">
-            </div>
+        <div id="block1" class="tabcontent first kitchen">
+            1
+        </div>
+        <div id="block2" class="tabcontent">
+            2
+        </div>
+        <div id="block3" class="tabcontent">
+            3
+        </div>
+        <div id="block4" class="tabcontent">
+            4
+        </div>
         </div>
 
         <script>
