@@ -35,9 +35,9 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
         // Content Tab Start
 
         $this->start_controls_section(
-            'main-section',
+            'block1',
             [
-                'label' => esc_html__('Block 1', 'elementor-addon'),
+                'label' => esc_html__('Section Settings', 'elementor-addon'),
                 'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
             ]
         );
@@ -60,8 +60,27 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
             ]
         );
 
+        $this->end_controls_section();
+
+        $this->start_controls_section(
+            'block1',
+            [
+                'label' => esc_html__('Block 1 Settings', 'elementor-addon'),
+                'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
+            ]
+        );
+
         $this->add_control(
-            'image',
+            'blocksName1',
+            [
+                'label' => esc_html__('Names For Block', 'elementor-addon'),
+                'type' => \Elementor\Controls_Manager::TEXTAREA,
+                'default' => esc_html__('Hello world', 'elementor-addon'),
+            ]
+        );
+
+        $this->add_control(
+            'image1',
             [
                 'label' => esc_html__('Background Image', 'elementor-addon'),
                 'type' => \Elementor\Controls_Manager::MEDIA,
@@ -69,6 +88,57 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
                     'url' => \Elementor\Utils::get_placeholder_image_src(),
                 ],
                 'description' => esc_html__('Select an image for your widget.', 'elementor-addon'),
+            ]
+        );
+
+        $this->add_control(
+            'repeater_control',
+            [
+                'label' => esc_html__('Repeater Control', 'elementor-addon'),
+                'type' => \Elementor\Controls_Manager::REPEATER,
+                'fields' => [
+                    [
+                        'name' => 'top-number',
+                        'label' => esc_html__('Top Number', 'elementor-addon'),
+                        'type' => \Elementor\Controls_Manager::NUMBER,
+                        'min' => 0,
+                        'max' => 100,
+                        'step' => 1,
+                    ],
+                    [
+                        'name' => 'left-number',
+                        'label' => esc_html__('Left Number', 'elementor-addon'),
+                        'type' => \Elementor\Controls_Manager::NUMBER,
+                        'min' => 0,
+                        'max' => 100,
+                        'step' => 1,
+                    ],
+                    [
+                        'name' => 'description',
+                        'label' => esc_html__('Description', 'elementor-addon'),
+                        'type' => \Elementor\Controls_Manager::TEXTAREA,
+                        'default' => esc_html__('Hello world', 'elementor-addon'),
+                    ],
+                ],
+            ]
+        );
+
+        $this->end_controls_section();
+
+        $this->start_controls_section(
+            'block2',
+            [
+                'label' => esc_html__('Block 2 Settings', 'elementor-addon'),
+                'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
+            ]
+        );
+
+        $this->add_control(
+            'blocksName2',
+            [
+                'label' => esc_html__('Names For Block', 'elementor-addon'),
+                'type' => \Elementor\Controls_Manager::TEXTAREA,
+                'default' => esc_html__('Hello world', 'elementor-addon'),
             ]
         );
 
@@ -85,6 +155,57 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
         );
 
         $this->add_control(
+            'repeater_control2',
+            [
+                'label' => esc_html__('Repeater Control', 'elementor-addon'),
+                'type' => \Elementor\Controls_Manager::REPEATER,
+                'fields' => [
+                    [
+                        'name' => 'top-number',
+                        'label' => esc_html__('Top Number', 'elementor-addon'),
+                        'type' => \Elementor\Controls_Manager::NUMBER,
+                        'min' => 0,
+                        'max' => 100,
+                        'step' => 1,
+                    ],
+                    [
+                        'name' => 'left-number',
+                        'label' => esc_html__('Left Number', 'elementor-addon'),
+                        'type' => \Elementor\Controls_Manager::NUMBER,
+                        'min' => 0,
+                        'max' => 100,
+                        'step' => 1,
+                    ],
+                    [
+                        'name' => 'description',
+                        'label' => esc_html__('Description', 'elementor-addon'),
+                        'type' => \Elementor\Controls_Manager::TEXTAREA,
+                        'default' => esc_html__('Hello world', 'elementor-addon'),
+                    ],
+                ],
+            ]
+        );
+
+        $this->end_controls_section();
+
+        $this->start_controls_section(
+            'block3',
+            [
+                'label' => esc_html__('Block 2 Settings', 'elementor-addon'),
+                'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
+            ]
+        );
+
+        $this->add_control(
+            'blocksName3',
+            [
+                'label' => esc_html__('Names For Block', 'elementor-addon'),
+                'type' => \Elementor\Controls_Manager::TEXTAREA,
+                'default' => esc_html__('Hello world', 'elementor-addon'),
+            ]
+        );
+
+        $this->add_control(
             'image3',
             [
                 'label' => esc_html__('Background Image', 'elementor-addon'),
@@ -93,6 +214,57 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
                     'url' => \Elementor\Utils::get_placeholder_image_src(),
                 ],
                 'description' => esc_html__('Select an image for your widget.', 'elementor-addon'),
+            ]
+        );
+
+        $this->add_control(
+            'repeater_control3',
+            [
+                'label' => esc_html__('Repeater Control', 'elementor-addon'),
+                'type' => \Elementor\Controls_Manager::REPEATER,
+                'fields' => [
+                    [
+                        'name' => 'top-number',
+                        'label' => esc_html__('Top Number', 'elementor-addon'),
+                        'type' => \Elementor\Controls_Manager::NUMBER,
+                        'min' => 0,
+                        'max' => 100,
+                        'step' => 1,
+                    ],
+                    [
+                        'name' => 'left-number',
+                        'label' => esc_html__('Left Number', 'elementor-addon'),
+                        'type' => \Elementor\Controls_Manager::NUMBER,
+                        'min' => 0,
+                        'max' => 100,
+                        'step' => 1,
+                    ],
+                    [
+                        'name' => 'description',
+                        'label' => esc_html__('Description', 'elementor-addon'),
+                        'type' => \Elementor\Controls_Manager::TEXTAREA,
+                        'default' => esc_html__('Hello world', 'elementor-addon'),
+                    ],
+                ],
+            ]
+        );
+
+        $this->end_controls_section();
+
+        $this->start_controls_section(
+            'block4',
+            [
+                'label' => esc_html__('Block 2 Settings', 'elementor-addon'),
+                'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
+            ]
+        );
+
+        $this->add_control(
+            'blocksName4',
+            [
+                'label' => esc_html__('Names For Block', 'elementor-addon'),
+                'type' => \Elementor\Controls_Manager::TEXTAREA,
+                'default' => esc_html__('Hello world', 'elementor-addon'),
             ]
         );
 
@@ -109,7 +281,7 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
         );
 
         $this->add_control(
-            'repeater_control',
+            'repeater_control4',
             [
                 'label' => esc_html__('Repeater Control', 'elementor-addon'),
                 'type' => \Elementor\Controls_Manager::REPEATER,
@@ -309,20 +481,20 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
 
 
         <div class="tab">
-            <button class="tablinks active" onclick="">Living room</button>
-            <button class="tablinks" onclick="">Kitchen</button>
-            <button class="tablinks" onclick="">Bedroom</button>
-            <button class="tablinks" onclick="">Bathroom</button>
+            <button class="tablinks active" onclick=""><?php echo $settings['blocksName1'] ?></button>
+            <button class="tablinks" onclick=""><?php echo $settings['blocksName2'] ?></button>
+            <button class="tablinks" onclick=""><?php echo $settings['blocksName3'] ?></button>
+            <button class="tablinks" onclick=""><?php echo $settings['blocksName4'] ?></button>
         </div>
 
-        <div class="descriptionContainer">
+        <div class="descriptionContainer page-width pageWidth">
             <div id="Description" class="tabcontent">
                 <?php
                 foreach ($settings['repeater_control'] as $item) {
                     $top_number = !empty($item['top-number']) ? $item['top-number'] . '%' : '50%';
                     $left_number = !empty($item['left-number']) ? $item['left-number'] . '%' : '50%';
                 ?>
-                    <div class="hoverDot" style="top: <?php echo esc_attr($top_number); ?>; left: <?php echo esc_attr($left_number); ?>;">
+                    <div class="hoverDot" style="top:<?php echo esc_attr($top_number); ?>; left:<?php echo esc_attr($left_number); ?>;">
                         <div class="dot">
                             <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
                                 <g opacity="0.7">
@@ -338,9 +510,38 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
                 ?>
             </div>
             <div class="media">
-                <img src="<?php echo $settings['image']['url']; ?>" alt="">
+                <img src="<?php echo $settings['image1']['url']; ?>" alt="">
+                <img src="<?php echo $settings['image2']['url']; ?>" alt="">
+                <img src="<?php echo $settings['image3']['url']; ?>" alt="">
+                <img src="<?php echo $settings['image4']['url']; ?>" alt="">
             </div>
         </div>
+
+        <script>
+            let sideMobNavigation = document.querySelector(".sideMobNavigation")
+let openSideNav = document.querySelector(".openSideNav")
+let closeSideNav = document.querySelector(".closeSideNav")
+
+let openMenu = () => {
+    sideMobNavigation.classList.toggle("open")
+    openSideNav.classList.toggle("open")
+    closeSideNav.classList.toggle("open")
+}
+
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName('tabcontent');
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = 'none';
+    }
+    tablinks = document.getElementsByClassName('tablinks');
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(' active', '');
+    }
+    document.getElementById(cityName).style.display = 'block';
+    evt.currentTarget.className += ' active';
+}
+        </script>
 <?php
     }
 }
