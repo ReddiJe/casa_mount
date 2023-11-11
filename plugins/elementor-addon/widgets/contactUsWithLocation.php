@@ -228,8 +228,10 @@ class Elementor_contactUsWithLocation extends \Elementor\Widget_Base
 
             .buttonHeroSection {
                 display: flex;
-                padding: 0.9375rem 3.125rem;
                 margin-top: 10px;
+                height: 15%;
+                width: 40%;
+                padding: 7px 20px;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
