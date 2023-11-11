@@ -457,23 +457,23 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
                 color: #fff;
             }
 
-            .pageWidth{
+            .pageWidth {
                 width: 100%;
                 padding: 25px;
             }
 
             @media screen and (min-width: 1600px) {
-                .pageWidth{
-                width: 100%;
-                padding: 25px 10%;
-            }
+                .pageWidth {
+                    width: 100%;
+                    padding: 25px 10%;
+                }
             }
 
             @media screen and (max-width: 600px) {
-                .pageWidth{
-                width: 100%;
-                padding: 15px;
-            }
+                .pageWidth {
+                    width: 100%;
+                    padding: 15px;
+                }
             }
 
             @media screen and (max-width: 600px) {
@@ -488,10 +488,9 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
 
             .tabcontent {
                 height: 80vh;
-    width: 100%;
-    background-size: cover;
+                width: 100%;
+                background-size: cover;
             }
-
         </style>
 
 

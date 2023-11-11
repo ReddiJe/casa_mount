@@ -73,7 +73,7 @@ class Elementor_blocksWithPictures extends \Elementor\Widget_Base
         $this->add_control(
             'repeater_control',
             [
-                'label' => esc_html__('Repeater Control', 'elementor-addon'),
+                'label' => esc_html__('Your Pictures', 'elementor-addon'),
                 'type' => \Elementor\Controls_Manager::REPEATER,
                 'fields' => [
                     [
@@ -85,8 +85,8 @@ class Elementor_blocksWithPictures extends \Elementor\Widget_Base
                         ],
                     ],
                     [
-                        'name' => 'description',
-                        'label' => esc_html__('Title', 'elementor-addon'),
+                        'name' => 'title',
+                        'label' => esc_html__('title', 'elementor-addon'),
                         'type' => \Elementor\Controls_Manager::TEXT,
                         'default' => esc_html__('Hello world', 'elementor-addon'),
                     ],
