@@ -237,7 +237,7 @@ class Elementor_switchSideImage extends \Elementor\Widget_Base
 
             .buttonHeroSection:hover {
                 box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
-                background: var(--blueDark);
+                background: #01133d;
             }
 
             .heroSectionTwo h1 {
@@ -262,7 +262,7 @@ class Elementor_switchSideImage extends \Elementor\Widget_Base
                 gap: 0.3125rem;
                 border-radius: 0.9375rem;
                 background: rgba(5, 108, 242, 0.10);
-                color: var(--blue);
+                color: #103894;
                 font-size: 1.125rem;
                 font-weight: 500;
                 transition: all linear 300ms;
