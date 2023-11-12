@@ -21,6 +21,8 @@ function register_hello_world_widget( $widgets_manager ) {
 	require_once( __DIR__ . '/widgets/blocksWithPictures.php' );
 	require_once( __DIR__ . '/widgets/cleaningServicesTypes.php' );
 	require_once( __DIR__ . '/widgets/contactUsWithLocation.php' );
+	require_once( __DIR__ . '/widgets/cleaningDifference.php' );
+	require_once( __DIR__ . '/widgets/textCenter.php' );
 
 
 	$widgets_manager->register( new \Elementor_switchSideImage() );
@@ -34,6 +36,8 @@ function register_hello_world_widget( $widgets_manager ) {
 	$widgets_manager->register( new \Elementor_blocksWithPictures() );
 	$widgets_manager->register( new \Elementor_cleaningServicesTypes() );
 	$widgets_manager->register( new \Elementor_contactUsWithLocation() );
+	$widgets_manager->register( new \Elementor_cleaningDifference() );
+	$widgets_manager->register( new \Elementor_textCenter() );
 
 
 }
