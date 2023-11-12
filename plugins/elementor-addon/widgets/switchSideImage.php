@@ -46,7 +46,6 @@ class Elementor_switchSideImage extends \Elementor\Widget_Base
             [
                 'label' => esc_html__('Title', 'elementor-addon'),
                 'type' => \Elementor\Controls_Manager::TEXTAREA,
-                'default' => esc_html__('Hello world', 'elementor-addon'),
             ]
         );
 
@@ -54,8 +53,7 @@ class Elementor_switchSideImage extends \Elementor\Widget_Base
             'text',
             [
                 'label' => esc_html__('Text', 'elementor-addon'),
-                'type' => \Elementor\Controls_Manager::TEXTAREA,
-                'default' => esc_html__('Hello world', 'elementor-addon'),
+                'type' => \Elementor\Controls_Manager::WYSIWYG,
             ]
         );
 
@@ -295,7 +293,7 @@ class Elementor_switchSideImage extends \Elementor\Widget_Base
                 display: none;
             }
 
-            .heroSection a {
+            .heroSection .buttonBlueBg {
                 padding: 10px;
                 margin-top: 20px;
                 border: 1px solid #B1882F;
@@ -308,6 +306,10 @@ class Elementor_switchSideImage extends \Elementor\Widget_Base
                 text-align: center;
                 display: block;
                 width: max-content;
+            }
+
+            .heroText p a {
+                color: #2c2d2c;
             }
         </style>
 
