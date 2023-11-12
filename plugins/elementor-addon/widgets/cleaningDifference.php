@@ -218,27 +218,15 @@ class Elementor_cleaningDifference extends \Elementor\Widget_Base
         </div>
 
         <div class="whatTheDifference pageWidth">
-
-        <div class="column columnTwo">
-                <div class="cell topTitle"></div>
-            </div>
-                <div class="cell topTitle"><?php echo $settings['title1']; ?></div>
-            </div>
-            <div class="column columnThree">
-                <div class="cell topTitle"><?php echo $settings['title2']; ?></div>
-            </div>
+            <div class="cell topTitle"></div>
+            <div class="cell topTitle"><?php echo $settings['title1']; ?></div>
+            <div class="cell topTitle"><?php echo $settings['title2']; ?></div>
             <?php
             foreach ($settings['repeater_control'] as $item) {
             ?>
-                <div class="column columnOne">
-                    <div class="cell leftTitle"><?php echo $item['description']; ?></div>
-                </div>
-                <div class="column columnTwo">
-                    <div class="cell text"><?php echo $item['standart']; ?></div>
-                </div>
-                <div class="column columnThree">
-                    <div class="cell text"><?php echo $item['deep']; ?></div>
-                </div>
+                <div class="cell leftTitle columnOne"><?php echo $item['description']; ?></div>
+                <div class="cell text columnTwo"><?php echo $item['standart']; ?></div>
+                <div class="cell text columnThree"><?php echo $item['deep']; ?></div>
             <?php } ?>
         </div>
 
