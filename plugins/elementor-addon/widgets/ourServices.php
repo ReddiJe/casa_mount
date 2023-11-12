@@ -47,7 +47,6 @@ class Elementor_ourServices extends \Elementor\Widget_Base
 			[
 				'label' => esc_html__('Title', 'elementor-addon'),
 				'type' => \Elementor\Controls_Manager::TEXTAREA,
-				'default' => esc_html__('Hello world', 'elementor-addon'),
 			]
 		);
 
@@ -61,13 +60,11 @@ class Elementor_ourServices extends \Elementor\Widget_Base
 						'name' => 'text',
 						'label' => esc_html__('Text', 'elementor-addon'),
 						'type' => \Elementor\Controls_Manager::TEXTAREA,
-						'default' => esc_html__('Hello world', 'elementor-addon'),
 					],
 					[
 						'name' => 'time_duration',
 						'label' => esc_html__('Duration Time', 'elementor-addon'),
 						'type' => \Elementor\Controls_Manager::TEXT,
-						'default' => esc_html__('1 hour', 'elementor-addon'),
 					],
 					[
 						'name' => 'image',
@@ -80,8 +77,6 @@ class Elementor_ourServices extends \Elementor\Widget_Base
 				],
 				'default' => [
 					[
-						'text' => esc_html__('Hello World', 'elementor-addon'),
-						'time_duration' => esc_html__('1 hour', 'elementor-addon'),
 						'image' => [
 							'url' => \Elementor\Utils::get_placeholder_image_src(),
 						],

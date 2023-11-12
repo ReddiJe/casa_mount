@@ -88,31 +88,32 @@ class Elementor_textCenter extends \Elementor\Widget_Base
 ?>
 
         <style>
-.textCenter{
-    width: 100%;
-    padding: 150px;
-    text-align: center;
-    font-size: 1.25rem;
-    color: var(--black);
-    font-weight: 300;
-}
+            .textCenter {
+                width: 100%;
+                padding: 150px;
+                text-align: center;
+                font-size: 1.25rem;
+                color: var(--black);
+                font-weight: 300;
+            }
 
-@media screen and (min-width: 1600px){
-    .pageWidth{
-        padding: 25px 15%;
-    }
+            @media screen and (min-width: 1600px) {
+                .pageWidth {
+                    padding: 25px 15%;
+                }
 
-    .pageWidth.heroSectionColumn{
-        padding: 150px 15%;
-    }
+                .pageWidth.heroSectionColumn {
+                    padding: 150px 15%;
+                }
 
-    .pageWidth.oneArticleContainerInner{
-        padding-top: 200px;
-    }
+                .pageWidth.oneArticleContainerInner {
+                    padding-top: 200px;
+                }
+            }
         </style>
 
         <p class="textCenter pageWidth">
-        <?php echo $settings['title']; ?>
+            <?php echo $settings['title']; ?>
         </p>
 
 <?php
