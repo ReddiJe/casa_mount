@@ -92,15 +92,53 @@ class Elementor_cleaningDifference extends \Elementor\Widget_Base
                     ],
                     [
                         'name' => 'standart',
-                        'label' => esc_html__('Standart Column', 'elementor-addon'),
+                        'label' => esc_html__('1st Column Text', 'elementor-addon'),
                         'type' => \Elementor\Controls_Manager::TEXT,
                     ],
                     [
                         'name' => 'deep',
-                        'label' => esc_html__('Deep Column', 'elementor-addon'),
+                        'label' => esc_html__('2nd Column Text', 'elementor-addon'),
                         'type' => \Elementor\Controls_Manager::TEXT,
                     ],
                 ],
+            ]
+        );
+
+        $this->add_control(
+            'button-title1',
+            [
+                'label' => esc_html__('Text For Button On The 1st column', 'elementor-addon'),
+                'type' => \Elementor\Controls_Manager::TEXT,
+                'placeholder' => esc_html__('insert text for button', 'elementor-addon'),
+            ]
+        );
+
+        $this->add_control(
+            'button-url1',
+            [
+                'label' => esc_html__('URL to embed', 'elementor-addon'),
+                'type' => \Elementor\Controls_Manager::TEXT,
+                'input_type' => 'url',
+                'placeholder' => esc_html__('https://your-link.com', 'elementor-addon'),
+            ]
+        );
+
+        $this->add_control(
+            'button-title2',
+            [
+                'label' => esc_html__('Text For Button On The 2nd column', 'elementor-addon'),
+                'type' => \Elementor\Controls_Manager::TEXT,
+                'placeholder' => esc_html__('insert text for button', 'elementor-addon'),
+            ]
+        );
+
+        $this->add_control(
+            'button-url2',
+            [
+                'label' => esc_html__('URL to embed', 'elementor-addon'),
+                'type' => \Elementor\Controls_Manager::TEXT,
+                'input_type' => 'url',
+                'placeholder' => esc_html__('https://your-link.com', 'elementor-addon'),
             ]
         );
 
@@ -185,8 +223,13 @@ class Elementor_cleaningDifference extends \Elementor\Widget_Base
                 color: #143d80;
             }
 
-            .buttonBlue {
+            .topTitle{
+                font-size: 1.5rem !important;
+                font-weight: 700 !important;
+                color: black;
+            }
 
+            .buttonBlue {
                 background: #4287f5;
                 color: #ffffff !important;
             }
@@ -228,6 +271,13 @@ class Elementor_cleaningDifference extends \Elementor\Widget_Base
                 <div class="cell text columnTwo"><?php echo $item['standart']; ?></div>
                 <div class="cell text columnThree"><?php echo $item['deep']; ?></div>
             <?php } ?>
+            <div></div>
+            <div class="cell"><a href="<?php echo $settings['buton-url1']; ?>" class="button"><?php echo $settings['buton-title1']; ?> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21" viewBox="0 0 24 21" fill="none">
+        <path d="M13.5017 20.2748C13.3582 20.1304 13.2776 19.9347 13.2776 19.7307C13.2776 19.5266 13.3582 19.3309 13.5017 19.1866L21.3849 11.2607L0.765977 11.2607C0.562828 11.2607 0.367998 11.1796 0.224348 11.0352C0.0806995 10.8908 -2.35298e-06 10.695 -2.34406e-06 10.4907C-2.33513e-06 10.2865 0.0806995 10.0907 0.224348 9.94627C0.367998 9.80186 0.562828 9.72074 0.765977 9.72074L21.3849 9.72074L13.5017 1.79492C13.3664 1.64895 13.2927 1.45589 13.2962 1.25641C13.2997 1.05693 13.3801 0.866602 13.5204 0.725526C13.6608 0.584449 13.8501 0.503639 14.0485 0.50012C14.247 0.4966 14.439 0.570646 14.5842 0.706658L23.776 9.94661C23.9194 10.091 24 10.2867 24 10.4907C24 10.6948 23.9194 10.8905 23.776 11.0349L14.5842 20.2748C14.4406 20.419 14.2459 20.5 14.0429 20.5C13.84 20.5 13.6453 20.419 13.5017 20.2748Z" fill="#056CF2"/>
+      </svg></a></div>
+            <div class="cell"><a href="<?php echo $settings['buton-url2']; ?>" class="button buttonBlue"><?php echo $settings['buton-title2']; ?> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21" viewBox="0 0 24 21" fill="none">
+        <path d="M13.5017 20.2748C13.3582 20.1304 13.2776 19.9347 13.2776 19.7307C13.2776 19.5266 13.3582 19.3309 13.5017 19.1866L21.3849 11.2607L0.765977 11.2607C0.562828 11.2607 0.367998 11.1796 0.224348 11.0352C0.0806995 10.8908 -2.35298e-06 10.695 -2.34406e-06 10.4907C-2.33513e-06 10.2865 0.0806995 10.0907 0.224348 9.94627C0.367998 9.80186 0.562828 9.72074 0.765977 9.72074L21.3849 9.72074L13.5017 1.79492C13.3664 1.64895 13.2927 1.45589 13.2962 1.25641C13.2997 1.05693 13.3801 0.866602 13.5204 0.725526C13.6608 0.584449 13.8501 0.503639 14.0485 0.50012C14.247 0.4966 14.439 0.570646 14.5842 0.706658L23.776 9.94661C23.9194 10.091 24 10.2867 24 10.4907C24 10.6948 23.9194 10.8905 23.776 11.0349L14.5842 20.2748C14.4406 20.419 14.2459 20.5 14.0429 20.5C13.84 20.5 13.6453 20.419 13.5017 20.2748Z" fill="#fff"/>
+      </svg></a></div>
         </div>
 
 
