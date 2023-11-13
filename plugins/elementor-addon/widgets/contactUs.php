@@ -355,6 +355,17 @@ class Elementor_contactUs extends \Elementor\Widget_Base
                     align-items: start;
                     flex-wrap: no-wrap;
                 }
+
+                .socialAndAdress {
+                justify-content: start;
+                align-items: start;
+                flex-direction: column;
+                width: 100%;
+
+            }
+            .adress{
+                max-width: 100%;
+            }
             }
         </style>
 
