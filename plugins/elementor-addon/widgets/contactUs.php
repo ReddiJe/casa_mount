@@ -339,6 +339,7 @@ class Elementor_contactUs extends \Elementor\Widget_Base
                     grid-template-columns: repeat(1, 1fr);
                     padding: 15px;
                     grid-gap: 0;
+                    height: auto;
                 }
 
                 .side{
