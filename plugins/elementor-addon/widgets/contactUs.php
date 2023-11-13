@@ -336,8 +336,9 @@ class Elementor_contactUs extends \Elementor\Widget_Base
 
             @media screen and (max-width: 600px) {
                 .contactsContainer{
-                    flex-direction: column;
+                    grid-template-columns: repeat(1, 1fr);
                     padding: 15px;
+                    grid-gap: 0;
                 }
 
                 .side{
