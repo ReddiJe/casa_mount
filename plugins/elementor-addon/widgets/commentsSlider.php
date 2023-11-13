@@ -47,7 +47,6 @@ class Elementor_commentsSlider extends \Elementor\Widget_Base
             [
                 'label' => esc_html__('Title', 'elementor-addon'),
                 'type' => \Elementor\Controls_Manager::TEXTAREA,
-                'default' => esc_html__('Hello world', 'elementor-addon'),
             ]
         );
 
@@ -56,7 +55,6 @@ class Elementor_commentsSlider extends \Elementor\Widget_Base
             [
                 'label' => esc_html__('Subtitle', 'elementor-addon'),
                 'type' => \Elementor\Controls_Manager::TEXTAREA,
-                'default' => esc_html__('Hello world', 'elementor-addon'),
             ]
         );
 
@@ -221,10 +219,9 @@ class Elementor_commentsSlider extends \Elementor\Widget_Base
             a {
                 text-decoration: underline !important;
             }
-<<<<<<< HEAD
 
             @media screen and (max-width:600px) {
-                .nameCompanyDate{
+                .nameCompanyDate {
                     width: 100%;
                     display: flex;
                     justify-content: center;
@@ -232,7 +229,6 @@ class Elementor_commentsSlider extends \Elementor\Widget_Base
                     flex-direction: column;
                 }
             }
-=======
 
             @media screen and (min-width: 1600px) {
                 @media (min-width: 1600px) {
@@ -303,8 +299,6 @@ class Elementor_commentsSlider extends \Elementor\Widget_Base
                 right: 0.5em;
                 top: 70%;
             }
-            }
->>>>>>> 421196b0bb02024062c294621097a06278dc531e
         </style>
 
 

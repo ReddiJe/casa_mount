@@ -70,7 +70,7 @@ class Elementor_contactUs extends \Elementor\Widget_Base
         $this->add_control(
             'url-for-facebook',
             [
-                'label' => esc_html__('URL to embed', 'elementor-addon'),
+                'label' => esc_html__('Facebook URL', 'elementor-addon'),
                 'type' => \Elementor\Controls_Manager::TEXT,
                 'input_type' => 'url',
                 'placeholder' => esc_html__('https://your-link.com', 'elementor-addon'),
@@ -80,7 +80,7 @@ class Elementor_contactUs extends \Elementor\Widget_Base
         $this->add_control(
             'url-for-instagram',
             [
-                'label' => esc_html__('URL to embed', 'elementor-addon'),
+                'label' => esc_html__('Instagram URL', 'elementor-addon'),
                 'type' => \Elementor\Controls_Manager::TEXT,
                 'input_type' => 'url',
                 'placeholder' => esc_html__('https://your-link.com', 'elementor-addon'),
@@ -90,7 +90,7 @@ class Elementor_contactUs extends \Elementor\Widget_Base
         $this->add_control(
             'url-for-linkedIn',
             [
-                'label' => esc_html__('URL to embed', 'elementor-addon'),
+                'label' => esc_html__('linkedln URL', 'elementor-addon'),
                 'type' => \Elementor\Controls_Manager::TEXT,
                 'input_type' => 'url',
                 'placeholder' => esc_html__('https://your-link.com', 'elementor-addon'),
@@ -335,37 +335,50 @@ class Elementor_contactUs extends \Elementor\Widget_Base
             }
 
             @media screen and (max-width: 600px) {
-                .contactsContainer{
+                .contactsContainer {
                     grid-template-columns: repeat(1, 1fr);
                     padding: 15px;
                     grid-gap: 0;
                     height: auto;
                 }
 
-                .side{
+                .contacts {
+                    height: 300px;
+                }
+
+                .side {
                     width: 100%;
                 }
 
-                .inputContainer{
+                .inputContainer {
+                    padding-left: 5px;
                     max-width: 80vw;
                 }
 
-                .rightContainer form{
+                .rightContainer form {
                     justify-content: start;
                     align-items: start;
                     flex-wrap: no-wrap;
                 }
 
                 .socialAndAdress {
-                justify-content: start;
-                align-items: start;
-                flex-direction: column;
-                width: 100%;
+                    justify-content: start;
+                    align-items: start;
+                    flex-direction: column;
+                    width: 100%;
+                }
 
-            }
-            .adress{
-                max-width: 100%;
-            }
+                .adress {
+                    max-width: 100%;
+                }
+
+                .rightContainer form {
+                    width: 100%;
+                }
+
+                .rightContainer form .inputContainer {
+                    width: 100%;
+                }
             }
         </style>
 
