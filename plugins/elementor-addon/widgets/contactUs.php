@@ -349,6 +349,12 @@ class Elementor_contactUs extends \Elementor\Widget_Base
                 .inputContainer{
                     max-width: 80vw;
                 }
+
+                .rightContainer form{
+                    justify-content: start;
+                    align-items: start;
+                    flex-wrap: no-wrap;
+                }
             }
         </style>
 
