@@ -221,6 +221,18 @@ class Elementor_commentsSlider extends \Elementor\Widget_Base
             a {
                 text-decoration: underline !important;
             }
+<<<<<<< HEAD
+
+            @media screen and (max-width:600px) {
+                .nameCompanyDate{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                }
+            }
+=======
 
             @media screen and (min-width: 1600px) {
                 @media (min-width: 1600px) {
@@ -292,6 +304,7 @@ class Elementor_commentsSlider extends \Elementor\Widget_Base
                 top: 70%;
             }
             }
+>>>>>>> 421196b0bb02024062c294621097a06278dc531e
         </style>
 
 
