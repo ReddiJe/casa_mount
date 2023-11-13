@@ -335,53 +335,17 @@ class Elementor_contactUs extends \Elementor\Widget_Base
             }
 
             @media screen and (max-width: 600px) {
-                .contacts {
-                    height: 200px;
-                    max-width: 90%;
+                .contactsContainer{
+                    flex-direction: column;
+                    padding: 15px;
                 }
 
-                .leftContainer h1 {
-                    width: 100%;
-                    padding-left: 10px;
-                }
-
-                .social {
-                    padding-left: 10px;
-                }
-
-                .adress a {
-                    max-width: 90%;
-                    word-wrap: break-word;
-                    padding-left: 10px;
-                }
-
-                .contactsContainer {
-                    grid-template-columns: 1fr;
-                    height: auto;
-                }
-
-                .leftContainer {
-                    height: auto;
-                    margin-top: 10px;
-                    margin-left: 0px;
-                }
-
-                .rightContainer form {
+                .side{
                     width: 100%;
                 }
 
-                .rightContainer form .inputContainer {
-                    width: 100%;
-                }
-
-                .contactsContainer .side {
-                    min-width: 49%;
-                    max-width: 100%;
-                    width: 100%;
-                }
-
-                .rightContainer {
-                    padding: 50px 0;
+                .inputContainer{
+                    max-width: 80vh;
                 }
             }
         </style>
