@@ -73,7 +73,7 @@ class Elementor_commentsSlider extends \Elementor\Widget_Base
         $this->add_control(
             'comments',
             [
-                'label' => esc_html__('Comments', 'elementor-addon'),
+                'label' => esc_html__('Accommodation', 'elementor-addon'),
                 'type' => \Elementor\Controls_Manager::REPEATER,
                 'fields' => [
                     [
@@ -221,6 +221,77 @@ class Elementor_commentsSlider extends \Elementor\Widget_Base
             a {
                 text-decoration: underline !important;
             }
+
+            @media screen and (min-width: 1600px) {
+                @media (min-width: 1600px) {
+                    .accommodationsContainer {
+                        padding: 25px 10%;
+                    }
+                }
+            }
+
+            @media screen and (max-width: 600px) {
+                .title {
+                    font-size: 32px;
+                    line-height: 39px;
+                }
+
+                .subtitle {
+                    font-size: 16px;
+                    line-height: 20px;
+                    text-align: center;
+                }
+
+                .name {
+                    text-align: center;
+                    justify-content: center;
+                }
+
+                .date {
+                    margin-left: 50px;
+                    margin-bottom: 10px;
+                    text-align: center;
+                    justify-content: center;
+                }
+
+                .reviewInner {
+                    gap: 10px;
+                    padding: 10px;
+                    text-align: center;
+                    justify-content: center;
+                }
+
+                .reviewInner img {
+                    display: none;
+                }
+
+                .nameCompanyDate {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                }
+            }
+
+            .reviewText {
+                font-size: 0.9rem;
+                margin: 0px 10px;
+                justify-content: center;
+                text-align: center;
+                padding: 0px 10%;
+            }
+
+            .splide__arrow--prev {
+                left: 0.5em;
+                top: 70%;
+            }
+
+            .splide__arrow--next {
+                right: 0.5em;
+                top: 70%;
+            }
+            }
         </style>
 
 
@@ -241,9 +312,9 @@ class Elementor_commentsSlider extends \Elementor\Widget_Base
                                     <img src="<?php echo $accommodation['image']['url']; ?>" alt="">
                                     <div class="reviewInnerText">
                                         <div class="nameCompanyDate">
-                                            <p><b><?php echo esc_html($accommodation['name']); ?></b></p>
+                                            <p class="name"><b><?php echo esc_html($accommodation['name']); ?></b></p>
                                             <p class="date"><?php echo esc_html($accommodation['date']); ?>
-                                            <a href="<?php echo esc_html($accommodation['link']['url']); ?>">Google</a>
+                                                <a href="<?php echo esc_html($accommodation['link']['url']); ?>">Google</a>
                                             </p>
                                         </div>
                                         <p class="reviewText">
