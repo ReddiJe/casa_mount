@@ -25,6 +25,7 @@ function register_hello_world_widget( $widgets_manager ) {
 	require_once( __DIR__ . '/widgets/textCenter.php' );
 	require_once( __DIR__ . '/widgets/twoColumnsValues.php' );
 	require_once( __DIR__ . '/widgets/servicesSlider.php' );
+	require_once( __DIR__ . '/widgets/titleWithButton.php' );
 
 
 	$widgets_manager->register( new \Elementor_switchSideImage() );
@@ -42,6 +43,7 @@ function register_hello_world_widget( $widgets_manager ) {
 	$widgets_manager->register( new \Elementor_textCenter() );
 	$widgets_manager->register( new \Elementor_twoColumnsValues() );
 	$widgets_manager->register( new \Elementor_servicesSlider() );
+	$widgets_manager->register( new \Elementor_titleWithButton() );
 
 
 }
