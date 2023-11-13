@@ -347,7 +347,7 @@ class Elementor_contactUs extends \Elementor\Widget_Base
                 }
 
                 .inputContainer{
-                    max-width: 80vh;
+                    max-width: 80vw;
                 }
             }
         </style>
