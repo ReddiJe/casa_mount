@@ -397,7 +397,7 @@ class Elementor_questionsAndAnswers extends \Elementor\Widget_Base
       <div class="containerQuestions">
         <div class="content">
           <?php foreach ($settings['qa_section'] as $index => $item) : ?>
-            <details id="<?php echo 'qa_' . $index; ?>" class="question <?php echo ($index === 0) ? 'active' : ''; ?>">
+            <details id="<?php echo 'qa_' . $index; ?>" class="question">
               <summary>
                 <?php echo esc_html($item['question']); ?>
               </summary>
