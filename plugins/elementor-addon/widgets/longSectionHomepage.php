@@ -47,7 +47,6 @@ class Elementor_longSectionHomepage extends \Elementor\Widget_Base
             [
                 'label' => esc_html__('Top Title', 'elementor-addon'),
                 'type' => \Elementor\Controls_Manager::TEXTAREA,
-                'default' => esc_html__('Hello world', 'elementor-addon'),
             ]
         );
 
@@ -56,7 +55,6 @@ class Elementor_longSectionHomepage extends \Elementor\Widget_Base
             [
                 'label' => esc_html__('Subtitle', 'elementor-addon'),
                 'type' => \Elementor\Controls_Manager::TEXTAREA,
-                'default' => esc_html__('Hello world', 'elementor-addon'),
             ]
         );
 
@@ -65,7 +63,6 @@ class Elementor_longSectionHomepage extends \Elementor\Widget_Base
             [
                 'label' => esc_html__('Text', 'elementor-addon'),
                 'type' => \Elementor\Controls_Manager::TEXTAREA,
-                'default' => esc_html__('Hello world', 'elementor-addon'),
             ]
         );
 
@@ -84,7 +81,6 @@ class Elementor_longSectionHomepage extends \Elementor\Widget_Base
             [
                 'label' => esc_html__('Bottom Title ', 'elementor-addon'),
                 'type' => \Elementor\Controls_Manager::TEXTAREA,
-                'default' => esc_html__('Hello world', 'elementor-addon'),
             ]
         );
 
@@ -93,7 +89,6 @@ class Elementor_longSectionHomepage extends \Elementor\Widget_Base
             [
                 'label' => esc_html__('Subtitle', 'elementor-addon'),
                 'type' => \Elementor\Controls_Manager::TEXTAREA,
-                'default' => esc_html__('Hello world', 'elementor-addon'),
             ]
         );
 
@@ -102,7 +97,6 @@ class Elementor_longSectionHomepage extends \Elementor\Widget_Base
             [
                 'label' => esc_html__('Left Text', 'elementor-addon'),
                 'type' => \Elementor\Controls_Manager::TEXTAREA,
-                'default' => esc_html__('Hello world', 'elementor-addon'),
             ]
         );
 
@@ -122,7 +116,6 @@ class Elementor_longSectionHomepage extends \Elementor\Widget_Base
             [
                 'label' => esc_html__('Right Side Title', 'elementor-addon'),
                 'type' => \Elementor\Controls_Manager::TEXTAREA,
-                'default' => esc_html__('Hello world', 'elementor-addon'),
             ]
         );
 
@@ -142,7 +135,6 @@ class Elementor_longSectionHomepage extends \Elementor\Widget_Base
             [
                 'label' => esc_html__('Description', 'elementor-addon'),
                 'type' => \Elementor\Controls_Manager::TEXTAREA,
-                'default' => esc_html__('Hello world', 'elementor-addon'),
             ]
         );
 
@@ -282,6 +274,51 @@ class Elementor_longSectionHomepage extends \Elementor\Widget_Base
             .descriptionMapHomepage p.description {
                 font-weight: 300;
             }
+
+            @media screen and (max-width: 768px) {
+                .titlesLongSection h2 {
+                    font-family: NewYork;
+                    font-size: 40px;
+                    font-weight: 400;
+                    line-height: 49px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                }
+
+                .titlesLongSection p {
+                    font-family: Open Sans;
+                    font-size: 20px !important;
+                    font-weight: 300;
+                    line-height: 35px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    width: 320px;
+                }
+
+                .textWowFadeIn {
+                    background: rgba(0, 0, 0, 0.50);
+                    backdrop-filter: blur(6px);
+                    padding: 25px 25px 25px 50px;
+                    font-size: 1.125rem;
+                    font-weight: 300;
+                    width: 100%;
+                }
+
+                .hoverMapSection {
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                    gap: 50px;
+                    padding: 100px 50px;
+                }
+
+                .longSectionHomepage {
+                    gap: 0vh;
+                }
+
+                .between {
+                    width: 100%;
+                }
+            }
         </style>
 
         <div class="longSectionHomepage">
@@ -315,8 +352,8 @@ class Elementor_longSectionHomepage extends \Elementor\Widget_Base
 
                 </div>
                 <div class="between">
-                        <img src="<?php echo esc_url($settings['image']['url']) ?>" alt="">
-                    </div>
+                    <img src="<?php echo esc_url($settings['image']['url']) ?>" alt="">
+                </div>
                 <div class="descriptionMapHomepage">
                     <p class="title">
                         <?php echo $settings['title1']; ?>
