@@ -273,7 +273,7 @@ class Elementor_questionsAndAnswers extends \Elementor\Widget_Base
           align-items: center;
           justify-content: space-between;
           font-weight: 600;
-          padding: 1.5rem;
+          padding-left: 5px;
         }
 
         summary::-webkit-details-marker,
@@ -292,7 +292,8 @@ class Elementor_questionsAndAnswers extends \Elementor\Widget_Base
         }
 
         .content {
-          padding: 0 1.5rem 1.5rem;
+          padding: 10px 5px 0px 5px;
+
         }
 
         details[open] {
@@ -364,7 +365,7 @@ class Elementor_questionsAndAnswers extends \Elementor\Widget_Base
 
         .question {
           font-family: Urbanist;
-          font-size: 16px;
+          font-size: 18px;
           font-weight: 400;
           line-height: 24px;
           letter-spacing: 0em;
