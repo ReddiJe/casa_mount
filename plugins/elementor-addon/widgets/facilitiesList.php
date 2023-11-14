@@ -47,7 +47,6 @@ class Elementor_facilitiesList extends \Elementor\Widget_Base
             [
                 'label' => esc_html__('Title', 'elementor-addon'),
                 'type' => \Elementor\Controls_Manager::TEXTAREA,
-                'default' => esc_html__('Hello world', 'elementor-addon'),
             ]
         );
 
@@ -56,7 +55,6 @@ class Elementor_facilitiesList extends \Elementor\Widget_Base
             [
                 'label' => esc_html__('Subtitle', 'elementor-addon'),
                 'type' => \Elementor\Controls_Manager::TEXTAREA,
-                'default' => esc_html__('Hello world', 'elementor-addon'),
             ]
         );
 
@@ -134,8 +132,8 @@ class Elementor_facilitiesList extends \Elementor\Widget_Base
                 ],
             ]
         );
-        
-        
+
+
 
         $this->end_controls_section();
 
@@ -151,100 +149,131 @@ class Elementor_facilitiesList extends \Elementor\Widget_Base
 ?>
 
         <style>
- .ourFacilitesContainer{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 25px;
-        padding: 50px;
-    }
+            .ourFacilitiesContainer {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 25px;
+                padding: 50px;
+            }
 
-    .facilitiesContainer{
-        width: 100%;
-        display: flex;
-        align-items: flex-start;
-        align-content: flex-start;
-        gap: 75px;
-        flex-wrap: wrap;
-    }
+            .facilitiesContainer {
+                width: 100%;
+                display: flex;
+                align-items: flex-start;
+                align-content: flex-start;
+                gap: 75px;
+                flex-wrap: wrap;
+            }
 
-    .facilitiesContainer .facility{
-        width: 20%;
-        position: relative;
-        overflow: hidden;
-    }
+            .facilitiesContainer .facility {
+                width: 20%;
+                position: relative;
+                overflow: hidden;
+            }
 
-    .facilitiesContainer .facility img{
-        width: 100%;
-    }
+            .facilitiesContainer .facility img {
+                width: 100%;
+            }
 
-    .facilitiesContainer .facility .text{
-        top: 85%;
-        position: absolute;
-        padding: 10px;
-        height: 100%;
-        width: 100%;
-        background: rgba(0, 0, 0, 0.75);
-        backdrop-filter: blur(4px);
-        display: flex;
-        justify-content: start;
-        align-items: start;
-        flex-direction: column;
-        gap: 15px;
-        transition: all linear 300ms;
-    }
+            .facilitiesContainer .facility .text {
+                top: 85%;
+                position: absolute;
+                padding: 10px;
+                height: 100%;
+                width: 100%;
+                background: rgba(0, 0, 0, 0.75);
+                backdrop-filter: blur(4px);
+                display: flex;
+                justify-content: start;
+                align-items: start;
+                flex-direction: column;
+                gap: 15px;
+                transition: all linear 300ms;
+            }
 
-    .facility .text h4,
-    .facility .text p{
-        color: #fff;
-        color: #FFF;
-font-family: Open Sans;
-    }
+            .facility .text h4,
+            .facility .text p {
+                color: #fff;
+                color: #FFF;
+                font-family: Open Sans;
+            }
 
-    .facility .text h4{
-        font-size: 1.25rem;
-        font-weight: 600;
-    }
+            .facility .text h4 {
+                font-size: 1.25rem;
+                font-weight: 600;
+            }
 
-    .facility .text p{
-        font-size: 1rem;
-        font-weight: 300;
-    }
+            .facility .text p {
+                font-size: 1rem;
+                font-weight: 300;
+            }
 
-    .facility .text .link{
-        font-weight: 400;
-    }
+            .facility .text .link {
+                font-weight: 400;
+            }
 
-    .facilitiesContainer .facility:hover .text{
-        top: 0;
-    }
+            .facilitiesContainer .facility:hover .text {
+                top: 0;
+            }
+
+            @media screen and (min-width: 1600px) {
+                .contactsContainer .side {
+                    padding: 0px 10%;
+                }
+            }
+
+            @media screen and (max-width: 600px) {
+                .ourFacilitiesContainer {
+                    padding: 50px 15px 50px 15px;
+                }
+                .facilitiesContainer {
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                    height: auto;
+                    gap: 25px;
+                }
+
+                .facilitiesContainer .facility {
+                    width: 100%;
+                    height: 350px;
+                }
+
+                .facilitiesContainer .facility img{
+                    height: 350px;
+                }
+
+                .facilitiesContainer .facility .text {
+                    top: 0;
+                }
+            }
         </style>
 
-<div class="ourFacilitesContainer">
-        <h2><?php echo $settings['title']; ?></h2>
-        <p><?php echo $settings['subtitle']; ?></p>
-        <div class="facilitiesContainer">
-            <?php 
-            foreach ($facilities as $facility)  {
-                $facility_image = $facility['facility_image']['url'];
-                $facility_url = $facility['facility_url'];
+        <div class="ourFacilitiesContainer">
+            <h2><?php echo $settings['title']; ?></h2>
+            <p><?php echo $settings['subtitle']; ?></p>
+            <div class="facilitiesContainer">
+                <?php
+                foreach ($facilities as $facility) {
+                    $facility_image = $facility['facility_image']['url'];
+                    $facility_url = $facility['facility_url'];
                 ?>
-            <a href="<?php echo $facility_url; ?>" class="facility">
-                <img src="<?php echo $facility_image; ?>" alt="">
-                <div class="text">
-                    <h4>
-                    <?php echo $facility['facility_title']; ?>
-                    </h4>
-                    <p><?php echo $facility['facility_description']; ?></p>
-                    <p class="link">More &gt;</p>
-                </div>
-            </a>
-            <?php 
-            }
-            ?>
+                    <a href="<?php echo $facility_url; ?>" class="facility">
+                        <img src="<?php echo $facility_image; ?>" alt="">
+                        <div class="text">
+                            <h4>
+                                <?php echo $facility['facility_title']; ?>
+                            </h4>
+                            <p><?php echo $facility['facility_description']; ?></p>
+                            <p class="link">More &gt;</p>
+                        </div>
+                    </a>
+                <?php
+                }
+                ?>
+            </div>
         </div>
-    </div>
 
 <?php
     }
