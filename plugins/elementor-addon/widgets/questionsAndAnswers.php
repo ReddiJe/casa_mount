@@ -401,7 +401,7 @@ class Elementor_questionsAndAnswers extends \Elementor\Widget_Base
               <summary>
                 <?php echo esc_html($item['question']); ?>
               </summary>
-              <div class="answer <?php echo ($index === 0) ? 'active' : ''; ?>" id="<?php echo 'qa_' . $index; ?>">
+              <div class="content">
                 <p><?php echo esc_html($item['answer']); ?></p>
               </div>
             </details>
