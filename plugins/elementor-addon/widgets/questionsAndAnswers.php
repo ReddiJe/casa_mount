@@ -352,6 +352,25 @@ class Elementor_questionsAndAnswers extends \Elementor\Widget_Base
           box-shadow: none;
         } */
 
+        .answer {
+          font-family: Urbanist;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 17px;
+          letter-spacing: 0em;
+          text-align: left;
+
+        }
+
+        .question {
+          font-family: Urbanist;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+
         .desktop {
           display: none;
         }
