@@ -1,73 +1,77 @@
 <?php
 
-class Elementor_timeline extends \Elementor\Widget_Base {
+class Elementor_timeline extends \Elementor\Widget_Base
+{
 
-	public function get_name() {
+	public function get_name()
+	{
 		return 'timeline';
 	}
 
-	public function get_title() {
-		return esc_html__( 'Timeline', 'elementor-addon' );
+	public function get_title()
+	{
+		return esc_html__('Timeline', 'elementor-addon');
 	}
 
-	public function get_icon() {
+	public function get_icon()
+	{
 		return 'eicon-code';
 	}
 
-	public function get_categories() {
-		return [ 'basic' ];
+	public function get_categories()
+	{
+		return ['basic'];
 	}
 
-	public function get_keywords() {
-		return [ 'hello', 'world' ];
+	public function get_keywords()
+	{
+		return ['hello', 'world'];
 	}
 
-	protected function register_controls() {
+	protected function register_controls()
+	{
 
 		// Content Tab Start
 
 		$this->start_controls_section(
 			'section_title',
 			[
-				'label' => esc_html__( 'Title', 'elementor-addon' ),
+				'label' => esc_html__('Title', 'elementor-addon'),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
-            ]
+			]
 		);
 
 		$this->add_control(
 			'title',
 			[
-				'label' => esc_html__( 'Title', 'elementor-addon' ),
+				'label' => esc_html__('Title', 'elementor-addon'),
 				'type' => \Elementor\Controls_Manager::TEXTAREA,
-				'default' => esc_html__( 'Hello world', 'elementor-addon' ),
-            ]
+			]
 		);
 
 		$this->add_control(
-            'subtitle',
-            [
-                'label' => esc_html__('Subtitle', 'elementor-addon'),
-                'type' => \Elementor\Controls_Manager::TEXTAREA,
-                'default' => esc_html__('Hello world', 'elementor-addon'),
-            ]
-        );
+			'subtitle',
+			[
+				'label' => esc_html__('Subtitle', 'elementor-addon'),
+				'type' => \Elementor\Controls_Manager::TEXTAREA,
+			]
+		);
 
 		$this->end_controls_section();
 
 		$this->start_controls_section(
 			'step1',
 			[
-				'label' => esc_html__( 'Step1', 'elementor-addon' ),
+				'label' => esc_html__('Step1', 'elementor-addon'),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
-            ]
+			]
 		);
 
 		$this->add_control(
 			'title1',
 			[
-				'label' => esc_html__( 'Title', 'elementor-addon' ),
+				'label' => esc_html__('Title', 'elementor-addon'),
 				'type' => \Elementor\Controls_Manager::TEXTAREA,
-				'default' => esc_html__( 'Hello world', 'elementor-addon' ),
 			]
 		);
 
@@ -76,7 +80,6 @@ class Elementor_timeline extends \Elementor\Widget_Base {
 			[
 				'label' => esc_html__('Subtitle', 'elementor-addon'),
 				'type' => \Elementor\Controls_Manager::TEXTAREA,
-				'default' => esc_html__('Hello world', 'elementor-addon'),
 			]
 		);
 
@@ -94,17 +97,16 @@ class Elementor_timeline extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'Step2',
 			[
-				'label' => esc_html__( 'Step2', 'elementor-addon' ),
+				'label' => esc_html__('Step2', 'elementor-addon'),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
-            ]
+			]
 		);
 
 		$this->add_control(
 			'title2',
 			[
-				'label' => esc_html__( 'Title', 'elementor-addon' ),
+				'label' => esc_html__('Title', 'elementor-addon'),
 				'type' => \Elementor\Controls_Manager::TEXTAREA,
-				'default' => esc_html__( 'Hello world', 'elementor-addon' ),
 			]
 		);
 
@@ -113,7 +115,6 @@ class Elementor_timeline extends \Elementor\Widget_Base {
 			[
 				'label' => esc_html__('Subtitle', 'elementor-addon'),
 				'type' => \Elementor\Controls_Manager::TEXTAREA,
-				'default' => esc_html__('Hello world', 'elementor-addon'),
 			]
 		);
 
@@ -131,17 +132,16 @@ class Elementor_timeline extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'step3',
 			[
-				'label' => esc_html__( 'Step3', 'elementor-addon' ),
+				'label' => esc_html__('Step3', 'elementor-addon'),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
-            ]
+			]
 		);
 
 		$this->add_control(
 			'title3',
 			[
-				'label' => esc_html__( 'Title', 'elementor-addon' ),
+				'label' => esc_html__('Title', 'elementor-addon'),
 				'type' => \Elementor\Controls_Manager::TEXTAREA,
-				'default' => esc_html__( 'Hello world', 'elementor-addon' ),
 			]
 		);
 
@@ -150,7 +150,6 @@ class Elementor_timeline extends \Elementor\Widget_Base {
 			[
 				'label' => esc_html__('Subtitle', 'elementor-addon'),
 				'type' => \Elementor\Controls_Manager::TEXTAREA,
-				'default' => esc_html__('Hello world', 'elementor-addon'),
 			]
 		);
 
@@ -168,17 +167,16 @@ class Elementor_timeline extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'step4',
 			[
-				'label' => esc_html__( 'Step4', 'elementor-addon' ),
+				'label' => esc_html__('Step4', 'elementor-addon'),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
-            ]
+			]
 		);
 
 		$this->add_control(
 			'title4',
 			[
-				'label' => esc_html__( 'Title', 'elementor-addon' ),
+				'label' => esc_html__('Title', 'elementor-addon'),
 				'type' => \Elementor\Controls_Manager::TEXTAREA,
-				'default' => esc_html__( 'Hello world', 'elementor-addon' ),
 			]
 		);
 
@@ -187,7 +185,6 @@ class Elementor_timeline extends \Elementor\Widget_Base {
 			[
 				'label' => esc_html__('Subtitle', 'elementor-addon'),
 				'type' => \Elementor\Controls_Manager::TEXTAREA,
-				'default' => esc_html__('Hello world', 'elementor-addon'),
 			]
 		);
 
@@ -205,17 +202,16 @@ class Elementor_timeline extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'step5',
 			[
-				'label' => esc_html__( 'Step5', 'elementor-addon' ),
+				'label' => esc_html__('Step5', 'elementor-addon'),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
-            ]
+			]
 		);
 
 		$this->add_control(
 			'title5',
 			[
-				'label' => esc_html__( 'Title', 'elementor-addon' ),
+				'label' => esc_html__('Title', 'elementor-addon'),
 				'type' => \Elementor\Controls_Manager::TEXTAREA,
-				'default' => esc_html__( 'Hello world', 'elementor-addon' ),
 			]
 		);
 
@@ -224,7 +220,6 @@ class Elementor_timeline extends \Elementor\Widget_Base {
 			[
 				'label' => esc_html__('Subtitle', 'elementor-addon'),
 				'type' => \Elementor\Controls_Manager::TEXTAREA,
-				'default' => esc_html__('Hello world', 'elementor-addon'),
 			]
 		);
 
@@ -242,17 +237,16 @@ class Elementor_timeline extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'step6',
 			[
-				'label' => esc_html__( 'Step6', 'elementor-addon' ),
+				'label' => esc_html__('Step6', 'elementor-addon'),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
-            ]
+			]
 		);
 
 		$this->add_control(
 			'title6',
 			[
-				'label' => esc_html__( 'Title', 'elementor-addon' ),
+				'label' => esc_html__('Title', 'elementor-addon'),
 				'type' => \Elementor\Controls_Manager::TEXTAREA,
-				'default' => esc_html__( 'Hello world', 'elementor-addon' ),
 			]
 		);
 
@@ -261,7 +255,6 @@ class Elementor_timeline extends \Elementor\Widget_Base {
 			[
 				'label' => esc_html__('Subtitle', 'elementor-addon'),
 				'type' => \Elementor\Controls_Manager::TEXTAREA,
-				'default' => esc_html__('Hello world', 'elementor-addon'),
 			]
 		);
 
@@ -284,7 +277,7 @@ class Elementor_timeline extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'section_title_style',
 			[
-				'label' => esc_html__( 'Title', 'elementor-addon' ),
+				'label' => esc_html__('Title', 'elementor-addon'),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -292,7 +285,7 @@ class Elementor_timeline extends \Elementor\Widget_Base {
 		$this->add_control(
 			'title_color',
 			[
-				'label' => esc_html__( 'Text Color', 'elementor-addon' ),
+				'label' => esc_html__('Text Color', 'elementor-addon'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .hello-world' => 'color: {{VALUE}};',
@@ -308,309 +301,294 @@ class Elementor_timeline extends \Elementor\Widget_Base {
 
 	}
 
-	protected function render() {
+	protected function render()
+	{
 		$settings = $this->get_settings_for_display();
 
-		?>
+?>
 
-        <style>
+		<style>
+			.heroSection {
+				text-align: center;
+				justify-content: center;
+			}
 
-	.heroSection {
-		text-align: center;
-		justify-content: center;
-	}
+			.heroSectionTimeline {
+				padding-top: 20vh;
+				height: 40vh;
+			}
 
-	.heroSectionTimeline{
-        padding-top: 20vh;
-        height: 40vh;
-    }
+			.timelineContainer {
+				position: relative;
+			}
 
-    .timelineContainer{
-        position: relative;
-    }
+			.timelineContainer .timelineBackground {
+				width: 100%;
+				object-fit: contain;
+			}
 
-    .timelineContainer .timelineBackground{
-        width: 100%;
-        object-fit: contain;
-    }
+			.step {
+				position: absolute;
+				display: flex;
+				flex-direction: column;
+				gap: 5px;
+			}
 
-    .step{
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-    }
+			.step h3,
+			.step p {
+				color: #fff;
+			}
 
-    .step h3, .step p{
-        color: #fff;
-    }
+			.step h3 {
+				font-size: 1rem;
+				font-weight: 400;
+			}
 
-    .step h3{
-        font-size: 1rem;
-        font-weight: 400;
-    }
+			.step.left {
+				justify-content: start;
+				align-items: start;
+			}
 
-    .step.left{
-        justify-content: start;
-        align-items: start;
-    }
+			.step.right {
+				justify-content: end;
+				align-items: end;
+			}
 
-    .step.right{
-        justify-content: end;
-        align-items: end;
-    }
+			.step.right p {
+				text-align: right;
+			}
 
-    .step.right p{
-        text-align: right;
-    }
 
-    
-    .step p{
-        color: #FFF;
-		font-size: 20px;
-		font-weight: 300;
-		max-width: 700px;
-    }
+			.step p {
+				color: #FFF;
+				font-size: 20px;
+				font-weight: 300;
+				max-width: 700px;
+			}
 
-    .step .subtitle{
-        color: rgba(255, 255, 255, 0.75);
-		font-size: 24px;
-		font-weight: 500;
-		width: 100;
-    }
+			.step .subtitle {
+				color: rgba(255, 255, 255, 0.75);
+				font-size: 24px;
+				font-weight: 500;
+				width: 100;
+			}
 
-    .stepOne{
-        top: 13%;
-        left: 22%;
-    }
+			.stepOne {
+				top: 13%;
+				left: 22%;
+			}
 
-    .stepTwo{
-        top: 23%;
-        left: 12%;
-        justify-content: end;
-        align-items: end;
-    }
+			.stepTwo {
+				top: 23%;
+				left: 12%;
+				justify-content: end;
+				align-items: end;
+			}
 
-    .stepThree{
-        top: 33%;
-        left: 33%;
-    }
+			.stepThree {
+				top: 33%;
+				left: 33%;
+			}
 
-    .stepFour{
-        top: 45%;
-        left: 26%;
-    }
+			.stepFour {
+				top: 45%;
+				left: 26%;
+			}
 
-    .stepFive{
-        top: 56%;
-        left: 25%;
-    }
+			.stepFive {
+				top: 56%;
+				left: 25%;
+			}
 
-    .stepSix{
-        padding: 15px;
-        background: rgba(0, 0, 0, 0.50);
-        top: 73%;
-        left: 54%;
-        transform: translateX(-50%);
-    }
+			.stepSix {
+				padding: 15px;
+				background: rgba(0, 0, 0, 0.50);
+				top: 73%;
+				left: 54%;
+				transform: translateX(-50%);
+			}
 
-    .stepSix h3,
-    .stepSix p{
-        width: 100%;
-		text-align: center;
-        }
-    
+			.stepSix h3,
+			.stepSix p {
+				width: 100%;
+				text-align: center;
+			}
 
-/* @media screen and (min-width: 1600px){
+			.timelineContainer .timelineBackgroundForPhone {
+				display: none;
+			}
 
-    .step p{
-		max-width: 800px;
-    }
+			@media screen and (max-width: 768px) {
+				.timelineContainer .timelineBackground {
+					display: none;
+				}
 
-    .stepOne{
-        top: 14%;
-        left: 22%;
-    }
+				.timelineContainer .timelineBackgroundForPhone {
+					display: block;
+					width: 100%;
+					object-fit: contain;
+				}
 
-    .stepTwo{
-        top: 23%;
-        left: 22%;
-        justify-content: end;
-        align-items: end;
-    }
-} */
+				.step {
+					position: absolute;
+					display: flex;
+					flex-direction: column;
+					gap: 5px;
+				}
 
-.timelineContainer .timelineBackgroundForPhone {
-	display: none;
-}
+				.step h3,
+				.step p {
+					color: #fff;
+					width: 80%;
+					font-size: 14px;
+				}
 
-@media screen and (max-width: 768px) {
-    .timelineContainer .timelineBackground {
-        display: none;
-    }
+				.step h3 {
+					font-size: 2rem;
+					font-weight: 400;
+				}
 
-    .timelineContainer .timelineBackgroundForPhone {
-        display: block;
-		width: 100%;
-        object-fit: contain;
-    }
+				.step.left {
+					justify-content: start;
+					align-items: start;
+				}
 
-	.step{
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-    }
+				.step.right {
+					justify-content: start;
+					align-items: start;
+				}
 
-    .step h3, .ste p{
-        color: #fff;
-    }
+				.step.right p {
+					text-align: start;
+				}
 
-    .step h3{
-        font-size: 2rem;
-        font-weight: 400;
-    }
 
-    .step.left{
-        justify-content: start;
-        align-items: start;
-    }
+				.step p {
+					color: #FFF;
+					font-size: 15px;
+					font-weight: 300;
+					max-width: 700px;
+				}
 
-    .step.right{
-        justify-content: start;
-        align-items: start;
-    }
+				.step .subtitle {
+					color: rgba(255, 255, 255, 0.75);
+					font-size: 19px;
+					font-weight: 500;
+					width: 100;
+				}
 
-    .step.right p{
-        text-align: start;
-    }
+				.stepOne {
+					top: 10%;
+					left: 3%;
+				}
 
-    
-    .step p{
-        color: #FFF;
-		font-size: 15px;
-		font-weight: 300;
-		max-width: 700px;
-    }
+				.stepTwo {
+					top: 23%;
+					left: 3%;
+					justify-content: start;
+					align-items: end;
+				}
 
-    .step .subtitle{
-        color: rgba(255, 255, 255, 0.75);
-		font-size: 19px;
-		font-weight: 500;
-		width: 100;
-    }
+				.stepThree {
+					top: 35%;
+					left: 3%;
+				}
 
-    .stepOne{
-        top: 10%;
-        left: 3%;
-    }
+				.stepFour {
+					top: 48%;
+					left: 3%;
+				}
 
-    .stepTwo{
-        top: 21%;
-        left: 3%;
-        justify-content: start;
-        align-items: end;
-    }
+				.stepFive {
+					width: Fixed (313px);
+					height: Hug (137px);
+					gap: 5px;
+					top: 60%;
+					left: 3%;
+				}
 
-    .stepThree{
-        top: 33%;
-        left: 3%;
-    }
+				.stepSix {
+					width: 80%;
+					padding: 10px;
+					background: rgba(0, 0, 0, 0.50);
+					top: 73%;
+					left: 50%;
+					transform: translateX(-50%);
+				}
 
-    .stepFour{
-        top: 45%;
-        left: 3%;
-    }
+				.stepSix h3,
+				.stepSix p {
+					width: 100%;
+					text-align: center;
+				}
+			}
+		</style>
 
-    .stepFive{
-		width: Fixed (313px);
-		height: Hug (137px);
-		gap: 5px;
-        top: 57%;
-        left: 3%;
-    }
 
-    .stepSix{
-        padding: 10px;
-        background: rgba(0, 0, 0, 0.50);
-        top: 73%;
-        left: 54%;
-        transform: translateX(-50%);
-    }
 
-    .stepSix h3,
-    .stepSix p{
-        width: 100%;
-		text-align: center;
-        }
-}
-        </style>
+		<div class="heroSection heroSectionTimeline wow fadeInUp">
+			<h1>
+				<?php echo $settings['title']; ?>
+			</h1>
+			<p>
+				<?php echo $settings['subtitle']; ?>
+			</p>
+		</div>
 
-		
+		<div class="timelineContainer">
+			<img src="http://casamounthomesja.com/wp-content/uploads/2023/11/bgPc.png" alt="" class="timelineBackground">
+			<img src="http://casamounthomesja.com/wp-content/uploads/2023/11/bgMobile.png" alt="" class="timelineBackgroundForPhone">
+			<div class="etapsContainer">
+				<div class="step stepOne left wow fadeInUp">
+					<h3>
+						<?php echo $settings['year1']; ?>
+					</h3>
+					<p class="subtitle"><?php echo $settings['title1']; ?></p>
+					<p><?php echo $settings['subtitle1']; ?></p>
+				</div>
 
-<div class="heroSection heroSectionTimeline wow fadeInUp">
-        <h1>
-            <?php echo $settings['title']; ?>
-        </h1>
-        <p>
-            <?php echo $settings['subtitle']; ?>
-        </p>
-    </div>
+				<div class="step stepTwo right wow fadeInUp">
+					<h3>
+						<?php echo $settings['year2']; ?>
+					</h3>
+					<p class="subtitle"><?php echo $settings['title2']; ?></p>
+					<p><?php echo $settings['subtitle2']; ?></p>
+				</div>
 
-<div class="timelineContainer">
-        <img src="http://casamounthomesja.com/wp-content/uploads/2023/11/bgPc.png" alt="" class="timelineBackground">
-		<img src="http://casamounthomesja.com/wp-content/uploads/2023/11/bgMobile.png" alt="" class="timelineBackgroundForPhone">
-        <div class="etapsContainer">
-            <div class="step stepOne left wow fadeInUp">
-                <h3>
-					<?php echo $settings['year1']; ?>
-                </h3>
-                <p class="subtitle"><?php echo $settings['title1']; ?></p>
-                <p><?php echo $settings['subtitle1']; ?></p>
-            </div>
+				<div class="step stepThree left wow fadeInUp">
+					<h3>
+						<?php echo $settings['year3']; ?>
+					</h3>
+					<p class="subtitle"><?php echo $settings['title3']; ?></p>
+					<p><?php echo $settings['subtitle3']; ?></p>
+				</div>
 
-            <div class="step stepTwo right wow fadeInUp">
-                <h3>
-				<?php echo $settings['year2']; ?>
-                </h3>
-                <p class="subtitle"><?php echo $settings['title2']; ?></p>
-                <p><?php echo $settings['subtitle2']; ?></p>
-            </div>
+				<div class="step stepFour right wow fadeInUp">
+					<h3>
+						<?php echo $settings['year4']; ?>
+					</h3>
+					<p class="subtitle"><?php echo $settings['title4']; ?></p>
+					<p><?php echo $settings['subtitle4']; ?></p>
+				</div>
 
-            <div class="step stepThree left wow fadeInUp">
-                <h3>
-				<?php echo $settings['year3']; ?>
-                </h3>
-                <p class="subtitle"><?php echo $settings['title3']; ?></p>
-                <p><?php echo $settings['subtitle3']; ?></p>
-            </div>
+				<div class="step stepFive left wow fadeInUp">
+					<h3>
+						<?php echo $settings['year5']; ?>
+					</h3>
+					<p class="subtitle"><?php echo $settings['title5']; ?></p>
+					<p><?php echo $settings['subtitle5']; ?></p>
+				</div>
 
-            <div class="step stepFour right wow fadeInUp">
-                <h3>
-				<?php echo $settings['year4']; ?>
-                </h3>
-                <p class="subtitle"><?php echo $settings['title4']; ?></p>
-                <p><?php echo $settings['subtitle4']; ?></p>
-            </div>
+				<div class="step stepSix left wow fadeInUp">
+					<h3>
+						<?php echo $settings['year6']; ?>
+					</h3>
+					<p class="subtitle"><?php echo $settings['title6']; ?></p>
+					<p><?php echo $settings['subtitle6']; ?></p>
+				</div>
+			</div>
+		</div>
 
-            <div class="step stepFive left wow fadeInUp">
-                <h3>
-				<?php echo $settings['year5']; ?>
-                </h3>
-                <p class="subtitle"><?php echo $settings['title5']; ?></p>
-                <p><?php echo $settings['subtitle5']; ?></p>
-            </div>
-
-            <div class="step stepSix left wow fadeInUp">
-                <h3>
-				<?php echo $settings['year6']; ?>
-                </h3>
-                <p class="subtitle"><?php echo $settings['title6']; ?></p>
-                <p><?php echo $settings['subtitle6']; ?></p>
-            </div>
-        </div>
-    </div>
-
-		<?php
+<?php
 	}
 }
