@@ -298,7 +298,7 @@ class Elementor_questionsAndAnswers extends \Elementor\Widget_Base
         details[open] {
 
           summary::after {
-            content: "−";
+            content: "-";
           }
 
           .content {
