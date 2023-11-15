@@ -188,7 +188,7 @@ class Elementor_docsBlocks extends \Elementor\Widget_Base
             .document p {
                 padding: 10px;
                 /* background: #314047; */
-                color: #fff;
+                color: #2c2d2c;
                 text-align: center;
                 width: 100%;
                 margin: 0;
@@ -263,18 +263,6 @@ class Elementor_docsBlocks extends \Elementor\Widget_Base
             @media screen and (min-width: 1600px) {
                 .documentsContainer {
                     padding: 0 10%;
-                }
-            }
-
-            @media screen and (max-width: 1050px) {
-                .documentsContainer {
-                    padding: 25px;
-                    grid-template-columns: repeat(2, 1fr);
-                }
-
-                .document {
-                    height: 200px;
-                    width: 100%;
                 }
             }
 
