@@ -27,6 +27,7 @@ $header_nav_menu = wp_nav_menu( [
 .site-header {
     position: absolute;
     z-index: 1000;
+	width: 100vw;
 }
 .site-navigation-toggle i{
 	color:#fff;
