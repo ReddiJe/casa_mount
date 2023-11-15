@@ -87,6 +87,7 @@ $footer_nav_menu = wp_nav_menu([
     .emailFooterContainer {
         display: flex;
         align-items: center;
+        font-size: 20px;
         gap: 15px;
         padding: 10px 50px 10px 50px;
     }
