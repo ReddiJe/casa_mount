@@ -44,17 +44,11 @@ $header_nav_menu = wp_nav_menu( [
 		display: block;
 	}
 
-	.mobileEMail{
-		display: none;
-	}
 @media screen and (max-width: 600px) {
 	.pcEmail{
 		display: none;
 	}
 
-	.mobileEMail{
-		display: block;
-	}
 }
 </style>
 <header id="site-header" class="site-header dynamic-header <?php echo esc_attr( hello_get_header_layout_class() ); ?>" role="banner">
@@ -92,7 +86,6 @@ $header_nav_menu = wp_nav_menu( [
 				// PHPCS - escaped by WordPress with "wp_nav_menu"
 				echo $header_nav_menu; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 				?>
-							<a href="mailto:info@casamounthomesja.com" class="emailHeader mobileEMail">info@casamounthomesja.com</a>
 			</nav>
 
 		<?php endif; ?>
