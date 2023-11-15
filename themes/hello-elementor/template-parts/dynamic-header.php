@@ -26,9 +26,15 @@ $header_nav_menu = wp_nav_menu([
 
 <style>
 	.site-header {
-		position: absolute;
 		z-index: 1000;
 		width: 100vw;
+		padding-bottom: 70px;
+	}
+
+	.header-inner{
+		position: fixed;
+		top: 0;
+		width: 100%;
 	}
 
 	.site-navigation-toggle i {
