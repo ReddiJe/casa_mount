@@ -28,7 +28,8 @@ $header_nav_menu = wp_nav_menu([
 	.site-header {
 		z-index: 1000;
 		width: 100vw;
-		padding-bottom: 70px;
+		padding-bottom: 73px;
+		overflow: visible;
 	}
 
 	.header-inner{
