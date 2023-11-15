@@ -83,6 +83,30 @@ $footer_nav_menu = wp_nav_menu( [
 .emailFooterContainer{
     padding-left: 25px;
 }
+.footer-inner{
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+        gap: 15px
+    }
+
+@media screen and(max-width: 600px) {
+    .footer-inner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px
+    }
+
+    .menu-footer-menu{
+        flex-wrap: no-wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
 </style>
 <footer id="site-footer" class="footer <?php echo esc_attr( $footer_class ); ?>" role="contentinfo">
 	<div class="footer-inner">
