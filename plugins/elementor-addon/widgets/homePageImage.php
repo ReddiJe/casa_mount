@@ -110,7 +110,7 @@ class Elementor_homePageImage extends \Elementor\Widget_Base
 
         <style>
             .firstViewContainer {
-                height: 90vh;
+                height: 100vh;
                 width: 100%;
             }
 
@@ -125,6 +125,10 @@ class Elementor_homePageImage extends \Elementor\Widget_Base
                 bottom: 0;
                 left: 0;
                 right: 0;
+            }
+
+            .firstViewContainer img {
+                height: 100vh;
             }
 
             .backgroundImage {
@@ -267,11 +271,12 @@ class Elementor_homePageImage extends \Elementor\Widget_Base
 
                 .titlesFirstView {
                     padding: 40px 10px 10px 40px;
+                    height: 100vh;
                 }
 
-                /* .firstViewContainer img {
-
-                } */
+                .firstViewContainer img {
+                    height: 100vh;
+                }
 
                 .titlesFirstView h1 {
                     font-family: Open Sans;
