@@ -47,7 +47,7 @@ $header_nav_menu = wp_nav_menu( [
 	.mobileEMail{
 		display: none;
 	}
-@media screen and (max-width: 600px;) {
+@media screen and (max-width: 600px) {
 	.pcEmail{
 		display: none;
 	}
