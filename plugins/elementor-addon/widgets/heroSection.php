@@ -138,6 +138,20 @@ class Elementor_heroSection extends \Elementor\Widget_Base
 				.heroImageContainer {
 					padding: 15px;
 					grid-template-columns: repeat(1, 1fr);
+					height: auto;
+				}
+
+				.hello-world h1 {
+					color: #000;
+					font-size: 24px;
+					font-weight: 400;
+					text-transform: uppercase;
+				}
+
+				.hello-world p {
+					color: #000;
+					font-size: 14px;
+					font-weight: 300;
 				}
 			}
 		</style>

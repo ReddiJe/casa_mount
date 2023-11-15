@@ -107,6 +107,7 @@ class Elementor_homePageImage extends \Elementor\Widget_Base
     {
         $settings = $this->get_settings_for_display();
 ?>
+
         <style>
             .firstViewContainer {
                 height: 90vh;
@@ -124,6 +125,10 @@ class Elementor_homePageImage extends \Elementor\Widget_Base
                 bottom: 0;
                 left: 0;
                 right: 0;
+            }
+
+            .backgroundImage {
+                width: 100%;
             }
 
             .titlesFirstView {
@@ -148,14 +153,14 @@ class Elementor_homePageImage extends \Elementor\Widget_Base
                 text-align: right;
             }
 
-            .titlesFirstView h1 {
+            .titlesFirstView p {
                 color: white;
                 font-size: 3rem;
                 text-transform: uppercase;
                 font-weight: 400;
             }
 
-            .titlesFirstView p {
+            .titlesFirstView h1 {
                 color: var(--Gold-Text, #F8D39E);
                 text-align: right;
                 font-size: 1.5rem;
@@ -248,13 +253,49 @@ class Elementor_homePageImage extends \Elementor\Widget_Base
             .arrowDown.investors:hover p {
                 color: #2c2d2c;
             }
+
+            @media screen and (min-width: 1600px) {
+                .firstViewContainer .side {
+                    padding: 0px 10%;
+                }
+            }
+
+            @media screen and (max-width: 768px) {
+                .firstViewContainer {
+                    height: auto;
+                }
+
+                .titlesFirstView {
+                    padding: 40px 10px 10px 40px;
+                }
+
+                /* .firstViewContainer img {
+
+                } */
+
+                .titlesFirstView h1 {
+                    font-family: Open Sans;
+                    font-size: 20px;
+                    font-weight: 300;
+                    letter-spacing: 0em;
+                    text-align: right;
+                }
+
+                .titlesFirstView p {
+                    font-family: NewYork;
+                    font-size: 1.85rem;
+                    font-weight: 500;
+                    letter-spacing: 0em;
+                    text-align: right;
+                }
+            }
         </style>
 
         <div class="firstViewContainer">
             <img src="<?php echo $settings['background_image']['url']; ?>" alt="" class="backgroundImage">
             <div class="titlesFirstView wow fadeInUp">
-                <p><?php echo $settings['text']; ?></p>
                 <h1><?php echo $settings['title']; ?></h1>
+                <p><?php echo $settings['text']; ?></p>
                 <a class="arrowDown" href="#sectionForArrow">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="34" viewBox="0 0 20 34" fill="none">
                         <path d="M20 22.6667C18.94 22.6667 17.3571 23.7051 16.0286 24.7562C14.3143 26.1077 12.8186 27.7227 11.6771 29.5743C10.8214 30.9627 10 32.6457 10 34M10 34C10 32.6457 9.17857 30.9612 8.32286 29.5743C7.18 27.7227 5.68428 26.1077 3.97286 24.7562C2.64285 23.7051 1.05714 22.6667 -2.82391e-06 22.6667M10 34L10 7.94464e-08" stroke="white" stroke-width="0.5" />
