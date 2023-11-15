@@ -32,7 +32,7 @@ $footer_nav_menu = wp_nav_menu( [
     background-position: center bottom;
     background-size: cover;
     display: flex;
-    background-image: url(http://localhost:8000/wp-content/uploads/2023/11/Group-88-scaled.webp);
+    background-image: url(http://casamounthomesja.com/wp-content/uploads/2023/11/Group-88-scaled.webp);
     justify-content: start;
     align-items: start;
     flex-direction: column;
@@ -83,15 +83,9 @@ $footer_nav_menu = wp_nav_menu( [
 .emailFooterContainer{
     padding-left: 25px;
 }
-.footer-inner{
-        display: flex;
-        justify-content: start;
-        align-items: start;
-        flex-direction: column;
-        gap: 15px
-    }
 
-@media screen and(max-width: 600px) {
+
+@media screen and (max-width: 600px){
     .footer-inner{
         display: flex;
         justify-content: center;
@@ -155,16 +149,7 @@ $footer_nav_menu = wp_nav_menu( [
                 <img src="/Vector1.png" alt="">
             </a>
         </div>
-		<nav class="site-navigation">
-			<?php
-			// PHPCS - escaped by WordPress with "wp_nav_menu"
-			echo $footer_nav_menu; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-			?>
-		</nav>
-		<?php
-				// PHPCS - escaped by WordPress with "wp_nav_menu"
-				echo $header_nav_menu; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-				?>
+
 	</div>
 </footer>
 
