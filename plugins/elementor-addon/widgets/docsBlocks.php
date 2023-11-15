@@ -187,7 +187,6 @@ class Elementor_docsBlocks extends \Elementor\Widget_Base
 
             .document p {
                 padding: 10px;
-                /* background: #314047; */
                 color: #2c2d2c;
                 text-align: center;
                 width: 100%;
@@ -221,7 +220,7 @@ class Elementor_docsBlocks extends \Elementor\Widget_Base
                 font-weight: 600;
             }
 
-            button {
+            span {
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -237,18 +236,18 @@ class Elementor_docsBlocks extends \Elementor\Widget_Base
                 transition: all linear 200ms;
             }
 
-            [type=button]:focus,
-            [type=button]:hover,
+            [type=span]:focus,
+            [type=span]:hover,
             [type=submit]:focus,
             [type=submit]:hover,
-            button:focus,
-            button:hover {
+            span:focus,
+            span:hover {
                 color: #2c2d2c;
                 background-color: #fff;
                 text-decoration: none
             }
 
-            button:hover {
+            span:hover {
                 gap: 25px;
             }
 
