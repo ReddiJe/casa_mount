@@ -60,6 +60,12 @@ $header_nav_menu = wp_nav_menu([
 		max-width: 100%;
 	}
 
+	@media screen and (min-width:1100px) {
+		.site-header {
+		padding-bottom: 98px;
+	}
+	}
+
 	@media screen and (max-width: 600px) {
 		.pcEmail {
 			display: none;
