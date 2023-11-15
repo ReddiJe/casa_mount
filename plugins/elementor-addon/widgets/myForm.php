@@ -146,7 +146,7 @@ class Elementor_myForm extends \Elementor\Widget_Base
 				font-weight: 400;
 			}
 
-			@media (max-width: 900px) {
+			@media (max-width: 600px) {
 				.contactUsForm {
 					padding: 20px;
 				}
@@ -157,6 +157,8 @@ class Elementor_myForm extends \Elementor\Widget_Base
 
 				.contactUsForm p {
 					font-size: 1rem;
+					max-width: 100%;
+					width: 100%;
 				}
 
 				.contactUsForm .containerInput {
