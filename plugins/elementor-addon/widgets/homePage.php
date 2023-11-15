@@ -250,7 +250,7 @@ class Elementor_homePage extends \Elementor\Widget_Base
             }
 
             @media screen and (min-width: 1600px) {
-                .contactsContainer .side {
+                .firstViewContainer .side {
                     padding: 0px 10%;
                 }
             }

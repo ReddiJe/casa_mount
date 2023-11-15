@@ -219,7 +219,7 @@ class Elementor_facilitiesList extends \Elementor\Widget_Base
             }
 
             @media screen and (min-width: 1600px) {
-                .contactsContainer .side {
+                .ourFacilitiesContainer {
                     padding: 0px 10%;
                 }
             }
