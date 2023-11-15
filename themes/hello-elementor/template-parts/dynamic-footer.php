@@ -94,7 +94,7 @@ $footer_nav_menu = wp_nav_menu( [
         gap: 15px
     }
 
-    .menu-footer-menu{
+    .site-navigation ul.menu{
         display: flex;
         flex-wrap: nowrap;
         justify-content: center;
