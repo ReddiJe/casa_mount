@@ -11,7 +11,7 @@ class Elementor_photoSlider extends \Elementor\Widget_Base
 
     public function get_title()
     {
-        return esc_html__('Photo SLider', 'elementor-addon');
+        return esc_html__('Photo Slider', 'elementor-addon');
     }
 
     public function get_icon()
