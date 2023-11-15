@@ -330,28 +330,10 @@ class Elementor_questionsAndAnswers extends \Elementor\Widget_Base
           }
         }
 
-        /* .question {
-          padding: 15px 10px;
-        }
-
-        .answers {
+        .section-title {
+          max-width: 100%;
           width: 100%;
         }
-
-        .question,
-        .answer {
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 24px;
-        }
-
-        .questions,
-        .answers {
-          background: transparent;
-          border: none;
-          border-radius: 0;
-          box-shadow: none;
-        } */
 
         .answer {
           font-family: Urbanist;
@@ -360,7 +342,6 @@ class Elementor_questionsAndAnswers extends \Elementor\Widget_Base
           line-height: 17px;
           letter-spacing: 0em;
           text-align: left;
-
         }
 
         .question {
