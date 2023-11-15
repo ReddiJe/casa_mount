@@ -51,21 +51,12 @@ class Elementor_photoSlider extends \Elementor\Widget_Base
             ]
         );
 
-        $this->add_control(
-            'subtitle',
-            [
-                'label' => esc_html__('Subtitle', 'elementor-addon'),
-                'type' => \Elementor\Controls_Manager::TEXTAREA,
-                'default' => esc_html__('Hello world', 'elementor-addon'),
-            ]
-        );
-
         $this->end_controls_section();
 
         $this->start_controls_section(
             'bottom_section_title',
             [
-                'label' => esc_html__('Bottom Title', 'elementor-addon'),
+                'label' => esc_html__('Gallery', 'elementor-addon'),
                 'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
             ]
         );
@@ -191,6 +182,44 @@ class Elementor_photoSlider extends \Elementor\Widget_Base
             .Title h3 {
                 font-size: 1.5rem;
                 justify-content: center;
+            }
+
+            @media screen and (min-width: 1600px) {
+                .longTimeline {
+                    padding: 0 10%;
+                }
+            }
+
+            @media screen and (max-width: 600px) {
+                .splide__slide {
+                    height: 50vh;
+                    padding: 30px 50px;
+                }
+
+                .splide__slide img {
+                    height: 100%;
+                }
+
+                .Title {
+                    color: #2c2d2c;
+                    font-size: 24px;
+                    font-style: normal;
+                    text-transform: uppercase;
+                    gap: 20px;
+                    padding: 40px 0px;
+                }
+
+                .Title h1 {
+                    font-size: 1.80rem;
+                }
+
+                .splide__arrow--prev {
+                    left: 0em;
+                }
+
+                .splide__arrow--next {
+                    right: 0em;
+                }
             }
         </style>
 
