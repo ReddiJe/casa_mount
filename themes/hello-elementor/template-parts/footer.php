@@ -8,16 +8,12 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
-
 $footer_nav_menu = wp_nav_menu( [
 	'theme_location' => 'menu-2',
 	'fallback_cb' => false,
 	'echo' => false,
 ] );
 ?>
-<style>
-	
-</style>
 <footer id="site-footer" class="site-footer" role="contentinfo">
 	<?php if ( $footer_nav_menu ) : ?>
 		<nav class="site-navigation">
