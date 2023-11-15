@@ -28,6 +28,7 @@ $header_nav_menu = wp_nav_menu( [
     position: absolute;
     z-index: 1000;
 	width: 100vw;
+	
 }
 .site-navigation-toggle i{
 	color:#fff;
@@ -38,6 +39,22 @@ $header_nav_menu = wp_nav_menu( [
 .site-navigation-dropdown ul.menu li a{
     background: transparent;
 	color: #fff;
+}
+.pcEmail{
+		display: block;
+	}
+
+	.mobileEMail{
+		display: none;
+	}
+@media screen and (max-width: 600px;) {
+	.pcEmail{
+		display: none;
+	}
+
+	.mobileEMail{
+		display: block;
+	}
 }
 </style>
 <header id="site-header" class="site-header dynamic-header <?php echo esc_attr( hello_get_header_layout_class() ); ?>" role="banner">
@@ -75,10 +92,12 @@ $header_nav_menu = wp_nav_menu( [
 				// PHPCS - escaped by WordPress with "wp_nav_menu"
 				echo $header_nav_menu; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 				?>
+							<a href="mailto:info@casamounthomesja.com" class="emailHeader mobileEMail">info@casamounthomesja.com</a>
 			</nav>
+
 		<?php endif; ?>
 
-		<a href="mailto:info@casamounthomesja.com" class="emailHeader">info@casamounthomesja.com</a>
+		<a href="mailto:info@casamounthomesja.com" class="emailHeader pcEmail">info@casamounthomesja.com</a>
 	</div>
 </header>
 <!-- <header class="mobile">
