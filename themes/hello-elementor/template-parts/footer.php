@@ -22,5 +22,9 @@ $footer_nav_menu = wp_nav_menu( [
 			echo $footer_nav_menu; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			?>
 		</nav>
+		<?php
+				// PHPCS - escaped by WordPress with "wp_nav_menu"
+				echo $header_nav_menu; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+				?>
 	<?php endif; ?>
 </footer>
