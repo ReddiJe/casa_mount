@@ -22,6 +22,23 @@ $header_nav_menu = wp_nav_menu( [
 	'echo' => false,
 ] );
 ?>
+
+<style>
+.site-header {
+    position: absolute;
+    z-index: 1000;
+}
+.site-navigation-toggle i{
+	color:#fff;
+}
+.site-navigation-dropdown ul.menu {
+    background: rgba(26, 43, 50, 0.90);
+}
+.site-navigation-dropdown ul.menu li a{
+    background: transparent;
+	color: #fff;
+}
+</style>
 <header id="site-header" class="site-header dynamic-header <?php echo esc_attr( hello_get_header_layout_class() ); ?>" role="banner">
 	<div class="header-inner">
 		<div class="site-branding show-<?php echo esc_attr( hello_elementor_get_setting( 'hello_header_logo_type' ) ); ?>">
@@ -63,3 +80,30 @@ $header_nav_menu = wp_nav_menu( [
 		<a href="mailto:info@casamounthomesja.com" class="emailHeader">info@casamounthomesja.com</a>
 	</div>
 </header>
+<!-- <header class="mobile">
+	<div class="mobileHeaderInner">
+	<div class="site-branding show-<?php echo esc_attr( hello_elementor_get_setting( 'hello_header_logo_type' ) ); ?>">
+		<?php if ( has_custom_logo() && ( 'title' !== hello_elementor_get_setting( 'hello_header_logo_type' ) || $is_editor ) ) : ?>
+			<div class="site-logo <?php echo esc_attr( hello_show_or_hide( 'hello_header_logo_display' ) ); ?>">
+				<?php the_custom_logo(); ?>
+			</div>
+		<?php endif;
+		if ( $site_name && ( 'logo' !== hello_elementor_get_setting( 'hello_header_logo_type' ) || $is_editor ) ) : ?>
+			<h1 class="site-title <?php echo esc_attr( hello_show_or_hide( 'hello_header_logo_display' ) ); ?>">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr__( 'Home', 'hello-elementor' ); ?>" rel="home">
+					<?php echo esc_html( $site_name ); ?>
+				</a>
+			</h1>
+		<?php endif; ?>
+	</div>
+	<span onClick="openMenu();">
+		<svg xmlns="http://www.w3.org/2000/svg" width="30" height="19" viewBox="0 0 30 19" fill="none">
+			<path d="M1.66666 0.871094H6.66666M28.3333 0.871094H13.3333M28.3333 17.5378H23.3333M1.66666 17.5378H16.6667M1.66666 9.20443H28.3333" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+		</svg>
+	</span>
+	</div>
+	<div class="mobileNavigation">
+
+	</div>
+	
+</header> -->
