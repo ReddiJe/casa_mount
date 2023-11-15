@@ -101,7 +101,8 @@ $footer_nav_menu = wp_nav_menu( [
     }
 
     .menu-footer-menu{
-        flex-wrap: no-wrap;
+        display: flex;
+        flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
         flex-direction: column;
