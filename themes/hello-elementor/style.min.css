@@ -500,14 +500,14 @@ ul {
     padding: 150px;
   }
   
-  .wpforms-title{
+.wpforms-title{
     color: #B1882F !important;
     font-size: 3rem !important;
     font-weight: 400 !important;
     text-transform: uppercase !important;
   }
   
-.wpforms-container-full .wpforms-form .wpforms-description {
+.wpforms-description {
     color: var(--Black, #2C2D2C) !important;
     font-size: 1.5rem !important;
     font-weight: 300 !important;
@@ -516,7 +516,7 @@ ul {
     text-align: center !important;
   }
 
-.wpforms-container-full .wpforms-field-label {
+.wpforms-field-label {
     font-family: Open Sans !important;
     font-size: 16px !important;
     font-weight: 400 !important;
@@ -525,7 +525,7 @@ ul {
     text-align: left !important;
 }
 
-.wpforms-container-full input[type=submit]:not(:hover):not(:active), div.wpforms-container-full button[type=submit]:not(:hover):not(:active), div.wpforms-container-full .wpforms-page-button:not(:hover):not(:active) {
+.wpforms-submit{
     color: #B1882F !important;
     font-family: Open Sans !important;
     font-size: 24px !important;
