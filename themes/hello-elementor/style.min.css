@@ -551,3 +551,8 @@ ul {
     width: 100% !important;
     max-width: 100% !important;
 }
+
+.wpforms-container .wpforms-container-full .wpforms-render-modern {
+    max-width: 100% !important;
+    width: 100% !important;
+}
