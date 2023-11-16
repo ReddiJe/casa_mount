@@ -500,7 +500,7 @@ ul {
     padding: 150px;
   }
   
-  .wpforms-title {
+  .wpforms-container-full .wpforms-form .wpforms-title{
     color: #B1882F;
     font-size: 3rem;
     font-weight: 400;
@@ -514,11 +514,4 @@ ul {
     text-transform: uppercase;
     width: 800px;
     text-align: center;
-  }
-  
-  .wpforms-title .wpforms-description .wpforms-field wpforms-field-number input,
-  .wpforms-title .wpforms-description .wpforms-field wpforms-field-number textarea {
-    width: 100%;
-    background: var(--Light-gray, #FBFBFB);
-    margin-bottom: 10px;
   }
