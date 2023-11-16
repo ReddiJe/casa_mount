@@ -261,7 +261,7 @@ class Elementor_docsBlocks extends \Elementor\Widget_Base
 
             @media screen and (min-width: 1600px) {
                 .documentsContainer {
-                    padding: 0 10%;
+                    padding: 50px 10%;
                 }
             }
 
