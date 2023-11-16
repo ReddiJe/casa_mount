@@ -492,13 +492,13 @@ ul {
 }
 
 .wpforms-head-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 25px;
-    padding: 150px;
-    width: 100%;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    gap: 25px !important;
+    padding: 150px !important;
+    width: 100% !important;
     max-width: 100%;
   }
   
@@ -539,12 +539,12 @@ ul {
 }
 
 .elementor-widget-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 25px;
-    padding: 150px;
-    width: 100%;
-    max-width: 100%;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    gap: 25px !important;
+    padding: 150px !important;
+    width: 100% !important;
+    max-width: 100% !important;
 }
