@@ -612,35 +612,3 @@ li {
   vertical-align: baseline;
   background: transparent;
 }
-
-.wpforms-head-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 25px;
-  padding: 150px;
-}
-
-.wpforms-title {
-  color: #B1882F;
-  font-size: 3rem;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-.wpforms-description {
-  color: var(--Black, #2C2D2C);
-  font-size: 1.5rem;
-  font-weight: 300;
-  text-transform: uppercase;
-  width: 800px;
-  text-align: center;
-}
-
-.wpforms-title .wpforms-description .wpforms-field wpforms-field-number input,
-.wpforms-title .wpforms-description .wpforms-field wpforms-field-number textarea {
-  width: 100%;
-  background: var(--Light-gray, #FBFBFB);
-  margin-bottom: 10px;
-}
