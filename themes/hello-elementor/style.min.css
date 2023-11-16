@@ -500,11 +500,11 @@ ul {
     padding: 150px;
   }
   
-  .wpforms-container-full .wpforms-form .wpforms-title{
+  .wpforms-title{
     color: #B1882F !important;
     font-size: 3rem !important;
     font-weight: 400 !important;
-    text-transform: uppercase;
+    text-transform: uppercase !important;
   }
   
 .wpforms-container-full .wpforms-form .wpforms-description {
