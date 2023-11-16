@@ -498,6 +498,8 @@ ul {
     flex-direction: column;
     gap: 25px;
     padding: 150px;
+    width: 100%;
+    max-width: 100%;
   }
   
 .wpforms-title{
@@ -534,4 +536,15 @@ ul {
     box-sizing: none !important;
     font-size: 1.2rem !important;
     font-weight: 400 !important;
+}
+
+.elementor-widget-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    padding: 150px;
+    width: 100%;
+    max-width: 100%;
 }
