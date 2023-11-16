@@ -526,10 +526,12 @@ ul {
 }
 
 .wpforms-submit{
+    padding: 10px !important;
+    border: 1px solid #B1882F !important;
     color: #B1882F !important;
-    font-family: Open Sans !important;
-    font-size: 24px !important;
-    font-style: normal !important;
+    background: white !important;
+    outline: none !important;
+    box-sizing: none !important;
+    font-size: 1.2rem !important;
     font-weight: 400 !important;
-    line-height: normal !important;
 }
