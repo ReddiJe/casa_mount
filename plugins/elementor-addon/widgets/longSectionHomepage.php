@@ -227,8 +227,14 @@ class Elementor_longSectionHomepage extends \Elementor\Widget_Base
             }
 
             .between {
-                width: 50%;
-                float: left;
+                width: 100%;
+                text-align: center;
+            }
+
+            .between img {
+                display: inline-block;
+                max-width: 60%;
+                height: auto;
             }
 
             .leftText {

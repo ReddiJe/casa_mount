@@ -283,14 +283,7 @@ class Elementor_threeSteps extends \Elementor\Widget_Base
 
             @media screen and (min-width: 1600px) {
                 .longTimeline {
-                    padding: 0 10%;
-                }
-            }
-
-            @media screen and (max-width: 1050px) {
-                .longTimeline {
-                    padding: 25px;
-                    grid-template-columns: repeat(1, 1fr);
+                    padding: 50px 10%;
                 }
             }
 
