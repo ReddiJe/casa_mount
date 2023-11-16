@@ -517,6 +517,11 @@ ul {
     text-align: center !important;
   }
 
+  .wpforms-field-container {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
 .wpforms-field-label {
     font-family: Open Sans !important;
     font-size: 16px !important;
@@ -555,4 +560,8 @@ ul {
 .wpforms-container .wpforms-container-full .wpforms-render-modern {
     max-width: 100% !important;
     width: 100% !important;
+}
+
+.header-inner {
+    align-items: center !important;
 }

@@ -116,6 +116,7 @@ class Elementor_heroSection extends \Elementor\Widget_Base
 				flex-direction: column;
 				height: 90vh;
 				gap: 15px;
+				padding: 20px 40px;
 			}
 
 			.page-header {
