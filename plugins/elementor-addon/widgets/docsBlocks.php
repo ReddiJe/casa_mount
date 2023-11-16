@@ -269,6 +269,23 @@ class Elementor_docsBlocks extends \Elementor\Widget_Base
                 .documentsContainer {
                     padding: 15px;
                     grid-template-columns: repeat(1, 1fr);
+                    width: 100%;
+                    max-width: 100%;
+                }
+
+                .loginForm {
+                    width: 100%;
+                    max-width: 100%;
+                }
+
+                .title{
+                    width: 100%;
+                    max-width: 100%;
+                }
+
+                .document img {
+                    width: 100%;
+                    max-width: 100%;
                 }
             }
         </style>
@@ -299,9 +316,6 @@ class Elementor_docsBlocks extends \Elementor\Widget_Base
                 </a>
             <?php } ?>
         </div>
-
-
-
 
         <script>
             let loginContainer = document.querySelector(".loginForm")

@@ -102,6 +102,11 @@ $footer_nav_menu = wp_nav_menu([
 
 
     @media screen and (max-width: 600px) {
+        .emailFooterContainer {
+            width: 100%;
+            max-width: 100%;
+        }
+
         .footer-inner {
             display: flex;
             justify-content: center;
