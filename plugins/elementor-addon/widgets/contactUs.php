@@ -291,8 +291,8 @@ class Elementor_contactUs extends \Elementor\Widget_Base
             .wpforms-container input.wpforms-field-medium,
             .wpforms-container select.wpforms-field-medium,
             div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium{
-                width: 100%;
-                max-width: 100%;
+                width: 100% !important;
+                max-width: 100% !important;
                 background: transparent !important;
                 outline: none !important;
                 border: none !important;
