@@ -281,6 +281,13 @@ class Elementor_contactUs extends \Elementor\Widget_Base
                 font-weight: 300;
             }
 
+            .wpforms-container-full .wpforms-form .wpforms-title {
+                width: 100% !important;
+                color: #FFF !important;
+                font-size: 2.625rem !important;
+                font-weight: 300 !important;
+            }
+
             .submitContainer {
                 width: 100%;
             }
@@ -294,10 +301,19 @@ class Elementor_contactUs extends \Elementor\Widget_Base
                 width: 45%;
             }
 
-            .inputContainer label {
-                color: #FFF;
-                font-size: 1rem;
-                font-weight: 700;
+            .wpforms-field-name-first .wpforms-field-required {
+                display: flex !important;
+                justify-content: start !important;
+                align-items: start !important;
+                flex-direction: column !important;
+                gap: 10px !important;
+                width: 45% !important;
+            }
+
+            .div.wpforms-container-full .wpforms-field-label{
+                color: #FFF !important;
+                font-size: 1rem !important;
+                font-weight: 700 !important;
             }
 
             .inputContainer input {
@@ -408,31 +424,7 @@ class Elementor_contactUs extends \Elementor\Widget_Base
                 </div>
             </div>
             <div class="rightContainer side" style="background-image: url(<?php echo $settings['image']['url']; ?>);">
-                <form action="">
-                    <h1>
-                        <?php echo $settings['titleForForm']; ?>
-                    </h1>
-                    <div class="inputContainer">
-                        <label for="name">Name</label>
-                        <input type="text" placeholder="Your Name" id="name">
-                    </div>
-                    <div class="inputContainer">
-                        <label for="name">Company</label>
-                        <input type="text" placeholder="Your Name" id="name">
-                    </div>
-                    <div class="inputContainer">
-                        <label for="name">Message</label>
-                        <input type="text" placeholder="Your Name" id="name">
-                    </div>
-                    <div class="inputContainer">
-                        <label for="name">Email</label>
-                        <input type="text" placeholder="Your Name" id="name">
-                    </div>
-                    <div class="submitContainer">
-                        Submit
-                    </div>
-                </form>
-
+                <?php echo do_shortcode('[wpforms id="495" title="true"]'); ?>
             </div>
         </div>
 
