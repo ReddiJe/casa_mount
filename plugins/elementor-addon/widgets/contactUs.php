@@ -290,8 +290,8 @@ class Elementor_contactUs extends \Elementor\Widget_Base
             }
 
             .wpforms-field-container {
-                display: flex !important;
-                flex-wrap: wrap !important;
+                display: flex;
+                flex-wrap: wrap;
             }
 
             .rightContainer .wpforms-form .wpforms-field-label {
@@ -326,10 +326,10 @@ class Elementor_contactUs extends \Elementor\Widget_Base
             }
 
             .wpforms-title {
-                color: #FFF !important;
-                font-size: 42px !important;
-                font-style: normal !important;
-                font-weight: 400 !important;
+                color: #FFF;
+                font-size: 42px;
+                font-style: normal;
+                font-weight: 400;
             }
 
             @media screen and (min-width: 1600px) {
