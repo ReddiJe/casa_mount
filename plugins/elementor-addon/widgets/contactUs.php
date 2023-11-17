@@ -410,6 +410,7 @@ class Elementor_contactUs extends \Elementor\Widget_Base
                 </div>
             </div>
             <div class="rightContainer side" style="background-image: url(<?php echo $settings['image']['url']; ?>);">
+            <h1>GERE</h1>
                 <?php echo do_shortcode('[wpforms id="495" title="true"]'); ?>
             </div>
         </div>
