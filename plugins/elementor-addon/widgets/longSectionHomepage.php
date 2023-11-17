@@ -304,25 +304,38 @@ class Elementor_longSectionHomepage extends \Elementor\Widget_Base
                 .textWowFadeIn {
                     background: rgba(0, 0, 0, 0.50);
                     backdrop-filter: blur(6px);
-                    padding: 25px 25px 25px 50px;
                     font-size: 1.125rem;
                     font-weight: 300;
                     width: 100%;
+                    max-width: 100%;
                 }
 
                 .hoverMapSection {
                     display: grid;
                     grid-template-columns: repeat(1, 1fr);
                     gap: 50px;
-                    padding: 100px 50px;
+                    /* padding: 100px 50px; */
+                    width: 100%;
+                    max-width: 100%;
                 }
 
                 .longSectionHomepage {
                     gap: 0vh;
+                    width: 100%;
+                    max-width: 100%;
                 }
 
                 .between {
                     width: 100%;
+                }
+
+                .topBlock {
+                    width: 100%;
+                    max-width: 100%;
+                }
+
+                .titlesLongSection {
+                    padding: 25px;
                 }
             }
         </style>
