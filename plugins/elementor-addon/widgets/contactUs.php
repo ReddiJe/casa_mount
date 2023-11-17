@@ -289,11 +289,12 @@ class Elementor_contactUs extends \Elementor\Widget_Base
 
             .rightContainer .wpforms-container input{
                 width: 100%;
-                background: transparent;
-                outline: none;
-                border: none;
-                border-bottom: 1px solid white;
-                color: white;
+                max-width: 100%;
+                background: transparent !important;
+                outline: none !important;
+                border: none !important;
+                border-bottom: 1px solid white !important;
+                color: white !important;
             }
 
             @media screen and (min-width: 1600px) {
