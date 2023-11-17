@@ -287,7 +287,10 @@ class Elementor_contactUs extends \Elementor\Widget_Base
                 width: 45%;
             }
 
-            .rightContainer .wpforms-container input{
+            .rightContainer .wpforms-container input,
+            .wpforms-container input.wpforms-field-medium,
+            .wpforms-container select.wpforms-field-medium,
+            div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium{
                 width: 100%;
                 max-width: 100%;
                 background: transparent !important;
