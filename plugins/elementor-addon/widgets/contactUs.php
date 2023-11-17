@@ -265,13 +265,14 @@ class Elementor_contactUs extends \Elementor\Widget_Base
             }
 
             .rightContainer .wpforms-container {
+                display: flex;
                 width: 100%;
                 height: 100%;
             }
 
             .rightContainer .wpforms-container form {
                 display: flex;
-                justify-content: start;
+                justify-content: center;
                 align-items: start;
                 flex-direction: column;
                 gap: 10px;
@@ -301,11 +302,27 @@ class Elementor_contactUs extends \Elementor\Widget_Base
                 color: white !important;
             }
 
+            .wpforms-submit {
+                font-family: 'Open Sans', sans-serif !important;
+                font-size: 28px;
+                font-weight: 300;
+            }
+
             .wpforms-field-label {
                 color: #FFF !important;
                 font-size: 16px !important;
                 font-style: normal !important;
                 font-weight: 700 !important;
+                font-family: 'Open Sans', sans-serif !important;
+            }
+
+            .wpforms-container input,
+            ::placeholder {
+                color: #FFF !important;
+                font-family: 'Open Sans', sans-serif !important;
+                font-size: 16px !important;
+                font-style: normal !important;
+                font-weight: 300 !important;
             }
 
             .wpforms-description {
@@ -369,6 +386,41 @@ class Elementor_contactUs extends \Elementor\Widget_Base
 
                 .rightContainer form .inputContainer {
                     width: 100%;
+                }
+
+                .wpforms-container input {
+                    width: 100%;
+                    max-width: 100%;
+                }
+
+                .wpforms-container input,
+                ::placeholder {
+                    color: #FFF !important;
+                    font-family: 'Open Sans', sans-serif !important;
+                    font-size: 14px !important;
+                    font-style: normal !important;
+                    font-weight: 300 !important;
+                }
+
+                .rightContainer .wpforms-container div.wpforms-field {
+                    width: 100%;
+                }
+
+                .wpforms-field-label {
+                    margin-bottom: 0px !important;
+                }
+
+                .rightContainer .wpforms-container form .wpforms-field-container {
+                    gap: 30px !important;
+                }
+
+                .wpforms-submit {
+                    width: 100% !important;
+                    margin: 0 auto !important;
+                }
+
+                .contactsContainer.heroSection {
+                    margin-bottom: 30px !important;
                 }
             }
         </style>
