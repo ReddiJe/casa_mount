@@ -264,9 +264,9 @@ class Elementor_contactUs extends \Elementor\Widget_Base
 
             }
 
-            .wpforms-container-full {
+            .rightContainer .wpforms-container-full {
                 display: flex !important;
-                width: 75% !important;
+                width: 80% !important;
                 justify-content: space-between !important;
                 align-items: flex-start !important;
                 align-content: flex-start !important;
@@ -274,14 +274,14 @@ class Elementor_contactUs extends \Elementor\Widget_Base
                 flex-wrap: wrap !important;
             }
 
-            .wpforms-container-full .wpforms-form .wpforms-title {
+            .rightContainer .wpforms-container-full .wpforms-form .wpforms-title {
                 width: 100% !important;
                 color: #FFF !important;
                 font-size: 2.625rem !important;
                 font-weight: 300 !important;
             }
 
-            .wpforms-field-name-first .wpforms-field-required {
+            .rightContainer .wpforms-field-name-first .wpforms-field-required {
                 display: flex !important;
                 justify-content: start !important;
                 align-items: start !important;
@@ -290,19 +290,19 @@ class Elementor_contactUs extends \Elementor\Widget_Base
                 width: 45% !important;
             }
 
-            .wpforms-field-label {
+            .rightContainer .wpforms-field-label {
                 color: #FFF !important;
                 font-size: 1rem !important;
                 font-weight: 700 !important;
             }
 
-            .wpforms-container-full .wpforms-field-label {
+            .rightContainer .wpforms-container-full .wpforms-field-label {
                 color: #FFF !important;
                 font-size: 1rem !important;
                 font-weight: 700 !important;
             }
 
-            .wpforms-field-medium .wpforms-field-required input {
+            .rightContainer .wpforms-field-medium .wpforms-field-required input {
                 background: transparent;
                 color: #fff;
                 border: none;
@@ -313,12 +313,12 @@ class Elementor_contactUs extends \Elementor\Widget_Base
                 width: 100%;
             }
 
-            ..wpforms-field-medium .wpforms-field-required input::placeholder {
+            .rightContainer .wpforms-field-medium .wpforms-field-required input::placeholder {
                 color: #fff;
                 font-weight: 300;
             }
 
-            ..wpforms-field-medium .wpforms-field-required .sumbit {
+            .rightContainer .wpforms-field-medium .wpforms-field-required .sumbit {
                 color: #fff;
                 font-size: 1.75rem;
                 font-weight: 300;
