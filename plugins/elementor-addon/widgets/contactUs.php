@@ -264,12 +264,12 @@ class Elementor_contactUs extends \Elementor\Widget_Base
                 padding: 25px;
             }
 
-            .rightContainer .wpforms-container{
+            .rightContainer .wpforms-container {
                 width: 100%;
                 height: 100%;
             }
 
-            .rightContainer .wpforms-container form{
+            .rightContainer .wpforms-container form {
                 display: flex;
                 justify-content: start;
                 align-items: start;
@@ -277,20 +277,21 @@ class Elementor_contactUs extends \Elementor\Widget_Base
                 gap: 10px;
             }
 
-            .rightContainer .wpforms-container form .wpforms-field-container{
+            .rightContainer .wpforms-container form .wpforms-field-container {
                 display: flex;
                 flex-wrap: wrap;
                 gap: 15px;
             }
 
-            .rightContainer .wpforms-container div.wpforms-field{
+            .rightContainer .wpforms-container div.wpforms-field {
                 width: 45%;
             }
 
             .rightContainer .wpforms-container input,
             .wpforms-container input.wpforms-field-medium,
             .wpforms-container select.wpforms-field-medium,
-            div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium{
+            .wpforms-submit,
+            div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
                 width: 100% !important;
                 max-width: 100% !important;
                 background: transparent !important;
@@ -298,6 +299,20 @@ class Elementor_contactUs extends \Elementor\Widget_Base
                 border: none !important;
                 border-bottom: 1px solid white !important;
                 color: white !important;
+            }
+
+            .wpforms-field-label {
+                color: #FFF !important;
+                font-size: 16px !important;
+                font-style: normal !important;
+                font-weight: 700 !important;
+            }
+
+            .wpforms-description {
+                color: #FFF !important;
+                font-size: 42px !important;
+                font-style: normal !important;
+                font-weight: 300 !important;
             }
 
             @media screen and (min-width: 1600px) {
@@ -384,7 +399,7 @@ class Elementor_contactUs extends \Elementor\Widget_Base
                 </div>
             </div>
             <div class="rightContainer side" style="background-image: url(<?php echo $settings['image']['url']; ?>);">
-                <?php echo do_shortcode('[wpforms id="495" title="true"]'); ?>
+                <?php echo do_shortcode('[wpforms id="495" description="true"]'); ?>
             </div>
         </div>
 
