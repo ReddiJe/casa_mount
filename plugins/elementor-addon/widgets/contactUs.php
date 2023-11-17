@@ -287,7 +287,7 @@ class Elementor_contactUs extends \Elementor\Widget_Base
                 width: 45%;
             }
 
-            .rightContainer .wpforms-container input.wpforms-field{
+            .rightContainer .wpforms-container input{
                 width: 100%;
                 background: transparent;
                 outline: none;
