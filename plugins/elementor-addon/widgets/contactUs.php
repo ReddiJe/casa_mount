@@ -313,12 +313,12 @@ class Elementor_contactUs extends \Elementor\Widget_Base
                 width: 100%;
             }
 
-            .rightContainer .wpforms-field-medium input::placeholder {
+            .rightContainer input::placeholder {
                 color: #fff;
                 font-weight: 300;
             }
 
-            .rightContainer .wpforms-field-medium .sumbit {
+            .rightContainer .sumbit {
                 color: #fff;
                 font-size: 1.75rem;
                 font-weight: 300;
