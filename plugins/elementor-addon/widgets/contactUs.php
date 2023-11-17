@@ -264,21 +264,14 @@ class Elementor_contactUs extends \Elementor\Widget_Base
 
             }
 
-            .rightContainer form {
-                display: flex;
-                width: 75%;
-                justify-content: space-between;
-                align-items: flex-start;
-                align-content: flex-start;
-                row-gap: 1.5625rem;
-                flex-wrap: wrap;
-            }
-
-            .rightContainer form h1 {
-                width: 100%;
-                color: #FFF;
-                font-size: 2.625rem;
-                font-weight: 300;
+            .wpforms-container-full {
+                display: flex !important;
+                width: 75% !important;
+                justify-content: space-between !important;
+                align-items: flex-start !important;
+                align-content: flex-start !important;
+                row-gap: 1.5625rem !important;
+                flex-wrap: wrap !important;
             }
 
             .wpforms-container-full .wpforms-form .wpforms-title {
@@ -286,19 +279,6 @@ class Elementor_contactUs extends \Elementor\Widget_Base
                 color: #FFF !important;
                 font-size: 2.625rem !important;
                 font-weight: 300 !important;
-            }
-
-            .submitContainer {
-                width: 100%;
-            }
-
-            .inputContainer {
-                display: flex;
-                justify-content: start;
-                align-items: start;
-                flex-direction: column;
-                gap: 10px;
-                width: 45%;
             }
 
             .wpforms-field-name-first .wpforms-field-required {
@@ -310,13 +290,19 @@ class Elementor_contactUs extends \Elementor\Widget_Base
                 width: 45% !important;
             }
 
-            .div.wpforms-container-full .wpforms-field-label{
+            .wpforms-field-label {
                 color: #FFF !important;
                 font-size: 1rem !important;
                 font-weight: 700 !important;
             }
 
-            .inputContainer input {
+            .wpforms-container-full .wpforms-field-label {
+                color: #FFF !important;
+                font-size: 1rem !important;
+                font-weight: 700 !important;
+            }
+
+            .wpforms-field-medium .wpforms-field-required input {
                 background: transparent;
                 color: #fff;
                 border: none;
@@ -327,12 +313,12 @@ class Elementor_contactUs extends \Elementor\Widget_Base
                 width: 100%;
             }
 
-            .inputContainer input::placeholder {
+            ..wpforms-field-medium .wpforms-field-required input::placeholder {
                 color: #fff;
                 font-weight: 300;
             }
 
-            .submitContainer .sumbit {
+            ..wpforms-field-medium .wpforms-field-required .sumbit {
                 color: #fff;
                 font-size: 1.75rem;
                 font-weight: 300;
