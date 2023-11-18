@@ -77,7 +77,18 @@
     align-items: center;
 }
 
-.custom-logo-link img{
+.phoneHeader{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #056CF2;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.custom-logo-link img{  
     height: 40px;
     object-fit: contain;
     width: auto;

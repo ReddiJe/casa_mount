@@ -1,67 +1,63 @@
 <?php
 
 
-class Elementor_heroSection extends \Elementor\Widget_Base
+class Elementor_heroSection extends \Elementor\Widget_Base 
 {
 
-	public function get_name()
-	{
+	public function get_name() {
 		return 'heroSection';
 	}
 
-	public function get_title()
-	{
-		return esc_html__('Hero Section', 'elementor-addon');
+	public function get_title() {
+		return esc_html__( 'Hero Section', 'elementor-addon' );
 	}
 
-	public function get_icon()
-	{
+	public function get_icon() {
 		return 'eicon-code';
 	}
 
-	public function get_categories()
-	{
-		return ['basic'];
+	public function get_categories() {
+		return [ 'basic' ];
 	}
 
-	public function get_keywords()
-	{
-		return ['hello', 'world'];
+	public function get_keywords() {
+		return [ 'hello', 'world' ];
 	}
 
-	protected function register_controls()
-	{
+	protected function register_controls() {
 
 		// Content Tab Start
 
 		$this->start_controls_section(
 			'section_title',
 			[
-				'label' => esc_html__('Title', 'elementor-addon'),
+				'label' => esc_html__( 'Title', 'elementor-addon' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
-			]
+            ]
 		);
 
 		$this->add_control(
 			'title',
 			[
-				'label' => esc_html__('Title', 'elementor-addon'),
+				'label' => esc_html__( 'Title', 'elementor-addon' ),
 				'type' => \Elementor\Controls_Manager::TEXTAREA,
-			]
+				'default' => esc_html__( 'Hello world', 'elementor-addon' ),
+            ]
 		);
 
-		$this->add_control(
-			'text',
+        $this->add_control(
+            'text',
 			[
-				'label' => esc_html__('Text', 'elementor-addon'),
+				'label' => esc_html__( 'Text', 'elementor-addon' ),
 				'type' => \Elementor\Controls_Manager::TEXTAREA,
+				'default' => esc_html__( 'Hello world', 'elementor-addon' ),
 			]
 		);
-
-		$this->add_control(
+		
+        $this->add_control(
 			'image',
 			[
-				'label' => esc_html__('Choose Image', 'textdomain'),
+				'label' => esc_html__( 'Choose Image', 'textdomain' ),
 				'type' => \Elementor\Controls_Manager::MEDIA,
 				'default' => [
 					'url' => \Elementor\Utils::get_placeholder_image_src(),
@@ -79,7 +75,7 @@ class Elementor_heroSection extends \Elementor\Widget_Base
 		$this->start_controls_section(
 			'section_title_style',
 			[
-				'label' => esc_html__('Title', 'elementor-addon'),
+				'label' => esc_html__( 'Title', 'elementor-addon' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -87,7 +83,7 @@ class Elementor_heroSection extends \Elementor\Widget_Base
 		$this->add_control(
 			'title_color',
 			[
-				'label' => esc_html__('Text Color', 'elementor-addon'),
+				'label' => esc_html__( 'Text Color', 'elementor-addon' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .hello-world' => 'color: {{VALUE}};',
@@ -103,69 +99,51 @@ class Elementor_heroSection extends \Elementor\Widget_Base
 
 	}
 
-	protected function render()
-	{
+	protected function render() {
 		$settings = $this->get_settings_for_display();
-?>
+		?>
 
-		<style>
-			.heroImageContainer {
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				flex-direction: column;
-				height: 90vh;
-				gap: 15px;
-				padding: 20px 40px;
-			}
+        <style>
+.heroSectionColumn{
+    padding: 150px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
 
-			.page-header {
-				display: none;
-			}
+.heroSectionColumn h2{
+    color: var(--black);
+text-align: center;
 
-			.heroImageContainer img {
-				max-height: 80%;
-				width: 100%;
-				object-fit: cover;
-			}
+font-size: 3.5rem;
 
-			@media screen and (min-width: 1600px) {
-				.heroImageContainer {
-					padding: 0 10%;
-				}
-			}
+font-weight: 300;
+line-height: 3.5rem; /* 100% */
+}
 
-			@media screen and (max-width: 600px) {
-				.heroImageContainer {
-					padding: 15px;
-					grid-template-columns: repeat(1, 1fr);
-					height: auto;
-				}
+.heroSectionColumn p{
+    text-align: center;
+    color: var(--black);
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+        </style>
 
-				.hello-world h1 {
-					color: #000;
-					font-size: 24px;
-					font-weight: 400;
-					text-transform: uppercase;
-				}
-
-				.hello-world p {
-					color: #000;
-					font-size: 14px;
-					font-weight: 300;
-				}
-			}
-		</style>
-
-		<div class="heroImageContainer">
-			<h1 class="hello-world">
-				<?php echo $settings['title']; ?>
-			</h1>
-			<p>
-				<?php echo $settings['text']; ?>
-			</p>
-			<?php echo '<img src="' . esc_url($settings['image']['url']) . '" alt="">'; ?>
-		</div>
-<?php
+        <div class="heroSectionColumn">
+		<h1 class="hello-world">
+			<?php echo $settings['title']; ?>
+        </h1>
+        <p>
+            <?php echo $settings['text']; ?>
+        </p>
+        <?php echo '<img src="' . esc_url( $settings['image']['url'] ) . '" alt="">'; ?>
+        </div>
+		<?php
 	}
 }

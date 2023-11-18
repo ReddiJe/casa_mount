@@ -41,7 +41,6 @@ $header_nav_menu = wp_nav_menu( [
 			</p>
 		<?php } ?>
 	</div>
-	<h1>HERE</h1>
 	<?php if ( $header_nav_menu ) : ?>
 		<nav class="site-navigation">
 			<?php
