@@ -193,7 +193,6 @@ class Elementor_contactUs extends \Elementor\Widget_Base
                 justify-content: space-between;
                 align-items: center;
                 width: 100%;
-
             }
 
             .social,
@@ -226,12 +225,12 @@ class Elementor_contactUs extends \Elementor\Widget_Base
 
             .rightContainer {
                 background-size: cover;
+                background-size: cover;
                 width: 100%;
                 margin-top: 20px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-
             }
 
             .rightContainer form {

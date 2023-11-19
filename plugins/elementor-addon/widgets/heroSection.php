@@ -102,27 +102,40 @@ class Elementor_heroSection extends \Elementor\Widget_Base
 	protected function render() {
 		$settings = $this->get_settings_for_display();
 		?>
+
         <style>
-            .heroImageContainer{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-                height: 90vh;
-                gap: 15px;
-            }
+.heroSectionColumn{
+    padding: 150px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
 
-            .page-header{
-                display: none;
-            }
+.heroSectionColumn h2{
+    color: var(--black);
+text-align: center;
 
-            .heroImageContainer img{
-                max-height: 80%;
-                width: 100%;
-                object-fit: cover;
-            }
+font-size: 3.5rem;
+
+font-weight: 300;
+line-height: 3.5rem; /* 100% */
+}
+
+.heroSectionColumn p{
+    text-align: center;
+    color: var(--black);
+    font-size: 1.25rem;
+    font-weight: 400;
+}
         </style>
-        <div class="heroImageContainer">
+
+        <div class="heroSectionColumn">
 		<h1 class="hello-world">
 			<?php echo $settings['title']; ?>
         </h1>

@@ -73,7 +73,7 @@ class Elementor_commentsSlider extends \Elementor\Widget_Base
         $this->add_control(
             'comments',
             [
-                'label' => esc_html__('Accommodation', 'elementor-addon'),
+                'label' => esc_html__('Comments', 'elementor-addon'),
                 'type' => \Elementor\Controls_Manager::REPEATER,
                 'fields' => [
                     [
