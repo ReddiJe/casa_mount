@@ -47,7 +47,6 @@ class Elementor_cleaningServicesTypes extends \Elementor\Widget_Base
             [
                 'label' => esc_html__('Title', 'elementor-addon'),
                 'type' => \Elementor\Controls_Manager::TEXTAREA,
-                'default' => esc_html__('Hello world', 'elementor-addon'),
             ]
         );
 
@@ -56,7 +55,6 @@ class Elementor_cleaningServicesTypes extends \Elementor\Widget_Base
             [
                 'label' => esc_html__('Subtitle', 'elementor-addon'),
                 'type' => \Elementor\Controls_Manager::TEXTAREA,
-                'default' => esc_html__('Hello world', 'elementor-addon'),
             ]
         );
 
@@ -91,19 +89,16 @@ class Elementor_cleaningServicesTypes extends \Elementor\Widget_Base
                         'name' => 'number',
                         'label' => esc_html__('Number Of Service', 'elementor-addon'),
                         'type' => \Elementor\Controls_Manager::TEXT,
-                        'default' => esc_html__('Hello world', 'elementor-addon'),
                     ],
                     [
                         'name' => 'title',
                         'label' => esc_html__('Title', 'elementor-addon'),
                         'type' => \Elementor\Controls_Manager::TEXT,
-                        'default' => esc_html__('Hello world', 'elementor-addon'),
                     ],
                     [
                         'name' => 'description',
                         'label' => esc_html__('Description', 'elementor-addon'),
                         'type' => \Elementor\Controls_Manager::TEXT,
-                        'default' => esc_html__('Hello world', 'elementor-addon'),
                     ],
                 ],
             ]

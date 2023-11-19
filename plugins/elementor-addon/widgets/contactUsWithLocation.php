@@ -67,7 +67,6 @@ class Elementor_contactUsWithLocation extends \Elementor\Widget_Base
             [
                 'label' => esc_html__('Title', 'elementor-addon'),
                 'type' => \Elementor\Controls_Manager::TEXTAREA,
-                'default' => esc_html__('Hello world', 'elementor-addon'),
             ]
         );
 
@@ -76,7 +75,6 @@ class Elementor_contactUsWithLocation extends \Elementor\Widget_Base
             [
                 'label' => esc_html__('Subtitle', 'elementor-addon'),
                 'type' => \Elementor\Controls_Manager::TEXTAREA,
-                'default' => esc_html__('Hello world', 'elementor-addon'),
             ]
         );
 
@@ -180,36 +178,92 @@ class Elementor_contactUsWithLocation extends \Elementor\Widget_Base
 ?>
 
         <style>
-            .heroText {
-                padding-top: 10px;
-                height: 35vh;
-            }
-
             .heroSection {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                width: 100%;
-                height: 80vh;
                 gap: 25px;
+                width: 100%;
+                height: 100vh;
                 padding: 25px;
+            }
+
+            .heroImage {
+                max-width: 50%;
+                width: 50%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .heroText {
+                display: flex;
+                justify-content: center;
+                align-items: start;
+                flex-direction: column;
+                gap: 15px;
+                max-width: calc(50% - 25px);
+            }
+
+            .heroText h1 {
+                color: var(--black);
+                font-size: 3.5rem;
+                font-weight: 300;
+                line-height: 3.5rem;
+            }
+
+            .heroText p {
+                color: var(--black);
+                font-size: 1.25rem;
+                font-weight: 300;
+            }
+
+            .heroSectionTwo {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 25px;
+                padding: 0 25px;
+                height: 80vh;
             }
 
             .rightImage .leftImageInner {
                 display: none;
             }
 
+            .leftImage .rightImageInner {
+                display: none;
+            }
+
+            .buttonHeroSection {
+                display: flex;
+                padding: 0.9375rem 3.125rem;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 0.625rem;
+                background: var(--blueLight);
+                box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+                color: #fff;
+                transition: all linear 300ms;
+            }
+
+            .buttonHeroSection:hover {
+                box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
+                background: var(--blueDark);
+            }
+
+            .heroSectionTwo h1 {
+                color: #010626;
+                font-size: 3rem;
+                font-weight: 700;
+                line-height: 3rem;
+            }
+
             .buttonsBlueBg {
                 display: flex;
                 align-items: center;
                 align-content: center;
-                padding-top: 80px;
                 gap: 25px;
-            }
-
-            .buttonBlueBg:hover {
-                background: #01133d;
-                color: #fff;
             }
 
             .buttonBlueBg {
@@ -220,36 +274,25 @@ class Elementor_contactUsWithLocation extends \Elementor\Widget_Base
                 gap: 0.3125rem;
                 border-radius: 0.9375rem;
                 background: rgba(5, 108, 242, 0.10);
-                color: #103894;
+                color: var(--blue);
                 font-size: 1.125rem;
                 font-weight: 500;
                 transition: all linear 300ms;
             }
 
-            .buttonHeroSection {
-                display: flex;
-                margin-top: 10px;
-                height: 15%;
-                width: 40%;
-                padding: 7px 20px;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                gap: 0.625rem;
-                background: #294994;
-                box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
-                border-radius: 10px;
+            .buttonBlueBg:hover {
+                background: var(--blueLight);
                 color: #fff;
-                transition: all linear 300ms;
             }
 
-            .buttonHeroSection:hover {
-                box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
-                background: #01133d
+            .buttonBlueBg:hover svg path {
+                background: var(--blueLight);
+                color: #fff;
+                fill: #fff;
             }
 
             .adress {
-                color: #103894;
+                color: var(--blue);
                 font-size: 1.25rem;
                 font-weight: 500;
             }
