@@ -154,6 +154,7 @@ class Elementor_hoverBlocks extends \Elementor\Widget_Base
                 grid-template-columns: repeat(4, 1fr);
                 padding: 25px;
                 grid-column-gap: 25px;
+                width: 100%;
             }
 
             .card {
@@ -169,6 +170,12 @@ class Elementor_hoverBlocks extends \Elementor\Widget_Base
             .cardInner {
                 height: 100%;
                 position: relative;
+            }
+
+            .text{
+                position: relative;
+                height: 100%;
+                width: 100%;
             }
 
             .bgCard {
@@ -196,6 +203,7 @@ class Elementor_hoverBlocks extends \Elementor\Widget_Base
                 bottom: 0;
                 z-index: 3;
                 object-fit: contain;
+                left: 0;
             }
 
             .cardInnerHover {
@@ -230,17 +238,17 @@ class Elementor_hoverBlocks extends \Elementor\Widget_Base
             <?php
             foreach ($facilities as $facility) {
                 $facility_image = $facility['facility_image']['url'];
-                $background_image = $facility['facility_image']['url'];
+                $background_image = $facility['background_image']['url'];
                 $facility_url = $facility['facility_url'];
             ?>
                 <a href="<?php echo $facility_url; ?>" class="card">
                     <div class="cardInner">
                         <div class="text">
-                        <img src="<?php echo $facility_image; ?>" alt="" class="imgCard">
+                        <img src="<?php echo $facility_image; ?>" alt="" class="bgCard">
                             <h3>
                                 <?php echo $facility['facility_title']; ?>
                             </h3>
-                            <img src="<?php echo $background_image; ?>" alt="">
+                            <img src="<?php echo $background_image; ?>" alt="" class="imgCard">
                         </div>
                         <div class="cardInnerHover">
                             <p><?php echo $facility['facility_description']; ?></p>
