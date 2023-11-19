@@ -3,6 +3,39 @@ html {
     -webkit-text-size-adjust: 100%
 }
 
+:root {
+    --black: #010626;
+    --blue: #0255BF;
+    --blueDark: #0339D9;
+    --blueLight: #086CF2;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Urbanist;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    color: var(--black);
+}
+
+.page-width {
+    width: 100%;
+    padding: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
 *,
 :after,
 :before {
@@ -18,7 +51,7 @@ body {
     color: #333;
     background-color: #fff;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale
+    -moz-osx-font-smoothing: grayscale;
 }
 
 h1,
