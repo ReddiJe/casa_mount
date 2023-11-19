@@ -256,7 +256,9 @@ $header_nav_menu = wp_nav_menu([
 			</svg>
 		</a>
 		<div class="checkboxHomeOffice">
-		</div>
+                <a href="#" class="chacboxInner activeHomeOffice">Home</a>
+                <a href="./officeCleaning.html" class="chacboxInner">Office</a>
+            </div>
 	</div>
 
 	<nav class="desktopNav">
