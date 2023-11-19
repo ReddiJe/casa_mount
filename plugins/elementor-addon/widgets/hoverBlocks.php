@@ -245,11 +245,11 @@ class Elementor_hoverBlocks extends \Elementor\Widget_Base
                 <a href="<?php echo $facility_url; ?>" class="card">
                     <div class="cardInner">
                         <div class="text">
-                        <img src="<?php echo $facility_image; ?>" alt="" class="bgCard">
+                        <img src="<?php echo $facility_image; ?>" alt="" class="imgCard">
                             <h3>
                                 <?php echo $facility['facility_title']; ?>
                             </h3>
-                            <img src="<?php echo $background_image; ?>" alt="" class="imgCard">
+                            <img src="<?php echo $background_image; ?>" alt="" class="bgCard">
                         </div>
                         <div class="cardInnerHover">
                             <p><?php echo $facility['facility_description']; ?></p>
