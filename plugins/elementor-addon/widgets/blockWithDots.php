@@ -47,7 +47,6 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
             [
                 'label' => esc_html__('Title', 'elementor-addon'),
                 'type' => \Elementor\Controls_Manager::TEXTAREA,
-                'default' => esc_html__('Hello world', 'elementor-addon'),
             ]
         );
 
@@ -56,7 +55,6 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
             [
                 'label' => esc_html__('Subtitle', 'elementor-addon'),
                 'type' => \Elementor\Controls_Manager::TEXTAREA,
-                'default' => esc_html__('Hello world', 'elementor-addon'),
             ]
         );
 
@@ -75,7 +73,6 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
             [
                 'label' => esc_html__('Names For Block', 'elementor-addon'),
                 'type' => \Elementor\Controls_Manager::TEXTAREA,
-                'default' => esc_html__('Hello world', 'elementor-addon'),
             ]
         );
 
@@ -117,7 +114,6 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
                         'name' => 'description',
                         'label' => esc_html__('Description', 'elementor-addon'),
                         'type' => \Elementor\Controls_Manager::TEXTAREA,
-                        'default' => esc_html__('Hello world', 'elementor-addon'),
                     ],
                 ],
             ]
@@ -138,7 +134,6 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
             [
                 'label' => esc_html__('Names For Block', 'elementor-addon'),
                 'type' => \Elementor\Controls_Manager::TEXTAREA,
-                'default' => esc_html__('Hello world', 'elementor-addon'),
             ]
         );
 
@@ -180,7 +175,6 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
                         'name' => 'description',
                         'label' => esc_html__('Description', 'elementor-addon'),
                         'type' => \Elementor\Controls_Manager::TEXTAREA,
-                        'default' => esc_html__('Hello world', 'elementor-addon'),
                     ],
                 ],
             ]
@@ -201,7 +195,6 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
             [
                 'label' => esc_html__('Names For Block', 'elementor-addon'),
                 'type' => \Elementor\Controls_Manager::TEXTAREA,
-                'default' => esc_html__('Hello world', 'elementor-addon'),
             ]
         );
 
@@ -243,7 +236,6 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
                         'name' => 'description',
                         'label' => esc_html__('Description', 'elementor-addon'),
                         'type' => \Elementor\Controls_Manager::TEXTAREA,
-                        'default' => esc_html__('Hello world', 'elementor-addon'),
                     ],
                 ],
             ]
@@ -264,7 +256,6 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
             [
                 'label' => esc_html__('Names For Block', 'elementor-addon'),
                 'type' => \Elementor\Controls_Manager::TEXTAREA,
-                'default' => esc_html__('Hello world', 'elementor-addon'),
             ]
         );
 
@@ -306,7 +297,6 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
                         'name' => 'description',
                         'label' => esc_html__('Description', 'elementor-addon'),
                         'type' => \Elementor\Controls_Manager::TEXTAREA,
-                        'default' => esc_html__('Hello world', 'elementor-addon'),
                     ],
                 ],
             ]
