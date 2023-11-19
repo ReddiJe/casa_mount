@@ -65,7 +65,7 @@ class Elementor_accommodationOptions extends \Elementor\Widget_Base
         $this->start_controls_section(
             'bottom_section_title',
             [
-                'label' => esc_html__('Bottom Title', 'elementor-addon'),
+                'label' => esc_html__('Types', 'elementor-addon'),
                 'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
             ]
         );

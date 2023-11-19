@@ -193,3 +193,5 @@ class Elementor_richText extends \Elementor\Widget_Base {
 		<?php
 	}
 }
+
+

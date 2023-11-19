@@ -43,7 +43,7 @@ class Elementor_accommodationsList extends \Elementor\Widget_Base
         );
 
         $this->add_control(
-            'title1',
+            'title',
             [
                 'label' => esc_html__('Title', 'elementor-addon'),
                 'type' => \Elementor\Controls_Manager::TEXTAREA,
@@ -52,7 +52,7 @@ class Elementor_accommodationsList extends \Elementor\Widget_Base
         );
 
         $this->add_control(
-            'subtitle1',
+            'subtitle',
 			[
 				'label' => esc_html__( 'Subtitle', 'elementor-addon' ),
 				'type' => \Elementor\Controls_Manager::TEXTAREA,
@@ -222,8 +222,8 @@ class Elementor_accommodationsList extends \Elementor\Widget_Base
 
 
 <div class="accommodationOptionsContainer">
-        <h2><?php echo $settings['title1']; ?></h2>
-        <p><?php echo $settings['subtitle1']; ?></p>
+        <h2><?php echo $settings['title']; ?></h2>
+        <p><?php echo $settings['subtitle']; ?></p>
         <div class="accommodationsContainer">
             <?php foreach ($accommodations as $accommodation) { ?>
                 <div class="accomodation">
