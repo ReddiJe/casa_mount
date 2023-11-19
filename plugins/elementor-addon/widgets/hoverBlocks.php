@@ -204,6 +204,7 @@ class Elementor_hoverBlocks extends \Elementor\Widget_Base
                 z-index: 3;
                 object-fit: contain;
                 left: 0;
+                max-height: 80%;
             }
 
             .cardInnerHover {
