@@ -296,9 +296,6 @@ class Elementor_switchSideImage extends \Elementor\Widget_Base
             .heroSection .buttonBlueBg {
                 padding: 10px;
                 margin-top: 20px;
-                border: 1px solid #B1882F;
-                color: #B1882F;
-                background: white;
                 outline: none;
                 box-sizing: none;
                 font-size: 1.2rem;
