@@ -37,7 +37,7 @@ class Elementor_calculator extends \Elementor\Widget_Base
         $this->start_controls_section(
             'main-section',
             [
-                'label' => esc_html__('Title', 'elementor-addon'),
+                'label' => esc_html__('Section Control', 'elementor-addon'),
                 'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
             ]
         );
@@ -52,7 +52,7 @@ class Elementor_calculator extends \Elementor\Widget_Base
         $this->add_control(
             'subtitle',
             [
-                'label' => esc_html__('Title', 'elementor-addon'),
+                'label' => esc_html__('Subtitle', 'elementor-addon'),
                 'type' => \Elementor\Controls_Manager::TEXTAREA,
             ]
         );
@@ -60,10 +60,34 @@ class Elementor_calculator extends \Elementor\Widget_Base
         $this->add_control(
             'titleUpperPrice',
             [
-                'label' => esc_html__('Title', 'elementor-addon'),
+                'label' => esc_html__('Title Upper Price', 'elementor-addon'),
                 'type' => \Elementor\Controls_Manager::TEXTAREA,
             ]
         );
+
+        $this->add_control(
+			'minSqFt',
+			[
+				'label' => esc_html__( 'Minimal sq.ft. for project', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::NUMBER,
+				'min' => 100,
+				'max' => 1000,
+				'step' => 100,
+				'default' => 500,
+			]
+		);
+
+        $this->add_control(
+			'maxSqFt',
+			[
+				'label' => esc_html__( 'Maximal sq.ft. for project', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::NUMBER,
+				'min' => 1000,
+				'max' => 5000,
+				'step' => 100,
+				'default' => 2000,
+			]
+		);
 
         $this->add_control(
             'repeater_control',
@@ -72,19 +96,18 @@ class Elementor_calculator extends \Elementor\Widget_Base
                 'type' => \Elementor\Controls_Manager::REPEATER,
                 'fields' => [
                     [
-                        'name' => 'top-number',
-                        'label' => esc_html__('Top Number', 'elementor-addon'),
-                        'type' => \Elementor\Controls_Manager::TEXTAREA,
+                        'name' => 'title',
+                        'label' => esc_html__('Title', 'elementor-addon'),
+                        'type' => \Elementor\Controls_Manager::TEXT,
                     ],
                     [
-                        'name' => 'left-number',
-                        'label' => esc_html__('Left Number', 'elementor-addon'),
-                        'type' => \Elementor\Controls_Manager::TEXTAREA,
-                    ],
-                    [
-                        'name' => 'description',
-                        'label' => esc_html__('Description', 'elementor-addon'),
-                        'type' => \Elementor\Controls_Manager::TEXTAREA,
+                        'name' => 'price',
+                        'label' => esc_html__('Price', 'elementor-addon'),
+                        'type' => \Elementor\Controls_Manager::NUMBER,
+                        'min' => 50,
+                        'max' => 1000,
+                        'step' => 10,
+                        'default' => 100,
                     ],
                 ],
             ]
@@ -387,8 +410,8 @@ class Elementor_calculator extends \Elementor\Widget_Base
 
         <div class="calculatorPageContainer">
             <div class="titleCOntainer">
-                <h1>Get a quote with our calculator</h1>
-                <p>Our pricing policy is so open and understandable that you can calculate the approximate cost directly in our calculator.</p>
+                <h1><?php echo $settings['title'] ?></h1>
+                <p><?php echo $settings['subtitle'] ?></p>
             </div>
             <div class="calculatorContainer">
                 <div class="allData">
@@ -396,6 +419,7 @@ class Elementor_calculator extends \Elementor\Widget_Base
                         <div class="inputContainer">
                             <label for="service">Choose the service:</label>
                             <select name="service" id="service">
+                                <option value="Deep">Sdandard Cleaning</option>
                                 <option value="Deep">Deep Cleaning</option>
                                 <option value="Move">Move In/Out Cleaning</option>
                             </select>
@@ -414,8 +438,11 @@ class Elementor_calculator extends \Elementor\Widget_Base
                             <input type="range" min="500" max="5000" value="500" class="range" id="sqRange">
                             <div class="minMax">
                                 <div class="min">
-                                    <500sq.ft.< /div>
-                                        <div class="max">>5000sq.ft.</div>
+                                    <500sq.ft.
+                                </div>
+                                <div class="max">
+                                    >5000sq.ft.
+                                </div>
                                 </div>
                             </div>
                         </div>
@@ -434,37 +461,18 @@ class Elementor_calculator extends \Elementor\Widget_Base
                                 Additional services:
                             </p>
                             <div class="adServicesContainer">
+                            <?php
+                foreach ($settings['repeater_control1'] as $item) {
+                ?>
                                 <div class="serviceCheckbox">
-                                    <label for="windows">Window Washing <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                    <label for="windows"><?php echo esc_html($item['title']); ?> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none" price="<?php echo esc_html($item['price']); ?>">
                                             <path d="M1 1L11 11M1 11L11 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                         </svg></label>
                                     <input type="checkbox" name="windows" id="windows" class="additionalServiceCheckbox">
                                 </div>
-                                <div class="serviceCheckbox">
-                                    <label for="windows">Window Washing <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                                            <path d="M1 1L11 11M1 11L11 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg></label>
-                                    <input type="checkbox" name="windows" id="windows" class="additionalServiceCheckbox">
-                                </div>
-                                <div class="serviceCheckbox">
-                                    <label for="windows">Window Washing <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                                            <path d="M1 1L11 11M1 11L11 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg></label>
-                                    <input type="checkbox" name="windows" id="windows" class="additionalServiceCheckbox">
-                                </div>
-                                <div class="serviceCheckbox">
-                                    <label for="windows">Window Washing <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                                            <path d="M1 1L11 11M1 11L11 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg></label>
-                                    <input type="checkbox" name="windows" id="windows" class="additionalServiceCheckbox">
-                                </div>
-                                <div class="serviceCheckbox">
-                                    <label for="windows">Window Washing <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                                            <path d="M1 1L11 11M1 11L11 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg></label>
-                                    <input type="checkbox" name="windows" id="windows" class="additionalServiceCheckbox">
-                                </div>
-
+                <?php
+                }
+                ?>
                             </div>
                         </div>
                     </div>
@@ -472,7 +480,7 @@ class Elementor_calculator extends \Elementor\Widget_Base
                     <div class="outputContainer">
                         <div class="outputContainerInner">
                             <h3>
-                                Your total payment will be:
+                                <?php echo $settings['titleUpperPrice'] ?>
                             </h3>
 
                             <p class="valueOfMoney">
