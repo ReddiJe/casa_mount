@@ -84,7 +84,7 @@ class Elementor_blocksWithPictures extends \Elementor\Widget_Base
                     ],
                     [
                         'name' => 'title',
-                        'label' => esc_html__('title', 'elementor-addon'),
+                        'label' => esc_html__('Title', 'elementor-addon'),
                         'type' => \Elementor\Controls_Manager::TEXT,
                     ],
                 ],
@@ -183,7 +183,7 @@ class Elementor_blocksWithPictures extends \Elementor\Widget_Base
             <?php foreach ($settings['repeater_control'] as $item) : ?>
                 <div class="cardsWhereCard">
                     <img src="<?php echo $item['image']['url']; ?>" alt="">
-                    <?php echo $item['description']; ?>
+                    <?php echo $item['title']; ?>
                 </div>
             <?php endforeach; ?>
         </div>

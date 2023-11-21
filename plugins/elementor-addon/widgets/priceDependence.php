@@ -47,7 +47,6 @@ class Elementor_priceDependence extends \Elementor\Widget_Base
             [
                 'label' => esc_html__('Title', 'elementor-addon'),
                 'type' => \Elementor\Controls_Manager::TEXTAREA,
-                'default' => esc_html__('Hello world', 'elementor-addon'),
             ]
         );
 
@@ -56,7 +55,6 @@ class Elementor_priceDependence extends \Elementor\Widget_Base
             [
                 'label' => esc_html__('Subtitle', 'elementor-addon'),
                 'type' => \Elementor\Controls_Manager::TEXTAREA,
-                'default' => esc_html__('Hello world', 'elementor-addon'),
             ]
         );
 
@@ -99,13 +97,11 @@ class Elementor_priceDependence extends \Elementor\Widget_Base
                         'name' => 'number',
                         'label' => esc_html__('Number', 'elementor-addon'),
                         'type' => \Elementor\Controls_Manager::TEXT,
-                        'default' => esc_html__('Hello world', 'elementor-addon'),
                     ],
                     [
                         'name' => 'price',
                         'label' => esc_html__('Price', 'elementor-addon'),
                         'type' => \Elementor\Controls_Manager::TEXT,
-                        'default' => esc_html__('Hello world', 'elementor-addon'),
                     ],
                     [
                         'name' => 'frequency',
@@ -192,7 +188,7 @@ class Elementor_priceDependence extends \Elementor\Widget_Base
                 width: 100%;
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
-                padding: 25px;
+                padding: 45px 75px;
                 grid-column-gap: 25px;
             }
 
@@ -236,8 +232,10 @@ class Elementor_priceDependence extends \Elementor\Widget_Base
             }
 
             .price {
-                padding-top: 30px;
-                position: fixed;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-top: 20px;
             }
 
             .frequency {
@@ -245,7 +243,7 @@ class Elementor_priceDependence extends \Elementor\Widget_Base
                 align-items: center;
             }
 
-            .frequency p{
+            .frequency p {
                 margin-bottom: 0px;
                 padding-top: 25px;
             }
@@ -270,7 +268,9 @@ class Elementor_priceDependence extends \Elementor\Widget_Base
                 <div class="additionalService">
                     <p>
                         <?php echo $item['number']; ?></p>
-                    <p class="price"><?php echo $item['price']; ?></p>
+                    <p class="price">
+                        <?php echo $item['price']; ?>
+                    </p>
                     <?php if (!empty($item['frequency'])) { ?>
                         <div class="frequency">
                             <p>
@@ -287,12 +287,15 @@ class Elementor_priceDependence extends \Elementor\Widget_Base
             ?>
         </div>
 
-        <div class="buttonHeroSection">
-            <a class="buttonBlueBg" href="<?php echo esc_url($settings['url']); ?>">
-                <?php echo esc_html($settings['textForButton']); ?>
-            </a>
-        </div>
-
-<?php
+        <?php
+        if (!empty($settings['textForButton']) && !empty($settings['url'])) {
+        ?>
+            <div class="buttonHeroSection">
+                <a class="buttonBlueBg" href="<?php echo esc_url($settings['url']); ?>">
+                    <?php echo esc_html($settings['textForButton']); ?>
+                </a>
+            </div>
+        <?php
+        }
     }
 }
