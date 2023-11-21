@@ -66,28 +66,28 @@ class Elementor_calculator extends \Elementor\Widget_Base
         );
 
         $this->add_control(
-			'minSqFt',
-			[
-				'label' => esc_html__( 'Minimal sq.ft. for project', 'textdomain' ),
-				'type' => \Elementor\Controls_Manager::NUMBER,
-				'min' => 100,
-				'max' => 1000,
-				'step' => 100,
-				'default' => 500,
-			]
-		);
+            'minSqFt',
+            [
+                'label' => esc_html__('Minimal sq.ft. for project', 'textdomain'),
+                'type' => \Elementor\Controls_Manager::NUMBER,
+                'min' => 100,
+                'max' => 1000,
+                'step' => 100,
+                'default' => 500,
+            ]
+        );
 
         $this->add_control(
-			'maxSqFt',
-			[
-				'label' => esc_html__( 'Maximal sq.ft. for project', 'textdomain' ),
-				'type' => \Elementor\Controls_Manager::NUMBER,
-				'min' => 1000,
-				'max' => 5000,
-				'step' => 100,
-				'default' => 2000,
-			]
-		);
+            'maxSqFt',
+            [
+                'label' => esc_html__('Maximal sq.ft. for project', 'textdomain'),
+                'type' => \Elementor\Controls_Manager::NUMBER,
+                'min' => 1000,
+                'max' => 5000,
+                'step' => 100,
+                'default' => 2000,
+            ]
+        );
 
         $this->add_control(
             'repeater_control',
@@ -438,11 +438,10 @@ class Elementor_calculator extends \Elementor\Widget_Base
                             <input type="range" min="500" max="5000" value="500" class="range" id="sqRange">
                             <div class="minMax">
                                 <div class="min">
-                                    <<?php echo $settings['minSqFt'] ?>sq.ft.
-                                </div>
-                                <div class="max">
-                                    ><?php echo $settings['maxSqFt'] ?>sq.ft.
-                                </div>
+                                    <<?php echo $settings['minSqFt'] ?>sq.ft. </div>
+                                        <div class="max">
+                                            ><?php echo $settings['maxSqFt'] ?>sq.ft.
+                                        </div>
                                 </div>
                             </div>
                         </div>
@@ -461,18 +460,18 @@ class Elementor_calculator extends \Elementor\Widget_Base
                                 Additional services:
                             </p>
                             <div class="adServicesContainer">
-                            <?php
-                foreach ($settings['repeater_contro1'] as $item) {
-                ?>
-                                <div class="serviceCheckbox">
-                                    <label for="windows"><?php echo esc_html($item['title']); ?> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none" price="<?php echo esc_html($item['price']); ?>">
-                                            <path d="M1 1L11 11M1 11L11 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg></label>
-                                    <input type="checkbox" name="windows" id="windows" class="additionalServiceCheckbox">
-                                </div>
-                <?php
-                }
-                ?>
+                                <?php
+                                foreach ($settings['repeater_control'] as $item) {
+                                ?>
+                                    <div class="serviceCheckbox">
+                                        <label for="windows"><?php echo esc_html($item['title']); ?> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none" price="<?php echo esc_html($item['price']); ?>">
+                                                <path d="M1 1L11 11M1 11L11 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg></label>
+                                        <input type="checkbox" name="windows" id="windows" class="additionalServiceCheckbox">
+                                    </div>
+                                <?php
+                                }
+                                ?>
                             </div>
                         </div>
                     </div>
