@@ -525,7 +525,6 @@ class Elementor_calculator extends \Elementor\Widget_Base
 
                     additionalCheckBox.forEach(child1 => {
                         if (child1.checked == true) {
-                            console.log(child1.title)
                             finalAmount = finalAmount + Number(child1.title)
                         }
                     });
