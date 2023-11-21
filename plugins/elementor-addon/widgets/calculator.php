@@ -438,10 +438,10 @@ class Elementor_calculator extends \Elementor\Widget_Base
                             <input type="range" min="500" max="5000" value="500" class="range" id="sqRange">
                             <div class="minMax">
                                 <div class="min">
-                                    <500sq.ft.
+                                    <<?php echo $settings['minSqFt'] ?>sq.ft.
                                 </div>
                                 <div class="max">
-                                    >5000sq.ft.
+                                    ><?php echo $settings['maxSqFt'] ?>sq.ft.
                                 </div>
                                 </div>
                             </div>
@@ -462,7 +462,7 @@ class Elementor_calculator extends \Elementor\Widget_Base
                             </p>
                             <div class="adServicesContainer">
                             <?php
-                foreach ($settings['repeater_control1'] as $item) {
+                foreach ($settings['repeater_contro1'] as $item) {
                 ?>
                                 <div class="serviceCheckbox">
                                     <label for="windows"><?php echo esc_html($item['title']); ?> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none" price="<?php echo esc_html($item['price']); ?>">
