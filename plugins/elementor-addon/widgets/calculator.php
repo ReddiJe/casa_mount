@@ -500,6 +500,53 @@ class Elementor_calculator extends \Elementor\Widget_Base
                 </div>
             </div>
 
+
+            <script>
+                let valueSq = document.getElementById("valueSq");
+                let valueFromRange = document.getElementById("sqRange")
+                let additionalCheckBox = document.querySelectorAll(".additionalServiceCheckbox")
+                let finalMoney = document.getElementById("valueOfMoney")
+
+                valueSq.innerHTML = valueFromRange.value;
+
+                let howMuchMoney = () => {
+                    let finalAmount = 0;
+                    let fromSq = valueFromRange.value * 0.5;
+                    finalAmount = fromSq;
+
+
+
+                    additionalCheckBox.forEach(child1 => {
+                        if (child1.checked == true) {
+                            finalAmount = finalAmount + 100
+                        }
+                    });
+
+
+                    finalMoney.innerHTML = finalAmount;
+
+
+                }
+
+                valueFromRange.oninput = function() {
+                    valueSq.innerHTML = this.value;
+                    howMuchMoney();
+                }
+
+
+
+
+                additionalCheckBox.forEach(child1 => {
+                    child1.addEventListener('click', () => {
+                        const parent = child1.parentNode;
+                        parent.classList.toggle('open');
+
+
+                        howMuchMoney();
+                        console.log(additionalCheckBox)
+                    });
+                });
+            </script>
     <?php
     }
 }
