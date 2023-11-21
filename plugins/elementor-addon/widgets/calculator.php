@@ -464,7 +464,7 @@ class Elementor_calculator extends \Elementor\Widget_Base
                                 foreach ($settings['repeater_control'] as $item) {
                                 ?>
                                     <div class="serviceCheckbox">
-                                        <label for="windows"><?php echo esc_html($item['title']); ?> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none" price="<?php echo esc_html($item['price']); ?>">
+                                        <label for="windows"><?php echo esc_html($item['title']); ?> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none" title="<?php echo esc_html($item['price']); ?>">
                                                 <path d="M1 1L11 11M1 11L11 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                             </svg></label>
                                         <input type="checkbox" name="windows" id="windows" class="additionalServiceCheckbox">
@@ -525,7 +525,7 @@ class Elementor_calculator extends \Elementor\Widget_Base
 
                     additionalCheckBox.forEach(child1 => {
                         if (child1.checked == true) {
-                            console.log(child1.price)
+                            console.log(child1.title)
                             finalAmount = finalAmount + 100
                         }
                     });
