@@ -460,20 +460,6 @@ class Elementor_calculator extends \Elementor\Widget_Base
                                 Additional services:
                             </p>
                             <div class="adServicesContainer">
-<<<<<<< HEAD
-                            <?php
-                foreach ($settings['repeater_contro1'] as $item) {
-                ?>
-                                <div class="serviceCheckbox">
-                                    <label for="windows"><?php echo esc_html($item['title']); ?> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none" price="<?php echo esc_html($item['price']); ?>">
-                                            <path d="M1 1L11 11M1 11L11 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg></label>
-                                    <input type="checkbox" name="windows" id="windows" class="additionalServiceCheckbox" price="<?php echo esc_html($item['price']); ?>">
-                                </div>
-                <?php
-                }
-                ?>
-=======
                                 <?php
                                 foreach ($settings['repeater_control'] as $item) {
                                 ?>
@@ -486,7 +472,6 @@ class Elementor_calculator extends \Elementor\Widget_Base
                                 <?php
                                 }
                                 ?>
->>>>>>> 19522c5f3e928def75703c4743b4c5d8cf882834
                             </div>
                         </div>
                     </div>
