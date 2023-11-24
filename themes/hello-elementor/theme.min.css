@@ -150,7 +150,6 @@
 
 .site-header {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     position: relative;
     border: 0.5px solid #FFF;
@@ -526,7 +525,6 @@ html[dir=rtl] #comments ol.comment-list .children:before {
 
 .site-navigation ul.menu {
     display: flex;
-    flex-wrap: wrap
 }
 
 .site-navigation ul.menu li {
@@ -674,6 +672,10 @@ footer .site-navigation ul.menu a {
 .site-navigation-dropdown ul.menu li.elementor-active>ul>li {
     transform: scaleY(1);
     max-height: 100vh
+}
+
+.heroSection {
+    padding: 0;
 }
 
 @media (max-width:576px) {

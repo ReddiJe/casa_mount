@@ -182,7 +182,7 @@ class Elementor_contactUsWithLocation extends \Elementor\Widget_Base
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                gap: 25px;
+                gap: 0 !important;
                 width: 100%;
                 height: 100vh;
                 padding: 25px;
@@ -200,8 +200,8 @@ class Elementor_contactUsWithLocation extends \Elementor\Widget_Base
                 justify-content: center;
                 align-items: start;
                 flex-direction: column;
-                gap: 15px;
                 max-width: calc(50% - 25px);
+                width: 50%;
             }
 
             .heroText h1 {
@@ -221,9 +221,7 @@ class Elementor_contactUsWithLocation extends \Elementor\Widget_Base
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                gap: 25px;
                 padding: 0 25px;
-                height: 80vh;
             }
 
             .rightImage .leftImageInner {
@@ -295,6 +293,15 @@ class Elementor_contactUsWithLocation extends \Elementor\Widget_Base
                 color: var(--blue);
                 font-size: 1.25rem;
                 font-weight: 500;
+            }
+
+            iframe {
+                height: 100%;
+                width: 50% !important;
+            }
+
+            .heroText {
+                padding-left: 25px !important;
             }
 
             @media screen and (min-width: 1600px) {

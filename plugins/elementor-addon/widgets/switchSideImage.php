@@ -144,8 +144,6 @@ class Elementor_switchSideImage extends \Elementor\Widget_Base
                 align-items: center;
                 width: 100%;
                 height: 80vh;
-                gap: 25px;
-                padding: 25px 60px;
             }
 
             .left {
@@ -156,7 +154,7 @@ class Elementor_switchSideImage extends \Elementor\Widget_Base
 
             .heroSection img {
                 width: 50%;
-                height: 65vh;
+                height: 100%;
                 object-fit: cover;
             }
 
@@ -166,6 +164,7 @@ class Elementor_switchSideImage extends \Elementor\Widget_Base
 
             .heroSection.left img.left {
                 display: block;
+                height: 100%;
             }
 
             .heroSection.left img.right {
@@ -178,6 +177,7 @@ class Elementor_switchSideImage extends \Elementor\Widget_Base
                 align-items: start;
                 flex-direction: column;
                 gap: 15px;
+                padding: 25px;
                 max-width: calc(50% - 25px);
             }
 

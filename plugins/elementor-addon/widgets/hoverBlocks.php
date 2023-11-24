@@ -221,6 +221,10 @@ class Elementor_hoverBlocks extends \Elementor\Widget_Base
                 font-weight: 300;
             }
 
+            .text h3 {
+                color: #2c2d2c;
+            }
+
             .cardInnerHover p {
                 color: #FFF;
                 font-family: Urbanist;
