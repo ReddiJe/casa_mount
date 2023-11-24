@@ -145,7 +145,7 @@ class Elementor_switchSideImage extends \Elementor\Widget_Base
                 width: 100%;
                 height: 80vh;
                 gap: 25px;
-                padding: 25px;
+                padding: 25px 60px;
             }
 
             .left {
@@ -156,7 +156,7 @@ class Elementor_switchSideImage extends \Elementor\Widget_Base
 
             .heroSection img {
                 width: 50%;
-                height: 80vh;
+                height: 65vh;
                 object-fit: cover;
             }
 

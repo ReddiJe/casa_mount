@@ -28,6 +28,8 @@ function register_hello_world_widget( $widgets_manager ) {
 	require_once( __DIR__ . '/widgets/titleWithButton.php' );
 	require_once( __DIR__ . '/widgets/hoverBlocks.php' );
 	require_once( __DIR__ . '/widgets/calculator.php' );
+	require_once( __DIR__ . '/widgets/heroSectionWithButton.php' );
+	require_once( __DIR__ . '/widgets/twoRowsValues.php' );
 
 
 	$widgets_manager->register( new \Elementor_switchSideImage() );
@@ -48,6 +50,8 @@ function register_hello_world_widget( $widgets_manager ) {
 	$widgets_manager->register( new \Elementor_titleWithButton() );
 	$widgets_manager->register( new \Elementor_hoverBlocks() );
 	$widgets_manager->register( new \Elementor_calculator() );
+	$widgets_manager->register( new \Elementor_heroSectionWithButton() );
+	$widgets_manager->register( new \Elementor_twoRowsValues() );
 
 
 }
