@@ -262,6 +262,7 @@ class Elementor_cleaningDifference extends \Elementor\Widget_Base
             @media screen and (max-width: 600px) {
                 .whatTheDifference {
                     overflow: scroll;
+                    width: 100%;
                 }
             }
         </style>
