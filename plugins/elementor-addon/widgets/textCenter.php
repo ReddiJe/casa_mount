@@ -109,6 +109,14 @@ class Elementor_textCenter extends \Elementor\Widget_Base
                     padding-top: 200px;
                 }
             }
+
+            @media screen and (max-width: 600px) {
+                .textCenter {
+                    padding: 25px;
+                    font-size: 1.15rem;
+                    font-weight: 400;
+                }
+            }
         </style>
 
         <p class="textCenter pageWidth">

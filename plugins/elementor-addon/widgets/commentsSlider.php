@@ -219,6 +219,79 @@ class Elementor_commentsSlider extends \Elementor\Widget_Base
             a {
                 text-decoration: underline !important;
             }
+
+            @media screen and (max-width: 600px) {
+                .nameCompanyDate {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                }
+
+                .title {
+                    font-size: 32px;
+                    line-height: 39px;
+                }
+
+                .subtitle {
+                    font-size: 16px;
+                    line-height: 20px;
+                    text-align: center;
+                }
+
+                .name {
+                    text-align: center;
+                    justify-content: center;
+                }
+
+                .date {
+                    margin-left: 50px;
+                    margin-bottom: 10px;
+                    text-align: center;
+                    justify-content: center;
+                }
+
+                .reviewInner {
+                    gap: 10px;
+                    padding: 20px 25px;
+                    text-align: center;
+                    justify-content: center;
+                }
+
+                .reviewText {
+                    font-size: 1rem;
+                }
+
+                .reviewInnerText {
+                    gap: 15px;
+                }
+
+                .reviewInner img {
+                    display: none;
+                }
+
+                .nameCompanyDate {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                }
+
+                .splide__arrow {
+                    top: 70%;
+                    width: 2em;
+                }
+
+                .splide__arrow--prev {
+                    left: 0;
+                }
+
+                .splide__arrow--next {
+                    right: 0;
+                }
+            }
         </style>
 
 
@@ -241,7 +314,7 @@ class Elementor_commentsSlider extends \Elementor\Widget_Base
                                         <div class="nameCompanyDate">
                                             <p><b><?php echo esc_html($accommodation['name']); ?></b></p>
                                             <p class="date"><?php echo esc_html($accommodation['date']); ?>
-                                            <a href="<?php echo esc_html($accommodation['link']['url']); ?>">Google</a>
+                                                <a href="<?php echo esc_html($accommodation['link']['url']); ?>">Google</a>
                                             </p>
                                         </div>
                                         <p class="reviewText">

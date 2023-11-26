@@ -255,6 +255,12 @@ class Elementor_twoRowsValues extends \Elementor\Widget_Base
             .pricesWithoutShadow {
                 padding-bottom: 100px;
             }
+
+            @media screen and (max-width: 600px) {
+                .additionalServices {
+                    grid-template-columns: repeat(1, 1fr);
+                }
+            }
         </style>
 
         <div class="cardsWithLightBg">

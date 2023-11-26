@@ -375,6 +375,7 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
                 background: #fff;
                 width: 300px;
                 border-radius: 15px;
+                width: auto;
             }
 
             .hoverDot:hover .description {
@@ -464,15 +465,18 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
                     width: 100%;
                     padding: 15px;
                 }
-            }
 
-            @media screen and (max-width: 600px) {
+                .hoverDot .description {
+                    width: auto;
+                }
+
                 .tab {
                     overflow-x: scroll;
                 }
 
                 .tabcontent {
-                    padding: 10px;
+                    padding: 0px;
+                    margin: 0px 0;
                 }
             }
 

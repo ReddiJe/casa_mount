@@ -344,8 +344,6 @@ class Elementor_calculator extends \Elementor\Widget_Base
                 background-color: #FAFBFF;
                 border-radius: 50px;
                 box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
-
-
             }
 
             .outputContainerInner h3 {
@@ -361,7 +359,6 @@ class Elementor_calculator extends \Elementor\Widget_Base
 
             .valueOfMoney {
                 display: flex;
-
             }
 
             .valueOfMoney {
@@ -406,6 +403,26 @@ class Elementor_calculator extends \Elementor\Widget_Base
             .orderNowButtonCalc:hover {
                 background: var(--blue);
             }
+
+            @media screen and (max-width: 600px) {
+                .calculatorPageContainer {
+                    padding: 100px 10px 10px 10px;
+                }
+
+                .calculatorContainer {
+                    flex-direction: column;
+                    padding-bottom: 50px;
+                }
+
+                .allData,
+                .outputContainer {
+                    width: 100%;
+                }
+
+                .checkboxHomeOffice {
+                    display: none;
+                }
+            }
         </style>
 
         <div class="calculatorPageContainer">
@@ -424,7 +441,7 @@ class Elementor_calculator extends \Elementor\Widget_Base
                                 <option value="Move">Move In/Out Cleaning</option>
                             </select>
                         </div>
-                        <div class="checkboxHomeOffice">
+                        <div class="c">
                             <a href="#" class="chacboxInner activeHomeOffice">Home</a>
                             <a href="#" class="chacboxInner">Office</a>
                         </div>

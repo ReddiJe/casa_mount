@@ -124,7 +124,7 @@ class Elementor_blocksWithPictures extends \Elementor\Widget_Base
     protected function render()
     {
         $settings = $this->get_settings_for_display();
-        
+
 ?>
 
         <style>
@@ -171,6 +171,12 @@ class Elementor_blocksWithPictures extends \Elementor\Widget_Base
             .cardsWhereCard img {
                 width: 6rem;
                 height: 6rem;
+            }
+
+            @media screen and (max-width: 600px) {
+                .cardsWhere {
+                    grid-template-columns: repeat(2, 1fr);
+                }
             }
         </style>
 

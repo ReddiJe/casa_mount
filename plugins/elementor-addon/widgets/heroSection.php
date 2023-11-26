@@ -139,6 +139,38 @@ class Elementor_heroSection extends \Elementor\Widget_Base
 				font-size: 1.25rem;
 				font-weight: 400;
 			}
+
+			@media screen and (max-width: 900px) {
+				.heroSectionColumn {
+					display: flex;
+					width: 100%;
+					padding: 15px;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					height: auto;
+					gap: 15px;
+				}
+
+				.heroSectionColumn h1 {
+					color: #010626;
+					text-align: center;
+					font-family: Urbanist;
+					font-size: 32px;
+					font-style: normal;
+					line-height: 32px;
+				}
+
+				.heroSectionColumn p {
+					color: #010626;
+					text-align: center;
+					font-family: Urbanist;
+					font-size: 15px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: normal;
+				}
+			}
 		</style>
 
 		<div class="heroSectionColumn">

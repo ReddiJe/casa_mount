@@ -414,6 +414,21 @@ class Elementor_contactUs extends \Elementor\Widget_Base
                     margin-bottom: 30px !important;
                 }
             }
+
+            @media screen and (max-width: 600px) {
+                .heroText {
+                    
+                }
+                .contactsContainer .side {
+                    min-width: 49%;
+                    max-width: 100%;
+                    width: 100%;
+                }
+
+                .rightContainer {
+                    padding: 50px 0;
+                }
+            }
         </style>
 
         <div class="contactsContainer heroSection">

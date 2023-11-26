@@ -154,7 +154,7 @@ class Elementor_switchSideImage extends \Elementor\Widget_Base
 
             .heroSection img {
                 width: 50%;
-                height: 100%;
+                height: 80vh;
                 object-fit: cover;
             }
 
@@ -227,12 +227,6 @@ class Elementor_switchSideImage extends \Elementor\Widget_Base
                 transition: all linear 300ms;
             }
 
-            /* .heroSection a {
-                box-sizing: none;
-                font-size: 1.2rem;
-                width: max-content;
-            } */
-
             .buttonHeroSection:hover {
                 box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
                 background: #01133d;
@@ -277,19 +271,13 @@ class Elementor_switchSideImage extends \Elementor\Widget_Base
                 fill: #fff;
             }
 
-            .adress {
-                color: var(--blue);
-                font-size: 1.25rem;
-                font-weight: 500;
-            }
-
-            .oneSideHero.left img.right,
-            .oneSideHero.right img.right {
+            .heroSection.left img.right,
+            .heroSection.right img.right {
                 display: block;
             }
 
-            .oneSideHero.left img.left,
-            .oneSideHero.right img.left {
+            .heroSection.left img.left,
+            .heroSection.right img.left {
                 display: none;
             }
 
@@ -308,6 +296,43 @@ class Elementor_switchSideImage extends \Elementor\Widget_Base
             .heroText p a {
                 color: #2c2d2c;
             }
+
+            @media screen and (max-width: 600px) {
+
+                .heroSection {
+                    flex-direction: column;
+                    height: auto !important;
+                    padding: 10px !important;
+                    gap: 10% !important;
+                }
+
+                .heroSection img {
+                    width: 100% !important;
+                    height: auto !important;
+                }
+
+                .heroText {
+                    padding: 25px 10px !important;
+                    width: 100% !important;
+                    max-width: 100% !important;
+                }
+
+                .heroText h1 {
+                    font-size: 2.25rem;
+                    text-align: center;
+                    line-height: normal;
+                    font-weight: 500;
+                }
+
+                .heroText p {
+                    font-size: 1.1rem;
+                    font-weight: 300;
+                }
+
+                .heroText {
+                    align-items: center;
+                }
+            }
         </style>
 
 
@@ -317,7 +342,7 @@ class Elementor_switchSideImage extends \Elementor\Widget_Base
                                 } else {
                                     echo 'left';
                                 }
-                                ?> ">
+                                ?> pageWidth">
             <img src="<?php echo esc_url($settings['image']['url']); ?>" alt="" class="left">
             <div class="heroText">
                 <h1>

@@ -186,6 +186,23 @@ class Elementor_ourServices extends \Elementor\Widget_Base
 				gap: 15px;
 				font-weight: 300;
 			}
+
+			@media screen and (max-width: 600px) {
+				.additionalService {
+					margin-bottom: 10px;
+				}
+
+				.additionalServices {
+					grid-template-columns: repeat(1, 1fr);
+					padding: 15px 15px !important;
+					border-radius: 10px;
+				}
+
+				.additionalServicesText {
+					padding: 15px;
+					gap: 15px;
+				}
+			}
 		</style>
 
 		<div class="title">

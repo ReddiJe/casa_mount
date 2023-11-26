@@ -247,6 +247,50 @@ class Elementor_priceDependence extends \Elementor\Widget_Base
                 margin-bottom: 0px;
                 padding-top: 25px;
             }
+
+            @media screen and (max-width: 600px) {
+                .additionalService {
+                    margin-bottom: 35px;
+                    align-items: center !important;
+                }
+
+                .number {
+                    color: #010626;
+                    text-align: center;
+                    font-family: Urbanist;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    margin-bottom: 10px;
+                }
+
+                .price {
+                    color: #010626;
+                    text-align: left;
+                    font-family: Urbanist;
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    padding-top: 5px;
+                }
+
+                .frequency p {
+                    color: #010626;
+                    font-family: Urbanist;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    padding-top: 5px;
+                }
+
+                .additionalServices {
+                    grid-template-columns: repeat(1, 1fr);
+                    padding: 15px 75px;
+                }
+            }
         </style>
 
         <div class="cardsWithLightBg pageWidth">
@@ -266,8 +310,9 @@ class Elementor_priceDependence extends \Elementor\Widget_Base
             foreach ($settings['repeater_control'] as $item) {
             ?>
                 <div class="additionalService">
-                    <p>
-                        <?php echo $item['number']; ?></p>
+                    <p class="number">
+                        <?php echo $item['number']; ?>
+                    </p>
                     <p class="price">
                         <?php echo $item['price']; ?>
                     </p>
@@ -295,7 +340,7 @@ class Elementor_priceDependence extends \Elementor\Widget_Base
                     <?php echo esc_html($settings['textForButton']); ?>
                 </a>
             </div>
-        <?php
+<?php
         }
     }
 }

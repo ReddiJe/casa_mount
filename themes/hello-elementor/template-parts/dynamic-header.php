@@ -46,7 +46,7 @@ $header_nav_menu = wp_nav_menu([
 	.site-header {
 		z-index: 1000;
 		width: 100vw;
-		padding-bottom: 73px;
+		padding-bottom: 25px;
 		overflow: visible;
 	}
 
@@ -253,6 +253,10 @@ $header_nav_menu = wp_nav_menu([
 		background: var(--blueDark);
 	}
 
+	.phoneNavContainer span {
+		display: none;
+	}
+
 	@media screen and (min-width:1100px) {
 		.site-header {
 			padding-bottom: 25px;
@@ -260,7 +264,23 @@ $header_nav_menu = wp_nav_menu([
 	}
 
 	@media screen and (max-width: 600px) {
+		header {
+			padding: 5px;
+		}
+
+		.phoneNavContainer span {
+			display: block;
+		}
+
 		.pcEmail {
+			display: none;
+		}
+
+		.checkboxHomeOffice {
+			display: none;
+		}
+
+		.orderNowButoon {
 			display: none;
 		}
 	}

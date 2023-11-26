@@ -130,47 +130,6 @@ $footer_nav_menu = wp_nav_menu([
         margin-top: auto;
     }
 
-    @media screen and (max-width: 600px) {
-        .emailFooterContainer {
-            width: 100%;
-            max-width: 100%;
-        }
-
-        .phoneFooterContainer {
-            width: 100%;
-            max-width: 100%;
-        }
-
-        .footer-inner {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            gap: 15px;
-            width: 100%;
-            max-width: 100%;
-        }
-
-        .site-navigation ul.menu {
-            display: flex;
-            flex-wrap: nowrap;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            width: 100%;
-            max-width: 100%;
-        }
-
-        .socialNetworksFooter {
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            max-width: 100%;
-            padding: 0px 0px 5px 0px;
-        }
-    }
-
-
     footer {
         display: inline-flex;
         flex-direction: column;
@@ -267,8 +226,65 @@ $footer_nav_menu = wp_nav_menu([
         color: #fff;
         font-weight: 300;
     }
+
+    @media screen and (max-width: 600px) {
+        .emailFooterContainer {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .phoneFooterContainer {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .footer-inner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 15px;
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .site-navigation ul.menu {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .socialNetworksFooter {
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 100%;
+            padding: 0px 0px 5px 0px;
+        }
+
+        .topFooter,
+        .footerRightInner {
+            flex-direction: column;
+        }
+
+        .topFooter {
+            gap: 25px;
+        }
+
+        .footerLeft {
+            align-items: center;
+        }
+
+        .footerLeft p {
+            text-align: center;
+        }
+    }
 </style>
- 
+
 <footer>
     <div class="topFooter pageWidth">
         <div class="footerLeft">
@@ -344,10 +360,10 @@ $footer_nav_menu = wp_nav_menu([
         <div class="footerRight">
             <div class="footerRightInner">
                 <ul class="navigationFooter">
-                <?php
-			// PHPCS - escaped by WordPress with "wp_nav_menu"
-			echo $footer_nav_menu; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-			?>
+                    <?php
+                    // PHPCS - escaped by WordPress with "wp_nav_menu"
+                    echo $footer_nav_menu; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+                    ?>
                 </ul>
             </div>
         </div>

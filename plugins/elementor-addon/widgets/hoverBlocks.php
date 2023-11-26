@@ -237,6 +237,15 @@ class Elementor_hoverBlocks extends \Elementor\Widget_Base
             .card:hover .cardInnerHover {
                 top: 0;
             }
+
+            @media screen and (max-width: 600px) {
+                .hoverCardsContainer {
+                grid-template-columns: repeat(1, 1fr);
+                padding: 5px;
+                grid-column-gap: 10px;
+                width: 100%;
+            }
+            }
         </style>
 
         <div class="hoverCardsContainer pageWidth">

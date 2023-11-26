@@ -199,6 +199,16 @@ class Elementor_cleaningServicesTypes extends \Elementor\Widget_Base
                 font-size: 1.5rem;
                 font-weight: 700;
             }
+
+            @media screen and (max-width: 600px) {
+                .typesOfInner {
+                    grid-template-columns: repeat(1, 1fr);
+                }
+
+                .homepageCleaningType h4 {
+                    font-size: 1.30rem !important;
+                }
+            }
         </style>
 
         <div class="typesOfCleaningServices pageWidth">

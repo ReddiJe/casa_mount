@@ -317,6 +317,24 @@ class Elementor_contactUsWithLocation extends \Elementor\Widget_Base
                     padding-top: 200px;
                 }
             }
+
+            @media screen and (max-width: 600px) {
+                iframe {
+                    height: auto !important;
+                    width: 100% !important;
+                }
+
+                .adress {
+                    text-align: center;
+                }
+
+                .buttonsBlueBg {
+                    align-items: center;
+                    flex-direction: column;
+                    width: 100%;
+                    gap: 0;
+                }
+            }
         </style>
 
         <div class="heroSection leftImage pageWidth">

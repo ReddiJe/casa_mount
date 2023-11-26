@@ -185,6 +185,45 @@ class Elementor_twoColumnsValues extends \Elementor\Widget_Base
                     padding-top: 200px;
                 }
             }
+
+            @media screen and (max-width: 600px) {
+                .richText h2 {
+                    color: #010626;
+                    text-align: center;
+                    font-family: Urbanist;
+                    font-size: 32px;
+                    font-style: normal;
+                    line-height: 32px;
+                }
+
+                .text h4 {
+                    color: #010626;
+                    font-family: Urbanist;
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 650;
+                    line-height: normal;
+                }
+
+                .text p {
+                    color: #010626;
+                    font-family: Urbanist;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+
+                .textTwoColumns {
+                    grid-template-columns: repeat(1, 1fr);
+                }
+
+                .textCenter {
+                    padding: 25px;
+                    font-size: 1.15rem;
+                    font-weight: 400;
+                }
+            }
         </style>
 
         <div class="richText pageWidth">

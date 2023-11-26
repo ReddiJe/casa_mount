@@ -251,6 +251,19 @@ class Elementor_cleaningDifference extends \Elementor\Widget_Base
                 font-size: 3rem;
                 font-weight: 700;
             }
+
+            @media screen and (max-width: 900px) {
+                .whatTheDifference .cell {
+                    min-height: 250px;
+                    min-width: 185px;
+                }
+            }
+
+            @media screen and (max-width: 600px) {
+                .whatTheDifference {
+                    overflow: scroll;
+                }
+            }
         </style>
 
         <div class="richText pageWidth">
