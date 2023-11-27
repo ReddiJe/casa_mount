@@ -305,8 +305,15 @@ $header_nav_menu = wp_nav_menu([
 
 <header id="site-header" class="site-header dynamic-header <?php echo esc_attr(hello_get_header_layout_class()); ?>" role="banner">
 	<div class="logoCheckBox">
-		<a href=""> <img src="<?php echo esc_url($logo_url); ?>" alt="">
+		<a href="averlexx.com"> <img src="<?php echo esc_url($logo_url); ?>" alt="">
 		</a>
+		<div class="site-branding show-<?php echo esc_attr(hello_elementor_get_setting('hello_header_logo_type')); ?>">
+      <?php if (has_custom_logo() && ('title' !== hello_elementor_get_setting('hello_header_logo_type')  $is_editor)) : ?>
+        <div class="site-logo <?php echo esc_attr(hello_show_or_hide('hello_header_logo_display')); ?>">
+          <?php the_custom_logo(); ?>
+        </div>
+      <?php endif; ?>
+
 		<div class="checkboxHomeOffice">
 			<a href="https://averlexx.com/" class="chacboxInner activeHomeOffice">Home</a>
 			<a href="https://averlexx.com/?page_id=66" class="chacboxInner">Office</a>
