@@ -143,7 +143,7 @@ class Elementor_switchSideImage extends \Elementor\Widget_Base
                 justify-content: space-between;
                 align-items: center;
                 width: 100%;
-                height: 80vh;
+                height: 80vh !important;
             }
 
             .left {
