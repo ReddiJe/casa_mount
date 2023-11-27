@@ -493,6 +493,10 @@ table tbody+tbody {
     padding: 25px;
 }
 
+.oneArticleContainer {
+    width: 100% !important;
+}
+
 @media (max-width:767px) {
     table table {
         font-size: .8em
