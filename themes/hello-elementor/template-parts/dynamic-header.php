@@ -308,11 +308,10 @@ $header_nav_menu = wp_nav_menu([
 		<a href="averlexx.com"> <img src="<?php echo esc_url($logo_url); ?>" alt="">
 		</a>
 		<div class="site-branding show-<?php echo esc_attr(hello_elementor_get_setting('hello_header_logo_type')); ?>">
-      <?php if (has_custom_logo() && ('title' !== hello_elementor_get_setting('hello_header_logo_type')  $is_editor)) : ?>
+
         <div class="site-logo <?php echo esc_attr(hello_show_or_hide('hello_header_logo_display')); ?>">
           <?php the_custom_logo(); ?>
         </div>
-      <?php endif; ?>
 
 		<div class="checkboxHomeOffice">
 			<a href="https://averlexx.com/" class="chacboxInner activeHomeOffice">Home</a>
