@@ -164,7 +164,7 @@ class Elementor_switchSideImage extends \Elementor\Widget_Base
 
             .heroSection.left img.left {
                 display: block;
-                height: 100%;
+                height: 80vh;
             }
 
             .heroSection.left img.right {
@@ -295,6 +295,7 @@ class Elementor_switchSideImage extends \Elementor\Widget_Base
 
             .heroText p a {
                 color: #2c2d2c;
+                text-decoration: underline;
             }
 
             @media screen and (max-width: 600px) {

@@ -375,7 +375,6 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
                 background: #fff;
                 width: 300px;
                 border-radius: 15px;
-                width: auto;
             }
 
             .hoverDot:hover .description {
@@ -418,8 +417,8 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
             .tab button.active {
                 border-bottom: none;
                 background: white;
-                color: aquamarine;
-                border-bottom: 2px solid var(--blue);
+                color: #056CF2;
+                border-bottom: 2px #056CF2;
                 box-shadow: none;
             }
 
@@ -451,6 +450,12 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
             .pageWidth {
                 width: 100%;
                 padding: 25px;
+            }
+
+            [type=button],
+            [type=submit],
+            button {
+                color: #2c2d2c;
             }
 
             @media screen and (min-width: 1600px) {

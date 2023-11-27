@@ -489,6 +489,10 @@ table tbody+tbody {
     border-block-start: 2px solid hsla(0, 0%, 50.2%, .5019607843)
 }
 
+.comments-area {
+    padding: 25px;
+}
+
 @media (max-width:767px) {
     table table {
         font-size: .8em

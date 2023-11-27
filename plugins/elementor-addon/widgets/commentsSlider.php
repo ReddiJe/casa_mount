@@ -150,7 +150,7 @@ class Elementor_commentsSlider extends \Elementor\Widget_Base
 
         <style>
             .title {
-                font-family: NewYork;
+                font-family: Urbanist;
                 font-size: 48px;
                 font-weight: 400;
                 line-height: 59px;

@@ -188,7 +188,7 @@ class Elementor_priceDependence extends \Elementor\Widget_Base
                 width: 100%;
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
-                padding: 45px 75px;
+                padding: 45px 75px 100px;
                 grid-column-gap: 25px;
             }
 
@@ -201,7 +201,7 @@ class Elementor_priceDependence extends \Elementor\Widget_Base
                 border-radius: 10px;
                 overflow: hidden;
                 background: #FFF;
-                box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+                box-shadow: none !important;
             }
 
             .additionalService img {
@@ -235,7 +235,9 @@ class Elementor_priceDependence extends \Elementor\Widget_Base
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                font-size: 40px;
                 padding-top: 20px;
+                font-weight: 700;
             }
 
             .frequency {
@@ -245,7 +247,7 @@ class Elementor_priceDependence extends \Elementor\Widget_Base
 
             .frequency p {
                 margin-bottom: 0px;
-                padding-top: 25px;
+                padding-top: 5px;
             }
 
             @media screen and (max-width: 600px) {

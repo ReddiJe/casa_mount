@@ -172,6 +172,11 @@ class Elementor_twoColumnsValues extends \Elementor\Widget_Base
                 font-weight: 300;
             }
 
+            li,
+            ul {
+                text-align: left !important;
+            }
+
             @media screen and (min-width: 1600px) {
                 .pageWidth {
                     padding: 25px 15%;

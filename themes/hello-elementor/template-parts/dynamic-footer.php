@@ -227,6 +227,22 @@ $footer_nav_menu = wp_nav_menu([
         font-weight: 300;
     }
 
+    .footerRightInner li, ul {
+        text-align: right;
+    }
+
+    .footerRightInner li {
+        list-style: none;;
+    }
+
+    @media screen and (min-width: 1600px) {
+        .menu-footer-menu-container ul {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 30px !important;
+        }
+    }
+
     @media screen and (max-width: 600px) {
         .emailFooterContainer {
             width: 100%;
