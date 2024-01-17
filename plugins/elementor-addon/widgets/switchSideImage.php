@@ -216,7 +216,6 @@ class Elementor_switchSideImage extends \Elementor\Widget_Base
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                align-items: center;
                 outline: none;
                 gap: 0.625rem;
                 background: var(--blueLight);
@@ -224,12 +223,13 @@ class Elementor_switchSideImage extends \Elementor\Widget_Base
                 color: #fff;
                 font-weight: 400;
                 padding: 10px;
+                border-radius: 15px;
                 transition: all linear 300ms;
             }
 
             .buttonHeroSection:hover {
                 box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
-                background: #01133d;
+                background: var(--blueDark);
             }
 
             .heroSectionTwo h1 {
@@ -260,11 +260,6 @@ class Elementor_switchSideImage extends \Elementor\Widget_Base
                 transition: all linear 300ms;
             }
 
-            .buttonBlueBg:hover {
-                background: var(--blueLight);
-                color: #fff;
-            }
-
             .buttonBlueBg:hover svg path {
                 background: var(--blueLight);
                 color: #fff;
@@ -282,8 +277,6 @@ class Elementor_switchSideImage extends \Elementor\Widget_Base
             }
 
             .heroSection .buttonBlueBg {
-                padding: 10px;
-                margin-top: 20px;
                 outline: none;
                 box-sizing: none;
                 font-size: 1.2rem;
@@ -291,6 +284,7 @@ class Elementor_switchSideImage extends \Elementor\Widget_Base
                 text-align: center;
                 display: block;
                 width: max-content;
+                color: #fff;
             }
 
             .heroText p a {

@@ -152,6 +152,7 @@ class Elementor_calculator extends \Elementor\Widget_Base
         <style>
             .calculatorPageContainer {
                 padding: 150px 25px 25px 25px;
+                width: 100%;
             }
 
             .calculatorContainer {
@@ -269,7 +270,6 @@ class Elementor_calculator extends \Elementor\Widget_Base
             }
 
             .serviceCheckbox {
-
                 position: relative;
             }
 
@@ -404,6 +404,10 @@ class Elementor_calculator extends \Elementor\Widget_Base
                 background: var(--blue);
             }
 
+            @media screen and (min-width: 1600px) {
+                width: 80%;
+            }
+
             @media screen and (max-width: 600px) {
                 .calculatorPageContainer {
                     padding: 100px 10px 10px 10px;
@@ -421,6 +425,10 @@ class Elementor_calculator extends \Elementor\Widget_Base
 
                 .checkboxHomeOffice {
                     display: none;
+                }
+
+                #valueOfMoney {
+                    font-size: 3.2rem;
                 }
             }
         </style>

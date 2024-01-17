@@ -458,6 +458,12 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
                 color: #2c2d2c;
             }
 
+            .tabcontent {
+                height: 80vh;
+                width: 100%;
+                background-size: cover;
+            }
+
             @media screen and (min-width: 1600px) {
                 .pageWidth {
                     width: 100%;
@@ -477,18 +483,19 @@ class Elementor_blockWithDots extends \Elementor\Widget_Base
 
                 .tab {
                     overflow-x: scroll;
+                    width: 100%;
                 }
 
                 .tabcontent {
                     padding: 0px;
                     margin: 0px 0;
                 }
-            }
 
-            .tabcontent {
-                height: 80vh;
-                width: 100%;
-                background-size: cover;
+                .tabcontent {
+                    height: 30vh;
+                    width: 100%;
+                    background-size: cover;
+                }
             }
         </style>
 

@@ -457,7 +457,7 @@ class Elementor_contactUs extends \Elementor\Widget_Base
                 </div>
             </div>
             <div class="rightContainer side" style="background-image: url(<?php echo $settings['image']['url']; ?>);">
-                <?php echo do_shortcode('[wpforms id="246" description="true"]'); ?>
+                <?php echo do_shortcode('[wpforms id="420" description="true"]'); ?>
             </div>
         </div>
 

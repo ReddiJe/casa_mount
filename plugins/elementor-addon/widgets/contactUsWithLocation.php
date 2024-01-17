@@ -272,7 +272,7 @@ class Elementor_contactUsWithLocation extends \Elementor\Widget_Base
                 gap: 0.3125rem;
                 border-radius: 0.9375rem;
                 background: rgba(5, 108, 242, 0.10);
-                color: var(--blue);
+                color: var(--blue) !important;
                 font-size: 1.125rem;
                 font-weight: 500;
                 transition: all linear 300ms;
@@ -280,7 +280,7 @@ class Elementor_contactUsWithLocation extends \Elementor\Widget_Base
 
             .buttonBlueBg:hover {
                 background: var(--blueLight);
-                color: #fff;
+                color: #fff !important;
             }
 
             .buttonBlueBg:hover svg path {
