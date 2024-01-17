@@ -348,13 +348,13 @@ class Elementor_contactUsWithLocation extends \Elementor\Widget_Base
                     <?php echo $settings['subtitle']; ?>
                 </p>
                 <div class="buttonsBlueBg">
-                    <a href="" class="buttonBlueBg">
+                    <a href="mailto:<?php echo $settings['email']; ?>" class="buttonBlueBg">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                             <path d="M4.01775 3.16436V3.16434L4.01639 3.16437L3.89811 3.16759L3.89811 3.16757L3.89664 3.16765C3.35108 3.19859 2.83804 3.43711 2.46277 3.8343C2.08749 4.23148 1.87843 4.75721 1.87847 5.30364V12.6965H1.87845L1.87849 12.6979L1.8817 12.8161L1.88168 12.8161L1.88176 12.8176C1.9127 13.3632 2.15122 13.8762 2.54841 14.2515C2.94559 14.6268 3.47132 14.8358 4.01775 14.8358H13.982V14.8358L13.9834 14.8358L14.1017 14.8326L14.1017 14.8326L14.1032 14.8325C14.6487 14.8016 15.1617 14.563 15.537 14.1658C15.9123 13.7687 16.1214 13.2429 16.1213 12.6965V5.30364H16.1213L16.1213 5.30228L16.1181 5.184L16.1181 5.184L16.118 5.18252C16.0871 4.63697 15.8486 4.12393 15.4514 3.74866C15.0542 3.37338 14.5285 3.16432 13.982 3.16436H4.01775ZM9.24539 10.1148L15.057 7.09278V12.6954L15.0533 12.7853C15.031 13.0539 14.9086 13.3044 14.7104 13.4871C14.5119 13.6699 14.2519 13.7715 13.982 13.7715H4.01878L3.9283 13.7677C3.6598 13.7453 3.4095 13.6229 3.22697 13.4247C3.04421 13.2262 2.94276 12.9663 2.94275 12.6965V7.09278L8.7544 10.1148L8.75432 10.1149L8.75812 10.1165L8.83012 10.1467L8.83006 10.1469L8.83386 10.1481C8.90121 10.1703 8.97231 10.1787 9.04298 10.173C9.11365 10.1673 9.18247 10.1475 9.24538 10.1148L9.24539 10.1148ZM4.01775 4.22864H13.981L14.0709 4.23241C14.3395 4.25468 14.5899 4.37705 14.7726 4.57528C14.9555 4.77376 15.057 5.03376 15.057 5.30364V5.893L8.9999 9.04271L2.94275 5.893V5.30468L2.94652 5.21418C2.96894 4.94569 3.09137 4.69539 3.28959 4.51286C3.48804 4.3301 3.74797 4.22865 4.01775 4.22864Z" fill="#056CF2" stroke="#056CF2" stroke-width="0.1" />
                         </svg>
                         <?php echo $settings['email']; ?>
                     </a>
-                    <a href="" class="buttonBlueBg">
+                    <a href="tel:<?php echo $settings['phone']; ?>" class="buttonBlueBg">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                             <mask id="path-1-outside-1_86_721" maskUnits="userSpaceOnUse" x="0.689697" y="0.686523" width="16" height="16" fill="black">
                                 <rect fill="white" x="0.689697" y="0.686523" width="16" height="16" />
@@ -367,7 +367,7 @@ class Elementor_contactUsWithLocation extends \Elementor\Widget_Base
                     </a>
                 </div>
                 <a href="<?php echo $settings['googleUrl']; ?>" class="adress">
-                    <?php echo $settings['adress'] ?>
+                    <?php echo $settings['adress']; ?>
                 </a>
                 <a href="<?php echo $settings['button-url']; ?>" class="buttonHeroSection"><?php echo $settings['button-title']; ?></a>
             </div>
