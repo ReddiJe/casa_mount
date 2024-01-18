@@ -40,6 +40,7 @@ $postslist = get_posts([
     'orderby' => 'title'
 ]);
 ?>
+
 <style>
     .h1 {
         color: var(--Black, #2C2D2C);
@@ -161,6 +162,13 @@ $postslist = get_posts([
     .viewAllButton:hover {
         background: #151B1D;
     }
+
+    @media screen and (max-width: 600px) {
+                .containerNews {
+                    display: flex;
+                    flex-direction: column;
+                }
+        }
 </style>
 
 <div class="containerNews">
