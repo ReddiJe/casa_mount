@@ -192,6 +192,10 @@ class Elementor_twoColumnsValues extends \Elementor\Widget_Base
             }
 
             @media screen and (max-width: 600px) {
+                .richText {
+                    padding: 0px !important;
+                }
+
                 .richText h2 {
                     color: #010626;
                     text-align: center;
@@ -221,10 +225,11 @@ class Elementor_twoColumnsValues extends \Elementor\Widget_Base
 
                 .textTwoColumns {
                     grid-template-columns: repeat(1, 1fr);
+                    padding: 10px !important;
                 }
 
                 .textCenter {
-                    padding: 25px;
+                    padding: 0px !important;
                     font-size: 1.15rem;
                     font-weight: 400;
                 }
@@ -241,9 +246,9 @@ class Elementor_twoColumnsValues extends \Elementor\Widget_Base
             ?>
                 <div class="text">
                     <h4><?php echo $item['title']; ?></h4>
-                    <ul>
-                        <li><?php echo $item['description']; ?></li>
-                    </ul>
+                    <div>
+                        <span><?php echo $item['description']; ?></span>
+                    </div>
                 </div>
             <?php } ?>
         </div>

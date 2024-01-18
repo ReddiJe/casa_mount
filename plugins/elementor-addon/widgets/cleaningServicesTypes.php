@@ -153,6 +153,7 @@ class Elementor_cleaningServicesTypes extends \Elementor\Widget_Base
 
             .richText h2 {
                 font-size: 3rem;
+                line-height: normal;
             }
 
             .richText p.title {

@@ -307,7 +307,7 @@ class Elementor_switchSideImage extends \Elementor\Widget_Base
                 }
 
                 .heroText {
-                    padding: 25px 10px !important;
+                    padding: 0px 10px !important;
                     width: 100% !important;
                     max-width: 100% !important;
                 }

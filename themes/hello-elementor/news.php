@@ -53,7 +53,6 @@ $postslist = get_posts([
     }
 
     .oneNews {
-        padding: 100px;
         width: 100%;
         background-size: cover;
         border-radius: 25px;
