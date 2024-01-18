@@ -164,11 +164,18 @@ $postslist = get_posts([
     }
 
     @media screen and (max-width: 600px) {
-                .containerNews {
-                    display: flex;
-                    flex-direction: column;
-                }
+        .containerNews {
+            display: flex;
+            flex-direction: column;
         }
+    }
+
+    @media screen and (max-width: 600px) {
+        .containerNews {
+            display: flex;
+            flex-direction: column;
+        }
+}
 </style>
 
 <div class="containerNews">
